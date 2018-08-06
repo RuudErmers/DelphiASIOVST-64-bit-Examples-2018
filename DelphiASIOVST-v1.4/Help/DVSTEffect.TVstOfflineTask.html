@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTEffect: packed record TVstOfflineTask</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TVstOfflineTask"></a><h1 class="cio">packed record TVstOfflineTask</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>Hierarchy</td><td><a class="section"  href="#@Fields">Fields</a></td><td>Methods</td><td>Properties</td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTEffect.html">DVSTEffect</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TVstOfflineTask = packed record</code></p>
+<h2 class="description">Description</h2>
+&nbsp;<h2 class="overview">Overview</h2>
+<a name="@Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#processName">processName</a></b>: array[0..95] of char;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#ReadPosition">ReadPosition</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#WritePosition">WritePosition</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#ReadCount">ReadCount</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#WriteCount">WriteCount</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#SizeInputBuffer">SizeInputBuffer</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#SizeOutputBuffer">SizeOutputBuffer</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#InputBuffer">InputBuffer</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#OutputBuffer">OutputBuffer</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#PositionToProcessFrom">PositionToProcessFrom</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#NumFramesToProcess">NumFramesToProcess</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#MaxFramesToWrite">MaxFramesToWrite</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#ExtraBuffer">ExtraBuffer</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#Value">Value</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#Index">Index</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#NumFramesInSourceFile">NumFramesInSourceFile</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#SourceSampleRate">SourceSampleRate</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#DestinationSampleRate">DestinationSampleRate</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#NumSourceChannels">NumSourceChannels</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#NumDestinationChannels">NumDestinationChannels</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#SourceFormat">SourceFormat</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#DestinationFormat">DestinationFormat</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#OutputText">OutputText</a></b>: array[0..511] of char;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#Progress">Progress</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#ProgressMode">ProgressMode</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#ProgressText">ProgressText</a></b>: array[0..99] of char;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#Flags">Flags</a></b>: <a   href="DVSTEffect.html#TVstOfflineTaskFlags">TVstOfflineTaskFlags</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#ReturnValue">ReturnValue</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#HostOwned">HostOwned</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#PlugOwned">PlugOwned</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstOfflineTask.html#Future">Future</a></b>: array[0..1023] of Byte;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="processName"></a><code><b>processName</b>: array[0..95] of char;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReadPosition"></a><code><b>ReadPosition</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug audio access</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WritePosition"></a><code><b>WritePosition</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug/host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReadCount"></a><code><b>ReadCount</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug/host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WriteCount"></a><code><b>WriteCount</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug/host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SizeInputBuffer"></a><code><b>SizeInputBuffer</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SizeOutputBuffer"></a><code><b>SizeOutputBuffer</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="InputBuffer"></a><code><b>InputBuffer</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OutputBuffer"></a><code><b>OutputBuffer</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PositionToProcessFrom"></a><code><b>PositionToProcessFrom</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NumFramesToProcess"></a><code><b>NumFramesToProcess</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MaxFramesToWrite"></a><code><b>MaxFramesToWrite</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ExtraBuffer"></a><code><b>ExtraBuffer</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug other data access</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Value"></a><code><b>Value</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Index"></a><code><b>Index</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host or plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NumFramesInSourceFile"></a><code><b>NumFramesInSourceFile</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host or plug file attributes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SourceSampleRate"></a><code><b>SourceSampleRate</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DestinationSampleRate"></a><code><b>DestinationSampleRate</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host or plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NumSourceChannels"></a><code><b>NumSourceChannels</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host or plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NumDestinationChannels"></a><code><b>NumDestinationChannels</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host or plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SourceFormat"></a><code><b>SourceFormat</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host or plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DestinationFormat"></a><code><b>DestinationFormat</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OutputText"></a><code><b>OutputText</b>: array[0..511] of char;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Progress"></a><code><b>Progress</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug or host progress notification</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ProgressMode"></a><code><b>ProgressMode</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ProgressText"></a><code><b>ProgressText</b>: array[0..99] of char;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reserved for future</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Flags"></a><code><b>Flags</b>: <a   href="DVSTEffect.html#TVstOfflineTaskFlags">TVstOfflineTaskFlags</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReturnValue"></a><code><b>ReturnValue</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host and plug; see TVstOfflineTaskFlags</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HostOwned"></a><code><b>HostOwned</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reserved for future</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PlugOwned"></a><code><b>PlugOwned</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Future"></a><code><b>Future</b>: array[0..1023] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+set by plug</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:19</em>
+</span>
+</body></html>

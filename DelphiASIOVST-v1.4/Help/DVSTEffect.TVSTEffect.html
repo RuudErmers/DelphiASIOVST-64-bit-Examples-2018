@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTEffect: record TVSTEffect</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TVSTEffect"></a><h1 class="cio">record TVSTEffect</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>Hierarchy</td><td><a class="section"  href="#@Fields">Fields</a></td><td>Methods</td><td>Properties</td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTEffect.html">DVSTEffect</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TVSTEffect = record</code></p>
+<h2 class="description">Description</h2>
+&nbsp;<h2 class="overview">Overview</h2>
+<a name="@Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#Magic">Magic</a></b>: array [0..3] of char;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#Dispatcher">Dispatcher</a></b>: <a   href="DVSTEffect.html#TDispatcherFunc">TDispatcherFunc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#Process">Process</a></b>: <a   href="DVSTEffect.html#TProcessProc">TProcessProc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#SetParameter">SetParameter</a></b>: <a   href="DVSTEffect.html#TSetParameterProc">TSetParameterProc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#GetParameter">GetParameter</a></b>: <a   href="DVSTEffect.html#TGetParameterFunc">TGetParameterFunc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#numPrograms">numPrograms</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#numParams">numParams</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#numInputs">numInputs</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#numOutputs">numOutputs</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#EffectFlags">EffectFlags</a></b>: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#reservedForHost">reservedForHost</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#resvd2">resvd2</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#InitialDelay">InitialDelay</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#RealQualities">RealQualities</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#OffQualities">OffQualities</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#IORatio">IORatio</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#vObject">vObject</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#User">User</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#UniqueID">UniqueID</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#Version">Version</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#ProcessReplacing">ProcessReplacing</a></b>: <a   href="DVSTEffect.html#TProcessProc">TProcessProc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#ProcessDoubleReplacing">ProcessDoubleReplacing</a></b>: <a   href="DVSTEffect.html#TProcessDoubleProc">TProcessDoubleProc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVSTEffect.html#Future">Future</a></b>: array[0..55] of Byte;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Magic"></a><code><b>Magic</b>: array [0..3] of char;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Dispatcher"></a><code><b>Dispatcher</b>: <a   href="DVSTEffect.html#TDispatcherFunc">TDispatcherFunc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+must be kEffectMagic ('VstP')</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Process"></a><code><b>Process</b>: <a   href="DVSTEffect.html#TProcessProc">TProcessProc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SetParameter"></a><code><b>SetParameter</b>: <a   href="DVSTEffect.html#TSetParameterProc">TSetParameterProc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Not used since 2.4, use ProcessReplacing instead!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetParameter"></a><code><b>GetParameter</b>: <a   href="DVSTEffect.html#TGetParameterFunc">TGetParameterFunc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="numPrograms"></a><code><b>numPrograms</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="numParams"></a><code><b>numParams</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="numInputs"></a><code><b>numInputs</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+all programs are assumed to have numParams parameters</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="numOutputs"></a><code><b>numOutputs</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EffectFlags"></a><code><b>EffectFlags</b>: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="reservedForHost"></a><code><b>reservedForHost</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+see constants</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="resvd2"></a><code><b>resvd2</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reserved for Host, must be 0 (Dont use it)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="InitialDelay"></a><code><b>InitialDelay</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reserved for Host, must be 0 (Dont use it)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RealQualities"></a><code><b>RealQualities</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+for algorithms which need input in the first place</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OffQualities"></a><code><b>OffQualities</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of realtime qualities (0: realtime)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IORatio"></a><code><b>IORatio</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of offline qualities (0: realtime only)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="vObject"></a><code><b>vObject</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+input samplerate to output samplerate ratio, not used yet</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="User"></a><code><b>User</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+for class access (see AudioEffect.hpp), MUST be 0 else!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UniqueID"></a><code><b>UniqueID</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+user access</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Version"></a><code><b>Version</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+pls choose 4 character as unique as possible. This is used to identify an effect for save+load</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ProcessReplacing"></a><code><b>ProcessReplacing</b>: <a   href="DVSTEffect.html#TProcessProc">TProcessProc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+(example 1100 for version 1.1.0.0)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ProcessDoubleReplacing"></a><code><b>ProcessDoubleReplacing</b>: <a   href="DVSTEffect.html#TProcessDoubleProc">TProcessDoubleProc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Future"></a><code><b>Future</b>: array[0..55] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:19</em>
+</span>
+</body></html>

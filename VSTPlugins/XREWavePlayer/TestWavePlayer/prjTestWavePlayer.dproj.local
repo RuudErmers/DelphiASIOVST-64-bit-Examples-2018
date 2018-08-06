@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.446,C:\Users\Ruud\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\TestWavePlayer\UMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.063,=C:\Users\Ruud\Documents\Projects\Common\UTickCount.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.437,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UMidiPorts.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.783,=C:\Users\Ruud\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.459,C:\Users\Ruud\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\TestWavePlayer\prjTestWavePlayer.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.394,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UMidiNrpn.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.464,=C:\Users\Ruud\Documents\Projects\Midimania\Common\MidiBase.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.447,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UMidiEvent.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.446,C:\Users\Ruud\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\TestWavePlayer\UMain.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

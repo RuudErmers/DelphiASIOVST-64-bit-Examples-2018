@@ -1,0 +1,723 @@
+object FmWinEar: TFmWinEar
+  Left = 324
+  Top = 215
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'WinEAR'
+  ClientHeight = 312
+  ClientWidth = 600
+  Color = clHighlightText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu
+  OldCreateOrder = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ImNoteF3: TShape
+    Tag = 53
+    Left = 56
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteG3: TShape
+    Tag = 55
+    Left = 88
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteA3: TShape
+    Tag = 57
+    Left = 120
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteB3: TShape
+    Tag = 59
+    Left = 152
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteC4: TShape
+    Tag = 60
+    Left = 184
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteD4: TShape
+    Tag = 62
+    Left = 216
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteE4: TShape
+    Tag = 64
+    Left = 248
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteF4: TShape
+    Tag = 65
+    Left = 280
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteG4: TShape
+    Tag = 67
+    Left = 312
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteA4: TShape
+    Tag = 69
+    Left = 344
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteB4: TShape
+    Tag = 71
+    Left = 376
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteC5: TShape
+    Tag = 72
+    Left = 408
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteD5: TShape
+    Tag = 74
+    Left = 440
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteE5: TShape
+    Tag = 76
+    Left = 472
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteF5: TShape
+    Tag = 77
+    Left = 504
+    Top = 40
+    Width = 33
+    Height = 161
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteDb5: TShape
+    Tag = 73
+    Left = 431
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteEb5: TShape
+    Tag = 75
+    Left = 465
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteBb4: TShape
+    Tag = 70
+    Left = 370
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteGb4: TShape
+    Tag = 66
+    Left = 302
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteAb4: TShape
+    Tag = 68
+    Left = 336
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteDb4: TShape
+    Tag = 61
+    Left = 207
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteEb4: TShape
+    Tag = 63
+    Left = 241
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteBb3: TShape
+    Tag = 58
+    Left = 146
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteAb3: TShape
+    Tag = 56
+    Left = 112
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object ImNoteGb3: TShape
+    Tag = 54
+    Left = 78
+    Top = 40
+    Width = 17
+    Height = 105
+    Brush.Color = clBlack
+    OnMouseDown = ImNoteF3MouseDown
+    OnMouseUp = ImNoteF3MouseUp
+  end
+  object LbVelocity: TLabel
+    Left = 312
+    Top = 8
+    Width = 37
+    Height = 13
+    Caption = 'Velocity'
+  end
+  object LbTime: TLabel
+    Left = 547
+    Top = 176
+    Width = 35
+    Height = 24
+    Caption = '0:00'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
+  end
+  object ImMarkRed1: TImage
+    Left = -20
+    Top = 120
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00000000000000000009999000000000009999990000000000999999000000
+      0000999999900000000009999990000000000000099000000000000009900000
+      0000000009900000000000000990000000000000099000000000000009900000
+      0000000009900000000000000990009000000000099009900000000009999900
+      000000000999900000000000099000000000
+    }
+    Transparent = True
+  end
+  object ImMarkRed4: TImage
+    Left = -20
+    Top = 120
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00000000000000000009999000000000009999990000000000999999000000
+      0000999999900000000009999990000000000000099000000000000009900000
+      0000000009900000000000000990000000000000099000000000000009900000
+      0000000009900000000000000990009000000000099009900000000009999900
+      000000000999900000000000099000000000
+    }
+    Transparent = True
+  end
+  object ImMarkRed2: TImage
+    Left = -20
+    Top = 120
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00000000000000000009999000000000009999990000000000999999000000
+      0000999999900000000009999990000000000000099000000000000009900000
+      0000000009900000000000000990000000000000099000000000000009900000
+      0000000009900000000000000990009000000000099009900000000009999900
+      000000000999900000000000099000000000
+    }
+    Transparent = True
+  end
+  object ImMarkRed3: TImage
+    Left = -20
+    Top = 120
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00000000000000000009999000000000009999990000000000999999000000
+      0000999999900000000009999990000000000000099000000000000009900000
+      0000000009900000000000000990000000000000099000000000000009900000
+      0000000009900000000000000990009000000000099009900000000009999900
+      000000000999900000000000099000000000
+    }
+    Transparent = True
+  end
+  object ImMark3: TImage
+    Left = -20
+    Top = 176
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00FFFFFFFFFFFF0000F9999FFFFFFF0000999999FFFFFF0000999999FFFFFF
+      00009999999FFFFF0000F999999FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFF9F0000FFFFF99FF99F0000FFFFF99999FF
+      0000FFFFF9999FFF0000FFFFF99FFFFF0000
+    }
+    Transparent = True
+  end
+  object ImMark4: TImage
+    Left = -20
+    Top = 176
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00FFFFFFFFFFFF0000F9999FFFFFFF0000999999FFFFFF0000999999FFFFFF
+      00009999999FFFFF0000F999999FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFF9F0000FFFFF99FF99F0000FFFFF99999FF
+      0000FFFFF9999FFF0000FFFFF99FFFFF0000
+    }
+    Transparent = True
+  end
+  object ImMark2: TImage
+    Left = -20
+    Top = 176
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00FFFFFFFFFFFF0000F9999FFFFFFF0000999999FFFFFF0000999999FFFFFF
+      00009999999FFFFF0000F999999FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFF9F0000FFFFF99FF99F0000FFFFF99999FF
+      0000FFFFF9999FFF0000FFFFF99FFFFF0000
+    }
+    Transparent = True
+  end
+  object ImMark1: TImage
+    Left = -20
+    Top = 176
+    Width = 13
+    Height = 17
+    Picture.Data = {
+      07544269746D617006010000424D060100000000000076000000280000000C00
+      0000120000000100040000000000900000000000000000000000100000000000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00FFFFFFFFFFFF0000F9999FFFFFFF0000999999FFFFFF0000999999FFFFFF
+      00009999999FFFFF0000F999999FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF0000FFFFF99FFFFF
+      0000FFFFF99FFFFF0000FFFFF99FFF9F0000FFFFF99FF99F0000FFFFF99999FF
+      0000FFFFF9999FFF0000FFFFF99FFFFF0000
+    }
+    Transparent = True
+  end
+  object BtMidiDevice: TButton
+    Left = 16
+    Top = 8
+    Width = 201
+    Height = 25
+    Caption = 'Midi Device'
+    Enabled = False
+    TabOrder = 10
+  end
+  object BtRepeat: TButton
+    Left = 0
+    Top = 248
+    Width = 201
+    Height = 33
+    Caption = 'Repeat'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+    Visible = False
+    OnClick = BtRepeatClick
+  end
+  object BtMelodicIntervals: TButton
+    Left = 0
+    Top = 248
+    Width = 201
+    Height = 33
+    Caption = 'Melodic Intervals'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = BtMelodicIntervalsClick
+  end
+  object BtHarmonicIntervals: TButton
+    Left = 200
+    Top = 248
+    Width = 201
+    Height = 33
+    Caption = 'Harmonic Intervals'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = BtHarmonicIntervalsClick
+  end
+  object BtThreeNoteChords: TButton
+    Left = 0
+    Top = 280
+    Width = 201
+    Height = 33
+    Caption = 'Three-Note Chords'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = BtThreeNoteChordsClick
+  end
+  object BtFourNoteChords: TButton
+    Left = 200
+    Top = 280
+    Width = 201
+    Height = 33
+    Caption = 'Four-Note Chords'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = BtFourNoteChordsClick
+  end
+  object BtMidiChannel: TButton
+    Left = 80
+    Top = 216
+    Width = 145
+    Height = 25
+    Caption = 'Midichannel'
+    Enabled = False
+    TabOrder = 6
+  end
+  object BtPatch: TButton
+    Left = 224
+    Top = 216
+    Width = 145
+    Height = 25
+    Caption = 'Patch'
+    Enabled = False
+    TabOrder = 7
+  end
+  object BtMidiThrough: TButton
+    Left = 368
+    Top = 216
+    Width = 145
+    Height = 25
+    Caption = 'Midi Thru: OFF'
+    TabOrder = 8
+    OnClick = BtMidiThroughClick
+  end
+  object SbVelocity: TScrollBar
+    Left = 360
+    Top = 8
+    Width = 217
+    Height = 17
+    Hint = 'Velocity'
+    LargeChange = 8
+    Max = 127
+    PageSize = 0
+    Position = 100
+    TabOrder = 9
+  end
+  object BtEnd: TButton
+    Left = 400
+    Top = 248
+    Width = 201
+    Height = 33
+    Caption = 'End'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 12
+    Visible = False
+    OnClick = BtEndClick
+  end
+  object BtMelody: TButton
+    Left = 400
+    Top = 248
+    Width = 201
+    Height = 33
+    Caption = 'Melody'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = BtMelodyClick
+  end
+  object BtScore: TButton
+    Left = 400
+    Top = 280
+    Width = 201
+    Height = 33
+    Caption = 'Score >>'
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+  object PnChords: TPanel
+    Left = -4
+    Top = -1
+    Width = 610
+    Height = 41
+    BorderStyle = bsSingle
+    Color = clAppWorkSpace
+    TabOrder = 13
+    Visible = False
+    object BtDominant7th: TButton
+      Left = 2
+      Top = 7
+      Width = 121
+      Height = 25
+      Caption = 'Dominant 7th'
+      TabOrder = 0
+      OnClick = BtDominant7thClick
+    end
+    object BtMajor7th: TButton
+      Left = 122
+      Top = 7
+      Width = 121
+      Height = 25
+      Caption = 'Major 7th'
+      TabOrder = 1
+      OnClick = BtMajor7thClick
+    end
+    object BtMinor7th: TButton
+      Left = 242
+      Top = 7
+      Width = 121
+      Height = 25
+      Caption = 'Minor 7th'
+      TabOrder = 2
+      OnClick = BtMinor7thClick
+    end
+    object BtDiminished7th: TButton
+      Left = 362
+      Top = 7
+      Width = 121
+      Height = 25
+      Caption = 'Diminished 7th'
+      TabOrder = 3
+      OnClick = BtDiminished7thClick
+    end
+    object BtHalfDiminished: TButton
+      Left = 482
+      Top = 7
+      Width = 121
+      Height = 25
+      Caption = 'Half Diminished'
+      TabOrder = 4
+      OnClick = BtHalfDiminishedClick
+    end
+  end
+  object MainMenu: TMainMenu
+    Left = 8
+    Top = 216
+    object MiFile: TMenuItem
+      Caption = '&File'
+      object MiOpenScoreLog: TMenuItem
+        Caption = 'Open Score &Log'
+        Enabled = False
+      end
+      object MiUpdateScoreLog: TMenuItem
+        Caption = 'Update Score Log'
+        Enabled = False
+      end
+      object MiCloseScoreLog: TMenuItem
+        Caption = 'Close Score Log'
+        Enabled = False
+      end
+      object MiPrintScoreLog: TMenuItem
+        Caption = 'Print Score Log'
+        Enabled = False
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MiExit: TMenuItem
+        Caption = 'Exit'
+        OnClick = MiExitClick
+      end
+    end
+    object MiEdit: TMenuItem
+      Caption = '&Edit'
+      Enabled = False
+      object MiCopyScore: TMenuItem
+        Caption = '&Copy Score ...'
+        Enabled = False
+      end
+      object MiCopyScoreLog: TMenuItem
+        Caption = 'Copy Score &Log'
+        Enabled = False
+      end
+    end
+    object MiSettings: TMenuItem
+      Caption = '&Settings'
+      Enabled = False
+      object MiMelodicIntervals: TMenuItem
+        Caption = '&Melodic Intervals...'
+      end
+      object MiHarmonicIntervals: TMenuItem
+        Caption = '&Harmonic Intervals...'
+      end
+      object MiMelody: TMenuItem
+        Caption = 'M&elody...'
+      end
+      object MiThreeNoteChords: TMenuItem
+        Caption = '&Three-Note Chords...'
+      end
+      object MiFourNoteChords: TMenuItem
+        Caption = '&Four-Note Chords...'
+      end
+    end
+    object MiScore: TMenuItem
+      Caption = 'S&core'
+      Enabled = False
+    end
+    object MiHelp: TMenuItem
+      Caption = '&Help'
+      OnClick = MiHelpClick
+    end
+  end
+  object StopWatch: TTimer
+    Enabled = False
+    OnTimer = StopWatchTimer
+    Left = 560
+    Top = 96
+  end
+end

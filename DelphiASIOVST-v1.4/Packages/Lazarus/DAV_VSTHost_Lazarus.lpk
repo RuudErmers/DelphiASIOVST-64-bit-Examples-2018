@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <PathDelim Value="\"/>
+    <Name Value="DAV_VSTHost_Lazarus"/>
+    <CompilerOptions>
+      <Version Value="9"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\Source;..\..\Source\VST;..\..\Resources"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <CStyleOperator Value="False"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <SmartLinkUnit Value="True"/>
+      </CodeGeneration>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Version Minor="3"/>
+    <Files Count="3">
+      <Item1>
+        <Filename Value="..\..\Source\VST\DAV_VSTHostRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="DAV_VSTHostRegister"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\Source\VST\DAV_VSTHost.pas"/>
+        <UnitName Value="DAV_VSTHost"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\Resources\DAV_VstHostRegister.lrs"/>
+        <Type Value="LRS"/>
+      </Item3>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="DAV_Common_Lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)\"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="$(TestDir)\publishedpackage\"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

@@ -1,0 +1,11 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+100 DIALOG DISCARDABLE  0, 0, 226, 250
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "Ms Shell Dlg"
+LANGUAGE LANG_NEUTRAL, 0
+BEGIN
+END

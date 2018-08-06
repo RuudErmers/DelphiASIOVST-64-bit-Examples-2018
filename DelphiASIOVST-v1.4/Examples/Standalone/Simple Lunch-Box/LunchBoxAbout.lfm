@@ -1,0 +1,48 @@
+object FmAbout: TFmAbout
+  Left = 384
+  Height = 99
+  Top = 373
+  Width = 317
+  HorzScrollBar.Page = 316
+  VertScrollBar.Page = 98
+  BorderStyle = bsNone
+  Caption = 'About'
+  Color = clMedGray
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnClick = FormClick
+  Position = poScreenCenter
+  object Label1: TLabel
+    Left = 24
+    Height = 33
+    Top = 17
+    Width = 259
+    Caption = 'Simple Lunchbox'
+    Color = clNone
+    Font.Height = -27
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    ParentColor = False
+    OnClick = FormClick
+  end
+  object Lb: TLabel
+    Left = 88
+    Height = 14
+    Top = 55
+    Width = 142
+    Caption = 'originally created by BramBos'
+    Color = clNone
+    ParentColor = False
+    OnClick = FormClick
+  end
+  object Label2: TLabel
+    Left = 86
+    Height = 14
+    Top = 69
+    Width = 148
+    Caption = 'complete rewritten as example'
+    Color = clNone
+    ParentColor = False
+    OnClick = FormClick
+  end
+end

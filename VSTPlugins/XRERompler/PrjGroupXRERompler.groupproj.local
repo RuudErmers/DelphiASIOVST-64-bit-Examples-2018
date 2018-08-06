@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.312,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREBridge\PrjGroupXREBridge.groupproj=C:\Users\Ruud\Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.030,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\PrjGroupXREBridge.groupproj=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\PrjGroupXREWavePlayer.groupproj</Transaction>
+    <Transaction>2017-12-22 08:34:20.922,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRERompler\PrjGroupXRERompler.groupproj=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRERompler\PrjGroupXREWavePlayer.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRERompler\prjRomplerVSTVA.dproj"/>
+	</Default.Personality>
+</BorlandProject>

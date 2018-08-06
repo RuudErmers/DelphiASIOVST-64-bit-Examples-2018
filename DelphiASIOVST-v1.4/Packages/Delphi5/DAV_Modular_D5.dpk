@@ -1,0 +1,51 @@
+package DAV_Modular_D5;
+
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $518000}
+{$DESCRIPTION 'ASIO & VST Project - Modular Package'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  rtl,
+  designide,
+  DAV_DSP_D5,
+  DAV_VSTPlugin_D5,
+  DAV_Common_D5;
+
+contains
+  DAV_ModularBaseComponent in '..\..\Source\Modular\DAV_ModularBaseComponent.pas',
+  DAV_ModularRegister in '..\..\Source\Modular\DAV_ModularRegister.pas',
+  DAV_ModularEnvelopeFollower in '..\..\Source\Modular\DAV_ModularEnvelopeFollower.pas',
+  DAV_ModularVoice in '..\..\Source\Modular\DAV_ModularVoice.pas',
+  DAV_ModularOscSine in '..\..\Source\Modular\DAV_ModularOscSine.pas',
+  DAV_ModularOscSaw in '..\..\Source\Modular\DAV_ModularOscSaw.pas',
+  DAV_ModularOscRamp in '..\..\Source\Modular\DAV_ModularOscRamp.pas',
+  DAV_ModularOscSquare in '..\..\Source\Modular\DAV_ModularOscSquare.pas',
+  DAV_ModularOscNoise in '..\..\Source\Modular\DAV_ModularOscNoise.pas',
+  DAV_ModularOscAbsSine in '..\..\Source\Modular\DAV_ModularOscAbsSine.pas',
+  DAV_ModularBaseOsc in '..\..\Source\Modular\DAV_ModularBaseOsc.pas',
+  DAV_ModularVoiceController in '..\..\Source\Modular\DAV_ModularVoiceController.pas',
+  DAV_ModularVoiceList in '..\..\Source\Modular\DAV_ModularVoiceList.pas',
+  DAV_ModularEnvelope in '..\..\Source\Modular\DAV_ModularEnvelope.pas';
+
+end.

@@ -1,0 +1,75 @@
+object RMCBehringerViewFrame: TRMCBehringerViewFrame
+  Left = 0
+  Top = 0
+  Width = 1360
+  Height = 720
+  DoubleBuffered = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clBlack
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentDoubleBuffered = False
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1360
+    Height = 720
+    Align = alClient
+    Caption = ''
+    RoundRect = 0
+    DoubleBuffered = True
+    Color = clBlack
+    FontSize = 8
+    object RMCADSRVCA: TRMCADSR
+      Left = 350
+      Top = 176
+      Width = 294
+      Height = 130
+      Caption = 'RMCADSR2'
+      Color = clHotLight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object RMCADSRVCF: TRMCADSR
+      Left = 350
+      Top = 375
+      Width = 294
+      Height = 130
+      Caption = 'RMCADSRVCF'
+      Color = clHotLight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Panel1: TPanel
+      Left = 92
+      Top = 0
+      Width = 2
+      Height = 665
+      Caption = 'Panel1'
+      TabOrder = 2
+    end
+    object Panel2: TPanel
+      Left = 180
+      Top = 0
+      Width = 2
+      Height = 665
+      Caption = 'Panel1'
+      TabOrder = 3
+    end
+  end
+end

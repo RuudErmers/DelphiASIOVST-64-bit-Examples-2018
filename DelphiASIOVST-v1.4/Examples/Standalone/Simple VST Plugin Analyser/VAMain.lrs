@@ -1,0 +1,41 @@
+{ Das ist eine automatisch erzeugte Lazarus-Ressourcendatei }
+
+LazarusResources.Add('TFmVSTAnalyser','FORMDATA',[
+  'TPF0'#14'TFmVSTAnalyser'#13'FmVSTAnalyser'#4'Left'#3#25#1#6'Height'#2'5'#3'T'
+  +'op'#3#224#0#5'Width'#3#223#0#18'HorzScrollBar.Page'#3#222#0#18'VertScrollBa'
+  +'r.Page'#2'!'#11'BorderIcons'#11#12'biSystemMenu'#10'biMinimize'#0#11'Border'
+  +'Style'#7#8'bsSingle'#7'Caption'#6#26'Simple VST Plugin Analyser'#12'ClientH'
+  +'eight'#2'"'#11'ClientWidth'#3#223#0#11'Font.Height'#2#243#9'Font.Name'#6#7
+  +'Verdana'#10'Font.Style'#11#6'fsBold'#0#4'Menu'#7#8'MainMenu'#10'OnActivate'
+  +#7#12'FormActivate'#7'OnClose'#7#9'FormClose'#8'OnCreate'#7#10'FormCreate'#12
+  +'OnDeactivate'#7#14'FormDeactivate'#0#6'TPanel'#8'VSTPanel'#6'Height'#2'"'#5
+  +'Width'#3#223#0#5'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNone'#7'Caption'
+  +#6#7'(empty)'#10'Font.Color'#4#17'*f'#0#11'Font.Height'#2#245#9'Font.Name'#6
+  +#7'Verdana'#8'TabOrder'#2#0#7'OnClick'#7#13'VSTPanelClick'#0#0#8'TVstHost'#7
+  +'VstHost'#10'VstPlugIns'#14#1#11'DisplayName'#6#6'Plugin'#0#0#21'ParameterQu'
+  +'antization'#2#0#9'BlockSize'#3#0#4#6'CanDos'#11#16'hcdSendVstEvents'#19'hcd'
+  +'SendVstMidiEvent'#18'hcdSendVstTimeInfo'#19'hcdReceiveVstEvents'#22'hcdRece'
+  +'iveVstMidiEvent'#21'hcdReceiveVstTimeInfo'#26'hcdReportConnectionChanges'#18
+  +'hcdAcceptIOChanges'#13'hcdSizeWindow'#18'hcdAsyncProcessing'#10'hcdOffline'
+  +#13'hcdSupplyIdle'#19'hcdStartStopProcess'#0#5'Tempo'#5#0#0#0#0#0#0#0#240#5
+  +'@'#10'VstVersion'#3#252#8#12'VendorString'#6#23'Delphi ASIO&VST Project'#13
+  +'ProductString'#6#26'Simple VST Plugin Analyser'#9'PlugInDir'#6#30'C:\Progra'
+  +'mme\Audio\Plugins\VST'#22'VstTimeInfo.SampleRate'#5#0#0#0#0#0#0'D'#172#14'@'
+  +#17'VstTimeInfo.Tempo'#5#0#0#0#0#0#0#0#240#5'@'#17'VstTimeInfo.Flags'#11#13
+  +'vtiNanosValid'#14'vtiPpqPosValid'#13'vtiTempoValid'#12'vtiBarsValid'#16'vti'
+  +'CyclePosValid'#15'vtiTimeSigValid'#13'vtiSmpteValid'#13'vtiClockValid'#0#4
+  +'left'#2#4#3'top'#2#3#0#0#9'TMainMenu'#8'MainMenu'#4'left'#2' '#3'top'#2#3#0
+  +#9'TMenuItem'#6'MIFile'#7'Caption'#6#11'&VST Plugin'#0#9'TMenuItem'#6'MIOpen'
+  +#7'Caption'#6#5'&Open'#7'OnClick'#7#11'MIOpenClick'#0#0#9'TMenuItem'#2'N1'#7
+  +'Caption'#6#1'-'#0#0#9'TMenuItem'#6'MIQuit'#7'Caption'#6#5'&Quit'#7'OnClick'
+  +#7#11'MIQuitClick'#0#0#0#9'TMenuItem'#10'MIPrograms'#7'Caption'#6#8'Programs'
+  +#0#9'TMenuItem'#6'MILoad'#7'Caption'#6#8'&Load...'#7'OnClick'#7#11'MILoadCli'
+  +'ck'#0#0#9'TMenuItem'#6'MISave'#7'Caption'#6#8'&Save...'#7'OnClick'#7#11'MIS'
+  +'aveClick'#0#0#9'TMenuItem'#2'N2'#7'Caption'#6#1'-'#0#0#0#9'TMenuItem'#4'MII'
+  +'R'#7'Caption'#6#16'Impulse Response'#0#9'TMenuItem'#8'MIPlotIR'#7'Caption'#6
+  +#24'Plot Impulse Response...'#7'OnClick'#7#13'MIPlotIRClick'#0#0#9'TMenuItem'
+  +#10'MIRenderIR'#7'Caption'#6#26'Render Impulse Response...'#7'Enabled'#8#0#0
+  +#0#0#11'TOpenDialog'#2'OD'#5'Title'#6#15'Load VST Plugin'#10'DefaultExt'#6#4
+  +'.DLL'#6'Filter'#6#24'VST Plugin (*.dll)|*.dll'#11'FilterIndex'#2#0#4'left'#2
+  +'<'#3'top'#2#3#0#0#0
+]);

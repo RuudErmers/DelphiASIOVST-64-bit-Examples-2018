@@ -1,0 +1,22 @@
+{ Das ist eine automatisch erzeugte Lazarus-Ressourcendatei }
+
+LazarusResources.Add('TVSTOpAmp','FORMDATA',[
+  'TPF0'#9'TVSTOpAmp'#8'VSTOpAmp'#14'OldCreateOrder'#8#5'Flags'#11#17'effFlagsH'
+  +'asEditor'#20'effFlagsCanReplacing'#0#7'Version'#6#3'1.0'#10'EffectName'#6#23
+  +'Simple OpAmp Simulation'#11'ProductName'#6#23'Simple OpAmp Simulation'#10'V'
+  +'endorName'#6#15'Christian Budde'#10'SampleRate'#5#0#0#0#0#0#0'D'#172#14'@'
+  +#14'CurrentProgram'#2#0#18'CurrentProgramName'#6#4'Init'#7'IORatio'#5#0#0#0#0
+  +#0#0#0#128#255'?'#8'UniqueID'#6#4'NoLi'#12'ShellPlugins'#14#0#8'Programs'#14
+  +#1#11'DisplayName'#6#4'Init'#9'VSTModule'#7#5'Owner'#0#0#19'ParameterPropert'
+  +'ies'#14#1#5'Curve'#7#8'ctLinear'#11'CurveFactor'#5#0#0#0#0#0#0#0#128#255'?'
+  +#11'DisplayName'#6#4'Gain'#14'LargeStepFloat'#5#0#0#0#0#0#0#0#128#0'@'#16'La'
+  +'rgeStepInteger'#2#2#3'Max'#5#0#0#0#0#0#0#0#160#2'@'#10'MaxInteger'#2#10#3'M'
+  +'in'#5#0#0#0#0#0#0#0#128#255'?'#10'MinInteger'#2#1#10'ShortLabel'#6#4'Gain'
+  +#14'SmallStepFloat'#5#0#0#0#0#0#0#0#128#255'?'#15'SmoothingFactor'#5#0#0#0#0
+  +#0#0#0#128#255'?'#9'StepFloat'#5#0#0#0#0#0#0#0#128#255'?'#9'VSTModule'#7#5'O'
+  +'wner'#17'OnParameterChange'#7#24'VSTModuleParameterChange'#0#0#19'Parameter'
+  +'Categories'#14#0#6'OnOpen'#7#13'VSTModuleOpen'#10'OnEditOpen'#7#17'VSTModul'
+  +'eEditOpen'#17'OnParameterChange'#7#24'VSTModuleParameterChange'#4'left'#3
+  +#243#0#3'top'#2'g'#6'Height'#3#150#0#16'HorizontalOffset'#3#245#1#14'Vertica'
+  +'lOffset'#3#235#1#5'Width'#3#215#0#0#0
+]);

@@ -1,0 +1,36 @@
+object RMCVSTPatches: TRMCVSTPatches
+  Left = 0
+  Top = 0
+  Width = 120
+  Height = 200
+  Color = 7170121
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentBackground = False
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  OnResize = FrameResize
+  object Label1: TLabel
+    Left = 0
+    Top = 0
+    Width = 120
+    Height = 25
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Label1'
+    Color = clBlack
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+end

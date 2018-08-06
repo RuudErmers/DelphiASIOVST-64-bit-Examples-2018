@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <Title Value="Circled Picture Drawing"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="DAV_GUI_Lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="DAV_Common_Lazarus"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="CircledPictureDrawing.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="16"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="MainUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="MainUnit"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="SettingsUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="SettingsUnit"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="7"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="ProgressBarUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="ProgressBarUnit"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="AdditionalChunks.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AdditionalChunks"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="4"/>
+        <UsageCount Value="25"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Source\DAV_DifferentialEvolution.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngCoder.pas"/>
+        <UnitName Value="DAV_GuiPngCoder"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="22"/>
+        <CursorPos X="16" Y="35"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <TopLine Value="1191"/>
+        <CursorPos X="4" Y="1214"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\Source\DAV_Math.pas"/>
+        <UnitName Value="DAV_Math"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\Source\DAV_BlockProcessing.pas"/>
+        <UnitName Value="DAV_BlockProcessing"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="15"/>
+        <CursorPos X="1" Y="37"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBlend.pas"/>
+        <UnitName Value="DAV_GuiBlend"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1511"/>
+        <CursorPos X="22" Y="1525"/>
+        <UsageCount Value="10"/>
+        <Bookmarks Count="3">
+          <Item0 X="1" Y="1215" ID="3"/>
+          <Item1 X="1" Y="579" ID="1"/>
+          <Item2 X="13" Y="1421" ID="2"/>
+        </Bookmarks>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\Source\DAV_MemoryUtils.pas"/>
+        <UnitName Value="DAV_MemoryUtils"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="158"/>
+        <CursorPos X="15" Y="172"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <UnitName Value="DAV_GuiFont"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="444"/>
+        <CursorPos X="15" Y="454"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+    </Units>
+    <JumpHistory Count="9" HistoryIndex="8">
+      <Position1>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="46" Column="44" TopLine="31"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="64" Column="45" TopLine="53"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="38" Column="52" TopLine="28"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="83" Column="1" TopLine="72"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="384" Column="4" TopLine="371"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="392" Column="1" TopLine="374"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="405" Column="2" TopLine="392"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <Caret Line="454" Column="8" TopLine="443"/>
+      </Position9>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source"/>
+      <OtherUnitFiles Value="..\..\..\Source;..\..\..\Source\Gui;..\..\..\Source\FileFormats"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

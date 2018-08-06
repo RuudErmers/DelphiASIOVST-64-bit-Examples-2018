@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{FA100D67-FB83-4568-8D96-D3010D8E8B72}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="PluginMerger.exe">Standalone\PluginMerger\PluginMerger.bdsproj</Projects>
+      <Projects Name="CustomWrapper.dll">Plugins\Custom Wrapper\CustomWrapper.bdsproj</Projects>
+      <Projects Name="Targets">PluginMerger.exe CustomWrapper.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

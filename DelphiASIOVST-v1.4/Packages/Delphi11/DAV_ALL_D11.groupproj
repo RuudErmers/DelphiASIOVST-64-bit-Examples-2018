@@ -1,0 +1,103 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{a973cfa2-bc36-4257-9f10-b8486005e177}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DAV_Common_D11">
+    <MSBuild Projects="DAV_Common_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_Common_D11:Clean">
+    <MSBuild Projects="DAV_Common_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_Common_D11:Make">
+    <MSBuild Projects="DAV_Common_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_DSP_D11">
+    <MSBuild Projects="DAV_DSP_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_DSP_D11:Clean">
+    <MSBuild Projects="DAV_DSP_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_DSP_D11:Make">
+    <MSBuild Projects="DAV_DSP_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_VSTPlugin_D11">
+    <MSBuild Projects="DAV_VSTPlugin_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_VSTPlugin_D11:Clean">
+    <MSBuild Projects="DAV_VSTPlugin_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_VSTPlugin_D11:Make">
+    <MSBuild Projects="DAV_VSTPlugin_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_VSTHost_D11">
+    <MSBuild Projects="DAV_VSTHost_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_VSTHost_D11:Clean">
+    <MSBuild Projects="DAV_VSTHost_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_VSTHost_D11:Make">
+    <MSBuild Projects="DAV_VSTHost_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_VSTCloner_D11">
+    <MSBuild Projects="DAV_VSTCloner_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_VSTCloner_D11:Clean">
+    <MSBuild Projects="DAV_VSTCloner_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_VSTCloner_D11:Make">
+    <MSBuild Projects="DAV_VSTCloner_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_Modular_D11">
+    <MSBuild Projects="DAV_Modular_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_Modular_D11:Clean">
+    <MSBuild Projects="DAV_Modular_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_Modular_D11:Make">
+    <MSBuild Projects="DAV_Modular_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_SEHost_D11">
+    <MSBuild Projects="DAV_SEHost_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_SEHost_D11:Clean">
+    <MSBuild Projects="DAV_SEHost_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_SEHost_D11:Make">
+    <MSBuild Projects="DAV_SEHost_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_GUI_D11">
+    <MSBuild Projects="DAV_GUI_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_GUI_D11:Clean">
+    <MSBuild Projects="DAV_GUI_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_GUI_D11:Make">
+    <MSBuild Projects="DAV_GUI_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DAV_ASIOHost_D11">
+    <MSBuild Projects="DAV_ASIOHost_D11.dproj" Targets="" />
+  </Target>
+  <Target Name="DAV_ASIOHost_D11:Clean">
+    <MSBuild Projects="DAV_ASIOHost_D11.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DAV_ASIOHost_D11:Make">
+    <MSBuild Projects="DAV_ASIOHost_D11.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DAV_Common_D11;DAV_DSP_D11;DAV_VSTPlugin_D11;DAV_VSTHost_D11;DAV_VSTCloner_D11;DAV_Modular_D11;DAV_SEHost_D11;DAV_GUI_D11;DAV_ASIOHost_D11" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="DAV_Common_D11:Clean;DAV_DSP_D11:Clean;DAV_VSTPlugin_D11:Clean;DAV_VSTHost_D11:Clean;DAV_VSTCloner_D11:Clean;DAV_Modular_D11:Clean;DAV_SEHost_D11:Clean;DAV_GUI_D11:Clean;DAV_ASIOHost_D11:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="DAV_Common_D11:Make;DAV_DSP_D11:Make;DAV_VSTPlugin_D11:Make;DAV_VSTHost_D11:Make;DAV_VSTCloner_D11:Make;DAV_Modular_D11:Make;DAV_SEHost_D11:Make;DAV_GUI_D11:Make;DAV_ASIOHost_D11:Make" />
+  </Target>
+</Project>

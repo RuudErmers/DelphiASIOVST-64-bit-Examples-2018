@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DGuiMidiKeyZones: Class TGuiKeyZoneCollection</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGuiKeyZoneCollection"></a><h1 class="cio">Class TGuiKeyZoneCollection</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DGuiMidiKeyZones.html">DGuiMidiKeyZones</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGuiKeyZoneCollection = class(TOwnedCollection)</code></p>
+<h2 class="description">Description</h2>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TOwnedCollection</li>
+<li class="thisitem">TGuiKeyZoneCollection</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#Create">Create</a></b>(AOwner: TPersistent);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#ClipZones">ClipZones</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#Add">Add</a></b>: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#Selected">Selected</a></b>: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#Insert">Insert</a></b>(Index: Integer): TCollectionItem;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#UpdateOwner">UpdateOwner</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#UnselectAll">UnselectAll</a></b>(doUpdate: Boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#ZoneByKey">ZoneByKey</a></b>(KeyNr: Byte): <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#DeleteSelected">DeleteSelected</a></b>;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html#Items">Items</a></b>[Index: Integer]: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a> read GetItem write SetItem;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TPersistent);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClipZones"></a><code>procedure <b>ClipZones</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Selected"></a><code>function <b>Selected</b>: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Insert"></a><code>function <b>Insert</b>(Index: Integer): TCollectionItem;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UpdateOwner"></a><code>procedure <b>UpdateOwner</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UnselectAll"></a><code>procedure <b>UnselectAll</b>(doUpdate: Boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ZoneByKey"></a><code>function <b>ZoneByKey</b>(KeyNr: Byte): <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteSelected"></a><code>procedure <b>DeleteSelected</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[Index: Integer]: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a> read GetItem write SetItem;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:18</em>
+</span>
+</body></html>

@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="DAV_Common_Lazarus"/>
+    <AddToProjectUsesSection Value="True"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="..\..\Resources"/>
+        <OtherUnitFiles Value="..\..\Source;..\..\Source\FileFormats;..\..\Resources"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <CStyleOperator Value="False"/>
+          <CPPInline Value="False"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <SmartLinkUnit Value="True"/>
+      </CodeGeneration>
+      <Other>
+        <CompilerMessages>
+          <UseMsgFile Value="True"/>
+        </CompilerMessages>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Version Minor="3"/>
+    <Files Count="24">
+      <Item1>
+        <Filename Value="..\..\Source\DAV_Common.pas"/>
+        <UnitName Value="DAV_Common"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\Source\DAV_CommonRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="DAV_CommonRegister"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\Source\DAV_Complex.pas"/>
+        <UnitName Value="DAV_Complex"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\Source\DAV_ComplexData.pas"/>
+        <UnitName Value="DAV_ComplexData"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\Source\DAV_AudioData.pas"/>
+        <UnitName Value="DAV_AudioData"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\Resources\DAV_CommonRegister.lrs"/>
+        <Type Value="LRS"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\Source\DAV_Approximations.pas"/>
+        <UnitName Value="DAV_Approximations"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\Source\DAV_Compiler.inc"/>
+        <Type Value="Include"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\Source\DAV_CompilerSwitches.inc"/>
+        <Type Value="Include"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\Source\FileFormats\DAV_MpegAudioLayer3.pas"/>
+        <UnitName Value="DAV_MpegAudioLayer3"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\..\Source\FileFormats\DAV_AudioFile.pas"/>
+        <UnitName Value="DAV_AudioFile"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\..\Source\FileFormats\DAV_AudioFileAIFF.pas"/>
+        <UnitName Value="DAV_AudioFileAIFF"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\..\Source\FileFormats\DAV_AudioFileAU.pas"/>
+        <UnitName Value="DAV_AudioFileAU"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\..\Source\FileFormats\DAV_AudioFileDataCache.pas"/>
+        <UnitName Value="DAV_AudioFileDataCache"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\..\Source\FileFormats\DAV_AudioFileWAV.pas"/>
+        <UnitName Value="DAV_AudioFileWAV"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\..\Source\FileFormats\DAV_ChannelDataCoder.pas"/>
+        <UnitName Value="DAV_ChannelDataCoder"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\..\Source\FileFormats\DAV_ChunkAiffBasic.pas"/>
+        <UnitName Value="DAV_ChunkAiffBasic"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\..\Source\FileFormats\DAV_ChunkClasses.pas"/>
+        <UnitName Value="DAV_ChunkClasses"/>
+      </Item18>
+      <Item19>
+        <Filename Value="..\..\Source\FileFormats\DAV_ChunkWaveBasic.pas"/>
+        <UnitName Value="DAV_ChunkWaveBasic"/>
+      </Item19>
+      <Item20>
+        <Filename Value="..\..\Source\FileFormats\DAV_ChunkWaveCustom.pas"/>
+        <UnitName Value="DAV_ChunkWaveCustom"/>
+      </Item20>
+      <Item21>
+        <Filename Value="..\..\Source\FileFormats\DAV_MpegAudio.pas"/>
+        <UnitName Value="DAV_MpegAudio"/>
+      </Item21>
+      <Item22>
+        <Filename Value="..\..\Source\DAV_Math.pas"/>
+        <UnitName Value="DAV_Math"/>
+      </Item22>
+      <Item23>
+        <Filename Value="..\..\Source\DAV_MiniFloat.pas"/>
+        <UnitName Value="DAV_MiniFloat"/>
+      </Item23>
+      <Item24>
+        <Filename Value="..\..\Source\DAV_FixedPoint.pas"/>
+        <UnitName Value="DAV_FixedPoint"/>
+      </Item24>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <IncludePath Value="..\Source"/>
+      <UnitPath Value="$(PkgOutDir);..\Source"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

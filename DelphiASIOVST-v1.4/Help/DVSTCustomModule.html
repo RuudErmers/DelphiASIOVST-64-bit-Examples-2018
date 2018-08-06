@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTCustomModule</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit DVSTCustomModule</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>uses</td><td><a class="section"  href="#@Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#@Types">Types</a></td><td>Constants</td><td>Variables</td></tr></table>
+<a name="@Description"></a><h2 class="description">Description</h2>
+&nbsp;<a name="@Uses"></a><h2 class="overview">Overview</h2>
+<a name="@Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DVSTCustomModule.TCustomVSTModule.html"><code>TCustomVSTModule</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="@Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TVstCanDo">TVstCanDo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TVstCanDos">TVstCanDos</a></b> = set of <a   href="DVSTCustomModule.html#TVstCanDo">TVstCanDo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TChannelPropertyFlags">TChannelPropertyFlags</a></b> = set of (cpfIsActive, cpfIsStereo, cpfUseSpeaker);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a></b> = procedure(const Inputs, Outputs: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; const SampleFrames: Integer) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TProcessDoubleEvent">TProcessDoubleEvent</a></b> = procedure(const Inputs, Outputs: <a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>; const SampleFrames: Integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TGetVUEvent">TGetVUEvent</a></b> = procedure(var VU:Single) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TBlockSizeChangeEvent">TBlockSizeChangeEvent</a></b> = procedure(Sender: TObject; const BlockSize: Integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TSampleRateChangeEvent">TSampleRateChangeEvent</a></b> = procedure(Sender: TObject; const SampleRate: Single) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOnDispatcherEvent">TOnDispatcherEvent</a></b> = procedure(Sender: TObject; opCode: <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOfflineNotifyEvent">TOfflineNotifyEvent</a></b> = procedure(Sender: TObject; AudioFile: <a   href="DVSTEffect.TVstAudioFile.html">TVstAudioFile</a>; numAudioFiles: Integer; start: Boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOfflinePrepareEvent">TOfflinePrepareEvent</a></b> = procedure(Sender: TObject; OfflineTask: <a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a>; count: Integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOfflineRunEvent">TOfflineRunEvent</a></b> = procedure(Sender: TObject; OfflineTask: <a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a>; count: Integer) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TVSTKeyEvent">TVSTKeyEvent</a></b> = procedure(Sender: TObject; var keyCode : <a   href="DVSTEffect.TVstKeyCode.html">TVstKeyCode</a>) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TProcessVarIOEvent">TProcessVarIOEvent</a></b> = procedure(Sender: TObject; varIo: <a   href="DVSTEffect.TVstVariableIo.html">TVstVariableIo</a>) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TInOutConnectedEvent">TInOutConnectedEvent</a></b> = procedure(Sender: TObject; Index: Integer; State: Boolean) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TSetKnobModeEvent">TSetKnobModeEvent</a></b> = procedure(Sender: TObject; val: Integer) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TSoftBypassEvent">TSoftBypassEvent</a></b> = procedure(Sender: TObject; isBypass: Boolean) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOnSetPanLawEvent">TOnSetPanLawEvent</a></b> = procedure(Sender: TObject; var vType: Integer; var val: single) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TGetEditorEvent">TGetEditorEvent</a></b> = procedure(Sender: TObject; var GUI: TForm; ParentWindow : THandle) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOnVendorSpecificEvent">TOnVendorSpecificEvent</a></b> = function(Sender: TObject; lArg1, lArg2: Integer; ptrArg: pointer; floatArg: Single): Integer of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOnCanDoEvent">TOnCanDoEvent</a></b> = function(Sender: TObject; CanDoText: String): Integer of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOnCheckKey">TOnCheckKey</a></b> = function(Sender: TObject; Key: Char): Boolean of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTCustomModule.html#TOnGetChannelPropertiesEvent">TOnGetChannelPropertiesEvent</a></b> = function(Sender: TObject; var vLabel: ShortString; var shortLabel: ShortString; var SpeakerArrangement: <a   href="DVSTEffect.html#TVstSpeakerArrangementType">TVstSpeakerArrangementType</a>; var Flags:<a   href="DVSTCustomModule.html#TChannelPropertyFlags">TChannelPropertyFlags</a>): Integer of object;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstCanDo"></a><code><b>TVstCanDo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-$DEFINE Debug</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vcdSendVstEvents: </li>
+<li>
+vcdSendVstMidiEvent: </li>
+<li>
+vcdSendVstTimeInfo: </li>
+<li>
+vcdReceiveVstEvents: </li>
+<li>
+vcdReceiveVstMidiEvent: </li>
+<li>
+vcdReceiveVstTimeInfo: </li>
+<li>
+vcdOffline: </li>
+<li>
+vcdPlugAsChannelInsert: </li>
+<li>
+vcdPlugAsSend: </li>
+<li>
+vcdMixDryWet: </li>
+<li>
+vcdNoRealTime: </li>
+<li>
+vcdMultipass: </li>
+<li>
+vcdMetapass: </li>
+<li>
+vcd1in1out: </li>
+<li>
+vcd1in2out: </li>
+<li>
+vcd2in1out: </li>
+<li>
+vcd2in2out: </li>
+<li>
+vcd2in4out: </li>
+<li>
+vcd4in2out: </li>
+<li>
+vcd4in4out: </li>
+<li>
+vcd4in8out: </li>
+<li>
+vcd8in4out: </li>
+<li>
+vcd8in8out: </li>
+<li>
+vcdMidiProgramNames: </li>
+<li>
+vcdLiveWithoutToolbar: </li>
+<li>
+vcdConformsToWindowRules: </li>
+<li>
+vcdBypass: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstCanDos"></a><code><b>TVstCanDos</b> = set of <a   href="DVSTCustomModule.html#TVstCanDo">TVstCanDo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TChannelPropertyFlags"></a><code><b>TChannelPropertyFlags</b> = set of (cpfIsActive, cpfIsStereo, cpfUseSpeaker);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TProcessAudioEvent"></a><code><b>TProcessAudioEvent</b> = procedure(const Inputs, Outputs: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; const SampleFrames: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TProcessDoubleEvent"></a><code><b>TProcessDoubleEvent</b> = procedure(const Inputs, Outputs: <a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>; const SampleFrames: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGetVUEvent"></a><code><b>TGetVUEvent</b> = procedure(var VU:Single) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBlockSizeChangeEvent"></a><code><b>TBlockSizeChangeEvent</b> = procedure(Sender: TObject; const BlockSize: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSampleRateChangeEvent"></a><code><b>TSampleRateChangeEvent</b> = procedure(Sender: TObject; const SampleRate: Single) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOnDispatcherEvent"></a><code><b>TOnDispatcherEvent</b> = procedure(Sender: TObject; opCode: <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOfflineNotifyEvent"></a><code><b>TOfflineNotifyEvent</b> = procedure(Sender: TObject; AudioFile: <a   href="DVSTEffect.TVstAudioFile.html">TVstAudioFile</a>; numAudioFiles: Integer; start: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOfflinePrepareEvent"></a><code><b>TOfflinePrepareEvent</b> = procedure(Sender: TObject; OfflineTask: <a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a>; count: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOfflineRunEvent"></a><code><b>TOfflineRunEvent</b> = procedure(Sender: TObject; OfflineTask: <a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a>; count: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVSTKeyEvent"></a><code><b>TVSTKeyEvent</b> = procedure(Sender: TObject; var keyCode : <a   href="DVSTEffect.TVstKeyCode.html">TVstKeyCode</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TProcessVarIOEvent"></a><code><b>TProcessVarIOEvent</b> = procedure(Sender: TObject; varIo: <a   href="DVSTEffect.TVstVariableIo.html">TVstVariableIo</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TInOutConnectedEvent"></a><code><b>TInOutConnectedEvent</b> = procedure(Sender: TObject; Index: Integer; State: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSetKnobModeEvent"></a><code><b>TSetKnobModeEvent</b> = procedure(Sender: TObject; val: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSoftBypassEvent"></a><code><b>TSoftBypassEvent</b> = procedure(Sender: TObject; isBypass: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOnSetPanLawEvent"></a><code><b>TOnSetPanLawEvent</b> = procedure(Sender: TObject; var vType: Integer; var val: single) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGetEditorEvent"></a><code><b>TGetEditorEvent</b> = procedure(Sender: TObject; var GUI: TForm; ParentWindow : THandle) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOnVendorSpecificEvent"></a><code><b>TOnVendorSpecificEvent</b> = function(Sender: TObject; lArg1, lArg2: Integer; ptrArg: pointer; floatArg: Single): Integer of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOnCanDoEvent"></a><code><b>TOnCanDoEvent</b> = function(Sender: TObject; CanDoText: String): Integer of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOnCheckKey"></a><code><b>TOnCheckKey</b> = function(Sender: TObject; Key: Char): Boolean of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOnGetChannelPropertiesEvent"></a><code><b>TOnGetChannelPropertiesEvent</b> = function(Sender: TObject; var vLabel: ShortString; var shortLabel: ShortString; var SpeakerArrangement: <a   href="DVSTEffect.html#TVstSpeakerArrangementType">TVstSpeakerArrangementType</a>; var Flags:<a   href="DVSTCustomModule.html#TChannelPropertyFlags">TChannelPropertyFlags</a>): Integer of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:18</em>
+</span>
+</body></html>

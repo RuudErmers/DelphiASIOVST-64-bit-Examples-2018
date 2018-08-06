@@ -1,0 +1,41 @@
+package DAV_SEHost_D19;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  DAV_Common_D16;
+
+contains
+  DAV_SEHost in '..\..\Source\SE\DAV_SEHost.pas',
+  DAV_SEHostRegister in '..\..\Source\SE\DAV_SEHostRegister.pas',
+  DAV_SEGUI in '..\..\Source\SE\DAV_SEGUI.pas',
+  DAV_SECommon in '..\..\Source\SE\DAV_SECommon.pas',
+  DAV_SEModule in '..\..\Source\SE\DAV_SEModule.pas';
+
+end.

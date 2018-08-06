@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTModuleWithDsp: Class TDspVSTModule</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TDspVSTModule"></a><h1 class="cio">Class TDspVSTModule</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTModuleWithDsp.html">DVSTModuleWithDsp</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDspVSTModule = class(<a class="normal"  href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html">TVSTModuleWithPrograms</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TVSTModuleWithPrograms description follows</div><div class="nodescription">no description available, TVSTModuleWithMidi description follows</div><div class="nodescription">no description available, TCustomVSTModule description follows</div><div class="nodescription">no description available, TBasicVSTModule description follows</div><p>
+-$DEFINE Debug</p>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TDataModule</li>
+<li class="ancestor"><a class="normal"  href="DVSTBasicModule.TBasicVSTModule.html">TBasicVSTModule</a></li>
+<li class="ancestor"><a class="normal"  href="DVSTCustomModule.TCustomVSTModule.html">TCustomVSTModule</a></li>
+<li class="ancestor"><a class="normal"  href="DVSTModuleWithMidi.TVSTModuleWithMidi.html">TVSTModuleWithMidi</a></li>
+<li class="ancestor"><a class="normal"  href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html">TVSTModuleWithPrograms</a></li>
+<li class="thisitem">TDspVSTModule</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#RegisterDSPItem">RegisterDSPItem</a></b>(item: TAVDProcessingComponent);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#UnRegisterDSPItem">UnRegisterDSPItem</a></b>(item: TAVDProcessingComponent);</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#BlockSize">BlockSize</a></b>: Integer read fBlockSize write SetBlockSize default 1024;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#BlockModeSize">BlockModeSize</a></b>: Integer read FBlockModeSize write SetBlockForcedSize default 1024;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#BlockModeOverlap">BlockModeOverlap</a></b>: Integer read FBlockModeOverlap write SetBlockOverlapSize default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#ProcessingMode">ProcessingMode</a></b>: <a   href="DVSTModuleWithDsp.html#TProcessingMode">TProcessingMode</a> read FProcessingMode write SetProcessingMode default pmNormal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#OnProcess">OnProcess</a></b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcess write SetOnProcess;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#OnProcessReplacing">OnProcessReplacing</a></b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcessReplacing write SetOnProcessReplacing;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithDsp.TDspVSTModule.html#OnProcessDoubleReplacing">OnProcessDoubleReplacing</a></b>: <a   href="DVSTCustomModule.html#TProcessDoubleEvent">TProcessDoubleEvent</a> read FOnProcessDoubles write SetOnProcessDoubleReplacing;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RegisterDSPItem"></a><code>procedure <b>RegisterDSPItem</b>(item: TAVDProcessingComponent);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UnRegisterDSPItem"></a><code>procedure <b>UnRegisterDSPItem</b>(item: TAVDProcessingComponent);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlockSize"></a><code>property <b>BlockSize</b>: Integer read fBlockSize write SetBlockSize default 1024;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlockModeSize"></a><code>property <b>BlockModeSize</b>: Integer read FBlockModeSize write SetBlockForcedSize default 1024;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlockModeOverlap"></a><code>property <b>BlockModeOverlap</b>: Integer read FBlockModeOverlap write SetBlockOverlapSize default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessingMode"></a><code>property <b>ProcessingMode</b>: <a   href="DVSTModuleWithDsp.html#TProcessingMode">TProcessingMode</a> read FProcessingMode write SetProcessingMode default pmNormal;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnProcess"></a><code>property <b>OnProcess</b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcess write SetOnProcess;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnProcessReplacing"></a><code>property <b>OnProcessReplacing</b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcessReplacing write SetOnProcessReplacing;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnProcessDoubleReplacing"></a><code>property <b>OnProcessDoubleReplacing</b>: <a   href="DVSTCustomModule.html#TProcessDoubleEvent">TProcessDoubleEvent</a> read FOnProcessDoubles write SetOnProcessDoubleReplacing;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:20</em>
+</span>
+</body></html>

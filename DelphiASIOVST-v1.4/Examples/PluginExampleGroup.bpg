@@ -1,0 +1,100 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = SoftKneeLimiter.dll SoftKneeFeedbackCompressor.dll SimpleLimiter.dll \
+  SimpleGate.dll SimpleFeedbackCompressor.dll SimpleCompressor.dll \
+  MultibandCompressor.dll EnhancedGate.dll XSynth.dll Vocoder.dll Tetris.dll \
+  SineSynth.dll VUMeter.dll SimpleSampler.dll Delayla.dll Phaser.dll OpAmp.dll \
+  NoGUIFilter.dll MIDIPlugIn.dll LoadVSTPlugin.dll GraphicEQ.dll fReeverb.dll \
+  Decimator.dll ASIOVST.dll DitherNoiseshaper.dll Wavedisplay.dll
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+SoftKneeLimiter.dll: Plugins\Dynamics\Soft Knee Limiter\SoftKneeLimiter.dpr
+  $(DCC)
+
+SoftKneeFeedbackCompressor.dll: Plugins\Dynamics\Soft Knee Feedback Compressor\SoftKneeFeedbackCompressor.dpr
+  $(DCC)
+
+SimpleLimiter.dll: Plugins\Dynamics\Simple Limiter\SimpleLimiter.dpr
+  $(DCC)
+
+SimpleGate.dll: Plugins\Dynamics\Simple Gate\SimpleGate.dpr
+  $(DCC)
+
+SimpleFeedbackCompressor.dll: Plugins\Dynamics\Simple Feedback Compressor\SimpleFeedbackCompressor.dpr
+  $(DCC)
+
+SimpleCompressor.dll: Plugins\Dynamics\Simple Compressor\SimpleCompressor.dpr
+  $(DCC)
+
+MultibandCompressor.dll: Plugins\Dynamics\Multiband Compressor\MultibandCompressor.dpr
+  $(DCC)
+
+EnhancedGate.dll: Plugins\Dynamics\Enhanced Gate\EnhancedGate.dpr
+  $(DCC)
+
+XSynth.dll: Plugins\XSynth\XSynth.dpr
+  $(DCC)
+
+Vocoder.dll: Plugins\Vocoder\Vocoder.dpr
+  $(DCC)
+
+Tetris.dll: Plugins\Tetris\Tetris.dpr
+  $(DCC)
+
+SineSynth.dll: Plugins\Sine Synth\SineSynth.dpr
+  $(DCC)
+
+VUMeter.dll: Plugins\Simple VU Meter\VUMeter.dpr
+  $(DCC)
+
+SimpleSampler.dll: Plugins\Simple Sampler\SimpleSampler.dpr
+  $(DCC)
+
+Delayla.dll: Plugins\Simple Delay\Delayla.dpr
+  $(DCC)
+
+Phaser.dll: Plugins\Phaser\Phaser.dpr
+  $(DCC)
+
+OpAmp.dll: Plugins\NonLinear\OpAmp.dpr
+  $(DCC)
+
+NoGUIFilter.dll: Plugins\No GUI Filter\NoGUIFilter.dpr
+  $(DCC)
+
+MIDIPlugIn.dll: Plugins\MIDI PluglIn\MIDIPlugIn.dpr
+  $(DCC)
+
+LoadVSTPlugin.dll: Plugins\Load VST Plugin\LoadVSTPlugin.dpr
+  $(DCC)
+
+GraphicEQ.dll: Plugins\Graphic EQ\GraphicEQ.dpr
+  $(DCC)
+
+fReeverb.dll: Plugins\fReeverb\fReeverb.dpr
+  $(DCC)
+
+Decimator.dll: Plugins\Decimator\Decimator.dpr
+  $(DCC)
+
+ASIOVST.dll: Plugins\ASIO-Extender\ASIOVST.dpr
+  $(DCC)
+
+DitherNoiseshaper.dll: Plugins\DitherNoiseshaper\DitherNoiseshaper.dpr
+  $(DCC)
+
+Wavedisplay.dll: Plugins\Wavedisplay\Wavedisplay.dpr
+  $(DCC)
+
+

@@ -1,0 +1,24 @@
+object RMCCCLeadFrame: TRMCCCLeadFrame
+  Left = 0
+  Top = 0
+  Width = 900
+  Height = 202
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 900
+    Height = 202
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    ExplicitWidth = 600
+    ExplicitHeight = 250
+  end
+end

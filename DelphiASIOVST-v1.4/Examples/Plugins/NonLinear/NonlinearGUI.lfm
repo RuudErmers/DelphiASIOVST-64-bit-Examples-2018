@@ -1,0 +1,42 @@
+object VSTGUI: TVSTGUI
+  Left = 372
+  Height = 48
+  Top = 219
+  Width = 434
+  BorderStyle = bsNone
+  Caption = 'Simple OpAmp Simulation'
+  ClientHeight = 48
+  ClientWidth = 434
+  Color = 53
+  Font.Height = -11
+  Font.Name = 'Verdana'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '0.9.27'
+  object LbGain: TLabel
+    Left = 175
+    Height = 14
+    Top = 32
+    Width = 73
+    Anchors = [akTop]
+    Caption = 'OpAmp Gain'
+    Font.Color = 5899260
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    ParentColor = False
+    ParentFont = False
+  end
+  object SBGain: TScrollBar
+    Left = 8
+    Height = 17
+    Top = 8
+    Width = 417
+    Anchors = [akTop, akLeft, akRight]
+    Max = 1000
+    Min = 100
+    PageSize = 0
+    Position = 100
+    TabOrder = 0
+    OnChange = SBGainChange
+  end
+end

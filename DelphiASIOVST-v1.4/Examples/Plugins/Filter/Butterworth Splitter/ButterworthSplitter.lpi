@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <AlwaysBuild Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <UseAppBundle Value="False"/>
+      <ActiveEditorIndexAtStart Value="3"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <HostApplicationFilename Value="C:\Users\Christian Budde\Projects\VSTPack\Bin\VST Plugin Analyser.exe"/>
+        <CommandLineParams Value="ButterworthSplitter.DLL"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="31">
+      <Unit0>
+        <Filename Value="ButterworthSplitter.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="8" Y="20"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="28"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ButterworthSplitterDM.pas"/>
+        <ComponentName Value="ButterworthSplitterModule"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="ButterworthSplitterDM"/>
+        <CursorPos X="68" Y="26"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\Source\DAV_Common.pas"/>
+        <UnitName Value="DAV_Common"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="9"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTOfflineTask.pas"/>
+        <UnitName Value="DAV_VSTOfflineTask"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="9"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspButterworthFilter.pas"/>
+        <UnitName Value="DAV_DspButterworthFilter"/>
+        <CursorPos X="19" Y="661"/>
+        <TopLine Value="651"/>
+        <UsageCount Value="9"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <UnitName Value="DAV_VSTModule"/>
+        <CursorPos X="15" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="13"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModuleWithDsp.pas"/>
+        <UnitName Value="DAV_VSTModuleWithDsp"/>
+        <CursorPos X="18" Y="116"/>
+        <TopLine Value="97"/>
+        <UsageCount Value="11"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTCustomModule.pas"/>
+        <UnitName Value="DAV_VSTCustomModule"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="13"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTBasicModule.pas"/>
+        <UnitName Value="DAV_VSTBasicModule"/>
+        <CursorPos X="18" Y="1567"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="12"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspFilterButterworth.pas"/>
+        <UnitName Value="DAV_DSPFilterButterworth"/>
+        <CursorPos X="24" Y="1116"/>
+        <TopLine Value="1084"/>
+        <UsageCount Value="12"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\Source\DAV_Compiler.inc"/>
+        <CursorPos X="26" Y="1089"/>
+        <TopLine Value="1076"/>
+        <UsageCount Value="11"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\Source\DAV_CompilerSwitches.inc"/>
+        <CursorPos X="42" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModuleWithMidi.pas"/>
+        <UnitName Value="DAV_VSTModuleWithMidi"/>
+        <CursorPos X="26" Y="299"/>
+        <TopLine Value="280"/>
+        <UsageCount Value="11"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspFilterChebyshevType1.pas"/>
+        <UnitName Value="DAV_DspFilterChebyshevType1"/>
+        <CursorPos X="11" Y="504"/>
+        <TopLine Value="484"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspConvolution.pas"/>
+        <UnitName Value="DAV_DspConvolution"/>
+        <CursorPos X="8" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspCorrelation.pas"/>
+        <UnitName Value="DAV_DspCorrelation"/>
+        <CursorPos X="5" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspCrosstalkCancellation.pas"/>
+        <UnitName Value="DAV_DspCrosstalkCancellation"/>
+        <CursorPos X="8" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspDelayLines.pas"/>
+        <UnitName Value="DAV_DspDelayLines"/>
+        <CursorPos X="8" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspCrosstalkSimulator.pas"/>
+        <UnitName Value="DAV_DspCrosstalkSimulator"/>
+        <CursorPos X="8" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspCrosstalkSimulatorHRTF.pas"/>
+        <UnitName Value="DAV_DspCrosstalkSimulatorHRTF"/>
+        <CursorPos X="8" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspHRTF.pas"/>
+        <UnitName Value="DAV_DspHrtf"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspFDNReverb.pas"/>
+        <UnitName Value="DAV_DspFDNReverb"/>
+        <CursorPos X="12" Y="297"/>
+        <TopLine Value="277"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\..\Source\DAV_VectorMath.pas"/>
+        <UnitName Value="DAV_VectorMath"/>
+        <CursorPos X="5" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspFeedbackDelayNetwork.pas"/>
+        <UnitName Value="DAV_DspFeedbackDelayNetwork"/>
+        <CursorPos X="5" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspVibrato.pas"/>
+        <UnitName Value="DAV_DspVibrato"/>
+        <CursorPos X="8" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspFilterLinearPhaseCrossover.pas"/>
+        <UnitName Value="DAV_DspFilterLinearPhaseCrossover"/>
+        <CursorPos X="1" Y="7"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspFreeverbFilter.pas"/>
+        <UnitName Value="DAV_DspFreeverbFilter"/>
+        <CursorPos X="1" Y="6"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPlateReverb.pas"/>
+        <UnitName Value="DAV_DspPlateReverb"/>
+        <CursorPos X="1" Y="7"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseDownsampler.pas"/>
+        <UnitName Value="DAV_DspPolyphaseDownsampler"/>
+        <CursorPos X="16" Y="356"/>
+        <TopLine Value="337"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseHilbert.pas"/>
+        <UnitName Value="DAV_DspPolyphaseHilbert"/>
+        <CursorPos X="28" Y="190"/>
+        <TopLine Value="174"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseUpsampler.pas"/>
+        <UnitName Value="DAV_DspPolyphaseUpsampler"/>
+        <CursorPos X="34" Y="859"/>
+        <TopLine Value="846"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit30>
+    </Units>
+    <JumpHistory Count="10" HistoryIndex="9">
+      <Position1>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseDownsampler.pas"/>
+        <Caret Line="311" Column="34" TopLine="283"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseDownsampler.pas"/>
+        <Caret Line="356" Column="12" TopLine="336"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseDownsampler.pas"/>
+        <Caret Line="932" Column="17" TopLine="912"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseDownsampler.pas"/>
+        <Caret Line="1211" Column="17" TopLine="1172"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseDownsampler.pas"/>
+        <Caret Line="357" Column="15" TopLine="336"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseHilbert.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseHilbert.pas"/>
+        <Caret Line="191" Column="15" TopLine="172"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseHilbert.pas"/>
+        <Caret Line="1659" Column="11" TopLine="1639"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseUpsampler.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspPolyphaseUpsampler.pas"/>
+        <Caret Line="224" Column="27" TopLine="207"/>
+      </Position10>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\..\Source\;$(ProjOutDir)\"/>
+      <OtherUnitFiles Value="..\..\..\..\Source\;..\..\..\..\Source\VST\;..\..\..\..\Source\DSP\;..\..\..\..\Source\Math\"/>
+      <UnitOutputDirectory Value="..\..\..\..\Bin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <IncludeAssertionCode Value="True"/>
+        <CPPInline Value="False"/>
+        <UseAnsiStrings Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <TargetCPU Value="i386"/>
+      <TargetOS Value="Win32"/>
+      <Optimizations>
+        <VariablesInRegisters Value="True"/>
+        <UncertainOptimizations Value="True"/>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

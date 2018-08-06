@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="PixelMapTest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="55" Y="13"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="BtMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmPixelMapTest"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="BtMain"/>
+        <EditorIndex Value="6"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="2" Y="11"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DAV_GuiPixelMap"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="333"/>
+        <CursorPos X="48" Y="343"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBlend.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\Source\DAV_MemoryUtils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\Lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="763"/>
+        <CursorPos X="14" Y="781"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\Lazarus\lcl\include\application.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="391"/>
+        <CursorPos X="1" Y="416"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\Lazarus\lcl\interfaces\win32\win32object.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="167"/>
+        <CursorPos X="16" Y="176"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\Lazarus\fpc\2.4.3\source\packages\winunits-base\src\activex.pp"/>
+        <UnitName Value="ActiveX"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3459"/>
+        <CursorPos X="12" Y="3477"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\..\..\..\..\Developer\lazarus\lcl\interfaces\carbon\carbongdiobjects.pp"/>
+        <UnitName Value="CarbonGDIObjects"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="21"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\..\..\..\..\usr\local\share\fpcsrc\packages\univint\src\MacOSAll.pas"/>
+        <UnitName Value="MacOSAll"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="23"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\..\..\..\..\Volumes\Windows 7\Users\Public\Code\GR32\Source\GR32_Backends_LCL_Carbon.pas"/>
+        <UnitName Value="GR32_Backends_LCL_Carbon"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="320"/>
+        <CursorPos X="1" Y="340"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiByteMap.pas"/>
+        <UnitName Value="DAV_GuiByteMap"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="702"/>
+        <CursorPos X="9" Y="748"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit12>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="434" Column="7" TopLine="423"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="49" Column="45" TopLine="30"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="396" Column="12" TopLine="385"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="434" Column="12" TopLine="423"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="993" Column="1" TopLine="984"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1151" Column="11" TopLine="1137"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1207" Column="1" TopLine="1197"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1149" Column="5" TopLine="1143"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1223" Column="61" TopLine="1212"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1297" Column="50" TopLine="1282"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1369" Column="82" TopLine="1366"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1424" Column="48" TopLine="1371"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1223" Column="2" TopLine="1212"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="41" Column="77" TopLine="30"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1217" Column="34" TopLine="1213"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="39" Column="39" TopLine="23"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1201" Column="61" TopLine="1190"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="39" Column="38" TopLine="23"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1214" Column="38" TopLine="1212"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="47" Column="28" TopLine="36"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1228" Column="61" TopLine="1217"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1433" Column="6" TopLine="1418"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1470" Column="46" TopLine="1458"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\..\..\..\..\..\..\Volumes\Windows 7\Users\Public\Code\GR32\Source\GR32_Backends_LCL_Carbon.pas"/>
+        <Caret Line="69" Column="50" TopLine="57"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1495" Column="1" TopLine="1473"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiByteMap.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="1449" Column="1" TopLine="1366"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="43" Column="66" TopLine="23"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <Caret Line="90" Column="12" TopLine="75"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source;..\..\..\Source\GUI;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\..\..\Source;..\..\..\Source\VST;..\..\..\Source\Math;..\..\..\Source\DSP;..\..\..\Source\GUI;..\..\..\Source\FileFormats"/>
+      <UnitOutputDirectory Value="..\..\..\UnitCache\$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,32 @@
+object FmNonlinearFMX: TFmNonlinearFMX
+  Left = 0
+  Top = 0
+  BiDiMode = bdLeftToRight
+  Caption = 'FMX Nonlinear'
+  ClientHeight = 56
+  ClientWidth = 283
+  Transparency = False
+  Visible = False
+  OnCreate = FormCreate
+  OnActivate = FormActivate
+  StyleLookup = 'backgroundstyle'
+  object SBGain: TScrollBar
+    Position.Point = '(8,8)'
+    Width = 265.000000000000000000
+    Height = 18.000000000000000000
+    TabOrder = 0
+    Min = -400.000000000000000000
+    Max = 200.000000000000000000
+    Orientation = orHorizontal
+    SmallChange = 1.000000000000000000
+    OnChange = SBGainChange
+  end
+  object LbGain: TLabel
+    Position.Point = '(80,32)'
+    Width = 120.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 1
+    TextAlign = taCenter
+    Text = 'OpAmp Gain'
+  end
+end

@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DGuiStaticWaveform: Class TGuiStaticWaveform</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGuiStaticWaveform"></a><h1 class="cio">Class TGuiStaticWaveform</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DGuiStaticWaveform.html">DGuiStaticWaveform</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGuiStaticWaveform = class(<a class="normal"  href="DGuiBaseControl.TGuiBaseControl.html">TGuiBaseControl</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TGuiBaseControl description follows</div><a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TGraphicControl</li>
+<li class="ancestor"><a class="normal"  href="DGuiBaseControl.TGuiBaseControl.html">TGuiBaseControl</a></li>
+<li class="thisitem">TGuiStaticWaveform</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#RedrawBuffer">RedrawBuffer</a></b>(doBufferFlip: Boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#SetWaveForm">SetWaveForm</a></b>(NewWaveData: <a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>; DoRedrawBuffer: Boolean = false; DoFlipBuffer: Boolean = false); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#SetWaveForm">SetWaveForm</a></b>(NewWaveData: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; DoRedrawBuffer: Boolean = false; DoFlipBuffer: Boolean = false); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#ClearWaveForm">ClearWaveForm</a></b>(DoRedrawBuffer: Boolean = false; DoFlipBuffer: Boolean = false);</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#Wavedata">Wavedata</a></b>: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a> read fWaveData;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#WaveLength">WaveLength</a></b>: Integer read GetWaveLength;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#WaveChannels">WaveChannels</a></b>: Integer read GetWaveChannels;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#Transparent">Transparent</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#LineWidth">LineWidth</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#LineColor">LineColor</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#Color">Color</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#DisplayChannels">DisplayChannels</a></b>: integer read fDisplayChannels write SetDisplayChannels default 2;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#WaveVPadding">WaveVPadding</a></b>: Integer read fWaveVPadding write SetWaveVPadding default 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#MedianVisible">MedianVisible</a></b>: Boolean read fMedianVisible write SetMedianVisible default true;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#MedianColor">MedianColor</a></b>: TColor read fMedianColor write SetMedianColor default clRed;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#MedianLineWidth">MedianLineWidth</a></b>: Integer read fMedianLineWidth write SetMedianLineWidth default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#NormalizationType">NormalizationType</a></b>: <a   href="DGuiStaticWaveform.html#TGuiNormalizationType">TGuiNormalizationType</a> read fNormalizationType write SetNormalizationType default ntNone;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiStaticWaveform.TGuiStaticWaveform.html#WaveDrawMode">WaveDrawMode</a></b>: <a   href="DGuiStaticWaveform.html#TGuiWaveDrawMode">TGuiWaveDrawMode</a> read fWaveDrawMode write SetWaveDrawMode default wdmSolid;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RedrawBuffer"></a><code>procedure <b>RedrawBuffer</b>(doBufferFlip: Boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWaveForm"></a><code>procedure <b>SetWaveForm</b>(NewWaveData: <a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>; DoRedrawBuffer: Boolean = false; DoFlipBuffer: Boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWaveForm"></a><code>procedure <b>SetWaveForm</b>(NewWaveData: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; DoRedrawBuffer: Boolean = false; DoFlipBuffer: Boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearWaveForm"></a><code>procedure <b>ClearWaveForm</b>(DoRedrawBuffer: Boolean = false; DoFlipBuffer: Boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Wavedata"></a><code>property <b>Wavedata</b>: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a> read fWaveData;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WaveLength"></a><code>property <b>WaveLength</b>: Integer read GetWaveLength;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WaveChannels"></a><code>property <b>WaveChannels</b>: Integer read GetWaveChannels;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Transparent"></a><code>property <b>Transparent</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LineWidth"></a><code>property <b>LineWidth</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LineColor"></a><code>property <b>LineColor</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DisplayChannels"></a><code>property <b>DisplayChannels</b>: integer read fDisplayChannels write SetDisplayChannels default 2;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="WaveVPadding"></a><code>property <b>WaveVPadding</b>: Integer read fWaveVPadding write SetWaveVPadding default 3;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MedianVisible"></a><code>property <b>MedianVisible</b>: Boolean read fMedianVisible write SetMedianVisible default true;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MedianColor"></a><code>property <b>MedianColor</b>: TColor read fMedianColor write SetMedianColor default clRed;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MedianLineWidth"></a><code>property <b>MedianLineWidth</b>: Integer read fMedianLineWidth write SetMedianLineWidth default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NormalizationType"></a><code>property <b>NormalizationType</b>: <a   href="DGuiStaticWaveform.html#TGuiNormalizationType">TGuiNormalizationType</a> read fNormalizationType write SetNormalizationType default ntNone;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="WaveDrawMode"></a><code>property <b>WaveDrawMode</b>: <a   href="DGuiStaticWaveform.html#TGuiWaveDrawMode">TGuiWaveDrawMode</a> read fWaveDrawMode write SetWaveDrawMode default wdmSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:18</em>
+</span>
+</body></html>

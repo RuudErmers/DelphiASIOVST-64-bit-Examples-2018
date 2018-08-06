@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="54">
+      <Unit0>
+        <Filename Value="SimpleVibrato.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="19" Y="12"/>
+        <UsageCount Value="34"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="SimpleVibratoDM.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SimpleVibratoModule"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="SimpleVibratoDM"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="49"/>
+        <CursorPos X="1" Y="73"/>
+        <UsageCount Value="34"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="SimpleVibratoGUI.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmSimpleVibrato"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SimpleVibratoGUI"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="36"/>
+        <CursorPos X="1" Y="36"/>
+        <UsageCount Value="34"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiDial.pas"/>
+        <UnitName Value="DAV_GuiDial"/>
+        <TopLine Value="3"/>
+        <CursorPos X="18" Y="34"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiCommon.pas"/>
+        <UnitName Value="DAV_GuiCommon"/>
+        <TopLine Value="396"/>
+        <CursorPos X="1" Y="421"/>
+        <UsageCount Value="11"/>
+        <Bookmarks Count="2">
+          <Item0 X="1" Y="86" ID="1"/>
+          <Item1 X="19" Y="163" ID="2"/>
+        </Bookmarks>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiRegister.pas"/>
+        <UnitName Value="DAV_GuiRegister"/>
+        <TopLine Value="19"/>
+        <CursorPos X="32" Y="33"/>
+        <UsageCount Value="11"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\Lazarus\fpc\2.2.5\source\rtl\win32\classes.pp"/>
+        <UnitName Value="Classes"/>
+        <TopLine Value="1"/>
+        <CursorPos X="27" Y="4"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiLED.pas"/>
+        <UnitName Value="DAV_GuiLED"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="11"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBaseControl.pas"/>
+        <UnitName Value="DAV_GuiBaseControl"/>
+        <TopLine Value="77"/>
+        <CursorPos X="3" Y="85"/>
+        <UsageCount Value="11"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiGraphXY.pas"/>
+        <UnitName Value="DAV_GuiGraphXY"/>
+        <TopLine Value="9"/>
+        <CursorPos X="26" Y="28"/>
+        <UsageCount Value="11"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\Lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <TopLine Value="1443"/>
+        <CursorPos X="26" Y="1466"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\Lazarus\fpc\2.2.5\source\rtl\objpas\types.pp"/>
+        <UnitName Value="types"/>
+        <TopLine Value="1"/>
+        <CursorPos X="47" Y="2"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiLabel.pas"/>
+        <UnitName Value="DAV_GuiLabel"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="11"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiEQGraph.pas"/>
+        <UnitName Value="DAV_GuiEQGraph"/>
+        <TopLine Value="1008"/>
+        <CursorPos X="56" Y="1014"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiModular.pas"/>
+        <UnitName Value="DAV_GuiModular"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="11"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBackgrounds.pas"/>
+        <UnitName Value="DAV_GuiBackgrounds"/>
+        <TopLine Value="32"/>
+        <CursorPos X="49" Y="52"/>
+        <UsageCount Value="11"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\Lazarus\lcl\intfgraphics.pas"/>
+        <UnitName Value="IntfGraphics"/>
+        <TopLine Value="255"/>
+        <CursorPos X="30" Y="257"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\Lazarus\fpc\2.2.5\source\packages\fcl-image\src\fpimage.pp"/>
+        <UnitName Value="FPimage"/>
+        <TopLine Value="101"/>
+        <CursorPos X="33" Y="117"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\Lazarus\fpc\2.2.5\source\packages\fcl-image\src\fpimage.inc"/>
+        <TopLine Value="313"/>
+        <CursorPos X="24" Y="316"/>
+        <UsageCount Value="11"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="SimpleVibratoGUI.lfm"/>
+        <TopLine Value="1"/>
+        <CursorPos X="27" Y="2"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\Lazarus\components\images\lazpng.pas"/>
+        <UnitName Value="LazPNG"/>
+        <TopLine Value="1"/>
+        <CursorPos X="27" Y="2"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Polygons.pas"/>
+        <UnitName Value="GR32_Polygons"/>
+        <TopLine Value="230"/>
+        <CursorPos X="3" Y="246"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_System.pas"/>
+        <UnitName Value="GR32_System"/>
+        <TopLine Value="143"/>
+        <CursorPos X="3" Y="159"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\Lazarus\fpc\2.4.0\source\rtl\win\wininc\redef.inc"/>
+        <TopLine Value="523"/>
+        <CursorPos X="11" Y="539"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32.pas"/>
+        <UnitName Value="GR32"/>
+        <TopLine Value="2082"/>
+        <CursorPos X="1" Y="2090"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\Lazarus\fpc\2.4.0\source\rtl\objpas\sysutils\sysutilh.inc"/>
+        <TopLine Value="47"/>
+        <CursorPos X="4" Y="63"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\Lazarus\fpc\2.4.0\source\rtl\objpas\objpas.pp"/>
+        <UnitName Value="objpas"/>
+        <TopLine Value="20"/>
+        <CursorPos X="28" Y="21"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Math.pas"/>
+        <UnitName Value="GR32_Math"/>
+        <TopLine Value="59"/>
+        <CursorPos X="29" Y="59"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_LowLevel.pas"/>
+        <UnitName Value="GR32_LowLevel"/>
+        <TopLine Value="821"/>
+        <CursorPos X="52" Y="851"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Blend.pas"/>
+        <UnitName Value="GR32_Blend"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="124" Y="13"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Containers.pas"/>
+        <UnitName Value="GR32_Containers"/>
+        <TopLine Value="26"/>
+        <CursorPos X="1" Y="42"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Resamplers.pas"/>
+        <UnitName Value="GR32_Resamplers"/>
+        <TopLine Value="1"/>
+        <CursorPos X="78" Y="4"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_ExtImage.pas"/>
+        <UnitName Value="GR32_ExtImage"/>
+        <TopLine Value="84"/>
+        <CursorPos X="69" Y="101"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_DrawingEx.pas"/>
+        <UnitName Value="GR32_DrawingEx"/>
+        <TopLine Value="35"/>
+        <CursorPos X="82" Y="52"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Backends_LCL_Win.pas"/>
+        <UnitName Value="GR32_Backends_LCL_Win"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Backends_Generic.pas"/>
+        <UnitName Value="GR32_Backends_Generic"/>
+        <TopLine Value="198"/>
+        <CursorPos X="47" Y="215"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Layers.pas"/>
+        <UnitName Value="GR32_Layers"/>
+        <TopLine Value="245"/>
+        <CursorPos X="16" Y="262"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Image.pas"/>
+        <UnitName Value="GR32_Image"/>
+        <TopLine Value="307"/>
+        <CursorPos X="49" Y="324"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_MicroTiles.pas"/>
+        <UnitName Value="GR32_MicroTiles"/>
+        <TopLine Value="105"/>
+        <CursorPos X="110" Y="122"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_RangeBars.pas"/>
+        <UnitName Value="GR32_RangeBars"/>
+        <TopLine Value="77"/>
+        <CursorPos X="15" Y="94"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Filters.pas"/>
+        <UnitName Value="GR32_Filters"/>
+        <TopLine Value="80"/>
+        <CursorPos X="3" Y="97"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_VectorMaps.pas"/>
+        <UnitName Value="GR32_VectorMaps"/>
+        <TopLine Value="110"/>
+        <CursorPos X="62" Y="128"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Rasterizers.pas"/>
+        <UnitName Value="GR32_Rasterizers"/>
+        <TopLine Value="177"/>
+        <CursorPos X="29" Y="194"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Transforms.pas"/>
+        <UnitName Value="GR32_Transforms"/>
+        <TopLine Value="80"/>
+        <CursorPos X="67" Y="97"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="11"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="..\..\..\Source\DAV_CRC.pas"/>
+        <UnitName Value="DAV_CRC"/>
+        <TopLine Value="1"/>
+        <CursorPos X="130" Y="3"/>
+        <UsageCount Value="10"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\..\..\Source\DAV_BlockRoutines.pas"/>
+        <UnitName Value="DAV_BlockRoutines"/>
+        <TopLine Value="1"/>
+        <CursorPos X="20" Y="5"/>
+        <UsageCount Value="10"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="..\..\..\Source\DAV_AudioData.pas"/>
+        <UnitName Value="DAV_AudioData"/>
+        <TopLine Value="56"/>
+        <CursorPos X="23" Y="73"/>
+        <UsageCount Value="10"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="..\..\..\Source\FileFormats\DAV_ChannelDataCoder.pas"/>
+        <UnitName Value="DAV_ChannelDataCoder"/>
+        <TopLine Value="466"/>
+        <CursorPos X="11" Y="483"/>
+        <UsageCount Value="10"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="..\..\..\Source\FileFormats\DAV_AudioFile.pas"/>
+        <UnitName Value="DAV_AudioFile"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="..\..\..\Source\DAV_HalfFloat.pas"/>
+        <UnitName Value="DAV_HalfFloat"/>
+        <TopLine Value="49"/>
+        <CursorPos X="40" Y="66"/>
+        <UsageCount Value="10"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="..\..\..\Source\FileFormats\DAV_ChunkClasses.pas"/>
+        <UnitName Value="DAV_ChunkClasses"/>
+        <TopLine Value="695"/>
+        <CursorPos X="22" Y="712"/>
+        <UsageCount Value="10"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="..\..\..\Source\DAV_Classes.pas"/>
+        <UnitName Value="DAV_Classes"/>
+        <TopLine Value="162"/>
+        <CursorPos X="3" Y="179"/>
+        <UsageCount Value="10"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="..\..\..\Source\DAV_Huffman.pas"/>
+        <UnitName Value="DAV_Huffman"/>
+        <TopLine Value="368"/>
+        <CursorPos X="21" Y="369"/>
+        <UsageCount Value="10"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\..\..\..\..\Library\GR32\GR32_Dsgn_Misc.pas"/>
+        <UnitName Value="GR32_Dsgn_Misc"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="10"/>
+      </Unit53>
+    </Units>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source"/>
+      <OtherUnitFiles Value="..\..\..\Packages\Lazarus;..\..\..\Source;..\..\..\Source\VST;..\..\..\Source\Math;..\..\..\Source\DSP;..\..\..\Source\GUI"/>
+      <UnitOutputDirectory Value="..\..\..\UnitCache\$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <CPPInline Value="False"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="2">
+      <Item1>
+        <Source Value="SimpleVibratoDM.pas"/>
+        <Line Value="81"/>
+      </Item1>
+      <Item2>
+        <Source Value="SimpleVibratoDM.pas"/>
+        <Line Value="86"/>
+      </Item2>
+    </BreakPoints>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

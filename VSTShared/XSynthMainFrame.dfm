@@ -1,0 +1,36 @@
+object SynthMainFrame: TSynthMainFrame
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'SynthMainFrame'
+  ClientHeight = 657
+  ClientWidth = 1554
+  Color = clBtnFace
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  OnCreate = FormCreate
+  PixelsPerInch = 120
+  TextHeight = 16
+  object MidiKeys: TGuiMidiKeys
+    Left = 0
+    Top = 584
+    Width = 1554
+    Height = 73
+    Align = alBottom
+    BlackKeyHeight = 0.629999995231628400
+    Height3d = 0.200000002980232200
+    KeyDownMode = kdmFlat
+    KeyZones = <>
+    NumOctaves = 5
+    ShowKeyZones = False
+    ExplicitLeft = -16
+    ExplicitTop = 456
+    ExplicitWidth = 1350
+  end
+end

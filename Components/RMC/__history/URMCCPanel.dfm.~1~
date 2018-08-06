@@ -1,0 +1,21 @@
+object RMCCPanelFrame: TRMCCPanelFrame
+  Left = 0
+  Top = 0
+  Width = 320
+  Height = 240
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 320
+    Height = 240
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'RMCEmptyPanel1'
+    TabOrder = 0
+    ExplicitLeft = 64
+    ExplicitTop = 72
+    ExplicitWidth = 200
+    ExplicitHeight = 100
+  end
+end

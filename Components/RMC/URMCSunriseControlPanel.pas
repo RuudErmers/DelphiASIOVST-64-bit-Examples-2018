@@ -1,0 +1,150 @@
+unit URMCSunriseControlPanel;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, URMCControls,URMCConstants,URMCBaseControlPanel,
+  Vcl.StdCtrls;
+
+type
+  TOnUIChanged = procedure ( Sender: TObject; Index, Value: Integer) of object;
+  Type TRMCParams = class parm0:integer; end;
+  TRMCSunriseControlPanel = class (TRMCBaseControlPanel)
+  public
+  { property } OnUIChanged:TOnUIChanged;
+  { property } OnKnobChanged:TOnUIChanged;
+     function CreateControl(mx, my: integer; _shape: TRMCKnobShape; id: integer;extra:integer=0):TRMCElement;
+    function CreateControlText(r: TRect; txt: string;justify:TAlignment=taCenter):Tlabel;
+    procedure CreateControlWave(x, y, icon: integer);
+    procedure ChangePCC(pcc, Value: Integer);virtual;
+    function CreateControlPanel(r: TRect; txt: string): TPanel;
+    procedure genPCC(pcc,value:integer);virtual;
+    constructor Create(AOwner: TComponent;parm:TRMCParams);overload;virtual;
+  private
+  end;
+
+
+implementation
+
+uses URMCBitmaps;
+
+function TRMCSunriseControlPanel.CreateControlText(r:TRect;txt:string;justify:TAlignment):TLabel;
+begin
+  result:=TLabel.Create(BasePanel);
+  with result do
+  begin
+    Parent:=BasePanel;
+    SetBounds(r.left,r.Top,r.Width,r.Height);
+    autosize:=false;
+    alignment:=justify;
+    font.Style:=[fsBold];
+    font.Size:=6;
+    font.Color:=$00CBD3E1;
+    Caption:=txt;
+  end;
+end;
+
+procedure TRMCSunriseControlPanel.CreateControlWave(x,y,icon:integer);
+VAR w,h:integer;
+const icons:array[0..4] of eBitmaps = (BmpSunriseSaw,BmpSunriseSquare,BmpSunriseSin,BmpSunriseTri,BmpSunriseNoise);
+begin
+  with Timage.Create(BasePanel) do
+  begin
+    Parent:=BasePanel;
+    Picture.Assign(getBitmap(icons[icon]));
+    w:=Picture.Bitmap.Width;
+    h:=Picture.Bitmap.Height;
+    SetBounds(x-w DIV 2, y- h DIV 2, w,h);
+  end;
+end;
+
+procedure TRMCSunriseControlPanel.genPCC(pcc, value: integer);
+begin
+  if assigned(OnUIChanged) then
+    OnUIChanged(self,pcc,value);
+end;
+
+function TRMCSunriseControlPanel.CreateControlPanel(r:TRect;txt:string):TPanel;
+begin
+  result:=TPanel.Create(BasePanel);
+  with result do
+  begin
+    Parent:=BasePanel;
+    Color:=$57A2DA;
+    bevelOuter:=bvNone;
+    ParentColor:=false;
+    ParentBackground:=false;
+    ParentFont:=false;
+    SetBounds(r.left,r.Top,r.Width,r.Height);
+    font.Style:=[fsBold];
+    font.Size:=6;
+    font.Color:=$00433D38;
+    Caption:=txt;
+  end;
+end;
+
+procedure TRMCSunriseControlPanel.ChangePCC(pcc, Value: Integer);
+begin
+
+end;
+
+constructor TRMCSunriseControlPanel.Create(AOwner: TComponent; parm: TRMCParams);
+begin
+  Create(AOwner);
+end;
+
+function TRMCSunriseControlPanel.CreateControl(mx,my:integer;_shape:TRMCKnobShape;id,extra:integer):TRMCElement;
+VAR r:TRect;
+begin
+  case _shape of
+    tkNone:  begin
+               r:=Rect(mx-26,my-16,mx+26,my+32);
+               result:=CreateButton(id,r);
+               with result do
+               begin
+                 shape:=_shape;
+                 TextWithSeg7:=true;
+               end
+             end;
+    tsSlider:begin
+               r:=Rect(mx-26,my-71,mx+26,my+71);
+//               r:=Rect(mx-26,my-100,mx+26,my+100);
+               result:=CreateButton(id,r);
+               with result do
+               begin
+                 shape:=_shape;
+               end
+             end;
+
+    tsButton:begin
+               r:=Rect(mx-22,my-11,mx+22,my+11);
+               result:=CreateButton(id,r);
+               with result do
+               begin
+                 shape:=_shape;
+                 if extra = 1 then SliderColor:=clBlack else SliderColor:=clYellow;
+               end
+             end;
+    tsLed:begin
+               r:=Rect(mx-8,my-8,mx+8,my+8);
+               result:=CreateButton(id,r);
+               with result do
+               begin
+                 shape:=_shape;
+               end
+             end;
+    tsKnob:begin
+               r:=Rect(mx-28,my-27,mx+28,my+27);
+               result:=CreateButton(id,r);
+               with result do
+               begin
+                 shape:=_shape;
+               end
+             end;
+
+  end;
+end;
+
+
+end.

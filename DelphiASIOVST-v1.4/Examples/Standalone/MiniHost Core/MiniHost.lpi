@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="4">
+      <Item1>
+        <PackageName Value="DAV_VSTHost_Lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="DAV_DSP_Lazarus"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="DAV_Common_Lazarus"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+    </RequiredPackages>
+    <Units Count="28">
+      <Unit0>
+        <Filename Value="MiniHost.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="59" Y="15"/>
+        <UsageCount Value="26"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="MiniHostForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmMiniHost"/>
+        <HasResources Value="True"/>
+        <UnitName Value="MiniHostForm"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="275"/>
+        <CursorPos X="50" Y="293"/>
+        <UsageCount Value="26"/>
+        <Bookmarks Count="1">
+          <Item0 X="16" Y="371" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="OptionsForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Options"/>
+        <HasResources Value="True"/>
+        <UnitName Value="OptionsForm"/>
+        <TopLine Value="22"/>
+        <CursorPos X="1" Y="22"/>
+        <UsageCount Value="26"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="AboutForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="about"/>
+        <HasResources Value="True"/>
+        <UnitName Value="AboutForm"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="13"/>
+        <CursorPos X="21" Y="45"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="PlayerForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Player"/>
+        <HasResources Value="True"/>
+        <UnitName Value="PlayerForm"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="26"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\..\..\Programme\Lazarus\lcl\interfaces\win32\interfaces.pp"/>
+        <UnitName Value="Interfaces"/>
+        <TopLine Value="3"/>
+        <CursorPos X="1" Y="45"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\Source\DVSTHost.pas"/>
+        <UnitName Value="DVSTHost"/>
+        <TopLine Value="1"/>
+        <CursorPos X="50" Y="13"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\Source\DAVDCommon.pas"/>
+        <UnitName Value="DAVDCommon"/>
+        <TopLine Value="1"/>
+        <CursorPos X="20" Y="36"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\Source\WaveIOX.pas"/>
+        <UnitName Value="WaveIOX"/>
+        <TopLine Value="1"/>
+        <CursorPos X="9" Y="29"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\Source\MIDI.pas"/>
+        <UnitName Value="Midi"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="257"/>
+        <CursorPos X="39" Y="326"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\Source\DAV_Common.pas"/>
+        <UnitName Value="DAV_Common"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1329"/>
+        <CursorPos X="16" Y="1347"/>
+        <UsageCount Value="11"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\Source\DAV_Complex.pas"/>
+        <UnitName Value="DAV_Complex"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="73"/>
+        <CursorPos X="1" Y="76"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="353"/>
+        <CursorPos X="24" Y="383"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\GR32\Source\GR32_Blend.pas"/>
+        <UnitName Value="GR32_Blend"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="19"/>
+        <CursorPos X="6" Y="47"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\GR32\Source\GR32.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="193"/>
+        <CursorPos X="4" Y="221"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\Source\DAV_VectorMath.pas"/>
+        <UnitName Value="DAV_VectorMath"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="859"/>
+        <CursorPos X="26" Y="870"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <UnitName Value="DAV_FixedPoint"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="42"/>
+        <CursorPos X="64" Y="60"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFixedPoint.pas"/>
+        <UnitName Value="DAV_GuiFixedPoint"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="418"/>
+        <CursorPos X="8" Y="454"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\Lazarus\lcl\ldockctrl.pas"/>
+        <UnitName Value="LDockCtrl"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="148"/>
+        <CursorPos X="1" Y="157"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBlendReference.pas"/>
+        <UnitName Value="DAV_GuiBlendReference"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="328"/>
+        <CursorPos X="2" Y="346"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBlend.pas"/>
+        <UnitName Value="DAV_GuiBlend"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="61"/>
+        <CursorPos X="3" Y="81"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_Common_Lazarus.pas"/>
+        <UnitName Value="DAV_Common_Lazarus"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="43" Y="10"/>
+        <UsageCount Value="11"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\Source\ASIO\DAV_AsioInterface.pas"/>
+        <UnitName Value="DAV_AsioInterface"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="779"/>
+        <CursorPos X="1" Y="809"/>
+        <UsageCount Value="11"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\Source\FileFormats\DAV_ChannelDataCoder.pas"/>
+        <UnitName Value="DAV_ChannelDataCoder"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="53"/>
+        <CursorPos X="63" Y="72"/>
+        <UsageCount Value="11"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_VSTPlugin_Lazarus.pas"/>
+        <UnitName Value="DAV_VSTPlugin_Lazarus"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\Lazarus\ide\lazarus.pp"/>
+        <UnitName Value="Lazarus"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHost.pas"/>
+        <UnitName Value="DAV_VSTHost"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="28"/>
+        <CursorPos X="10" Y="57"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\Lazarus\fpc\2.7.1\source\rtl\win64\windows.pp"/>
+        <UnitName Value="windows"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="AboutForm.pas"/>
+        <Caret Line="9" Column="13" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="AboutForm.pas"/>
+        <Caret Line="36" Column="8" TopLine="8"/>
+      </Position2>
+      <Position3>
+        <Filename Value="AboutForm.pas"/>
+        <Caret Line="73" Column="5" TopLine="43"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="102" Column="36" TopLine="95"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="106" Column="1" TopLine="78"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="70" Column="12" TopLine="50"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="194" Column="12" TopLine="171"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1800" Column="1" TopLine="1781"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1968" Column="8" TopLine="1932"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="2087" Column="8" TopLine="2051"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="2158" Column="8" TopLine="2129"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1786" Column="3" TopLine="1784"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1778" Column="29" TopLine="1760"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1636" Column="23" TopLine="1618"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1657" Column="1" TopLine="1634"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="58" Column="20" TopLine="40"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1784" Column="29" TopLine="1766"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1646" Column="23" TopLine="1628"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="315" Column="73" TopLine="284"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="1778" Column="33" TopLine="1757"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="59" Column="24" TopLine="59"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\Source\DAV_FixedPoint.pas"/>
+        <Caret Line="61" Column="87" TopLine="41"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <Caret Line="1161" Column="29" TopLine="1149"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <Caret Line="383" Column="64" TopLine="353"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <Caret Line="1254" Column="35" TopLine="1224"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <Caret Line="1265" Column="33" TopLine="1235"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\..\..\Source\DAV_Complex.pas"/>
+        <Caret Line="1670" Column="9" TopLine="1663"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source"/>
+      <OtherUnitFiles Value="..\..\..\Source;..\..\..\Source\ASIO;..\..\..\Source\DSP;..\..\..\Source\FileFormats;..\..\..\Source\GUI;..\..\..\Source\Math;..\..\..\Source\VST"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

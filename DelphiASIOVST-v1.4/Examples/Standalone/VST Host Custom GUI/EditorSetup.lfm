@@ -1,0 +1,88 @@
+object FmSetup: TFmSetup
+  Left = 653
+  Height = 86
+  Top = 675
+  Width = 226
+  HorzScrollBar.Page = 225
+  VertScrollBar.Page = 85
+  ActiveControl = CBDrivers
+  BorderStyle = bsToolWindow
+  Caption = 'Setup'
+  Font.Height = -11
+  Font.Name = 'Verdana'
+  Font.Style = [fsBold]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object LbPreset: TLabel
+    Left = 4
+    Height = 21
+    Top = 2
+    Width = 81
+    AutoSize = False
+    Caption = 'ASIO Driver:'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object LbIn: TLabel
+    Left = 4
+    Height = 21
+    Top = 34
+    Width = 37
+    AutoSize = False
+    Caption = 'Input:'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 4
+    Height = 21
+    Top = 58
+    Width = 37
+    AutoSize = False
+    Caption = 'Output:'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object CBDrivers: TComboBox
+    Left = 88
+    Height = 21
+    Top = 2
+    Width = 132
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    Color = clBtnFace
+    ItemHeight = 13
+    MaxLength = 0
+    OnChange = CBDriversChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object CBInput: TComboBox
+    Left = 48
+    Height = 21
+    Top = 34
+    Width = 172
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    Color = clBtnFace
+    ItemHeight = 13
+    MaxLength = 0
+    OnChange = CBInputChange
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object CBOutput: TComboBox
+    Left = 48
+    Height = 21
+    Top = 58
+    Width = 172
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    Color = clBtnFace
+    ItemHeight = 13
+    MaxLength = 0
+    OnChange = CBOutputChange
+    Style = csDropDownList
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,31 @@
+object RMCWavePlayerFrame: TRMCWavePlayerFrame
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'RMCWavePlayerFrame'
+  ClientHeight = 617
+  ClientWidth = 1378
+  Color = 9795430
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  PixelsPerInch = 120
+  TextHeight = 16
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1378
+    Height = 617
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+  end
+end

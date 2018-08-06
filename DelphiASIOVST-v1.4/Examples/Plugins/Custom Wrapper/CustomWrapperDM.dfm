@@ -1,0 +1,54 @@
+object CustomWrapperDataModule: TCustomWrapperDataModule
+  OldCreateOrder = False
+  OnCreate = VSTModuleCreate
+  OnDestroy = VSTModuleDestroy
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'Custom VST Wrapper'
+  ProductName = 'DAV Wrapper Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 44100.000000000000000000
+  CurrentProgram = -1
+  IORatio = 1.000000000000000000
+  UniqueID = 'Wrap'
+  ShellPlugins = <>
+  Programs = <>
+  ParameterProperties = <>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnEditOpen = VSTModuleEditOpen
+  OnEditClose = VSTModuleEditClose
+  OnBlockSizeChange = VSTModuleBlockSizeChange
+  OnProcess = VSTModuleProcess
+  OnProcess64Replacing = VSTModuleProcessDoubleReplacing
+  OnProcessEvents = VSTModuleProcessEvents
+  OnProcess32Replacing = VSTModuleProcessReplacing
+  OnProcessVarIO = VSTModuleProcessVarIO
+  OnResume = VSTModuleResume
+  OnSampleRateChange = VSTModuleSampleRateChange
+  OnSoftBypass = VSTModuleSoftBypass
+  OnStartProcess = VSTModuleStartProcess
+  OnStopProcess = VSTModuleStopProcess
+  OnSuspend = VSTModuleSuspend
+  Left = 215
+  Top = 113
+  Height = 150
+  Width = 215
+  object VstHost: TVstHost
+    CanDos = [hcdSendVstEvents, hcdSendVstMidiEvent, hcdSendVstTimeInfo, hcdReceiveVstEvents, hcdReceiveVstMidiEvent, hcdReceiveVstTimeInfo, hcdReportConnectionChanges, hcdAcceptIOChanges, hcdSizeWindow, hcdAsyncProcessing, hcdOffline, hcdSupplyIdle, hcdStartStopProcess]
+    ManageIdleAutomaticly = False
+    ParameterQuantization = 0
+    PlugInDir = 'C:\Program Files\Audio\Plugins\VST'
+    Tempo = 120.000000000000000000
+    VendorVersion = 0
+    VstPlugIns = <>
+    VstTimeInfo.SampleRate = 44100.000000000000000000
+    VstTimeInfo.Tempo = 120.000000000000000000
+    VstTimeInfo.Flags = [vtiNanosValid, vtiPpqPosValid, vtiTempoValid, vtiBarsValid, vtiCyclePosValid, vtiTimeSigValid, vtiSmpteValid, vtiClockValid]
+    VstVersion = 2300
+    Left = 8
+    Top = 8
+  end
+end

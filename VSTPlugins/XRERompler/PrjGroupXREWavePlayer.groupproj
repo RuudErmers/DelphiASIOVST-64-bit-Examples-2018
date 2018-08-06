@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A43126C9-4A9D-4B9D-87B8-EE1DE4BAB12B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="prjWavePlayerVSTSA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="XREWavePlayer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjWavePlayerVSTSA">
+        <MSBuild Projects="prjWavePlayerVSTSA.dproj"/>
+    </Target>
+    <Target Name="prjWavePlayerVSTSA:Clean">
+        <MSBuild Projects="prjWavePlayerVSTSA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjWavePlayerVSTSA:Make">
+        <MSBuild Projects="prjWavePlayerVSTSA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XREWavePlayer">
+        <MSBuild Projects="XREWavePlayer.dproj"/>
+    </Target>
+    <Target Name="XREWavePlayer:Clean">
+        <MSBuild Projects="XREWavePlayer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XREWavePlayer:Make">
+        <MSBuild Projects="XREWavePlayer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjWavePlayerVSTSA;XREWavePlayer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjWavePlayerVSTSA:Clean;XREWavePlayer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjWavePlayerVSTSA:Make;XREWavePlayer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

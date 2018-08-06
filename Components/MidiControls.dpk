@@ -1,0 +1,56 @@
+package MidiControls;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE BUILDCOMPONENTS}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'PianoEx Components Pack'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vclx,
+  designide,
+  vclimg;
+
+contains
+  URMCEmptyPanel in 'RMC\URMCEmptyPanel.pas',
+  URMCControls in 'RMC\URMCControls.pas',
+  URMCConstants in 'RMC\URMCConstants.pas',
+  URMCBaseControlPanel in 'RMC\URMCBaseControlPanel.pas',
+  UKnobEditor in 'RMC\UKnobEditor.pas',
+  URMCPropertyEditor in 'RMC\URMCPropertyEditor.pas',
+  URMCPropertyForm in 'RMC\URMCPropertyForm.pas' {RMCPropertyForm},
+  URMCVolControl in 'RMC\URMCVolControl.pas',
+  URMCMidiCCGrid in 'RMC\URMCMidiCCGrid.pas',
+  UVirtCC in '..\Common\UVirtCC.pas',
+  URMCShape in 'RMC\URMCShape.pas',
+  URMCCheckBox in 'RMC\URMCCheckBox.pas',
+  URMCADSR in 'RMC\URMCADSR.pas',
+  URMC7Segment in 'RMC\URMC7Segment.pas',
+  URMCBitmaps in 'RMC\URMCBitmaps.pas';
+
+end.

@@ -1,0 +1,26 @@
+object RMCMultiPatternView: TRMCMultiPatternView
+  Left = 0
+  Top = 0
+  Width = 890
+  Height = 70
+  Color = 6956042
+  ParentBackground = False
+  ParentColor = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 890
+    Height = 70
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    ExplicitLeft = 344
+    ExplicitTop = -16
+    ExplicitWidth = 200
+    ExplicitHeight = 100
+  end
+end

@@ -1,0 +1,32 @@
+object RMCVSTPatches: TRMCVSTPatches
+  Left = 0
+  Top = 0
+  Width = 553
+  Height = 127
+  Color = 2434341
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentBackground = False
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 553
+    Height = 127
+    Align = alClient
+    Caption = ''
+    RoundRect = 0
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    ExplicitLeft = 176
+    ExplicitTop = 16
+    ExplicitWidth = 200
+    ExplicitHeight = 100
+  end
+end

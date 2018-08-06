@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.395,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XSingletons.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.305,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XMoogFilter.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.207,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.642,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XREDS264.dproj=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XSynth64.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.528,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\VoiceList.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.972,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.717,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XSynth64.dproj=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XSynth.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.048,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XOscillator.pas=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.672,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.211,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XSynthModel.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.224,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

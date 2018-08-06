@@ -1,0 +1,50 @@
+unit URMCSyntorchestraFrame;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, URMCControls,
+  URMCEmptyPanel;
+
+type
+  TOnUIChanged = procedure ( Sender: TObject; Index, Value: Integer) of object;
+
+  TRMCSyntorchestraFrame = class(TForm)
+    RMCElement1: TRMCElement;
+    Label1: TLabel;
+    RMCEmptyPanel1: TRMCEmptyPanel;
+    RMCElement2: TRMCElement;
+    RMCElement3: TRMCElement;
+    RMCElement4: TRMCElement;
+    RMCElement5: TRMCElement;
+    RMCElement6: TRMCElement;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+  private
+    { Private declarations }
+    procedure CBUIChanged(Sender: TObject; Index, Value: Integer);
+  public
+    { Public declarations }
+    { property } OnUIChanged:TOnUIChanged;
+  end;
+
+var
+  RMCSyntorchestraFrame: TRMCSyntorchestraFrame;
+
+implementation
+
+{$R *.dfm}
+
+uses UVirtCC;
+
+procedure TRMCSyntorchestraFrame.CBUIChanged( Sender: TObject; Index, Value: Integer);
+begin
+  if assigned(OnUIChanged) then
+    OnUIChanged(Sender,Index,Value);
+end;
+
+end.

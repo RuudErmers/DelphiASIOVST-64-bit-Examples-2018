@@ -1,0 +1,57 @@
+object FmPixelMapTest: TFmPixelMapTest
+  Left = 504
+  Height = 244
+  Top = 147
+  Width = 384
+  Caption = 'Bitmap Test'
+  ClientHeight = 244
+  ClientWidth = 384
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '0.9.29'
+  object PaintBox: TPaintBox
+    Left = 8
+    Height = 197
+    Top = 39
+    Width = 368
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    OnPaint = PaintBoxPaint
+  end
+  object BtCountTest: TButton
+    Left = 89
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = '&Count Test'
+    OnClick = BtCountTestClick
+    TabOrder = 0
+  end
+  object BtSimpleTest: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = '&Simple Test'
+    TabOrder = 1
+  end
+  object BtPaintTest: TButton
+    Left = 170
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = '&Paint Test'
+    OnClick = BtPaintTestClick
+    TabOrder = 2
+  end
+  object BtSave: TButton
+    Left = 251
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = '&Save Test'
+    OnClick = BtSaveClick
+    TabOrder = 3
+  end
+end

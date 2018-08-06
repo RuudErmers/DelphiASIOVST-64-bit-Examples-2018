@@ -1,0 +1,216 @@
+	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{2A61F091-0A8A-4FAE-BA43-2C196CFA6459}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="ADSR\AdsrTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AudioDataDisplay\AudioDataDisplayTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Button\ButtonTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="EQ-Graph\EqGraphTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="EQ-Slide\EqSlideTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="GraphXY\GraphXyTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Group Box\GroupBoxTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Label\LabelTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LEDs\LedTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="MidiKeys\MidiKeysTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Panel\PanelTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Select Box\SelectBox.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="StaticWaveform\StaticWaveformTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Stitched Button\StitchedButtonTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Stitched Dial\DialTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Stitched Switch\SwitchTest.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="AdsrTest">
+			<MSBuild Projects="ADSR\AdsrTest.dproj"/>
+		</Target>
+		<Target Name="AdsrTest:Clean">
+			<MSBuild Targets="Clean" Projects="ADSR\AdsrTest.dproj"/>
+		</Target>
+		<Target Name="AdsrTest:Make">
+			<MSBuild Targets="Make" Projects="ADSR\AdsrTest.dproj"/>
+		</Target>
+		<Target Name="AudioDataDisplayTest">
+			<MSBuild Projects="AudioDataDisplay\AudioDataDisplayTest.dproj"/>
+		</Target>
+		<Target Name="AudioDataDisplayTest:Clean">
+			<MSBuild Targets="Clean" Projects="AudioDataDisplay\AudioDataDisplayTest.dproj"/>
+		</Target>
+		<Target Name="AudioDataDisplayTest:Make">
+			<MSBuild Targets="Make" Projects="AudioDataDisplay\AudioDataDisplayTest.dproj"/>
+		</Target>
+		<Target Name="ButtonTest">
+			<MSBuild Projects="Button\ButtonTest.dproj"/>
+		</Target>
+		<Target Name="ButtonTest:Clean">
+			<MSBuild Targets="Clean" Projects="Button\ButtonTest.dproj"/>
+		</Target>
+		<Target Name="ButtonTest:Make">
+			<MSBuild Targets="Make" Projects="Button\ButtonTest.dproj"/>
+		</Target>
+		<Target Name="EqGraphTest">
+			<MSBuild Projects="EQ-Graph\EqGraphTest.dproj"/>
+		</Target>
+		<Target Name="EqGraphTest:Clean">
+			<MSBuild Targets="Clean" Projects="EQ-Graph\EqGraphTest.dproj"/>
+		</Target>
+		<Target Name="EqGraphTest:Make">
+			<MSBuild Targets="Make" Projects="EQ-Graph\EqGraphTest.dproj"/>
+		</Target>
+		<Target Name="EqSlideTest">
+			<MSBuild Projects="EQ-Slide\EqSlideTest.dproj"/>
+		</Target>
+		<Target Name="EqSlideTest:Clean">
+			<MSBuild Targets="Clean" Projects="EQ-Slide\EqSlideTest.dproj"/>
+		</Target>
+		<Target Name="EqSlideTest:Make">
+			<MSBuild Targets="Make" Projects="EQ-Slide\EqSlideTest.dproj"/>
+		</Target>
+		<Target Name="GraphXyTest">
+			<MSBuild Projects="GraphXY\GraphXyTest.dproj"/>
+		</Target>
+		<Target Name="GraphXyTest:Clean">
+			<MSBuild Targets="Clean" Projects="GraphXY\GraphXyTest.dproj"/>
+		</Target>
+		<Target Name="GraphXyTest:Make">
+			<MSBuild Targets="Make" Projects="GraphXY\GraphXyTest.dproj"/>
+		</Target>
+		<Target Name="GroupBoxTest">
+			<MSBuild Projects="Group Box\GroupBoxTest.dproj"/>
+		</Target>
+		<Target Name="GroupBoxTest:Clean">
+			<MSBuild Targets="Clean" Projects="Group Box\GroupBoxTest.dproj"/>
+		</Target>
+		<Target Name="GroupBoxTest:Make">
+			<MSBuild Targets="Make" Projects="Group Box\GroupBoxTest.dproj"/>
+		</Target>
+		<Target Name="LabelTest">
+			<MSBuild Projects="Label\LabelTest.dproj"/>
+		</Target>
+		<Target Name="LabelTest:Clean">
+			<MSBuild Targets="Clean" Projects="Label\LabelTest.dproj"/>
+		</Target>
+		<Target Name="LabelTest:Make">
+			<MSBuild Targets="Make" Projects="Label\LabelTest.dproj"/>
+		</Target>
+		<Target Name="LedTest">
+			<MSBuild Projects="LEDs\LedTest.dproj"/>
+		</Target>
+		<Target Name="LedTest:Clean">
+			<MSBuild Targets="Clean" Projects="LEDs\LedTest.dproj"/>
+		</Target>
+		<Target Name="LedTest:Make">
+			<MSBuild Targets="Make" Projects="LEDs\LedTest.dproj"/>
+		</Target>
+		<Target Name="MidiKeysTest">
+			<MSBuild Projects="MidiKeys\MidiKeysTest.dproj"/>
+		</Target>
+		<Target Name="MidiKeysTest:Clean">
+			<MSBuild Targets="Clean" Projects="MidiKeys\MidiKeysTest.dproj"/>
+		</Target>
+		<Target Name="MidiKeysTest:Make">
+			<MSBuild Targets="Make" Projects="MidiKeys\MidiKeysTest.dproj"/>
+		</Target>
+		<Target Name="PanelTest">
+			<MSBuild Projects="Panel\PanelTest.dproj"/>
+		</Target>
+		<Target Name="PanelTest:Clean">
+			<MSBuild Targets="Clean" Projects="Panel\PanelTest.dproj"/>
+		</Target>
+		<Target Name="PanelTest:Make">
+			<MSBuild Targets="Make" Projects="Panel\PanelTest.dproj"/>
+		</Target>
+		<Target Name="SelectBox">
+			<MSBuild Projects="Select Box\SelectBox.dproj"/>
+		</Target>
+		<Target Name="SelectBox:Clean">
+			<MSBuild Targets="Clean" Projects="Select Box\SelectBox.dproj"/>
+		</Target>
+		<Target Name="SelectBox:Make">
+			<MSBuild Targets="Make" Projects="Select Box\SelectBox.dproj"/>
+		</Target>
+		<Target Name="StaticWaveformTest">
+			<MSBuild Projects="StaticWaveform\StaticWaveformTest.dproj"/>
+		</Target>
+		<Target Name="StaticWaveformTest:Clean">
+			<MSBuild Targets="Clean" Projects="StaticWaveform\StaticWaveformTest.dproj"/>
+		</Target>
+		<Target Name="StaticWaveformTest:Make">
+			<MSBuild Targets="Make" Projects="StaticWaveform\StaticWaveformTest.dproj"/>
+		</Target>
+		<Target Name="StitchedButtonTest">
+			<MSBuild Projects="Stitched Button\StitchedButtonTest.dproj"/>
+		</Target>
+		<Target Name="StitchedButtonTest:Clean">
+			<MSBuild Targets="Clean" Projects="Stitched Button\StitchedButtonTest.dproj"/>
+		</Target>
+		<Target Name="StitchedButtonTest:Make">
+			<MSBuild Targets="Make" Projects="Stitched Button\StitchedButtonTest.dproj"/>
+		</Target>
+		<Target Name="DialTest">
+			<MSBuild Projects="Stitched Dial\DialTest.dproj"/>
+		</Target>
+		<Target Name="DialTest:Clean">
+			<MSBuild Targets="Clean" Projects="Stitched Dial\DialTest.dproj"/>
+		</Target>
+		<Target Name="DialTest:Make">
+			<MSBuild Targets="Make" Projects="Stitched Dial\DialTest.dproj"/>
+		</Target>
+		<Target Name="SwitchTest">
+			<MSBuild Projects="Stitched Switch\SwitchTest.dproj"/>
+		</Target>
+		<Target Name="SwitchTest:Clean">
+			<MSBuild Targets="Clean" Projects="Stitched Switch\SwitchTest.dproj"/>
+		</Target>
+		<Target Name="SwitchTest:Make">
+			<MSBuild Targets="Make" Projects="Stitched Switch\SwitchTest.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="AdsrTest;AudioDataDisplayTest;ButtonTest;EqGraphTest;EqSlideTest;GraphXyTest;GroupBoxTest;LabelTest;LedTest;MidiKeysTest;PanelTest;SelectBox;StaticWaveformTest;StitchedButtonTest;DialTest;SwitchTest"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="AdsrTest:Clean;AudioDataDisplayTest:Clean;ButtonTest:Clean;EqGraphTest:Clean;EqSlideTest:Clean;GraphXyTest:Clean;GroupBoxTest:Clean;LabelTest:Clean;LedTest:Clean;MidiKeysTest:Clean;PanelTest:Clean;SelectBox:Clean;StaticWaveformTest:Clean;StitchedButtonTest:Clean;DialTest:Clean;SwitchTest:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="AdsrTest:Make;AudioDataDisplayTest:Make;ButtonTest:Make;EqGraphTest:Make;EqSlideTest:Make;GraphXyTest:Make;GroupBoxTest:Make;LabelTest:Make;LedTest:Make;MidiKeysTest:Make;PanelTest:Make;SelectBox:Make;StaticWaveformTest:Make;StitchedButtonTest:Make;DialTest:Make;SwitchTest:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

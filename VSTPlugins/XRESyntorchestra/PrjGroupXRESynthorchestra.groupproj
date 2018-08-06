@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{ACE2B568-00D7-4C43-9D0B-C0BDE5B873F3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="prjSynthorchestraVSTVA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="XRESyntorchestra.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjSynthorchestraVSTVA">
+        <MSBuild Projects="prjSynthorchestraVSTVA.dproj"/>
+    </Target>
+    <Target Name="prjSynthorchestraVSTVA:Clean">
+        <MSBuild Projects="prjSynthorchestraVSTVA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjSynthorchestraVSTVA:Make">
+        <MSBuild Projects="prjSynthorchestraVSTVA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XRESyntorchestra">
+        <MSBuild Projects="XRESyntorchestra.dproj"/>
+    </Target>
+    <Target Name="XRESyntorchestra:Clean">
+        <MSBuild Projects="XRESyntorchestra.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XRESyntorchestra:Make">
+        <MSBuild Projects="XRESyntorchestra.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjSynthorchestraVSTVA;XRESyntorchestra"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjSynthorchestraVSTVA:Clean;XRESyntorchestra:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjSynthorchestraVSTVA:Make;XRESyntorchestra:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

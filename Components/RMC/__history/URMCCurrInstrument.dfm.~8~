@@ -1,0 +1,64 @@
+object RMCCurrInstrumentFrame: TRMCCurrInstrumentFrame
+  Left = 0
+  Top = 0
+  Width = 800
+  Height = 204
+  DoubleBuffered = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentDoubleBuffered = False
+  ParentFont = False
+  TabOrder = 0
+  object LabelWorkstation: TLabel
+    Left = 0
+    Top = 0
+    Width = 800
+    Height = 29
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Yamaha W5'
+    Color = 2434341
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -23
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    ExplicitTop = 8
+  end
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 29
+    Width = 800
+    Height = 175
+    Align = alClient
+    Caption = ''
+    RoundRect = 0
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+  end
+  object RMCElement1: TRMCElement
+    Left = 200
+    Top = 96
+    Width = 100
+    Height = 40
+    Index = 0
+    Caption = 'RMCElement1'
+    Color = clNone
+    Options.ButtonColorOff = clBlack
+    Options.ButtonColorOn = clBlack
+    Options.SliderColor = 42495
+    Options.TextWithSeg7 = False
+    Options.Shape = trTextLine
+    MinValue = 0
+    MaxValue = 127
+    Value = 0
+  end
+end

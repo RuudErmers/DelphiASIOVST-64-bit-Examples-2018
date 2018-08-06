@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <Runnable Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <Title Value="Linkwitz Riley"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <HostApplicationFilename Value="C:\Users\Christian Budde\Projects\VSTPack\Bin\VST Plugin Analyser.exe"/>
+        <CommandLineParams Value="LinkwitzRiley.DLL"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="LinkwitzRiley.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2"/>
+        <CursorPos X="48" Y="15"/>
+        <UsageCount Value="25"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="LinkwitzRileyDM.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LinkwitzRileyModule"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="LinkwitzRileyDM"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="40"/>
+        <CursorPos X="45" Y="39"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\Source\DAV_Common.pas"/>
+        <UnitName Value="DAV_Common"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTOfflineTask.pas"/>
+        <UnitName Value="DAV_VSTOfflineTask"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\Source\DSP\DAV_DspButterworthFilter.pas"/>
+        <UnitName Value="DAV_DspButterworthFilter"/>
+        <TopLine Value="651"/>
+        <CursorPos X="19" Y="661"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="LinkwitzRiley.lpi"/>
+        <TopLine Value="140"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <UnitName Value="DAV_VSTModule"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="137"/>
+        <CursorPos X="1" Y="184"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModuleWithDsp.pas"/>
+        <UnitName Value="DAV_VSTModuleWithDsp"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="10" Y="5"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModuleWithPrograms.pas"/>
+        <UnitName Value="DAV_VSTModuleWithPrograms"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2"/>
+        <CursorPos X="36" Y="16"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModuleWithMidi.pas"/>
+        <UnitName Value="DAV_VSTModuleWithMidi"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2"/>
+        <CursorPos X="39" Y="16"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTCustomModule.pas"/>
+        <UnitName Value="DAV_VSTCustomModule"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="27"/>
+        <CursorPos X="38" Y="41"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTBasicModule.pas"/>
+        <UnitName Value="DAV_VSTBasicModule"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="36"/>
+        <CursorPos X="49" Y="50"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\Lazarus\fpc\2.4.3\source\rtl\objpas\classes\classesh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1946"/>
+        <CursorPos X="11" Y="1960"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\Source\DAV_Compiler.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="15" Y="10"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\Source\DAV_CompilerSwitches.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="59"/>
+        <CursorPos X="19" Y="83"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\Lazarus\lcl\lresources.pp"/>
+        <UnitName Value="LResources"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="430"/>
+        <CursorPos X="19" Y="442"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit15>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="LinkwitzRileyDM.pas"/>
+        <Caret Line="39" Column="45" TopLine="22"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="11" Column="29" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="181" Column="16" TopLine="99"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="5" Column="14" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="173" Column="12" TopLine="154"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="8" Column="14" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="110" Column="12" TopLine="86"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="117" Column="21" TopLine="93"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="121" Column="13" TopLine="97"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\Source\VST\DAV_VSTModule.pas"/>
+        <Caret Line="176" Column="23" TopLine="156"/>
+      </Position11>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\..\Source;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\..\..\..\Source;..\..\..\..\Source\VST;..\..\..\..\Source\DSP;..\..\..\..\Source\Math"/>
+      <UnitOutputDirectory Value="..\..\..\..\UnitCache\$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <CPPInline Value="False"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <Optimizations>
+        <VariablesInRegisters Value="True"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

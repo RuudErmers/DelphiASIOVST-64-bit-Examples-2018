@@ -1,0 +1,142 @@
+object DualLinkwitzRileyFiltersModule: TDualLinkwitzRileyFiltersModule
+  OnCreate = VSTModuleCreate
+  OnDestroy = VSTModuleDestroy
+  OldCreateOrder = False
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'DualLinkwitzRileyFilters'
+  ProductName = 'DAV Filter Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  TailSize = 131072
+  CanDos = [vcdPlugAsChannelInsert, vcdPlugAsSend, vcd1in2out]
+  SampleRate = 44100
+  CurrentProgramName = 'Default'
+  IORatio = 1
+  UniqueID = 'LiRi'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Default'
+      VSTModule = Owner
+    end  
+    item
+      DisplayName = 'Audio Range'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 10000
+      DisplayName = 'Lowpass Frequency'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      Max = 20000
+      MaxInteger = 20000
+      Min = 2
+      MinInteger = 2
+      ReportVST2Properties = True
+      ShortLabel = 'LP Freq'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'Hz'
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParameterLowpassFrequencyChange
+      OnCustomParameterLabel = ParameterFrequencyLabel
+      OnCustomParameterDisplay = ParameterFrequencyDisplay
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Lowpass Order'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 1
+      LargeStepInteger = 1
+      Max = 16
+      MaxInteger = 16
+      Min = 1
+      MinInteger = 1
+      ReportVST2Properties = True
+      ShortLabel = 'LP Ord.'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'dB/Oct'
+      VSTModule = Owner
+      OnParameterChange = ParameterLowpassOrderChange
+      OnCustomParameterDisplay = ParameterOrderDisplay
+      OnStringToParameter = StringOrderToParameter
+    end  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 10000
+      DisplayName = 'Highpass Frequency'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      Max = 20000
+      MaxInteger = 20000
+      Min = 2
+      MinInteger = 2
+      ReportVST2Properties = True
+      ShortLabel = 'HP Freq'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'Hz'
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParameterHighpassFrequencyChange
+      OnCustomParameterLabel = ParameterFrequencyLabel
+      OnCustomParameterDisplay = ParameterFrequencyDisplay
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Highpass Order'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 1
+      LargeStepInteger = 1
+      Max = 16
+      MaxInteger = 16
+      Min = 1
+      MinInteger = 1
+      ShortLabel = 'HP Ord.'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'dB/Oct'
+      VSTModule = Owner
+      OnParameterChange = ParameterHighpassOrderChange
+      OnCustomParameterDisplay = ParameterOrderDisplay
+      OnStringToParameter = StringOrderToParameter
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Type'
+      Flags = [ppfParameterIsSwitch, ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 1
+      LargeStepInteger = 1
+      Max = 3
+      MaxInteger = 3
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'Type'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      VSTModule = Owner
+      OnParameterChange = ParameterTypeChange
+      OnCustomParameterDisplay = ParameterTypeDisplay
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnResume = VSTModuleResume
+  OnSampleRateChange = VSTModuleSampleRateChange
+  left = 286
+  top = 77
+  Height = 150
+  HorizontalOffset = 482
+  VerticalOffset = 301
+  Width = 215
+end

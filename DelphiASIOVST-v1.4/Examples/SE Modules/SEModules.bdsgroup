@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{CC06E7E4-2464-45C1-86DE-02193C0F07A6}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="SEAllDspModules.sem">All DSP Modules\SEAllDspModules.bdsproj</Projects>
+      <Projects Name="SEApproximations.sem">Approximations\SEApproximations.bdsproj</Projects>
+      <Projects Name="SEAudioRGB.sem">AudioRGB\SEAudioRGB.bdsproj</Projects>
+      <Projects Name="SEAverage.sem">Average\SEAverage.bdsproj</Projects>
+      <Projects Name="SEBarberpole.sem">Barberpole\SEBarberpole.bdsproj</Projects>
+      <Projects Name="SEBassEnhancer.sem">Bass Enhancer\SEBassEnhancer.bdsproj</Projects>
+      <Projects Name="SEBrushedMetal.sem">Brushed Metal\SEBrushedMetal.bdsproj</Projects>
+      <Projects Name="SEButterworth.sem">Butterworth\SEButterworth.bdsproj</Projects>
+      <Projects Name="SEChebyshevFilter.sem">Chebyshev\SEChebyshevFilter.bdsproj</Projects>
+      <Projects Name="SEChebyshevWaveshaper.sem">ChebyshevWaveshaper\SEChebyshevWaveshaper.bdsproj</Projects>
+      <Projects Name="SEChorus.sem">Chorus\SEChorus.bdsproj</Projects>
+      <Projects Name="SEClock.sem">Clock\SEClock.bdsproj</Projects>
+      <Projects Name="SEConvert.sem">Convert\SEConvert.bdsproj</Projects>
+      <Projects Name="SEConvolution.sem">Convolution\SEConvolution.bdsproj</Projects>
+      <Projects Name="SECorrelationMeter.sem">Correlation Meter\SECorrelationMeter.bdsproj</Projects>
+      <Projects Name="SEDelay.sem">Delay\SEDelay.bdsproj</Projects>
+      <Projects Name="SEDynamics.sem">Dynamics\SEDynamics.bdsproj</Projects>
+      <Projects Name="SEEnvelope.sem">Envelope\SEEnvelope.bdsproj</Projects>
+      <Projects Name="SEFibonacci.sem">Fibonacci\SEFibonacci.bdsproj</Projects>
+      <Projects Name="SEFilters.sem">Filters\SEFilters.bdsproj</Projects>
+      <Projects Name="SEGain.sem">Gain\SEGain.bdsproj</Projects>
+      <Projects Name="SEGFX.sem">GFX\SEGFX.bdsproj</Projects>
+      <Projects Name="SEHRTF3D.sem">HRTF3D\SEHRTF3D.bdsproj</Projects>
+      <Projects Name="SEIntToList.sem">IntToList\SEIntToList.bdsproj</Projects>
+      <Projects Name="SELabel.sem">Label\SELabel.bdsproj</Projects>
+      <Projects Name="SELightweightDynamics.sem">Lightweight Dynamics\SELightweightDynamics.bdsproj</Projects>
+      <Projects Name="SELinkwitzRiley.sem">Linkwitz-Riley\SELinkwitzRiley.bdsproj</Projects>
+      <Projects Name="SEMagicHealer.sem">Magic Healer\SEMagicHealer.bdsproj</Projects>
+      <Projects Name="SEMerger.sem">Merger\SEMerger.bdsproj</Projects>
+      <Projects Name="SEOpenGL.sem">OpenGL\SEOpenGL.bdsproj</Projects>
+      <Projects Name="SEPascalScript.sem">PascalScript\SEPascalScript.bdsproj</Projects>
+      <Projects Name="SEPhaser.sem">Phaser\SEPhaser.bdsproj</Projects>
+      <Projects Name="SEPitchshifter.sem">Pitch Shifter\SEPitchshifter.bdsproj</Projects>
+      <Projects Name="SERealverb.sem">Realverb\SERealverb.bdsproj</Projects>
+      <Projects Name="SEReverb.sem">Reverb\SEReverb.bdsproj</Projects>
+      <Projects Name="SEScope.sem">Scope\SEScope.bdsproj</Projects>
+      <Projects Name="SESine.sem">Sine\SESine.bdsproj</Projects>
+      <Projects Name="SEStringTools.sem">String Tools\SEStringTools.bdsproj</Projects>
+      <Projects Name="SETanhAproximations.sem">Tanh Aproximations\SETanhAproximations.bdsproj</Projects>
+      <Projects Name="SETools.sem">Tools\SETools.bdsproj</Projects>
+      <Projects Name="SETransposer.sem">Transposer\SETransposer.bdsproj</Projects>
+      <Projects Name="SETrigoMath.sem">Trigonometric Math\SETrigoMath.bdsproj</Projects>
+      <Projects Name="SETuner.sem">Tuner\SETuner.bdsproj</Projects>
+      <Projects Name="SEVibrato.sem">Vibrato\SEVibrato.bdsproj</Projects>
+      <Projects Name="SEVocoder.sem">Vocoder\SEVocoder.bdsproj</Projects>
+      <Projects Name="SEVoiceSynth.sem">VoiceSynth\SEVoiceSynth.bdsproj</Projects>
+      <Projects Name="SEVST2SEM.sem">VST To SEM\SEVST2SEM.bdsproj</Projects>
+      <Projects Name="SEWaveshaper.sem">Waveshaper\SEWaveshaper.bdsproj</Projects>
+      <Projects Name="SETransientProcessor.sem">Transient Processor\SETransientProcessor.bdsproj</Projects>
+      <Projects Name="SEModDelay.sem">ModDelay\SEModDelay.bdsproj</Projects>
+      <Projects Name="SELeslie.sem">Leslie\SELeslie.bdsproj</Projects>
+      <Projects Name="SEFrequencyShifter.sem">Frequency Shifter\SEFrequencyShifter.bdsproj</Projects>
+      <Projects Name="SEExciter.sem">Exciter\SEExciter.bdsproj</Projects>
+      <Projects Name="SEDitherNoiseshaper.sem">Dither &amp; NoiseShaper\SEDitherNoiseshaper.bdsproj</Projects>
+      <Projects Name="SEAudioFileOscillator.sem">Audio File Oscillator\SEAudioFileOscillator.bdsproj</Projects>
+      <Projects Name="SEMp3Player.sem">MP3 Player\SEMp3Player.bdsproj</Projects>
+      <Projects Name="Targets">SEAllDspModules.sem SEApproximations.sem SEAudioRGB.sem SEAverage.sem SEBarberpole.sem SEBassEnhancer.sem SEBrushedMetal.sem SEButterworth.sem SEChebyshevFilter.sem SEChebyshevWaveshaper.sem SEChorus.sem SEClock.sem SEConvert.sem SEConvolution.sem SECorrelationMeter.sem SEDelay.sem SEDynamics.sem SEEnvelope.sem SEFibonacci.sem SEFilters.sem SEGain.sem SEGFX.sem SEHRTF3D.sem SEIntToList.sem SELabel.sem SELightweightDynamics.sem SELinkwitzRiley.sem SEMagicHealer.sem SEMerger.sem SEOpenGL.sem SEPascalScript.sem SEPhaser.sem SEPitchshifter.sem SERealverb.sem SEReverb.sem SEScope.sem SESine.sem SEStringTools.sem SETanhAproximations.sem SETools.sem SETransposer.sem SETrigoMath.sem SETuner.sem SEVibrato.sem SEVocoder.sem SEVoiceSynth.sem SEVST2SEM.sem SEWaveshaper.sem SETransientProcessor.sem SEModDelay.sem SELeslie.sem SEFrequencyShifter.sem SEExciter.sem SEDitherNoiseshaper.sem SEAudioFileOscillator.sem SEMp3Player.sem</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

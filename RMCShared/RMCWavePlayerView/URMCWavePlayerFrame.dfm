@@ -1,0 +1,85 @@
+object RMCWavePlayerFrame: TRMCWavePlayerFrame
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'RMCWavePlayerFrame'
+  ClientHeight = 203
+  ClientWidth = 1045
+  Color = 9795430
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  OnMouseDown = FormMouseDown
+  PixelsPerInch = 120
+  TextHeight = 16
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1045
+    Height = 203
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    ExplicitWidth = 536
+    object LabelFilename: TLabel
+      Left = 56
+      Top = 104
+      Width = 82
+      Height = 16
+      Caption = 'LabelFilename'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object LabelStatus: TLabel
+      Left = 56
+      Top = 142
+      Width = 82
+      Height = 16
+      Caption = 'LabelFilename'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object ButtonPlay: TButton
+      Left = 145
+      Top = 56
+      Width = 75
+      Height = 26
+      Caption = 'Play'
+      TabOrder = 0
+    end
+    object ButtonPause: TButton
+      Left = 234
+      Top = 56
+      Width = 75
+      Height = 26
+      Caption = 'Pause'
+      TabOrder = 1
+    end
+    object Panel1: TPanel
+      Left = 56
+      Top = 56
+      Width = 75
+      Height = 25
+      Caption = 'Load'
+      ParentBackground = False
+      TabOrder = 2
+      OnMouseDown = Panel1MouseDown
+    end
+  end
+end

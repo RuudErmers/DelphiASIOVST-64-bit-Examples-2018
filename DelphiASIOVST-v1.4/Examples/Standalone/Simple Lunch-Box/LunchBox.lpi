@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="5"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="HostVSTLaz"/>
+        <MinVersion Minor="2" Valid="True"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="HostASIOLaz"/>
+        <MinVersion Minor="2" Valid="True"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="LunchBox.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="1" Y="30"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="7"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="LunchBoxMain.pas"/>
+        <ComponentName Value="FmLunchBox"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="LunchBoxMain.lrs"/>
+        <UnitName Value="LunchBoxMain"/>
+        <CursorPos X="29" Y="495"/>
+        <TopLine Value="463"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="LunchBoxSetup.pas"/>
+        <ComponentName Value="FmSetup"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="LunchBoxSetup.lrs"/>
+        <UnitName Value="LunchBoxSetup"/>
+        <CursorPos X="21" Y="18"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="LunchBoxAbout.pas"/>
+        <ComponentName Value="FmAbout"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="LunchBoxAbout.lrs"/>
+        <UnitName Value="LunchBoxAbout"/>
+        <CursorPos X="49" Y="12"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="8"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="LunchBoxVST.pas"/>
+        <ComponentName Value="FmVST"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="LunchBoxVST.lrs"/>
+        <UnitName Value="LunchBoxVST"/>
+        <CursorPos X="48" Y="11"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="LunchBoxEventList.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LunchBoxEventList"/>
+        <CursorPos X="1" Y="391"/>
+        <TopLine Value="350"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="LunchBoxEvent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LunchBoxEvent"/>
+        <CursorPos X="34" Y="105"/>
+        <TopLine Value="76"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="LunchBoxInputFilter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LunchBoxInputFilter"/>
+        <CursorPos X="23" Y="34"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="6"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\Source\DAVDCommon.pas"/>
+        <UnitName Value="DAVDCommon"/>
+        <CursorPos X="1" Y="147"/>
+        <TopLine Value="126"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit8>
+    </Units>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Lazarus\"/>
+      <OtherUnitFiles Value="..\..\..\Source\;..\..\..\Lazarus\"/>
+      <SrcPath Value="..\..\..\Source\"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

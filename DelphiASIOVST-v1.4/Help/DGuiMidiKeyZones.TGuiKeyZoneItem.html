@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DGuiMidiKeyZones: Class TGuiKeyZoneItem</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGuiKeyZoneItem"></a><h1 class="cio">Class TGuiKeyZoneItem</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DGuiMidiKeyZones.html">DGuiMidiKeyZones</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGuiKeyZoneItem = class(TCollectionItem)</code></p>
+<h2 class="description">Description</h2>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TCollectionItem</li>
+<li class="thisitem">TGuiKeyZoneItem</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#Create">Create</a></b>(Collection: TCollection); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SetIndex">SetIndex</a></b>(Value: Integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#MoveZoneZ">MoveZoneZ</a></b>(NewIndex: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#MoveZone">MoveZone</a></b>(MoveAmount: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#BringToFront">BringToFront</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SendToBack">SendToBack</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#Select">Select</a></b>(doUpdate: Boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SetMouseOver">SetMouseOver</a></b>(MouseOverState: Boolean = true; doUpdate: Boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#UnSelect">UnSelect</a></b>(doUpdate: Boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SetBorders">SetBorders</a></b>(Key1, Key2: Byte; doUpdate: Boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#KeyInZone">KeyInZone</a></b>(KeyNr: Byte): boolean;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#DisplayName">DisplayName</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#LowestZoneKey">LowestZoneKey</a></b>: Byte read fLowestZoneKey write SetLowestZoneKey default 48;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#HighestZoneKey">HighestZoneKey</a></b>: Byte read fHighestZoneKey write SetHighestZoneKey default 59;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#Visible">Visible</a></b>: Boolean read fVisible write SetVisible default true;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#DefaultBrushColor">DefaultBrushColor</a></b>: TColor read fDefaultBrushColor write SetDefaultBrushColor default clSkyBlue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#DefaultBrushStyle">DefaultBrushStyle</a></b>: TBrushStyle read fDefaultBrushStyle write SetDefaultBrushStyle default bsSolid;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#DefaultBorderColor">DefaultBorderColor</a></b>: TColor read fDefaultBorderColor write SetDefaultBorderColor default clBlack;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#DefaultBorderWidth">DefaultBorderWidth</a></b>: Integer read fDefaultBorderWidth write SetDefaultBorderWidth default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#DefaultBorderStyle">DefaultBorderStyle</a></b>: TPenStyle read fDefaultBorderStyle write SetDefaultBorderStyle default psSolid;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#HoverBrushColor">HoverBrushColor</a></b>: TColor read fHoverBrushColor write SetHoverBrushColor default $FFDAB6;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#HoverBrushStyle">HoverBrushStyle</a></b>: TBrushStyle read fHoverBrushStyle write SetHoverBrushStyle default bsSolid;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#HoverBorderColor">HoverBorderColor</a></b>: TColor read fHoverBorderColor write SetHoverBorderColor default clBlack;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#HoverBorderWidth">HoverBorderWidth</a></b>: Integer read fHoverBorderWidth write SetHoverBorderWidth default 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#HoverBorderStyle">HoverBorderStyle</a></b>: TPenStyle read fHoverBorderStyle write SetHoverBorderStyle default psSolid;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SelectedBrushColor">SelectedBrushColor</a></b>: TColor read fSelectedBrushColor write SetSelectedBrushColor default $000099;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SelectedBrushStyle">SelectedBrushStyle</a></b>: TBrushStyle read fSelectedBrushStyle write SetSelectedBrushStyle default bsSolid;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SelectedBorderColor">SelectedBorderColor</a></b>: TColor read fSelectedBorderColor write SetSelectedBorderColor default clBlack;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SelectedBorderWidth">SelectedBorderWidth</a></b>: Integer read fSelectedBorderWidth write SetSelectedBorderWidth default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#SelectedBorderStyle">SelectedBorderStyle</a></b>: TPenStyle read fSelectedBorderStyle write SetSelectedBorderStyle default psSolid;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#Tag">Tag</a></b>: Integer read fTag write fTag;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#Selected">Selected</a></b>: Boolean read fSelected;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html#IsMouseOver">IsMouseOver</a></b>: Boolean read fIsMouseOver;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(Collection: TCollection); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetIndex"></a><code>procedure <b>SetIndex</b>(Value: Integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveZoneZ"></a><code>procedure <b>MoveZoneZ</b>(NewIndex: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveZone"></a><code>procedure <b>MoveZone</b>(MoveAmount: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BringToFront"></a><code>procedure <b>BringToFront</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendToBack"></a><code>procedure <b>SendToBack</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Select"></a><code>procedure <b>Select</b>(doUpdate: Boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetMouseOver"></a><code>procedure <b>SetMouseOver</b>(MouseOverState: Boolean = true; doUpdate: Boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UnSelect"></a><code>procedure <b>UnSelect</b>(doUpdate: Boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetBorders"></a><code>procedure <b>SetBorders</b>(Key1, Key2: Byte; doUpdate: Boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="KeyInZone"></a><code>function <b>KeyInZone</b>(KeyNr: Byte): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DisplayName"></a><code>property <b>DisplayName</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LowestZoneKey"></a><code>property <b>LowestZoneKey</b>: Byte read fLowestZoneKey write SetLowestZoneKey default 48;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HighestZoneKey"></a><code>property <b>HighestZoneKey</b>: Byte read fHighestZoneKey write SetHighestZoneKey default 59;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Visible"></a><code>property <b>Visible</b>: Boolean read fVisible write SetVisible default true;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DefaultBrushColor"></a><code>property <b>DefaultBrushColor</b>: TColor read fDefaultBrushColor write SetDefaultBrushColor default clSkyBlue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DefaultBrushStyle"></a><code>property <b>DefaultBrushStyle</b>: TBrushStyle read fDefaultBrushStyle write SetDefaultBrushStyle default bsSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DefaultBorderColor"></a><code>property <b>DefaultBorderColor</b>: TColor read fDefaultBorderColor write SetDefaultBorderColor default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DefaultBorderWidth"></a><code>property <b>DefaultBorderWidth</b>: Integer read fDefaultBorderWidth write SetDefaultBorderWidth default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DefaultBorderStyle"></a><code>property <b>DefaultBorderStyle</b>: TPenStyle read fDefaultBorderStyle write SetDefaultBorderStyle default psSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HoverBrushColor"></a><code>property <b>HoverBrushColor</b>: TColor read fHoverBrushColor write SetHoverBrushColor default $FFDAB6;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HoverBrushStyle"></a><code>property <b>HoverBrushStyle</b>: TBrushStyle read fHoverBrushStyle write SetHoverBrushStyle default bsSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HoverBorderColor"></a><code>property <b>HoverBorderColor</b>: TColor read fHoverBorderColor write SetHoverBorderColor default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HoverBorderWidth"></a><code>property <b>HoverBorderWidth</b>: Integer read fHoverBorderWidth write SetHoverBorderWidth default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HoverBorderStyle"></a><code>property <b>HoverBorderStyle</b>: TPenStyle read fHoverBorderStyle write SetHoverBorderStyle default psSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SelectedBrushColor"></a><code>property <b>SelectedBrushColor</b>: TColor read fSelectedBrushColor write SetSelectedBrushColor default $000099;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SelectedBrushStyle"></a><code>property <b>SelectedBrushStyle</b>: TBrushStyle read fSelectedBrushStyle write SetSelectedBrushStyle default bsSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SelectedBorderColor"></a><code>property <b>SelectedBorderColor</b>: TColor read fSelectedBorderColor write SetSelectedBorderColor default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SelectedBorderWidth"></a><code>property <b>SelectedBorderWidth</b>: Integer read fSelectedBorderWidth write SetSelectedBorderWidth default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SelectedBorderStyle"></a><code>property <b>SelectedBorderStyle</b>: TPenStyle read fSelectedBorderStyle write SetSelectedBorderStyle default psSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Tag"></a><code>property <b>Tag</b>: Integer read fTag write fTag;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Selected"></a><code>property <b>Selected</b>: Boolean read fSelected;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IsMouseOver"></a><code>property <b>IsMouseOver</b>: Boolean read fIsMouseOver;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:18</em>
+</span>
+</body></html>

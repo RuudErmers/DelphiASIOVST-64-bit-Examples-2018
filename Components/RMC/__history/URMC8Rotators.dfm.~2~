@@ -1,0 +1,29 @@
+object RMC8RotatorsFrame: TRMC8RotatorsFrame
+  Left = 0
+  Top = 0
+  Width = 800
+  Height = 60
+  DoubleBuffered = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clBlack
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentDoubleBuffered = False
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 800
+    Height = 60
+    Align = alClient
+    Caption = ''
+    RoundRect = 0
+    DoubleBuffered = True
+    Color = clBlack
+    FontSize = 8
+    ExplicitWidth = 1360
+    ExplicitHeight = 200
+  end
+end

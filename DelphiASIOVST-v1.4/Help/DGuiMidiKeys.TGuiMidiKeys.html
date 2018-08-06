@@ -1,0 +1,756 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DGuiMidiKeys: Class TGuiMidiKeys</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGuiMidiKeys"></a><h1 class="cio">Class TGuiMidiKeys</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DGuiMidiKeys.html">DGuiMidiKeys</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGuiMidiKeys = class(<a class="normal"  href="DGuiBaseControl.TGuiBaseControl.html">TGuiBaseControl</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TGuiBaseControl description follows</div><a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TGraphicControl</li>
+<li class="ancestor"><a class="normal"  href="DGuiBaseControl.TGuiBaseControl.html">TGuiBaseControl</a></li>
+<li class="thisitem">TGuiMidiKeys</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#SetKeyColor">SetKeyColor</a></b>(FromKey, ToKey: Byte; BaseColor: TColor = clNone; Over: TColor = clNone; Pressed: TColor = clNone);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#SetKeyVelocity">SetKeyVelocity</a></b>(FromKey, ToKey: Byte; Amount: single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#SetKeyPressed">SetKeyPressed</a></b>(KeyNr: Byte; KeyDown: Boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ReleaseKey">ReleaseKey</a></b>(KeyNr: Byte; ReleaseMouseTriggered: boolean = false);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ReleaseAllKeys">ReleaseAllKeys</a></b>(ReleaseMouseTriggered: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#RemoveKeyColor">RemoveKeyColor</a></b>(FromKey, ToKey: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#AllNotesOff">AllNotesOff</a></b>(MouseTriggeredOnly: Boolean = true; ExceptKey: Integer = -1);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#RedrawBuffer">RedrawBuffer</a></b>(doBufferFlip: Boolean); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#MousePosToKey">MousePosToKey</a></b>(X, Y: Integer; CheckYPos: Boolean = true): Integer; dynamic;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#GetZoneMouseOverType">GetZoneMouseOverType</a></b>(X: Integer; KeyNr: Integer = -1; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a> = nil): <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ScreenCoordOnKey">ScreenCoordOnKey</a></b>(X, Y: Integer; KeyNr: Integer; CheckYPos: Boolean = true): Boolean; dynamic;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#Keys">Keys</a></b>: <a   href="DGuiMidiKeys.html#TGuiKeyArray">TGuiKeyArray</a> read fKeys;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ReleaseMouseBtnOnLeave">ReleaseMouseBtnOnLeave</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#KeyDownMode">KeyDownMode</a></b>: <a   href="DGuiMidiKeys.html#TGuiKeyDownMode">TGuiKeyDownMode</a> read fKeyDownMode write SetKeyDownMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#BorderColor">BorderColor</a></b>: TColor read fBorderColor write SetBorderColor default clBlack;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#KeySeparatorColor">KeySeparatorColor</a></b>: TColor read fKeySeparatorColor write SetKeySeparatorColor default clBlack;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ZoneSeparatorColor">ZoneSeparatorColor</a></b>: TColor read fZoneSeparatorColor write SetZoneSeparatorColor default clBlack;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ZoneBarColor">ZoneBarColor</a></b>: TColor read fZoneBarColor write SetZoneBarColor default clWhite;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ZoneBarHoverColor">ZoneBarHoverColor</a></b>: TColor read fZoneBarHoverColor write SetZoneBarHoverColor default $00CCEEFF;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#BlackKeyColor">BlackKeyColor</a></b>: TColor read fBlackKeyColor write SetBlackKeyColor default $00333333;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#BlackKeyHoverColor">BlackKeyHoverColor</a></b>: TColor read fBlackKeyHoverColor write SetBlackKeyHoverColor default $00666666;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#BlackKeyPressedColor">BlackKeyPressedColor</a></b>: TColor read fBlackKeyPressedColor write SetBlackKeyPressedColor default clSilver;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#WhiteKeyColor">WhiteKeyColor</a></b>: TColor read fWhiteKeyColor write SetWhiteKeyColor default $00F8F8F8;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#WhiteKeyHoverColor">WhiteKeyHoverColor</a></b>: TColor read fWhiteKeyHoverColor write SetWhiteKeyHoverColor default $00DDDDDD;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#WhiteKeyPressedColor">WhiteKeyPressedColor</a></b>: TColor read fWhiteKeyPressedColor write SetWhiteKeyPressedColor default clSilver;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#CursorKeys">CursorKeys</a></b>: TCursor read fCursorKeys write fCursorKeys default crHandPoint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#CursorZoneBar">CursorZoneBar</a></b>: TCursor read fCursorZoneBar write fCursorZoneBar default crDefault;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#CursorZone">CursorZone</a></b>: TCursor read fCursorZone write fCursorZone default crSize;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#CursorZoneBorder">CursorZoneBorder</a></b>: TCursor read fCursorZoneBorder write fCursorZoneBorder default crSizeWE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#Height3d">Height3d</a></b>: Single read fHeight3d write SetHeight3d;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#BlackKeyHeight">BlackKeyHeight</a></b>: Single read fBlackKeyHeight write SetBlackKeyHeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#BaseOctave">BaseOctave</a></b>: Byte read fBaseOctave write SetBaseOctave default 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#NumOctaves">NumOctaves</a></b>: Byte read fNumOctaves write SetNumOctaves default 3;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#IncludeLastOctave">IncludeLastOctave</a></b>: Boolean read fIncludeLastOctave write SetIncludeLastOctave default false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#KeyZones">KeyZones</a></b>: <a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html">TGuiKeyZoneCollection</a> read fKeyZones write SetKeyZones;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#ShowKeyZones">ShowKeyZones</a></b>: Boolean read fShowKeyZones write SetShowKeyZones default True;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#KeyZoneHeight">KeyZoneHeight</a></b>: Integer read fKeyZoneHeight write SetKeyZoneHeight default 10;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#AllowKeyDragging">AllowKeyDragging</a></b>: Boolean read fAllowKeyDragging write fAllowKeyDragging default true;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnMouseUpOnMidiKey">OnMouseUpOnMidiKey</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseUpOnMidiKey">TGuiOnMouseUpOnMidiKey</a> read fOnMouseUpOnMidiKey write fOnMouseUpOnMidiKey;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnMouseUpOnKeyZoneBar">OnMouseUpOnKeyZoneBar</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseUpOnKeyZoneBar">TGuiOnMouseUpOnKeyZoneBar</a> read fOnMouseUpOnKeyZoneBar write fOnMouseUpOnKeyZoneBar;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnMouseDownOnMidiKey">OnMouseDownOnMidiKey</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseDownOnMidiKey">TGuiOnMouseDownOnMidiKey</a> read fOnMouseDownOnMidiKey write fOnMouseDownOnMidiKey;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnMouseDownKeyZoneBar">OnMouseDownKeyZoneBar</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseDownOnKeyZoneBar">TGuiOnMouseDownOnKeyZoneBar</a> read fOnMouseDownOnKeyZoneBar write fOnMouseDownOnKeyZoneBar;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnZoneBarMouseEnter">OnZoneBarMouseEnter</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneBarMouseEnter">TGuiOnZoneBarMouseEnter</a> read fOnZoneBarMouseEnter write fOnZoneBarMouseEnter;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnZoneBarMouseLeave">OnZoneBarMouseLeave</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneBarMouseLeave">TGuiOnZoneBarMouseLeave</a> read fOnZoneBarMouseLeave write fOnZoneBarMouseLeave;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnZoneMouseEnter">OnZoneMouseEnter</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneMouseEnter">TGuiOnZoneMouseEnter</a> read fOnZoneMouseEnter write fOnZoneMouseEnter;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnZoneMouseLeave">OnZoneMouseLeave</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneMouseLeave">TGuiOnZoneMouseLeave</a> read fOnZoneMouseLeave write fOnZoneMouseLeave;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnZoneMouseOverChanged">OnZoneMouseOverChanged</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneMouseOverChanged">TGuiOnZoneMouseOverChanged</a> read fOnZoneMouseOverChanged write fOnZoneMouseOverChanged;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnZoneSelectionChanged">OnZoneSelectionChanged</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneSelectionChanged">TGuiOnZoneSelectionChanged</a> read fOnZoneSelectionChanged write fOnZoneSelectionChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnKeyMouseEnter">OnKeyMouseEnter</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnKeyMouseEnter">TGuiOnKeyMouseEnter</a> read fOnKeyMouseEnter write fOnKeyMouseEnter;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnKeyMouseLeave">OnKeyMouseLeave</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnKeyMouseLeave">TGuiOnKeyMouseLeave</a> read fOnKeyMouseLeave write fOnKeyMouseLeave;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnStartZoneBarDragging">OnStartZoneBarDragging</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnStartZoneBarDragging">TGuiOnStartZoneBarDragging</a> read fOnStartZoneBarDragging write fOnStartZoneBarDragging;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnMoveZoneBarDragging">OnMoveZoneBarDragging</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnMoveZoneBarDragging">TGuiOnMoveZoneBarDragging</a> read fOnMoveZoneBarDragging write fOnMoveZoneBarDragging;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnEndZoneBarDragging">OnEndZoneBarDragging</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnEndZoneBarDragging">TGuiOnEndZoneBarDragging</a> read fOnEndZoneBarDragging write fOnEndZoneBarDragging;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnStartKeyDragging">OnStartKeyDragging</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnStartKeyDragging">TGuiOnStartKeyDragging</a> read fOnStartKeyDragging write fOnStartKeyDragging;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnMoveKeyDragging">OnMoveKeyDragging</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnMoveKeyDragging">TGuiOnMoveKeyDragging</a> read fOnMoveKeyDragging write fOnMoveKeyDragging;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnEndKeyDragging">OnEndKeyDragging</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnEndKeyDragging">TGuiOnEndKeyDragging</a> read fOnEndKeyDragging write fOnEndKeyDragging;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnNoteOn">OnNoteOn</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnNoteOn">TGuiOnNoteOn</a> read fOnNoteOn write fOnNoteOn;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiMidiKeys.TGuiMidiKeys.html#OnNoteOff">OnNoteOff</a></b>: <a   href="DGuiMidiKeys.html#TGuiOnNoteOff">TGuiOnNoteOff</a> read fOnNoteOff write fOnNoteOff;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetKeyColor"></a><code>procedure <b>SetKeyColor</b>(FromKey, ToKey: Byte; BaseColor: TColor = clNone; Over: TColor = clNone; Pressed: TColor = clNone);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetKeyVelocity"></a><code>procedure <b>SetKeyVelocity</b>(FromKey, ToKey: Byte; Amount: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetKeyPressed"></a><code>procedure <b>SetKeyPressed</b>(KeyNr: Byte; KeyDown: Boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReleaseKey"></a><code>procedure <b>ReleaseKey</b>(KeyNr: Byte; ReleaseMouseTriggered: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReleaseAllKeys"></a><code>procedure <b>ReleaseAllKeys</b>(ReleaseMouseTriggered: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RemoveKeyColor"></a><code>procedure <b>RemoveKeyColor</b>(FromKey, ToKey: Byte);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AllNotesOff"></a><code>procedure <b>AllNotesOff</b>(MouseTriggeredOnly: Boolean = true; ExceptKey: Integer = -1);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RedrawBuffer"></a><code>procedure <b>RedrawBuffer</b>(doBufferFlip: Boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MousePosToKey"></a><code>function <b>MousePosToKey</b>(X, Y: Integer; CheckYPos: Boolean = true): Integer; dynamic;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetZoneMouseOverType"></a><code>function <b>GetZoneMouseOverType</b>(X: Integer; KeyNr: Integer = -1; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a> = nil): <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ScreenCoordOnKey"></a><code>function <b>ScreenCoordOnKey</b>(X, Y: Integer; KeyNr: Integer; CheckYPos: Boolean = true): Boolean; dynamic;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Keys"></a><code>property <b>Keys</b>: <a   href="DGuiMidiKeys.html#TGuiKeyArray">TGuiKeyArray</a> read fKeys;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReleaseMouseBtnOnLeave"></a><code>property <b>ReleaseMouseBtnOnLeave</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="KeyDownMode"></a><code>property <b>KeyDownMode</b>: <a   href="DGuiMidiKeys.html#TGuiKeyDownMode">TGuiKeyDownMode</a> read fKeyDownMode write SetKeyDownMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BorderColor"></a><code>property <b>BorderColor</b>: TColor read fBorderColor write SetBorderColor default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="KeySeparatorColor"></a><code>property <b>KeySeparatorColor</b>: TColor read fKeySeparatorColor write SetKeySeparatorColor default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ZoneSeparatorColor"></a><code>property <b>ZoneSeparatorColor</b>: TColor read fZoneSeparatorColor write SetZoneSeparatorColor default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ZoneBarColor"></a><code>property <b>ZoneBarColor</b>: TColor read fZoneBarColor write SetZoneBarColor default clWhite;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ZoneBarHoverColor"></a><code>property <b>ZoneBarHoverColor</b>: TColor read fZoneBarHoverColor write SetZoneBarHoverColor default $00CCEEFF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BlackKeyColor"></a><code>property <b>BlackKeyColor</b>: TColor read fBlackKeyColor write SetBlackKeyColor default $00333333;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BlackKeyHoverColor"></a><code>property <b>BlackKeyHoverColor</b>: TColor read fBlackKeyHoverColor write SetBlackKeyHoverColor default $00666666;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BlackKeyPressedColor"></a><code>property <b>BlackKeyPressedColor</b>: TColor read fBlackKeyPressedColor write SetBlackKeyPressedColor default clSilver;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="WhiteKeyColor"></a><code>property <b>WhiteKeyColor</b>: TColor read fWhiteKeyColor write SetWhiteKeyColor default $00F8F8F8;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="WhiteKeyHoverColor"></a><code>property <b>WhiteKeyHoverColor</b>: TColor read fWhiteKeyHoverColor write SetWhiteKeyHoverColor default $00DDDDDD;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="WhiteKeyPressedColor"></a><code>property <b>WhiteKeyPressedColor</b>: TColor read fWhiteKeyPressedColor write SetWhiteKeyPressedColor default clSilver;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CursorKeys"></a><code>property <b>CursorKeys</b>: TCursor read fCursorKeys write fCursorKeys default crHandPoint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CursorZoneBar"></a><code>property <b>CursorZoneBar</b>: TCursor read fCursorZoneBar write fCursorZoneBar default crDefault;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CursorZone"></a><code>property <b>CursorZone</b>: TCursor read fCursorZone write fCursorZone default crSize;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CursorZoneBorder"></a><code>property <b>CursorZoneBorder</b>: TCursor read fCursorZoneBorder write fCursorZoneBorder default crSizeWE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Height3d"></a><code>property <b>Height3d</b>: Single read fHeight3d write SetHeight3d;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BlackKeyHeight"></a><code>property <b>BlackKeyHeight</b>: Single read fBlackKeyHeight write SetBlackKeyHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BaseOctave"></a><code>property <b>BaseOctave</b>: Byte read fBaseOctave write SetBaseOctave default 3;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NumOctaves"></a><code>property <b>NumOctaves</b>: Byte read fNumOctaves write SetNumOctaves default 3;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IncludeLastOctave"></a><code>property <b>IncludeLastOctave</b>: Boolean read fIncludeLastOctave write SetIncludeLastOctave default false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="KeyZones"></a><code>property <b>KeyZones</b>: <a   href="DGuiMidiKeyZones.TGuiKeyZoneCollection.html">TGuiKeyZoneCollection</a> read fKeyZones write SetKeyZones;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowKeyZones"></a><code>property <b>ShowKeyZones</b>: Boolean read fShowKeyZones write SetShowKeyZones default True;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="KeyZoneHeight"></a><code>property <b>KeyZoneHeight</b>: Integer read fKeyZoneHeight write SetKeyZoneHeight default 10;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AllowKeyDragging"></a><code>property <b>AllowKeyDragging</b>: Boolean read fAllowKeyDragging write fAllowKeyDragging default true;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMouseUpOnMidiKey"></a><code>property <b>OnMouseUpOnMidiKey</b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseUpOnMidiKey">TGuiOnMouseUpOnMidiKey</a> read fOnMouseUpOnMidiKey write fOnMouseUpOnMidiKey;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMouseUpOnKeyZoneBar"></a><code>property <b>OnMouseUpOnKeyZoneBar</b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseUpOnKeyZoneBar">TGuiOnMouseUpOnKeyZoneBar</a> read fOnMouseUpOnKeyZoneBar write fOnMouseUpOnKeyZoneBar;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMouseDownOnMidiKey"></a><code>property <b>OnMouseDownOnMidiKey</b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseDownOnMidiKey">TGuiOnMouseDownOnMidiKey</a> read fOnMouseDownOnMidiKey write fOnMouseDownOnMidiKey;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMouseDownKeyZoneBar"></a><code>property <b>OnMouseDownKeyZoneBar</b>: <a   href="DGuiMidiKeys.html#TGuiOnMouseDownOnKeyZoneBar">TGuiOnMouseDownOnKeyZoneBar</a> read fOnMouseDownOnKeyZoneBar write fOnMouseDownOnKeyZoneBar;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnZoneBarMouseEnter"></a><code>property <b>OnZoneBarMouseEnter</b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneBarMouseEnter">TGuiOnZoneBarMouseEnter</a> read fOnZoneBarMouseEnter write fOnZoneBarMouseEnter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnZoneBarMouseLeave"></a><code>property <b>OnZoneBarMouseLeave</b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneBarMouseLeave">TGuiOnZoneBarMouseLeave</a> read fOnZoneBarMouseLeave write fOnZoneBarMouseLeave;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnZoneMouseEnter"></a><code>property <b>OnZoneMouseEnter</b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneMouseEnter">TGuiOnZoneMouseEnter</a> read fOnZoneMouseEnter write fOnZoneMouseEnter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnZoneMouseLeave"></a><code>property <b>OnZoneMouseLeave</b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneMouseLeave">TGuiOnZoneMouseLeave</a> read fOnZoneMouseLeave write fOnZoneMouseLeave;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnZoneMouseOverChanged"></a><code>property <b>OnZoneMouseOverChanged</b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneMouseOverChanged">TGuiOnZoneMouseOverChanged</a> read fOnZoneMouseOverChanged write fOnZoneMouseOverChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnZoneSelectionChanged"></a><code>property <b>OnZoneSelectionChanged</b>: <a   href="DGuiMidiKeys.html#TGuiOnZoneSelectionChanged">TGuiOnZoneSelectionChanged</a> read fOnZoneSelectionChanged write fOnZoneSelectionChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnKeyMouseEnter"></a><code>property <b>OnKeyMouseEnter</b>: <a   href="DGuiMidiKeys.html#TGuiOnKeyMouseEnter">TGuiOnKeyMouseEnter</a> read fOnKeyMouseEnter write fOnKeyMouseEnter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnKeyMouseLeave"></a><code>property <b>OnKeyMouseLeave</b>: <a   href="DGuiMidiKeys.html#TGuiOnKeyMouseLeave">TGuiOnKeyMouseLeave</a> read fOnKeyMouseLeave write fOnKeyMouseLeave;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnStartZoneBarDragging"></a><code>property <b>OnStartZoneBarDragging</b>: <a   href="DGuiMidiKeys.html#TGuiOnStartZoneBarDragging">TGuiOnStartZoneBarDragging</a> read fOnStartZoneBarDragging write fOnStartZoneBarDragging;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMoveZoneBarDragging"></a><code>property <b>OnMoveZoneBarDragging</b>: <a   href="DGuiMidiKeys.html#TGuiOnMoveZoneBarDragging">TGuiOnMoveZoneBarDragging</a> read fOnMoveZoneBarDragging write fOnMoveZoneBarDragging;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnEndZoneBarDragging"></a><code>property <b>OnEndZoneBarDragging</b>: <a   href="DGuiMidiKeys.html#TGuiOnEndZoneBarDragging">TGuiOnEndZoneBarDragging</a> read fOnEndZoneBarDragging write fOnEndZoneBarDragging;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnStartKeyDragging"></a><code>property <b>OnStartKeyDragging</b>: <a   href="DGuiMidiKeys.html#TGuiOnStartKeyDragging">TGuiOnStartKeyDragging</a> read fOnStartKeyDragging write fOnStartKeyDragging;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMoveKeyDragging"></a><code>property <b>OnMoveKeyDragging</b>: <a   href="DGuiMidiKeys.html#TGuiOnMoveKeyDragging">TGuiOnMoveKeyDragging</a> read fOnMoveKeyDragging write fOnMoveKeyDragging;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnEndKeyDragging"></a><code>property <b>OnEndKeyDragging</b>: <a   href="DGuiMidiKeys.html#TGuiOnEndKeyDragging">TGuiOnEndKeyDragging</a> read fOnEndKeyDragging write fOnEndKeyDragging;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnNoteOn"></a><code>property <b>OnNoteOn</b>: <a   href="DGuiMidiKeys.html#TGuiOnNoteOn">TGuiOnNoteOn</a> read fOnNoteOn write fOnNoteOn;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnNoteOff"></a><code>property <b>OnNoteOff</b>: <a   href="DGuiMidiKeys.html#TGuiOnNoteOff">TGuiOnNoteOff</a> read fOnNoteOff write fOnNoteOff;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:18</em>
+</span>
+</body></html>

@@ -1,0 +1,15 @@
+{ Das ist eine automatisch erzeugte Lazarus-Ressourcendatei }
+
+LazarusResources.Add('TVSTGUI','FORMDATA',[
+  'TPF0'#7'TVSTGUI'#6'VSTGUI'#4'Left'#3't'#1#6'Height'#2'0'#3'Top'#3#219#0#5'Wi'
+  +'dth'#3#178#1#11'BorderStyle'#7#6'bsNone'#7'Caption'#6#23'Simple OpAmp Simul'
+  +'ation'#12'ClientHeight'#2'0'#11'ClientWidth'#3#178#1#5'Color'#2'5'#11'Font.'
+  +'Height'#2#245#9'Font.Name'#6#7'Verdana'#8'OnCreate'#7#10'FormCreate'#6'OnSh'
+  +'ow'#7#8'FormShow'#10'LCLVersion'#6#6'0.9.27'#0#6'TLabel'#6'LbGain'#4'Left'#3
+  +#175#0#6'Height'#2#14#3'Top'#2' '#5'Width'#2'I'#7'Anchors'#11#5'akTop'#0#7'C'
+  +'aption'#6#10'OpAmp Gain'#10'Font.Color'#4#252#3'Z'#0#11'Font.Height'#2#245#9
+  +'Font.Name'#6#7'Verdana'#11'ParentColor'#8#10'ParentFont'#8#0#0#10'TScrollBa'
+  +'r'#6'SBGain'#4'Left'#2#8#6'Height'#2#17#3'Top'#2#8#5'Width'#3#161#1#7'Ancho'
+  +'rs'#11#5'akTop'#6'akLeft'#7'akRight'#0#3'Max'#3#232#3#3'Min'#2'd'#8'PageSiz'
+  +'e'#2#0#8'Position'#2'd'#8'TabOrder'#2#0#8'OnChange'#7#12'SBGainChange'#0#0#0
+]);

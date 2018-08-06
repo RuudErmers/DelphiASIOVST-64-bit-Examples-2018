@@ -1,0 +1,18 @@
+object RMCMixerFrame: TRMCMixerFrame
+  Left = 0
+  Top = 0
+  Width = 1220
+  Height = 230
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1220
+    Height = 230
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    ExplicitLeft = 688
+    ExplicitWidth = 193
+  end
+end

@@ -1,0 +1,2 @@
+download HRTF files from sourceforge and add them here in order to use them
+in the various example plugins.

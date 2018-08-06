@@ -1,0 +1,55 @@
+object RMCEffectsFrame: TRMCEffectsFrame
+  Left = 0
+  Top = 0
+  Width = 640
+  Height = 204
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 640
+    Height = 204
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    object Line1: TPanel
+      Left = 20
+      Top = 64
+      Width = 290
+      Height = 2
+      BorderWidth = 3
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+    object Line2: TPanel
+      Left = 324
+      Top = 64
+      Width = 290
+      Height = 2
+      BorderWidth = 3
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+    object RMCInstruments: TRMCMultiPatternView
+      Left = 96
+      Top = 24
+      Width = 200
+      Height = 105
+      Color = 6956042
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 2
+    end
+  end
+end

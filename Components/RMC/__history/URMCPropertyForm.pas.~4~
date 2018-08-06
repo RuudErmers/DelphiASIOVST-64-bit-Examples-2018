@@ -1,0 +1,212 @@
+unit URMCPropertyForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, URMCControls, URMCConstants,  Vcl.ExtCtrls;
+
+type
+  TRMCPropertyForm = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    PanelEdit: TPanel;
+    RMCElement1: TRMCElement;
+    PanelColors: TPanel;
+    RadioGroupStyle: TRadioGroup;
+    RadioGroupShape: TRadioGroup;
+    ColorBoxButtonOff: TColorBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    ColorBoxButtonOn: TColorBox;
+    CheckBox7Seg: TCheckBox;
+    PanelSliderColor: TPanel;
+    Label3: TLabel;
+    ColorBoxSlider: TColorBox;
+    ButtonResize: TButton;
+    Label4: TLabel;
+    ColorBoxBackColor: TColorBox;
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure RadioGroupStyleClick(Sender: TObject);
+    procedure RadioGroupShapeClick(Sender: TObject);
+    procedure CheckBox7SegClick(Sender: TObject);
+    procedure ColorBoxSliderCloseUp(Sender: TObject);
+    procedure ColorBoxButtonOffCloseUp(Sender: TObject);
+    procedure ColorBoxButtonOnCloseUp(Sender: TObject);
+    procedure ColorBoxBackColorCloseUp(Sender: TObject);
+  private
+    { Private declarations }
+    CurStyle:TRMCStyle;
+    procedure ExitForm(element: TRMCElement);
+    procedure InitForm(element: TRMCElement);
+    procedure SetStyle(style: TRMCStyle;reset:boolean);
+    procedure Update;
+  public
+    { Public declarations }
+    function Execute(element:TRMCElement):boolean;
+  end;
+
+var
+  RMCPropertyForm: TRMCPropertyForm;
+
+implementation
+
+{$R *.dfm}
+
+uses UMyScreen;
+
+procedure TRMCPropertyForm.InitForm(element: TRMCElement);
+begin
+  CurStyle:=tsError;
+  RMCElement1.CopyOptions(element);
+  RMCElement1.MinValue:=element.MinValue;
+  RMCElement1.MaxValue:=element.MaxValue;
+  RMCElement1.Value:=element.Value;
+
+  RMCElement1.SetBounds((PanelEdit.Width - element.Width) DIV 2, (PanelEdit.Height - element.Height) DIV 2, element.Width, element.Height);
+  Update;
+end;
+
+procedure TRMCPropertyForm.RadioGroupShapeClick(Sender: TObject);
+begin
+  case CurStyle of
+  tsRMC:   RMCElement1.Shape:=TRMCKnobShape(ord(trKnob)+RadioGroupShape.ItemIndex);
+  tsRoland:   RMCElement1.Shape:=TRMCKnobShape(ord(tkVCOWave)+RadioGroupShape.ItemIndex);
+  tsVASynth:   RMCElement1.Shape:=TRMCKnobShape(ord(tvKnob)+RadioGroupShape.ItemIndex);
+  tsTwinkle:   RMCElement1.Shape:=TRMCKnobShape(ord(trTwinkle)+RadioGroupShape.ItemIndex);
+  tsSunrise:   RMCElement1.Shape:=TRMCKnobShape(ord(tsKnob)+RadioGroupShape.ItemIndex);
+  end;
+  Update;
+end;
+
+procedure TRMCPropertyForm.RadioGroupStyleClick(Sender: TObject);
+begin
+  SetStyle(TRMCStyle(RadioGroupStyle.ItemIndex),true);
+  Update;
+end;
+
+procedure TRMCPropertyForm.SetStyle(style:TRMCStyle;reset:boolean);
+VAR sl:TStringList;
+begin
+  if CurStyle = Style then exit;
+  CurStyle:=style;
+  sl:=TstringList.Create;
+  case style of
+  tsRMC: begin
+       if reset then RMCElement1.Shape:=trKnob;
+       sl.Add('Knob');sl.Add('Button');sl.Add('Slider');sl.Add('PitchKnob');sl.Add('None');sl.Add('Midi4');sl.Add('LedButton');sl.Add('TextButton');sl.Add('Text');sl.Add('Led');sl.Add('TextLine');
+     end;
+  tsRoland: begin
+       if reset then RMCElement1.Shape:=tkVCOWave;
+       sl.Add('VCO Wave');sl.Add('LFO Wave');sl.Add('Foot');sl.Add('Noise');sl.Add('Value');sl.Add('LFO');sl.Add('None');sl.Add('Slider');sl.Add('SliderMulti');
+     end;
+  tsVASynth: begin
+       if reset then RMCElement1.Shape:=tvKnob;
+       sl.Add('Knob');sl.Add('VCO Wave');sl.Add('VCO Foot');sl.Add('LFO Wave');
+       sl.Add('LFO Select');sl.Add('VCO Foot4');sl.Add('VCO Wave4');sl.Add('LFO 1'); sl.Add('LFO 2');
+     end;
+  tsTwinkle: begin
+       if reset then RMCElement1.Shape:=trTwinkle;
+       sl.Add('Twinkle');
+     end;
+  tsSunrise: begin
+       if reset then RMCElement1.Shape:=tsKnob;
+       sl.Add('Knob');sl.Add('Button');sl.Add('Slider');sl.Add('Led');
+     end;
+   end;
+   RadioGroupShape.Items.Assign(sl);
+
+   sl.Free;
+end;
+
+procedure TRMCPropertyForm.Update;
+begin
+  if RMCElement1.Shape < tkVCOWave then SetStyle(tsRMC,false)
+  else if RMCElement1.Shape < tvKnob then SetStyle(tsRoland,false)
+     else if RMCElement1.Shape < trTwinkle then SetStyle(tsVASynth,false)
+       else if RMCElement1.Shape < tsKnob then SetStyle(tsTwinkle,false)
+       else SetStyle(tsSunrise,false);
+  RadioGroupStyle.ItemIndex:=ord(CurStyle);
+  case CurStyle of
+   tsRMC:   RadioGroupShape.ItemIndex:=ord(RMCElement1.Shape)-ord(trKnob);
+   tsRoland:   RadioGroupShape.ItemIndex:=ord(RMCElement1.Shape)-ord(tkVCOWave);
+   tsVASynth:   RadioGroupShape.ItemIndex:=ord(RMCElement1.Shape)-ord(tvKnob);
+   tsTwinkle:   RadioGroupShape.ItemIndex:=ord(RMCElement1.Shape)-ord(trTwinkle);
+   tsSunrise:   RadioGroupShape.ItemIndex:=ord(RMCElement1.Shape)-ord(tsSunrise);
+  end;
+  if CheckBox7Seg.Checked<>RMCElement1.TextWithSeg7 then
+    CheckBox7Seg.Checked:=RMCElement1.TextWithSeg7;
+  ColorBoxSlider.Selected:=RMCElement1.SliderColor;
+  PanelSliderColor.Visible:=RMCElement1.Shape = trSlider;
+  PanelColors.Visible:=RMCElement1.Shape in [ trTextButton,trLed,trTwinkle,trLedButton];
+  CheckBox7Seg.Visible:=CurStyle=tsRoland;
+  ColorBoxBackColor.Selected:=RMCElement1.Color;
+  ColorBoxButtonOff.Selected:=RMCElement1.ButtonColorOff;
+  ColorBoxButtonOn.Selected:=RMCElement1.ButtonColorOn;
+end;
+
+procedure TRMCPropertyForm.ExitForm(element: TRMCElement);
+begin
+  element.CopyOptions(RMCElement1);
+end;
+
+
+procedure TRMCPropertyForm.FormShow(Sender: TObject);
+begin
+  MyScreen.SetWindowOnScreen(Handle,MyScreen.Monitor(MonitorMain),false,false);
+end;
+
+procedure TRMCPropertyForm.Button3Click(Sender: TObject);
+begin
+  RMCElement1.Shape:=TRMCKnobShape(ord(RMCElement1.Shape)+1);
+  Update;
+end;
+
+procedure TRMCPropertyForm.Button4Click(Sender: TObject);
+begin
+  RMCElement1.Shape:=TRMCKnobShape(ord(RMCElement1.Shape)-1);
+  Update;
+end;
+
+procedure TRMCPropertyForm.CheckBox7SegClick(Sender: TObject);
+begin
+  RMCElement1.TextWithSeg7:=not RMCElement1.TextWithSeg7;
+end;
+
+procedure TRMCPropertyForm.ColorBoxBackColorCloseUp(Sender: TObject);
+begin
+  RMCElement1.Color:=ColorBoxBackColor.Selected;
+  Update;
+end;
+
+procedure TRMCPropertyForm.ColorBoxButtonOffCloseUp(Sender: TObject);
+begin
+  RMCElement1.ButtonColorOff:=ColorBoxButtonOff.Selected;
+  Update;
+end;
+
+procedure TRMCPropertyForm.ColorBoxButtonOnCloseUp(Sender: TObject);
+begin
+  RMCElement1.ButtonColorOn:=ColorBoxButtonOn.Selected;
+  Update;
+end;
+
+procedure TRMCPropertyForm.ColorBoxSliderCloseUp(Sender: TObject);
+begin
+  RMCElement1.SliderColor:=ColorBoxSlider.Selected;
+  Update;
+end;
+
+function TRMCPropertyForm.Execute(element: TRMCElement):boolean;
+begin
+  InitForm(element);
+  result:=ShowModal = mrOK;
+  if result then
+     ExitForm(element);
+end;
+
+end.

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.470,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\URMCSunriseFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.569,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\URMCSunriseOSC.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.142,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCStyleSunrise\URMCSunriseVCF.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.619,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\URMCSunrisePERF.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.542,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCStyleSunrise\URMCSunriseControlPanel.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.720,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\URMCSunriseVCF.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.003,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCStyleSunrise\URMCSunriseFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.058,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCStyleSunrise\URMCSunriseLFO.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.670,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\URMCSunriseVCA.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.827,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMC7Segment.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.478,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\UModularViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.084,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.121,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCStyleSunrise\URMCSunriseVCA.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.519,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\URMCSunriseLFO.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.099,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCStyleSunrise\URMCSunrisePERF.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.376,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCModularView\URMCSunriseControlPanel.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.078,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCStyleSunrise\URMCSunriseOSC.pas</Transaction>
+  </Transactions>
+</BorlandProject>

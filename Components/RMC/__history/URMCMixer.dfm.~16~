@@ -1,0 +1,20 @@
+object RMCMixerFrame: TRMCMixerFrame
+  Left = 0
+  Top = 0
+  Width = 1200
+  Height = 230
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1200
+    Height = 230
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    ExplicitWidth = 1220
+  end
+end

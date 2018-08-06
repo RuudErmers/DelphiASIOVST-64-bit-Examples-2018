@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.416,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.204,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.678,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.dfm=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.868,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\URMCCrumarView.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.678,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.960,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.726,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.408,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\prjCrumarView.dproj=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\prjCrumarVSTSA.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.409,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.413,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.773,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.208,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XRECDS2\XSynthModel.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.901,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\UViewASIOForm.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.350,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMC7Segment.pas=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.726,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.dfm=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.617,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\UCrumarViewTestMain.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.643,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XEffects.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.248,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UDataLayer.pas</Transaction>
+  </Transactions>
+</BorlandProject>

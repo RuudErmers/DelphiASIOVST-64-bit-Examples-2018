@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{979403FE-AACB-4556-9B06-5B6DAE8CEC6C}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="mdaAmbience.dll">Ambience\mdaAmbience.bdsproj</Projects>
+      <Projects Name="mdaBandisto.dll">Bandisto\mdaBandisto.bdsproj</Projects>
+      <Projects Name="mdaBeatBox.dll">BeatBox\mdaBeatBox.bdsproj</Projects>
+      <Projects Name="mdaCombo.dll">Combo\mdaCombo.bdsproj</Projects>
+      <Projects Name="mdaDeess.dll">De-ess\mdaDeess.bdsproj</Projects>
+      <Projects Name="mdaDegrade.dll">Degrade\mdaDegrade.bdsproj</Projects>
+      <Projects Name="mdaDelay.dll">Delay\mdaDelay.bdsproj</Projects>
+      <Projects Name="mdaDetune.dll">Detune\mdaDetune.bdsproj</Projects>
+      <Projects Name="mdaDither.dll">Dither\mdaDither.bdsproj</Projects>
+      <Projects Name="mdaDubDelay.dll">DubDelay\mdaDubDelay.bdsproj</Projects>
+      <Projects Name="mdaDX10.dll">Dx10\mdaDX10.bdsproj</Projects>
+      <Projects Name="mdaDynamics.dll">Dynamics\mdaDynamics.bdsproj</Projects>
+      <Projects Name="mdaEPiano.dll">EPiano\mdaEPiano.bdsproj</Projects>
+      <Projects Name="mdaImage.dll">Image\mdaImage.bdsproj</Projects>
+      <Projects Name="mdaJX10.dll">JX10\mdaJX10.bdsproj</Projects>
+      <Projects Name="mdaLeslie.dll">Leslie\mdaLeslie.bdsproj</Projects>
+      <Projects Name="mdaLimiter.dll">Limiter\mdaLimiter.bdsproj</Projects>
+      <Projects Name="mdaLoopEx.dll">Loopex\mdaLoopEx.bdsproj</Projects>
+      <Projects Name="mdaLoudness.dll">Loudness\mdaLoudness.bdsproj</Projects>
+      <Projects Name="mdaMultiband.dll">Multiband\mdaMultiband.bdsproj</Projects>
+      <Projects Name="mdaOverdrive.dll">Overdrive\mdaOverdrive.bdsproj</Projects>
+      <Projects Name="mdaPiano.dll">Piano\mdaPiano.bdsproj</Projects>
+      <Projects Name="mdaRePsycho.dll">RePsycho!\mdaRePsycho.bdsproj</Projects>
+      <Projects Name="mdaRezFilter.dll">RezFilter\mdaRezFilter.bdsproj</Projects>
+      <Projects Name="mdaRingMod.dll">RingMod\mdaRingMod.bdsproj</Projects>
+      <Projects Name="mdaRoundPan.dll">RoundPan\mdaRoundPan.bdsproj</Projects>
+      <Projects Name="mdaShepard.dll">Shepard\mdaShepard.bdsproj</Projects>
+      <Projects Name="mdaSplitter.dll">Splitter\mdaSplitter.bdsproj</Projects>
+      <Projects Name="mdaStereo.dll">Stereo\mdaStereo.bdsproj</Projects>
+      <Projects Name="mdaSubSynth.dll">SubSynth\mdaSubSynth.bdsproj</Projects>
+      <Projects Name="mdaTalkBox.dll">TalkBox\mdaTalkBox.bdsproj</Projects>
+      <Projects Name="mdaTestTone.dll">TestTone\mdaTestTone.bdsproj</Projects>
+      <Projects Name="mdaThruZero.dll">ThruZero\mdaThruZero.bdsproj</Projects>
+      <Projects Name="mdaTracker.dll">Tracker\mdaTracker.bdsproj</Projects>
+      <Projects Name="mdaTransient.dll">Transient\mdaTransient.bdsproj</Projects>
+      <Projects Name="mdaVocInput.dll">VocInput\mdaVocInput.bdsproj</Projects>
+      <Projects Name="mdaVocoder.dll">Vocoder\mdaVocoder.bdsproj</Projects>
+      <Projects Name="Targets">mdaAmbience.dll mdaBandisto.dll mdaBeatBox.dll mdaCombo.dll mdaDeess.dll mdaDegrade.dll mdaDelay.dll mdaDetune.dll mdaDither.dll mdaDubDelay.dll mdaDX10.dll mdaDynamics.dll mdaEPiano.dll mdaImage.dll mdaJX10.dll mdaLeslie.dll mdaLimiter.dll mdaLoopEx.dll mdaLoudness.dll mdaMultiband.dll mdaOverdrive.dll mdaPiano.dll mdaRePsycho.dll mdaRezFilter.dll mdaRingMod.dll mdaRoundPan.dll mdaShepard.dll mdaSplitter.dll mdaStereo.dll mdaSubSynth.dll mdaTalkBox.dll mdaTestTone.dll mdaThruZero.dll mdaTracker.dll mdaTransient.dll mdaVocInput.dll mdaVocoder.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

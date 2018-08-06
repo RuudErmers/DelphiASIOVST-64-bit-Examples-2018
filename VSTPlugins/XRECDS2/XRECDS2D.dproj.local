@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.770,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XChorus.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.313,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XReverb.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.784,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XReverb.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.934,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XEffects.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XEffectsBase.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.005,=C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XEffects.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.783,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XChorus.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.143,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\UIXPlugin.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.603,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UVirtCC.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.623,C:\Users\Ruud\Documents\Projects\Common\UTickCount.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.354,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XSynthModule.dfm=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XSynthModule.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.986,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XSynthMainFrame.dfm=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XSynthMainFrame.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.772,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\UFormEffects.dfm=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\UFormEffects.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.815,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XMoogFilter.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XMoogFilter.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.921,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\UCrumarViewFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.722,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\UCrumarViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.333,C:\Users\Ruud\Documents\Projects\Midimania\Super52\Model\ULog.pas=C:\Users\Ruud\Documents\Projects\Midimania\Super52\Utils\ULog.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.188,C:\Users\Ruud\Documents\Projects\Midimania\Super52\Utils\ULog.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.592,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.388,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitSlicer.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.378,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRECDS2\XPluginCDRECDS2.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRECDS2\XPluginRECDS2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.034,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XEffects.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XEffects.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.986,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XSynthMainFrame.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XSynthMainFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.768,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMC7Segment.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.267,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\UFormEffects.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.344,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UDataLayer.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.339,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XPhaser.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.784,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XPhaser.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.797,=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XSynthModelBase.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.050,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XSynthModelBase.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\UXPluginBase.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.035,=C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XEffects64.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.218,=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRECDS2\XSynthModel.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.458,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRECDS2\XSynthModel.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRECDS2\XPluginCDRECDS2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.379,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XOscillator.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XOscillator.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.905,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\URMCCrumarView.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.044,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\URMCCrumarView.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.984,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRECDS2\XSynthModel.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRECDS2\XPluginFactory.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.686,=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\UFormEffects.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.783,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XDelay.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.452,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XDelay.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.472,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\URMCVSTView.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.314,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\URMCVSTView.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.484,=C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\USampleValue.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.851,=C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\UIXPlugin.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.229,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UMidiEvent.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.279,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\UIXPlugin.pas=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\UIXPlugin.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.354,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\XSynthModule.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\XSynthModule.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.772,C:\Users\Ruud\Documents\Projects\Midimania\VSTShared\UFormEffects.pas=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XRESynth\UFormEffects.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.413,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCVST\XEffects.pas</Transaction>
+  </Transactions>
+</BorlandProject>

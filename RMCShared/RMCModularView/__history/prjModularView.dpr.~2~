@@ -1,0 +1,27 @@
+program prjModularView;
+
+uses
+  Vcl.Forms,
+  UModularViewTestMain in 'UModularViewTestMain.pas' {Form1},
+  URMCEmptyPanel in '..\..\Components\RMC\URMCEmptyPanel.pas',
+  URMCControls in '..\..\Components\RMC\URMCControls.pas',
+  URMCConstants in '..\..\Components\RMC\URMCConstants.pas',
+  URMCBaseControlPanel in '..\..\Components\RMC\URMCBaseControlPanel.pas',
+  UKnobEditor in '..\..\Components\RMC\UKnobEditor.pas',
+  URMCShape in '..\..\Components\RMC\URMCShape.pas',
+  UModularView in 'UModularView.pas',
+  UModularViewFrame in 'UModularViewFrame.pas' {CrumarViewFrame: TFrame},
+  UVirtCC in '..\..\Common\UVirtCC.pas',
+  UMidiPorts in '..\..\Common\UMidiPorts.pas',
+  UMidiEvent in '..\..\Common\UMidiEvent.pas',
+  UMidiNrpn in '..\..\Common\UMidiNrpn.pas',
+  MidiBase in '..\..\Common\MidiBase.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

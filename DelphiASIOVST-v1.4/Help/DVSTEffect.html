@@ -1,0 +1,2386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTEffect</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit DVSTEffect</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>uses</td><td><a class="section"  href="#@Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section"  href="#@FuncsProcs">Functions and Procedures</a></td><td><a class="section"  href="#@Types">Types</a></td><td><a class="section"  href="#@Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="@Description"></a><h2 class="description">Description</h2>
+&nbsp;<a name="@Uses"></a><h2 class="overview">Overview</h2>
+<a name="@Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="DVSTEffect.TVSTEffect.html"><code>TVSTEffect</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstEvent.html"><code>TVstEvent</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstEvents.html"><code>TVstEvents</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="DVSTEffect.TVstMidiEvent.html"><code>TVstMidiEvent</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="DVSTEffect.TVstMidiSysexEvent.html"><code>TVstMidiSysexEvent</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstTimeInfo.html"><code>TVstTimeInfo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstVariableIo.html"><code>TVstVariableIo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstParameterProperties.html"><code>TVstParameterProperties</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstPinProperties.html"><code>TVstPinProperties</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TMidiProgramName.html"><code>TMidiProgramName</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TMidiProgramCategory.html"><code>TMidiProgramCategory</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TMidiKeyName.html"><code>TMidiKeyName</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="DVSTEffect.TVstSpeakerProperties.html"><code>TVstSpeakerProperties</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="DVSTEffect.TVstSpeakerArrangement.html"><code>TVstSpeakerArrangement</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstOfflineTask.html"><code>TVstOfflineTask</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstAudioFile.html"><code>TVstAudioFile</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstAudioFileMarker.html"><code>TVstAudioFileMarker</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstWindow.html"><code>TVstWindow</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstKeyCode.html"><code>TVstKeyCode</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstFileType.html"><code>TVstFileType</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstFileSelect.html"><code>TVstFileSelect</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TVstPatchChunkInfo.html"><code>TVstPatchChunkInfo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TFXPreset.html"><code>TFXPreset</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TFXChunkSet.html"><code>TFXChunkSet</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TFXSet.html"><code>TFXSet</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DVSTEffect.TFXChunkBank.html"><code>TFXChunkBank</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="DVSTEffect.ERect.html"><code>ERect</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="@FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DVSTEffect.html#FourCharToLong">FourCharToLong</a></b>(C1, C2, C3, C4: Char): Longint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DVSTEffect.html#FMod">FMod</a></b>(d1, d2: Double): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DVSTEffect.html#Rect">Rect</a></b>(Left, Top, Right, Bottom : Smallint):<a   href="DVSTEffect.ERect.html">ERect</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DVSTEffect.html#dB2string">dB2string</a></b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="DVSTEffect.html#dB2stringRound">dB2stringRound</a></b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DVSTEffect.html#float2string">float2string</a></b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="DVSTEffect.html#long2string">long2string</a></b>(value: Longint; text: PChar);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DVSTEffect.html#float2stringAsLong">float2stringAsLong</a></b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="DVSTEffect.html#Hz2string">Hz2string</a></b>(samples, sampleRate: Single; text: PChar);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DVSTEffect.html#ms2string">ms2string</a></b>(samples, sampleRate: Single; text: PChar);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DVSTEffect.html#gapSmallValue">gapSmallValue</a></b>(value, maxValue: Double): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DVSTEffect.html#invGapSmallValue">invGapSmallValue</a></b>(value, maxValue: Double): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DVSTEffect.html#Opcode2String">Opcode2String</a></b>(opcode: <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DVSTEffect.html#KeyCodeToInteger">KeyCodeToInteger</a></b>(VKC:<a   href="DVSTEffect.TVstKeyCode.html">TVstKeyCode</a>):Integer;</code></td>
+</tr>
+</table>
+<a name="@Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PPSingle">PPSingle</a></b> = &circ;PSingle;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PPDouble">PPDouble</a></b> = &circ;PDouble;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a></b> = &circ;<a   href="DVSTEffect.TVSTEffect.html">TVSTEffect</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TProcessPrecision">TProcessPrecision</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TAudioMasterOpcode">TAudioMasterOpcode</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TAudioMasterCallbackFunc">TAudioMasterCallbackFunc</a></b> = function(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Opcode: <a   href="DVSTEffect.html#TAudioMasterOpcode">TAudioMasterOpcode</a>; Index, Value: Integer; Ptr: Pointer; Opt: Single): LongInt; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TDispatcherFunc">TDispatcherFunc</a></b> = function(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Opcode : <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>; Index, Value: Integer; Ptr: Pointer; Opt: Single): LongInt; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TProcessProc">TProcessProc</a></b> = procedure(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; Sampleframes: Integer); cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TProcessDoubleProc">TProcessDoubleProc</a></b> = procedure(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Inputs, Outputs: <a   href="DVSTEffect.html#PPDouble">PPDouble</a>; Sampleframes: Integer); cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TSetParameterProc">TSetParameterProc</a></b> = procedure(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Index: Longint; Parameter: Single); cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TGetParameterFunc">TGetParameterFunc</a></b> = function(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Index: LongInt): Single; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TMainProc">TMainProc</a></b> = function(<a   href="DVSTHost.html#audioMaster">audioMaster</a>: <a   href="DVSTEffect.html#TAudioMasterCallbackFunc">TAudioMasterCallbackFunc</a>): <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TEffFlag">TEffFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TEffFlags">TEffFlags</a></b> = set of <a   href="DVSTEffect.html#TEffFlag">TEffFlag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVSTEventType">TVSTEventType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstEvent">PVstEvent</a></b> = &circ;<a   href="DVSTEffect.TVstEvent.html">TVstEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstEvents">PVstEvents</a></b> = &circ;<a   href="DVSTEffect.TVstEvents.html">TVstEvents</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstMidiEventFlag">TVstMidiEventFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstMidiEventFlags">TVstMidiEventFlags</a></b> = set of <a   href="DVSTEffect.html#TVstMidiEventFlag">TVstMidiEventFlag</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstMidiEvent">PVstMidiEvent</a></b> = &circ;<a   href="DVSTEffect.TVstMidiEvent.html">TVstMidiEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstMidiSysexEvent">PVstMidiSysexEvent</a></b> = &circ;<a   href="DVSTEffect.TVstMidiSysexEvent.html">TVstMidiSysexEvent</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstTimeInfoFlag">TVstTimeInfoFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstTimeInfoFlags">TVstTimeInfoFlags</a></b> = set of <a   href="DVSTEffect.html#TVstTimeInfoFlag">TVstTimeInfoFlag</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstTimeInfo">PVstTimeInfo</a></b> = &circ;<a   href="DVSTEffect.TVstTimeInfo.html">TVstTimeInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstVariableIo">PVstVariableIo</a></b> = &circ;<a   href="DVSTEffect.TVstVariableIo.html">TVstVariableIo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstHostLanguage">TVstHostLanguage</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstParameterPropertiesFlag">TVstParameterPropertiesFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstParameterPropertiesFlags">TVstParameterPropertiesFlags</a></b> = set of <a   href="DVSTEffect.html#TVstParameterPropertiesFlag">TVstParameterPropertiesFlag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstParameterProperties">PVstParameterProperties</a></b> = &circ;<a   href="DVSTEffect.TVstParameterProperties.html">TVstParameterProperties</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstPinPropertiesFlag">TVstPinPropertiesFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstPinPropertiesFlags">TVstPinPropertiesFlags</a></b> = set of <a   href="DVSTEffect.html#TVstPinPropertiesFlag">TVstPinPropertiesFlag</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstPinProperties">PVstPinProperties</a></b> = &circ;<a   href="DVSTEffect.TVstPinProperties.html">TVstPinProperties</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TMidiProgramNameFlag">TMidiProgramNameFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TMidiProgramNameFlags">TMidiProgramNameFlags</a></b> = set of <a   href="DVSTEffect.html#TMidiProgramNameFlag">TMidiProgramNameFlag</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PMidiProgramName">PMidiProgramName</a></b> = &circ;<a   href="DVSTEffect.TMidiProgramName.html">TMidiProgramName</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PMidiProgramCategory">PMidiProgramCategory</a></b> = &circ;<a   href="DVSTEffect.TMidiProgramCategory.html">TMidiProgramCategory</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PMidiKeyName">PMidiKeyName</a></b> = &circ;<a   href="DVSTEffect.TMidiKeyName.html">TMidiKeyName</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstSpeakerType">TVstSpeakerType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstSpeakerProperties">PVstSpeakerProperties</a></b> = &circ;<a   href="DVSTEffect.TVstSpeakerProperties.html">TVstSpeakerProperties</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstSpeakerArrangement">PVstSpeakerArrangement</a></b> = &circ;<a   href="DVSTEffect.TVstSpeakerArrangement.html">TVstSpeakerArrangement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstSpeakerArrangementType">TVstSpeakerArrangementType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstOfflineTaskFlag">TVstOfflineTaskFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstOfflineTaskFlags">TVstOfflineTaskFlags</a></b> = set of <a   href="DVSTEffect.html#TVstOfflineTaskFlag">TVstOfflineTaskFlag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstOfflineTask">PVstOfflineTask</a></b> = &circ;<a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstOfflineOption">TVstOfflineOption</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstAudioFileFlag">TVstAudioFileFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstAudioFileFlags">TVstAudioFileFlags</a></b> = set of <a   href="DVSTEffect.html#TVstAudioFileFlag">TVstAudioFileFlag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstAudioFile">PVstAudioFile</a></b> = &circ;<a   href="DVSTEffect.TVstAudioFile.html">TVstAudioFile</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstAudioFileMarker">PVstAudioFileMarker</a></b> = &circ;<a   href="DVSTEffect.TVstAudioFileMarker.html">TVstAudioFileMarker</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstWindow">PVstWindow</a></b> = &circ;<a   href="DVSTEffect.TVstWindow.html">TVstWindow</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstKeyCode">PVstKeyCode</a></b> = &circ;<a   href="DVSTEffect.TVstKeyCode.html">TVstKeyCode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstVirtualKey">TVstVirtualKey</a></b> = LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstModifierKeys">TVstModifierKeys</a></b> = LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstFileType">PVstFileType</a></b> = &circ;<a   href="DVSTEffect.TVstFileType.html">TVstFileType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstFileCommand">TVstFileCommand</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstFileTypeType">TVstFileTypeType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstFileSelect">PVstFileSelect</a></b> = &circ;<a   href="DVSTEffect.TVstFileSelect.html">TVstFileSelect</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PVstPatchChunkInfo">PVstPatchChunkInfo</a></b> = &circ;<a   href="DVSTEffect.TVstPatchChunkInfo.html">TVstPatchChunkInfo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#TVstPanLawType">TVstPanLawType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PPERect">PPERect</a></b> = &circ;<a   href="DVSTEffect.html#PERect">PERect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#PERect">PERect</a></b> = &circ;<a   href="DVSTEffect.ERect.html">ERect</a>;</code></td>
+</tr>
+</table>
+<a name="@Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#kEffectMagic">kEffectMagic</a></b> = 'VstP';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_BACK">VKEY_BACK</a></b>         = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_TAB">VKEY_TAB</a></b>          = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_CLEAR">VKEY_CLEAR</a></b>        = 3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_RETURN">VKEY_RETURN</a></b>       = 4;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_PAUSE">VKEY_PAUSE</a></b>        = 5;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_ESCAPE">VKEY_ESCAPE</a></b>       = 6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_SPACE">VKEY_SPACE</a></b>        = 7;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NEXT">VKEY_NEXT</a></b>         = 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_END">VKEY_END</a></b>          = 9;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_HOME">VKEY_HOME</a></b>         = 10;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_LEFT">VKEY_LEFT</a></b>         = 11;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_UP">VKEY_UP</a></b>           = 12;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_RIGHT">VKEY_RIGHT</a></b>        = 13;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_DOWN">VKEY_DOWN</a></b>         = 14;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_PAGEUP">VKEY_PAGEUP</a></b>       = 15;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_PAGEDOWN">VKEY_PAGEDOWN</a></b>     = 16;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_SELECT">VKEY_SELECT</a></b>       = 17;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_PRINT">VKEY_PRINT</a></b>        = 18;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_ENTER">VKEY_ENTER</a></b>        = 19;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_SNAPSHOT">VKEY_SNAPSHOT</a></b>     = 20;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_INSERT">VKEY_INSERT</a></b>       = 21;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_DELETE">VKEY_DELETE</a></b>       = 22;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_HELP">VKEY_HELP</a></b>         = 23;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD0">VKEY_NUMPAD0</a></b>      = 24;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD1">VKEY_NUMPAD1</a></b>      = 25;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD2">VKEY_NUMPAD2</a></b>      = 26;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD3">VKEY_NUMPAD3</a></b>      = 27;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD4">VKEY_NUMPAD4</a></b>      = 28;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD5">VKEY_NUMPAD5</a></b>      = 29;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD6">VKEY_NUMPAD6</a></b>      = 30;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD7">VKEY_NUMPAD7</a></b>      = 31;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD8">VKEY_NUMPAD8</a></b>      = 32;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMPAD9">VKEY_NUMPAD9</a></b>      = 33;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_MULTIPLY">VKEY_MULTIPLY</a></b>     = 34;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_ADD">VKEY_ADD</a></b>          = 35;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_SEPARATOR">VKEY_SEPARATOR</a></b>    = 36;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_SUBTRACT">VKEY_SUBTRACT</a></b>     = 37;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_DECIMAL">VKEY_DECIMAL</a></b>      = 38;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_DIVIDE">VKEY_DIVIDE</a></b>       = 39;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F1">VKEY_F1</a></b>           = 40;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F2">VKEY_F2</a></b>           = 41;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F3">VKEY_F3</a></b>           = 42;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F4">VKEY_F4</a></b>           = 43;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F5">VKEY_F5</a></b>           = 44;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F6">VKEY_F6</a></b>           = 45;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F7">VKEY_F7</a></b>           = 46;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F8">VKEY_F8</a></b>           = 47;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F9">VKEY_F9</a></b>           = 48;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F10">VKEY_F10</a></b>          = 49;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F11">VKEY_F11</a></b>          = 50;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_F12">VKEY_F12</a></b>          = 51;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_NUMLOCK">VKEY_NUMLOCK</a></b>      = 52;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_SCROLL">VKEY_SCROLL</a></b>       = 53;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_SHIFT">VKEY_SHIFT</a></b>        = 54;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_CONTROL">VKEY_CONTROL</a></b>      = 55;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_ALT">VKEY_ALT</a></b>          = 56;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#VKEY_EQUALS">VKEY_EQUALS</a></b>       = 57;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#MODIFIER_SHIFT">MODIFIER_SHIFT</a></b> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#MODIFIER_ALTERNATE">MODIFIER_ALTERNATE</a></b> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#MODIFIER_COMMAND">MODIFIER_COMMAND</a></b> = 4;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#MODIFIER_CONTROL">MODIFIER_CONTROL</a></b> = 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#cMagic">cMagic</a></b>           = 'CcnK';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#presetMagic">presetMagic</a></b>      = 'FxCk';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#bankMagic">bankMagic</a></b>        = 'FxBk';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#chunkPresetMagic">chunkPresetMagic</a></b> = 'FPCh';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#chunkBankMagic">chunkBankMagic</a></b>   = 'FBCh';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#chunkGlobalMagic">chunkGlobalMagic</a></b> = 'FxCh';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.html#fMagic">fMagic</a></b>           = <a   href="DVSTEffect.html#presetMagic">presetMagic</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FourCharToLong"></a><code>function <b>FourCharToLong</b>(C1, C2, C3, C4: Char): Longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FMod"></a><code>function <b>FMod</b>(d1, d2: Double): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Rect"></a><code>function <b>Rect</b>(Left, Top, Right, Bottom : Smallint):<a   href="DVSTEffect.ERect.html">ERect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="dB2string"></a><code>procedure <b>dB2string</b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="dB2stringRound"></a><code>procedure <b>dB2stringRound</b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="float2string"></a><code>procedure <b>float2string</b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="long2string"></a><code>procedure <b>long2string</b>(value: Longint; text: PChar);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="float2stringAsLong"></a><code>procedure <b>float2stringAsLong</b>(value: Single; text: PChar);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Hz2string"></a><code>procedure <b>Hz2string</b>(samples, sampleRate: Single; text: PChar);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ms2string"></a><code>procedure <b>ms2string</b>(samples, sampleRate: Single; text: PChar);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="gapSmallValue"></a><code>function <b>gapSmallValue</b>(value, maxValue: Double): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="invGapSmallValue"></a><code>function <b>invGapSmallValue</b>(value, maxValue: Double): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Opcode2String"></a><code>function <b>Opcode2String</b>(opcode: <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="KeyCodeToInteger"></a><code>function <b>KeyCodeToInteger</b>(VKC:<a   href="DVSTEffect.TVstKeyCode.html">TVstKeyCode</a>):Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPSingle"></a><code><b>PPSingle</b> = &circ;PSingle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPDouble"></a><code><b>PPDouble</b> = &circ;PDouble;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVSTEffect"></a><code><b>PVSTEffect</b> = &circ;<a   href="DVSTEffect.TVSTEffect.html">TVSTEffect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TDispatcherOpcode"></a><code><b>TDispatcherOpcode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+effOpen: </li>
+<li>
+effClose: 0: initialise</li>
+<li>
+effSetProgram: 1: exit, release all memory and other resources!</li>
+<li>
+effGetProgram: 2: program no in &lt;value&gt;</li>
+<li>
+effSetProgramName: 3: return current program no.</li>
+<li>
+effGetProgramName: 4: user changed program name (max 24 char + 0) to as passed in string</li>
+<li>
+effGetParamLabel: 5: stuff program name (max 24 char + 0) into string</li>
+<li>
+effGetParamDisplay: 6: stuff parameter &lt;index&gt; label (max 8 char + 0) into string (examples: sec, dB, type)</li>
+<li>
+effGetParamName: 7: stuff parameter &lt;index&gt; textual representation into string (examples: 0.5, -3, PLATE)</li>
+<li>
+effGetVu: 8: stuff parameter &lt;index&gt; label (max 8 char + 0) into string (examples: Time, Gain, RoomType)</li>
+<li>
+effSetSampleRate: 9: NOT USED SINCE 2.4 - called if (flags &amp; (effFlagsHasClip | effFlagsHasVu)) system</li>
+<li>
+effSetBlockSize: 10: in opt (float value in Hz; for example 44100.0Hz)</li>
+<li>
+effMainsChanged: 11: in value (this is the maximun size of an audio block, pls check sampleframes in process call)</li>
+<li>
+effEditGetRect: 12: the user has switched the 'power on' button to value (0 off, else on). This only switches audio processing; you should flush delay buffers etc. editor</li>
+<li>
+effEditOpen: 13: stuff rect (top, left, bottom, right) into ptr</li>
+<li>
+effEditClose: 14: system dependant Window Pointer in ptr</li>
+<li>
+effEditDraw: 15: no arguments</li>
+<li>
+effEditMouse: 16: NOT USED SINCE 2.4 - draw method, ptr points to rect (MAC only)</li>
+<li>
+effEditKey: 17: NOT USED SINCE 2.4 - index: x, value: y (MAC only)</li>
+<li>
+effEditIdle: 18: NOT USED SINCE 2.4 - system keycode in value</li>
+<li>
+effEditTop: 19: no arguments. Be gentle!</li>
+<li>
+effEditSleep: 20: NOT USED SINCE 2.4 - window has topped, no arguments</li>
+<li>
+effIdentify: 21: NOT USED SINCE 2.4 - window goes to background new</li>
+<li>
+effGetChunk: 22: NOT USED SINCE 2.4 - returns 'NvEf'</li>
+<li>
+effSetChunk: 23: host requests Pointer to chunk into (void**)ptr, ByteSize returned</li>
+<li>
+effProcessEvents: 24: plug-in receives saved chunk, ByteSize passed VstEvents</li>
+<li>
+effCanBeAutomated: 25: VstEvents* in &lt;ptr&gt; parameters and programs</li>
+<li>
+effString2Parameter: 26: parameter index in &lt;index&gt;</li>
+<li>
+effGetNumProgramCategories: 27: parameter index in &lt;index&gt;, string in &lt;ptr&gt;</li>
+<li>
+effGetProgramNameIndexed: 28: NOT USED IN 2.4 - no arguments. this is for dividing programs into groups (like GM)</li>
+<li>
+effCopyProgram: 29: get program name of category &lt;value&gt;, program &lt;index&gt; into &lt;ptr&gt;. category (that is, &lt;value&gt;) may be -1, in which case program indices are enumerated linearily (as usual); otherwise, each category starts over with index 0.</li>
+<li>
+effConnectInput: 30: NOT USED IN 2.4 - copy current program to destination &lt;index&gt;, note: implies setParameter connections, configuration</li>
+<li>
+effConnectOutput: 31: NOT USED IN 2.4 - input at &lt;index&gt; has been (dis-)connected; &lt;value&gt; == 0: disconnected, else connected</li>
+<li>
+effGetInputProperties: 32: NOT USED IN 2.4 - same as input</li>
+<li>
+effGetOutputProperties: 33: &lt;index&gt;, VstPinProperties* in ptr, return != 0 =&gt; true</li>
+<li>
+effGetPlugCategory: 34: dto</li>
+<li>
+effGetCurrentPosition: 35: no parameter, return value is category realtime</li>
+<li>
+effGetDestinationBuffer: 36: NOT USED IN 2.4 - for external dsp, see flag bits below</li>
+<li>
+effOfflineNotify: 37: NOT USED IN 2.4 - for external dsp, see flag bits below. returns float* offline</li>
+<li>
+effOfflinePrepare: 38: ptr = VstAudioFile array, value = count, index = start flag</li>
+<li>
+effOfflineRun: 39: ptr = VstOfflineTask array, value = count</li>
+<li>
+effProcessVarIo: 40: dto other</li>
+<li>
+effSetSpeakerArrangement: 41: VstVariableIo* in &lt;ptr&gt;</li>
+<li>
+effSetBlockSizeAndSampleRate: 42: VstSpeakerArrangement* pluginInput in &lt;value&gt; VstSpeakerArrangement* pluginOutput in &lt;ptr&gt;</li>
+<li>
+effSetBypass: 43: NOT USED IN 2.4 - block size in &lt;value&gt;, sampleRate in &lt;opt&gt;</li>
+<li>
+effGetEffectName: 44: onOff in &lt;value&gt; (0 = off)</li>
+<li>
+effGetErrorText: 45: char* name (max 32 Bytes) in &lt;ptr&gt;</li>
+<li>
+effGetVendorString: 46: NOT USED IN 2.4 - char* text (max 256 Bytes) in &lt;ptr&gt;</li>
+<li>
+effGetProductString: 47: fills &lt;ptr&gt; with a string identifying the vendor (max 64 char)</li>
+<li>
+effGetVendorVersion: 48: fills &lt;ptr&gt; with a string with product name (max 64 char)</li>
+<li>
+effVendorSpecific: 49: returns vendor-specific version</li>
+<li>
+effCanDo: 50: no definition, vendor specific handling</li>
+<li>
+effGetTailSize: 51: &lt;ptr&gt;</li>
+<li>
+effIdle: 52: returns tail size; 0 is default (return 1 for 'no tail')</li>
+<li>
+effGetIcon: 53: idle call in response to audioMasterneedIdle. must NOT USED IN 2.4 - return 1 to keep idle calls beeing issued gui</li>
+<li>
+effSetViewPosition: 54: NOT USED IN 2.4 - void* in &lt;ptr&gt;, not yet defined</li>
+<li>
+effGetParameterProperties: 55: NOT USED IN 2.4 - set view position (in window) to x &lt;index&gt; y &lt;value&gt; and...</li>
+<li>
+effKeysRequired: 56: of param &lt;index&gt;, VstParameterProperties* in &lt;ptr&gt;</li>
+<li>
+effGetVstVersion: 57: NOT USED IN 2.4 - returns 0: needs keys (default for 1.0 plugs), 1: don't need</li>
+<li>
+effEditKeyDown: 58: returns 2; older versions return 0</li>
+<li>
+effEditKeyUp: 59: character in &lt;index&gt;, virtual in &lt;value&gt;, modifiers in &lt;opt&gt; return -1 if not used, return 1 if used</li>
+<li>
+effSetEditKnobMode: 60: character in &lt;index&gt;, virtual in &lt;value&gt;, modifiers in &lt;opt&gt; return -1 if not used, return 1 if used</li>
+<li>
+effGetMidiProgramName: 61: mode in &lt;value&gt;: 0: circular, 1:circular relativ, 2:linear midi plugins channeldependent programs</li>
+<li>
+effGetCurrentMidiProgram: 62: passed &lt;ptr&gt; points to MidiProgramName struct. struct will be filled with information for 'thisProgramIndex'. returns number of used programIndexes. if 0 is returned, no MidiProgramNames supported.</li>
+<li>
+effGetMidiProgramCategory: 63: returns the programIndex of the current program. passed &lt;ptr&gt; points to MidiProgramName struct. struct will be filled with information for the current program.</li>
+<li>
+effHasMidiProgramsChanged: 64: passed &lt;ptr&gt; points to MidiProgramCategory struct. struct will be filled with information for 'thisCategoryIndex'. returns number of used categoryIndexes. if 0 is returned, no MidiProgramCategories supported.</li>
+<li>
+effGetMidiKeyName: 65: returns 1 if the MidiProgramNames or MidiKeyNames had changed on this channel, 0 otherwise. &lt;ptr&gt; ignored.</li>
+<li>
+effBeginSetProgram: 66: passed &lt;ptr&gt; points to MidiKeyName struct. struct will be filled with information for 'thisProgramIndex' and 'thisKeyNumber'. If keyName is &quot;&quot; the standard name of the key will be displayed. If 0 is returned, no MidiKeyNames are defined for 'thisProgramIndex'.</li>
+<li>
+effEndSetProgram: 67: called before a new program is loaded</li>
+<li>
+effGetSpeakerArrangement: 68: called when the program is loaded</li>
+<li>
+effShellGetNextPlugin: 69: VstSpeakerArrangement** pluginInput in &lt;value&gt; VstSpeakerArrangement** pluginOutput in &lt;ptr&gt;</li>
+<li>
+effStartProcess: 70: This opcode is only called, if plugin is of type kPlugCategShell. returns the next plugin's uniqueID. &lt;ptr&gt; points to a char buffer of size 64, which is to be filled with the name of the plugin including the terminating zero.</li>
+<li>
+effStopProcess: 71: Called before the start of process call</li>
+<li>
+effSetTotalSampleToProcess: 72: Called after the stop of process call</li>
+<li>
+effSetPanLaw: 73: Called in offline (non RealTime) Process before process is called, indicates how many sample will be processed</li>
+<li>
+effBeginLoadBank: 74: PanLaw : Type (Linear, Equal Power,.. see enum PanLaw Type) in &lt;value&gt;, Gain in &lt;opt&gt;: for Linear : [1.0 =&gt; 0dB PanLaw], [&tilde;0.58 =&gt; -4.5dB], [0.5 =&gt; -6.02dB]</li>
+<li>
+effBeginLoadProgram: 75: Called before a Bank is loaded, &lt;ptr&gt; points to VstPatchChunkInfo structure return -1 if the Bank can not be loaded, return 1 if it can be loaded else 0 (for compatibility)</li>
+<li>
+effSetProcessPrecision: 76: Called before a Program is loaded, &lt;ptr&gt; points to VstPatchChunkInfo structure return -1 if the Program can not be loaded, return 1 if it can be loaded else 0 (for compatibility)</li>
+<li>
+effGetNumMidiInputChannels: 77: see TProcessPrecision</li>
+<li>
+effGetNumMidiOutputChannels: 78: return number of used MIDI input channels (1-15) @see AudioEffectX::getNumMidiInputChannels</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TProcessPrecision"></a><code><b>TProcessPrecision</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+79: return number of used MIDI output channels (1-15) @see AudioEffectX::getNumMidiOutputChannels</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pp32: single precision float (32bits)</li>
+<li>
+pp64: double precision (64bits)</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAudioMasterOpcode"></a><code><b>TAudioMasterOpcode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+audioMasterAutomate: </li>
+<li>
+audioMasterVersion: 0: index, value, returns 0</li>
+<li>
+audioMasterCurrentId: 1: vst version, currently 2 (0 for older), 2400 for VST 2.4!</li>
+<li>
+audioMasterIdle: 2: returns the unique id of a plug that's currently loading</li>
+<li>
+audioMasterPinConnected: 3: call application idle routine (this will call effEditIdle for all open editors too)</li>
+<li>
+audioMasterUnused: 4: inquire if an input or output is beeing connected; index enumerates input or output counting from zero, value is 0 for input and != 0 otherwise. note: the return value is 0 for &lt;true&gt; such that older versions</li>
+<li>
+audioMasterWantMidi: 5: placeholder VstEvents + VstTimeInfo</li>
+<li>
+audioMasterGetTime: 6: &lt;value&gt; is a filter which is currently ignored</li>
+<li>
+audioMasterProcessEvents: 7: returns const VstTimeInfo* (or 0 if not supported) &lt;value&gt; should contain a mask indicating which fields are required (see valid masks above), as some items may require extensive conversions</li>
+<li>
+audioMasterSetTime: 8: VstEvents* in &lt;ptr&gt;</li>
+<li>
+audioMasterTempoAt: 9: NOT USED IN 2.4 - VstTimenfo* in &lt;ptr&gt;, filter in &lt;value&gt;, not supported</li>
+<li>
+audioMasterGetNumAutomatableParameters: 10: NOT USED IN 2.4 - returns tempo (in bpm * 10000) at sample frame location passed in &lt;value&gt; parameters</li>
+<li>
+audioMasterGetParameterQuantization: 11: NOT USED IN 2.4</li>
+<li>
+audioMasterIOChanged: 12: NOT USED IN 2.4 - returns the integer value for +1.0 representation, or 1 if full Single float precision is maintained in automation. parameter index in &lt;value&gt; (-1: all, any) connections, configuration</li>
+<li>
+audioMasterNeedIdle: 13: numInputs and/or numOutputs has changed</li>
+<li>
+audioMasterSizeWindow: 14: NOT USED IN 2.4 - plug needs idle calls (outside its editor window)</li>
+<li>
+audioMasterGetSampleRate: 15: index: width, value: height</li>
+<li>
+audioMasterGetBlockSize: </li>
+<li>
+audioMasterGetInputLatency: </li>
+<li>
+audioMasterGetOutputLatency: </li>
+<li>
+audioMasterGetPreviousPlug: </li>
+<li>
+audioMasterGetNextPlug: 20: NOT USED IN 2.4 - input pin in &lt;value&gt; (-1: first to come), returns cEffect*</li>
+<li>
+audioMasterWillReplaceOrAccumulate: 21: NOT USED IN 2.4 - output pin in &lt;value&gt; (-1: first to come), returns cEffect* realtime info</li>
+<li>
+audioMasterGetCurrentProcessLevel: 22: NOT USED IN 2.4 - returns: 0: not supported, 1: replace, 2: accumulate</li>
+<li>
+audioMasterGetAutomationState: 23: returns: 0: not supported, 1: currently in user thread (gui) 2: currently in audio thread (where process is called) 3: currently in 'sequencer' thread (midi, timer etc) 4: currently offline processing and thus in user thread other: not defined, but probably pre-empting user thread.</li>
+<li>
+audioMasterOfflineStart: 24: returns 0: not supported, 1: off, 2:read, 3:write, 4:read/write offline</li>
+<li>
+audioMasterOfflineRead: </li>
+<li>
+audioMasterOfflineWrite: 26: ptr points to offline structure, see below. return 0: error, 1 ok</li>
+<li>
+audioMasterOfflineGetCurrentPass: 27: same as read</li>
+<li>
+audioMasterOfflineGetCurrentMetaPass: </li>
+<li>
+audioMasterSetOutputSampleRate: other</li>
+<li>
+audioMasterGetOutputSpeakerArrangement: 30: NOT USED IN 2.4 - for variable i/o, sample rate in &lt;opt&gt;</li>
+<li>
+audioMasterGetVendorString: 31: NOT USED IN 2.4 - result in ret</li>
+<li>
+audioMasterGetProductString: 32: fills &lt;ptr&gt; with a string identifying the vendor (max 64 char)</li>
+<li>
+audioMasterGetVendorVersion: 33: fills &lt;ptr&gt; with a string with product name (max 64 char)</li>
+<li>
+audioMasterVendorSpecific: 34: returns vendor-specific version</li>
+<li>
+audioMasterSetIcon: 35: no definition, vendor specific handling</li>
+<li>
+audioMasterCanDo: 36: NOT USED IN 2.4 - void* in &lt;ptr&gt;, format not defined yet</li>
+<li>
+audioMasterGetLanguage: 37: string in ptr, see below</li>
+<li>
+audioMasterOpenWindow: 38: see enum</li>
+<li>
+audioMasterCloseWindow: 39: NOT USED IN 2.4 - returns platform specific ptr</li>
+<li>
+audioMasterGetDirectory: 40: NOT USED IN 2.4 - close window, platform specific handle in &lt;ptr&gt;</li>
+<li>
+audioMasterUpdateDisplay: 41: get plug directory, FSSpec on MAC, else char*</li>
+<li>
+audioMasterBeginEdit: 42: something has changed, update 'multi-fx' display &mdash;from here VST 2.1 extension opcodes&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</li>
+<li>
+audioMasterEndEdit: 43: begin of automation session (when mouse down), parameter index in &lt;index&gt;</li>
+<li>
+audioMasterOpenFileSelector: 44: end of automation session (when mouse up), parameter index in &lt;index&gt;</li>
+<li>
+audioMasterCloseFileSelector: 45: open a fileselector window with VstFileSelect* in &lt;ptr&gt; &mdash;from here VST 2.2 extension opcodes&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</li>
+<li>
+audioMasterEditFile: 46: close a fileselector operation with VstFileSelect* in &lt;ptr&gt;: Must be always called after an open !</li>
+<li>
+audioMasterGetChunkFile: 47: NOT USED IN 2.4 - open an editor for audio (defined by XML text in ptr)</li>
+<li>
+audioMasterGetInputSpeakerArrangement: 48: NOT USED IN 2.4 - get the native path of currently loading bank or project (called from writeChunk) void* in &lt;ptr&gt; (char[2048], or sizeof(FSSpec))</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAudioMasterCallbackFunc"></a><code><b>TAudioMasterCallbackFunc</b> = function(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Opcode: <a   href="DVSTEffect.html#TAudioMasterOpcode">TAudioMasterOpcode</a>; Index, Value: Integer; Ptr: Pointer; Opt: Single): LongInt; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+49: NOT USED IN 2.4 - result a VstSpeakerArrangement in ret will always return true.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TDispatcherFunc"></a><code><b>TDispatcherFunc</b> = function(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Opcode : <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>; Index, Value: Integer; Ptr: Pointer; Opt: Single): LongInt; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TProcessProc"></a><code><b>TProcessProc</b> = procedure(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; Sampleframes: Integer); cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TProcessDoubleProc"></a><code><b>TProcessDoubleProc</b> = procedure(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Inputs, Outputs: <a   href="DVSTEffect.html#PPDouble">PPDouble</a>; Sampleframes: Integer); cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSetParameterProc"></a><code><b>TSetParameterProc</b> = procedure(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Index: Longint; Parameter: Single); cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGetParameterFunc"></a><code><b>TGetParameterFunc</b> = function(Effect: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; Index: LongInt): Single; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMainProc"></a><code><b>TMainProc</b> = function(<a   href="DVSTHost.html#audioMaster">audioMaster</a>: <a   href="DVSTEffect.html#TAudioMasterCallbackFunc">TAudioMasterCallbackFunc</a>): <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a>; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TEffFlag"></a><code><b>TEffFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+effFlagsHasEditor: </li>
+<li>
+effFlagsHasClip: if set, is expected to react to editor messages</li>
+<li>
+effFlagsHasVu: NOT USED SINCE 2.4 - return &gt; 1. in getVu() if clipped</li>
+<li>
+effFlagsCanMono: NOT USED SINCE 2.4 - return vu value in getVu(); &gt; 1. means clipped</li>
+<li>
+effFlagsCanReplacing: NOT USED SINCE 2.4 - if numInputs == 2, makes sense to be used for mono in</li>
+<li>
+effFlagsProgramChunks: MUST BE SET! supports in place output (processReplacing() exsists)</li>
+<li>
+effFlagsUnused1: program data are handled in formatless chunks</li>
+<li>
+effFlagsUnused2: Unused</li>
+<li>
+effFlagsIsSynth: Unused</li>
+<li>
+effFlagsNoSoundInStop: host may assign mixer channels for its outputs</li>
+<li>
+effFlagsExtIsAsync: does not produce sound when input is all silence</li>
+<li>
+effFlagsExtHasBuffer: NOT USED IN 2.4! - for external dsp; plug returns immedeately from process() host polls plug position (current block) via effGetCurrentPosition</li>
+<li>
+effFlagsCanDoubleReplacing: NOT USED IN 2.4! - external dsp, may have their own output buffer (32 bit float) host then requests this via effGetDestinationBuffer</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TEffFlags"></a><code><b>TEffFlags</b> = set of <a   href="DVSTEffect.html#TEffFlag">TEffFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+plug-in supports double precision processing</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVSTEventType"></a><code><b>TVSTEventType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+pls zero</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+etNone: </li>
+<li>
+etMidi: </li>
+<li>
+etAudio: 1: midi event, can be cast as VstMidiEvent (see below)</li>
+<li>
+etVideo: 2: audio</li>
+<li>
+etParameter: 3: video</li>
+<li>
+etTrigger: 4: parameter</li>
+<li>
+etSysEx: 5: trigger</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstEvent"></a><code><b>PVstEvent</b> = &circ;<a   href="DVSTEffect.TVstEvent.html">TVstEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+6: midi system exclusive</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstEvents"></a><code><b>PVstEvents</b> = &circ;<a   href="DVSTEffect.TVstEvents.html">TVstEvents</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+size may vary but is usually 16</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstMidiEventFlag"></a><code><b>TVstMidiEventFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+variable VstMidiEventFlag //////////////////////////////////////////////////////////</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kVstMidiEventIsRealtime: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstMidiEventFlags"></a><code><b>TVstMidiEventFlags</b> = set of <a   href="DVSTEffect.html#TVstMidiEventFlag">TVstMidiEventFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstMidiEvent"></a><code><b>PVstMidiEvent</b> = &circ;<a   href="DVSTEffect.TVstMidiEvent.html">TVstMidiEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+defined events ////////////////////////////////////////////////////////////</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstMidiSysexEvent"></a><code><b>PVstMidiSysexEvent</b> = &circ;<a   href="DVSTEffect.TVstMidiSysexEvent.html">TVstMidiSysexEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+zero</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstTimeInfoFlag"></a><code><b>TVstTimeInfoFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+VstTimeInfo ///////////////////////////////////////////////////////////////
+
+<p>VstTimeInfo as requested via audioMasterGetTime (getTimeInfo()) refers to the current time slice. note the new slice is already started when processEvents() is called</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vtiTransportChanged: </li>
+<li>
+vtiTransportPlaying: Indicates that Playing, Cycle or Recording has changed</li>
+<li>
+vtiTransportCycleActive: </li>
+<li>
+vtiTransportRecording: </li>
+<li>
+vtiTransportUnused1: </li>
+<li>
+vtiTransportUnused2: </li>
+<li>
+vtiAutomationWriting: </li>
+<li>
+vtiAutomationReading: </li>
+<li>
+vtiNanosValid: flags which indicate which of the fields in this VstTimeInfo are valid; samplePos and sampleRate are always valid</li>
+<li>
+vtiPpqPosValid: </li>
+<li>
+vtiTempoValid: </li>
+<li>
+vtiBarsValid: </li>
+<li>
+vtiCyclePosValid: </li>
+<li>
+vtiTimeSigValid: start and end</li>
+<li>
+vtiSmpteValid: </li>
+<li>
+vtiClockValid: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstTimeInfoFlags"></a><code><b>TVstTimeInfoFlags</b> = set of <a   href="DVSTEffect.html#TVstTimeInfoFlag">TVstTimeInfoFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstTimeInfo"></a><code><b>PVstTimeInfo</b> = &circ;<a   href="DVSTEffect.TVstTimeInfo.html">TVstTimeInfo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstVariableIo"></a><code><b>PVstVariableIo</b> = &circ;<a   href="DVSTEffect.TVstVariableIo.html">TVstVariableIo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+see above</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstHostLanguage"></a><code><b>TVstHostLanguage</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kVstLangUnknown: </li>
+<li>
+kVstLangEnglish: </li>
+<li>
+kVstLangGerman: </li>
+<li>
+kVstLangFrench: </li>
+<li>
+kVstLangItalian: </li>
+<li>
+kVstLangSpanish: </li>
+<li>
+kVstLangJapanese: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstParameterPropertiesFlag"></a><code><b>TVstParameterPropertiesFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kVstParameterIsSwitch: </li>
+<li>
+kVstParameterUsesIntegerMinMax: </li>
+<li>
+kVstParameterUsesFloatStep: </li>
+<li>
+kVstParameterUsesIntStep: </li>
+<li>
+kVstParameterSupportsDisplayIndex: </li>
+<li>
+kVstParameterSupportsDisplayCategory: </li>
+<li>
+kVstParameterCanRamp: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstParameterPropertiesFlags"></a><code><b>TVstParameterPropertiesFlags</b> = set of <a   href="DVSTEffect.html#TVstParameterPropertiesFlag">TVstParameterPropertiesFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstParameterProperties"></a><code><b>PVstParameterProperties</b> = &circ;<a   href="DVSTEffect.TVstParameterProperties.html">TVstParameterProperties</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstPinPropertiesFlag"></a><code><b>TVstPinPropertiesFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vppIsActive: </li>
+<li>
+vppIsStereo: </li>
+<li>
+vppUseSpeaker: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstPinPropertiesFlags"></a><code><b>TVstPinPropertiesFlags</b> = set of <a   href="DVSTEffect.html#TVstPinPropertiesFlag">TVstPinPropertiesFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstPinProperties"></a><code><b>PVstPinProperties</b> = &circ;<a   href="DVSTEffect.TVstPinProperties.html">TVstPinProperties</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstPluginCategory"></a><code><b>TVstPluginCategory</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vpcUnknown: </li>
+<li>
+vpcEffect: </li>
+<li>
+vpcSynth: </li>
+<li>
+vpcAnalysis: </li>
+<li>
+vpcMastering: </li>
+<li>
+vpcSpacializer: </li>
+<li>
+vpcRoomFx: 'panners'</li>
+<li>
+vpcSurroundFx: delays and reverbs</li>
+<li>
+vpcRestoration: dedicated surround processor</li>
+<li>
+vpcOfflineProcess: </li>
+<li>
+vpcShell: </li>
+<li>
+vpcGenerator: plugin which is only a container of plugins.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMidiProgramNameFlag"></a><code><b>TMidiProgramNameFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mpnIsOmni: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMidiProgramNameFlags"></a><code><b>TMidiProgramNameFlags</b> = set of <a   href="DVSTEffect.html#TMidiProgramNameFlag">TMidiProgramNameFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+default is multi. for omni mode, channel 0 is used for inquiries and program changes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMidiProgramName"></a><code><b>PMidiProgramName</b> = &circ;<a   href="DVSTEffect.TMidiProgramName.html">TMidiProgramName</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMidiProgramCategory"></a><code><b>PMidiProgramCategory</b> = &circ;<a   href="DVSTEffect.TMidiProgramCategory.html">TMidiProgramCategory</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+omni etc, see below</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMidiKeyName"></a><code><b>PMidiKeyName</b> = &circ;<a   href="DVSTEffect.TMidiKeyName.html">TMidiKeyName</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reserved, none defined yet, zero.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstSpeakerType"></a><code><b>TVstSpeakerType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reserved, none defined yet, zero. surround setup //////////////////////////////////////////////////////////// &mdash;Speaker Types&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; user-defined speaker types (to be extended in the negative range) (will be handled as their corresponding speaker types with abs values: e.g abs(stU1) == stL, abs(stU2) == stR)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+stU32: </li>
+<li>
+stU31: </li>
+<li>
+stU30: </li>
+<li>
+stU29: </li>
+<li>
+stU28: </li>
+<li>
+stU27: </li>
+<li>
+stU26: </li>
+<li>
+stU25: </li>
+<li>
+stU24: </li>
+<li>
+stU23: </li>
+<li>
+stU22: </li>
+<li>
+stU21: </li>
+<li>
+stU20: </li>
+<li>
+stU19: == stLfe2</li>
+<li>
+stU18: == stTrr</li>
+<li>
+stU17: == stTrc</li>
+<li>
+stU16: == stTrl</li>
+<li>
+stU15: == stTfr</li>
+<li>
+stU14: == stTfc</li>
+<li>
+stU13: == stTfl</li>
+<li>
+stU12: == stTm</li>
+<li>
+stU11: == stSr</li>
+<li>
+stU10: == stSl</li>
+<li>
+stU9: == stCs</li>
+<li>
+stU8: == stS</li>
+<li>
+stU7: == stRc</li>
+<li>
+stU6: == stLc</li>
+<li>
+stU5: == stRs</li>
+<li>
+stU4: == stLs</li>
+<li>
+stU3: == stLfe</li>
+<li>
+stU2: == stCenter</li>
+<li>
+stU1: == stRight</li>
+<li>
+stUndefined: == stLeft</li>
+<li>
+stMono: Undefined</li>
+<li>
+stLeft: Mono (M)</li>
+<li>
+stRight: Left (L)</li>
+<li>
+stCenter: Right (R)</li>
+<li>
+stLfe: Center (C)</li>
+<li>
+stLs: Subbass (Lfe)</li>
+<li>
+stRs: Left Surround (Ls)</li>
+<li>
+stLc: Right Surround (Rs)</li>
+<li>
+stRc: Left of Center (Lc)</li>
+<li>
+stSurround: Right of Center (Rc)</li>
+<li>
+stSl: Surround (S)</li>
+<li>
+stSr: Side Left (Sl)</li>
+<li>
+stTm: Side Right (Sr)</li>
+<li>
+stTfl: Top Middle (Tm)</li>
+<li>
+stTfc: Top Front Left (Tfl)</li>
+<li>
+stTfr: Top Front Center (Tfc)</li>
+<li>
+stTrl: Top Front Right (Tfr)</li>
+<li>
+stTrc: Top Rear Left (Trl)</li>
+<li>
+stTrr: Top Rear Center (Trc)</li>
+<li>
+stLfe2: Top Rear Right (Trr)</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstSpeakerProperties"></a><code><b>PVstSpeakerProperties</b> = &circ;<a   href="DVSTEffect.TVstSpeakerProperties.html">TVstSpeakerProperties</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Subbass 2 (Lfe2)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstSpeakerArrangement"></a><code><b>PVstSpeakerArrangement</b> = &circ;<a   href="DVSTEffect.TVstSpeakerArrangement.html">TVstSpeakerArrangement</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+note: the origin for azimuth is right (as by math conventions dealing with radians); the elevation origin is also right, visualizing a rotation of a circle across the -pi/pi axis of the horizontal circle. thus, an elevation of -pi/2 corresponds to bottom, and a speaker standing on the left, and 'beaming' upwards would have an azimuth of -pi, and an elevation of pi/2. for user interface representation, grads are more likely to be used, and the origins will obviously 'shift' accordingly.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstSpeakerArrangementType"></a><code><b>TVstSpeakerArrangementType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+variable</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+satUserDefined: </li>
+<li>
+satEmpty: </li>
+<li>
+satMono: </li>
+<li>
+satStereo: M</li>
+<li>
+satStereoSurround: L R</li>
+<li>
+satStereoCenter: Ls Rs</li>
+<li>
+satStereoSide: Lc Rc</li>
+<li>
+satStereoCLfe: Sl Sr</li>
+<li>
+sat30Cine: C Lfe</li>
+<li>
+sat30Music: L R C</li>
+<li>
+sat31Cine: L R S</li>
+<li>
+sat31Music: L R C Lfe</li>
+<li>
+sat40Cine: L R Lfe S</li>
+<li>
+sat40Music: L R C S (LCRS)</li>
+<li>
+sat41Cine: L R Ls Rs (Quadro)</li>
+<li>
+sat41Music: L R C Lfe S (LCRS+Lfe)</li>
+<li>
+sat50: L R Lfe Ls Rs (Quadro+Lfe)</li>
+<li>
+sat51: L R C Ls Rs</li>
+<li>
+sat60Cine: L R C Lfe Ls Rs</li>
+<li>
+sat60Music: L R C Ls Rs Cs</li>
+<li>
+sat61Cine: L R Ls Rs Sl Sr</li>
+<li>
+sat61Music: L R C Lfe Ls Rs Cs</li>
+<li>
+sat70Cine: L R Lfe Ls Rs Sl Sr</li>
+<li>
+sat70Music: L R C Ls Rs Lc Rc</li>
+<li>
+sat71Cine: L R C Ls Rs Sl Sr</li>
+<li>
+sat71Music: L R C Lfe Ls Rs Lc Rc</li>
+<li>
+sat80Cine: L R C Lfe Ls Rs Sl Sr</li>
+<li>
+sat80Music: L R C Ls Rs Lc Rc Cs</li>
+<li>
+sat81Cine: L R C Ls Rs Cs Sl Sr</li>
+<li>
+sat81Music: L R C Lfe Ls Rs Lc Rc Cs</li>
+<li>
+sat102: L R C Lfe Ls Rs Cs Sl Sr</li>
+<li>
+satNumSpeakerArr: L R C Lfe Ls Rs Tfl Tfc Tfr Trl Trr Lfe2</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstOfflineTaskFlag"></a><code><b>TVstOfflineTaskFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+votUnvalidParameter: </li>
+<li>
+votNewFile: </li>
+<li>
+votUnused1: </li>
+<li>
+votUnused2: </li>
+<li>
+votUnused3: </li>
+<li>
+votUnused4: </li>
+<li>
+votUnused5: </li>
+<li>
+votUnused6: </li>
+<li>
+votUnused7: </li>
+<li>
+votUnused8: </li>
+<li>
+votPlugError: </li>
+<li>
+votInterleavedAudio: </li>
+<li>
+votTempOutputFile: </li>
+<li>
+votFloatOutputFile: </li>
+<li>
+votRandomWrite: </li>
+<li>
+votStretch: </li>
+<li>
+votNoThread: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstOfflineTaskFlags"></a><code><b>TVstOfflineTaskFlags</b> = set of <a   href="DVSTEffect.html#TVstOfflineTaskFlag">TVstOfflineTaskFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstOfflineTask"></a><code><b>PVstOfflineTask</b> = &circ;<a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstOfflineOption"></a><code><b>TVstOfflineOption</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vooAudio: </li>
+<li>
+vooPeaks: reading/writing audio samples</li>
+<li>
+vooParameter: reading graphic representation</li>
+<li>
+vooMarker: reading/writing parameters</li>
+<li>
+vooCursor: reading/writing marker</li>
+<li>
+vooSelection: reading/moving edit cursor</li>
+<li>
+vooQueryFiles: reading/changing selection</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstAudioFileFlag"></a><code><b>TVstAudioFileFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+to request the host to call asynchronously offlineNotify</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vafReadOnly: set by host (in call offlineNotify)</li>
+<li>
+vafNoRateConversion: </li>
+<li>
+vafNoChannelChange: </li>
+<li>
+vafUnused1: </li>
+<li>
+vafUnused2: </li>
+<li>
+vafUnused3: </li>
+<li>
+vafUnused4: </li>
+<li>
+vafUnused5: </li>
+<li>
+vafUnused6: </li>
+<li>
+vafUnused7: </li>
+<li>
+vafCanProcessSelection: Set by plug (in function offlineStart)</li>
+<li>
+vafNoCrossfade: </li>
+<li>
+vafWantRead: </li>
+<li>
+vafWantWrite: </li>
+<li>
+vafWantWriteMarker: </li>
+<li>
+vafWantMoveCursor: </li>
+<li>
+vafWantSelect: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstAudioFileFlags"></a><code><b>TVstAudioFileFlags</b> = set of <a   href="DVSTEffect.html#TVstAudioFileFlag">TVstAudioFileFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstAudioFile"></a><code><b>PVstAudioFile</b> = &circ;<a   href="DVSTEffect.TVstAudioFile.html">TVstAudioFile</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstAudioFileMarker"></a><code><b>PVstAudioFileMarker</b> = &circ;<a   href="DVSTEffect.TVstAudioFileMarker.html">TVstAudioFileMarker</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstWindow"></a><code><b>PVstWindow</b> = &circ;<a   href="DVSTEffect.TVstWindow.html">TVstWindow</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstKeyCode"></a><code><b>PVstKeyCode</b> = &circ;<a   href="DVSTEffect.TVstKeyCode.html">TVstKeyCode</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstVirtualKey"></a><code><b>TVstVirtualKey</b> = LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+see enum TVstModifierKey Used by member virt of VstKeyCode /////////////////////////////////////////</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstModifierKeys"></a><code><b>TVstModifierKeys</b> = LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Used by member modifier of VstKeyCode /////////////////////////////////////</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstFileType"></a><code><b>PVstFileType</b> = &circ;<a   href="DVSTEffect.TVstFileType.html">TVstFileType</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Used by audioMasterOpenFileSelector ///////////////////////////////////////</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstFileCommand"></a><code><b>TVstFileCommand</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kVstFileLoad: </li>
+<li>
+kVstFileSave: </li>
+<li>
+kVstMultipleFilesLoad: </li>
+<li>
+kVstDirectorySelect: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstFileTypeType"></a><code><b>TVstFileTypeType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kVstFileType: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstFileSelect"></a><code><b>PVstFileSelect</b> = &circ;<a   href="DVSTEffect.TVstFileSelect.html">TVstFileSelect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVstPatchChunkInfo"></a><code><b>PVstPatchChunkInfo</b> = &circ;<a   href="DVSTEffect.TVstPatchChunkInfo.html">TVstPatchChunkInfo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+future use</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstPanLawType"></a><code><b>TVstPanLawType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kLinearPanLaw: </li>
+<li>
+kEqualPowerPanLaw: L = pan * M; R = (1 - pan) * M;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPERect"></a><code><b>PPERect</b> = &circ;<a   href="DVSTEffect.html#PERect">PERect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+array[0..7] of char; // variable</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PERect"></a><code><b>PERect</b> = &circ;<a   href="DVSTEffect.ERect.html">ERect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="kEffectMagic"></a><code><b>kEffectMagic</b> = 'VstP';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-$DEFINE Debug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_BACK"></a><code><b>VKEY_BACK</b>         = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_TAB"></a><code><b>VKEY_TAB</b>          = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_CLEAR"></a><code><b>VKEY_CLEAR</b>        = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_RETURN"></a><code><b>VKEY_RETURN</b>       = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_PAUSE"></a><code><b>VKEY_PAUSE</b>        = 5;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_ESCAPE"></a><code><b>VKEY_ESCAPE</b>       = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_SPACE"></a><code><b>VKEY_SPACE</b>        = 7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NEXT"></a><code><b>VKEY_NEXT</b>         = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_END"></a><code><b>VKEY_END</b>          = 9;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_HOME"></a><code><b>VKEY_HOME</b>         = 10;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_LEFT"></a><code><b>VKEY_LEFT</b>         = 11;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_UP"></a><code><b>VKEY_UP</b>           = 12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_RIGHT"></a><code><b>VKEY_RIGHT</b>        = 13;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_DOWN"></a><code><b>VKEY_DOWN</b>         = 14;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_PAGEUP"></a><code><b>VKEY_PAGEUP</b>       = 15;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_PAGEDOWN"></a><code><b>VKEY_PAGEDOWN</b>     = 16;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_SELECT"></a><code><b>VKEY_SELECT</b>       = 17;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_PRINT"></a><code><b>VKEY_PRINT</b>        = 18;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_ENTER"></a><code><b>VKEY_ENTER</b>        = 19;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_SNAPSHOT"></a><code><b>VKEY_SNAPSHOT</b>     = 20;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_INSERT"></a><code><b>VKEY_INSERT</b>       = 21;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_DELETE"></a><code><b>VKEY_DELETE</b>       = 22;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_HELP"></a><code><b>VKEY_HELP</b>         = 23;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD0"></a><code><b>VKEY_NUMPAD0</b>      = 24;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD1"></a><code><b>VKEY_NUMPAD1</b>      = 25;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD2"></a><code><b>VKEY_NUMPAD2</b>      = 26;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD3"></a><code><b>VKEY_NUMPAD3</b>      = 27;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD4"></a><code><b>VKEY_NUMPAD4</b>      = 28;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD5"></a><code><b>VKEY_NUMPAD5</b>      = 29;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD6"></a><code><b>VKEY_NUMPAD6</b>      = 30;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD7"></a><code><b>VKEY_NUMPAD7</b>      = 31;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD8"></a><code><b>VKEY_NUMPAD8</b>      = 32;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMPAD9"></a><code><b>VKEY_NUMPAD9</b>      = 33;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_MULTIPLY"></a><code><b>VKEY_MULTIPLY</b>     = 34;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_ADD"></a><code><b>VKEY_ADD</b>          = 35;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_SEPARATOR"></a><code><b>VKEY_SEPARATOR</b>    = 36;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_SUBTRACT"></a><code><b>VKEY_SUBTRACT</b>     = 37;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_DECIMAL"></a><code><b>VKEY_DECIMAL</b>      = 38;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_DIVIDE"></a><code><b>VKEY_DIVIDE</b>       = 39;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F1"></a><code><b>VKEY_F1</b>           = 40;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F2"></a><code><b>VKEY_F2</b>           = 41;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F3"></a><code><b>VKEY_F3</b>           = 42;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F4"></a><code><b>VKEY_F4</b>           = 43;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F5"></a><code><b>VKEY_F5</b>           = 44;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F6"></a><code><b>VKEY_F6</b>           = 45;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F7"></a><code><b>VKEY_F7</b>           = 46;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F8"></a><code><b>VKEY_F8</b>           = 47;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F9"></a><code><b>VKEY_F9</b>           = 48;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F10"></a><code><b>VKEY_F10</b>          = 49;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F11"></a><code><b>VKEY_F11</b>          = 50;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_F12"></a><code><b>VKEY_F12</b>          = 51;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_NUMLOCK"></a><code><b>VKEY_NUMLOCK</b>      = 52;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_SCROLL"></a><code><b>VKEY_SCROLL</b>       = 53;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_SHIFT"></a><code><b>VKEY_SHIFT</b>        = 54;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_CONTROL"></a><code><b>VKEY_CONTROL</b>      = 55;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_ALT"></a><code><b>VKEY_ALT</b>          = 56;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VKEY_EQUALS"></a><code><b>VKEY_EQUALS</b>       = 57;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MODIFIER_SHIFT"></a><code><b>MODIFIER_SHIFT</b> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MODIFIER_ALTERNATE"></a><code><b>MODIFIER_ALTERNATE</b> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MODIFIER_COMMAND"></a><code><b>MODIFIER_COMMAND</b> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MODIFIER_CONTROL"></a><code><b>MODIFIER_CONTROL</b> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cMagic"></a><code><b>cMagic</b>           = 'CcnK';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+L = pow (pan, 0.5) * M; R = pow ((1 - pan), 0.5) * M;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="presetMagic"></a><code><b>presetMagic</b>      = 'FxCk';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="bankMagic"></a><code><b>bankMagic</b>        = 'FxBk';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="chunkPresetMagic"></a><code><b>chunkPresetMagic</b> = 'FPCh';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="chunkBankMagic"></a><code><b>chunkBankMagic</b>   = 'FBCh';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="chunkGlobalMagic"></a><code><b>chunkGlobalMagic</b> = 'FxCh';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="fMagic"></a><code><b>fMagic</b>           = <a   href="DVSTEffect.html#presetMagic">presetMagic</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+not used</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:19</em>
+</span>
+</body></html>

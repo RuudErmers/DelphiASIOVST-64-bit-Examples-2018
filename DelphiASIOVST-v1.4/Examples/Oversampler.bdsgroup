@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{71F86CF5-48BE-4641-8EC2-878BA6C1B2FC}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="OversampleTemplate.dll">Plugins\Oversampler Template\OversampleTemplate.bdsproj</Projects>
+      <Projects Name="OversampleShellExtension.dll">Shell Extensions\Oversample Shell Extension\OversampleShellExtension.bdsproj</Projects>
+      <Projects Name="OversampleVstPlugin.exe">Standalone\Oversample VST Plugin\OversampleVstPlugin.bdsproj</Projects>
+      <Projects Name="Targets">OversampleTemplate.dll OversampleShellExtension.dll OversampleVstPlugin.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

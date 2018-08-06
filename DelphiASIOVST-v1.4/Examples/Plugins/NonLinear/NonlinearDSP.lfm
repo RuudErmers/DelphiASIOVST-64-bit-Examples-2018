@@ -1,0 +1,47 @@
+object VSTOpAmp: TVSTOpAmp
+  OldCreateOrder = False
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'Simple OpAmp Simulation'
+  ProductName = 'Simple OpAmp Simulation'
+  VendorName = 'Christian Budde'
+  SampleRate = 44100
+  CurrentProgramName = 'Init'
+  IORatio = 1
+  UniqueID = 'NoLi'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Init'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      CurveFactor = 1
+      DisplayName = 'Gain'
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 10
+      MaxInteger = 10
+      Min = 1
+      MinInteger = 1
+      ShortLabel = 'Gain'
+      SmallStepFloat = 1
+      SmoothingFactor = 1
+      StepFloat = 1
+      VSTModule = Owner
+      OnParameterChange = VSTModuleParameterChange
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnEditOpen = VSTModuleEditOpen
+  OnParameterChange = VSTModuleParameterChange
+  OnProcess = VSTModuleProcess
+  OnProcess32Replacing = VSTModuleProcess
+  left = 243
+  top = 103
+  Height = 150
+  HorizontalOffset = 501
+  VerticalOffset = 491
+  Width = 215
+end

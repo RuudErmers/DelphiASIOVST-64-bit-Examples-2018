@@ -1,0 +1,79 @@
+object FmLabelTest: TFmLabelTest
+  Left = 218
+  Height = 99
+  Top = 77
+  Width = 135
+  Caption = 'Label Test'
+  ClientHeight = 99
+  ClientWidth = 135
+  Color = 7373965
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnPaint = FormPaint
+  OnResize = FormResize
+  LCLVersion = '0.9.29'
+  object LabelA: TGuiLabel
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 57
+    Caption = 'Test'
+    Font.Color = clBlue
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    ParentFont = False
+  end
+  object LabelC: TGuiLabel
+    Left = 8
+    Height = 25
+    Top = 39
+    Width = 57
+    AntiAlias = gaaLinear3x
+    Caption = 'Test'
+    Font.Color = clRed
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    ParentFont = False
+  end
+  object LabelB: TGuiLabel
+    Left = 71
+    Height = 25
+    Top = 8
+    Width = 57
+    AntiAlias = gaaLinear2x
+    Caption = 'Test'
+    Font.Color = clLime
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    ParentFont = False
+  end
+  object LabelD: TGuiLabel
+    Left = 71
+    Height = 25
+    Top = 39
+    Width = 57
+    AntiAlias = gaaLinear4x
+    Caption = 'Test'
+    Font.Color = clYellow
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    ParentFont = False
+  end
+  object CbTransparent: TCheckBox
+    Left = 25
+    Height = 17
+    Top = 70
+    Width = 79
+    Caption = 'Transparent'
+    Color = 7373965
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    OnClick = CbTransparentClick
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end

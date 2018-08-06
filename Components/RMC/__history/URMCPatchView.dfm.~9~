@@ -1,0 +1,35 @@
+object RMCPatchView: TRMCPatchView
+  Left = 0
+  Top = 0
+  Width = 320
+  Height = 27
+  Ctl3D = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentCtl3D = False
+  ParentFont = False
+  TabOrder = 0
+  object Label1: TLabel
+    AlignWithMargins = True
+    Left = 0
+    Top = -3
+    Width = 320
+    Height = 18
+    Margins.Left = 0
+    Margins.Top = 6
+    Margins.Right = 0
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Label1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = Label1Click
+  end
+end

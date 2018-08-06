@@ -1,0 +1,40 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{b8fbd42f-5279-4d93-9a49-dbc8105b2d41}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DriverHostInterceptor">
+    <MSBuild Projects="DriverHostInterceptor.dproj" Targets="" />
+  </Target>
+  <Target Name="DriverHostInterceptor:Clean">
+    <MSBuild Projects="DriverHostInterceptor.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DriverHostInterceptor:Make">
+    <MSBuild Projects="DriverHostInterceptor.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ASIODemo">
+    <MSBuild Projects="..\..\Standalone\ASIO-Host Demo\ASIODemo.dproj" Targets="" />
+  </Target>
+  <Target Name="ASIODemo:Clean">
+    <MSBuild Projects="..\..\Standalone\ASIO-Host Demo\ASIODemo.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ASIODemo:Make">
+    <MSBuild Projects="..\..\Standalone\ASIO-Host Demo\ASIODemo.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DriverHostInterceptor;ASIODemo" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="DriverHostInterceptor:Clean;ASIODemo:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="DriverHostInterceptor:Make;ASIODemo:Make" />
+  </Target>
+</Project>

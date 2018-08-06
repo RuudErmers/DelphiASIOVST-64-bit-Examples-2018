@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTEffect: packed record TFXChunkBank</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TFXChunkBank"></a><h1 class="cio">packed record TFXChunkBank</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>Hierarchy</td><td><a class="section"  href="#@Fields">Fields</a></td><td>Methods</td><td>Properties</td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTEffect.html">DVSTEffect</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TFXChunkBank = packed record</code></p>
+<h2 class="description">Description</h2>
+<p>
+array[0..0] of fxPreset; // variable no. of programs &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; For Bank (.fxb) with chunk (magic = 'FBCh') &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
+<h2 class="overview">Overview</h2>
+<a name="@Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#chunkMagic">chunkMagic</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#ByteSize">ByteSize</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#fxMagic">fxMagic</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#version">version</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#fxID">fxID</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#fxVersion">fxVersion</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#numPrograms">numPrograms</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#future">future</a></b>: array[0..127] of Byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#chunkSize">chunkSize</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TFXChunkBank.html#chunk">chunk</a></b>: Pointer;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="chunkMagic"></a><code><b>chunkMagic</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ByteSize"></a><code><b>ByteSize</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+'CcnK'</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="fxMagic"></a><code><b>fxMagic</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+of this chunk, excl. magic + ByteSize</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="version"></a><code><b>version</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+'FBCh'</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="fxID"></a><code><b>fxID</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="fxVersion"></a><code><b>fxVersion</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+fx unique id</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="numPrograms"></a><code><b>numPrograms</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="future"></a><code><b>future</b>: array[0..127] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="chunkSize"></a><code><b>chunkSize</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="chunk"></a><code><b>chunk</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:20</em>
+</span>
+</body></html>

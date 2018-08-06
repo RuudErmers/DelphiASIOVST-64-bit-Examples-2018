@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="VSTPluginScanner.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2"/>
+        <CursorPos X="19" Y="12"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="VPSmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmVSTPluginScanner"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="VPSmain"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="32"/>
+        <CursorPos X="1" Y="32"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\Lazarus\lcl\include\winapi.inc"/>
+        <TopLine Value="293"/>
+        <CursorPos X="51" Y="317"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\Lazarus\lcl\include\application.inc"/>
+        <TopLine Value="345"/>
+        <CursorPos X="51" Y="366"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\Source\DAV_Common.pas"/>
+        <UnitName Value="DAV_Common"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Source\DAV_AudioData.pas"/>
+        <UnitName Value="DAV_AudioData"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_Common_Lazarus.pas"/>
+        <UnitName Value="DAV_Common_Lazarus"/>
+        <TopLine Value="1"/>
+        <CursorPos X="43" Y="6"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\Source\DAV_CommonRegister.pas"/>
+        <UnitName Value="DAV_CommonRegister"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="26"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\Resources\DAV_CommonRegister.lrs"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_DSP_Lazarus.pas"/>
+        <UnitName Value="DAV_DSP_Lazarus"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHost.pas"/>
+        <UnitName Value="DAV_VSTHost"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2099"/>
+        <CursorPos X="9" Y="2132"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_VSTPluginIDE.pas"/>
+        <UnitName Value="DAV_VSTPluginIDE"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiCommon.pas"/>
+        <UnitName Value="DAV_GuiCommon"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiDial.pas"/>
+        <UnitName Value="DAV_GuiDial"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1582"/>
+        <CursorPos X="25" Y="1599"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiLED.pas"/>
+        <UnitName Value="DAV_GuiLED"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="107"/>
+        <CursorPos X="25" Y="124"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiRegister.pas"/>
+        <UnitName Value="DAV_GuiRegister"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="62" Y="22"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit15>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="..\..\..\Source\DAV_CommonRegister.pas"/>
+        <Caret Line="26" Column="4" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHost.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHost.pas"/>
+        <Caret Line="2116" Column="25" TopLine="2099"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHost.pas"/>
+        <Caret Line="2082" Column="30" TopLine="2065"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHost.pas"/>
+        <Caret Line="23" Column="14" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiDial.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiLED.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiRegister.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position8>
+      <Position9>
+        <Filename Value="VPSmain.pas"/>
+        <Caret Line="268" Column="102" TopLine="268"/>
+      </Position9>
+      <Position10>
+        <Filename Value="VSTPluginScanner.lpr"/>
+        <Caret Line="5" Column="128" TopLine="1"/>
+      </Position10>
+      <Position11>
+        <Filename Value="VPSmain.pas"/>
+        <Caret Line="114" Column="8" TopLine="94"/>
+      </Position11>
+      <Position12>
+        <Filename Value="VPSmain.pas"/>
+        <Caret Line="430" Column="1" TopLine="404"/>
+      </Position12>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\..\..\Source;..\..\..\Resources;..\..\..\Source\DSP;..\..\..\Source\VST"/>
+      <UnitOutputDirectory Value="..\..\..\Bin\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

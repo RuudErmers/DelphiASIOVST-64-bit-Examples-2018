@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTEffect: packed record TVstAudioFile</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TVstAudioFile"></a><h1 class="cio">packed record TVstAudioFile</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>Hierarchy</td><td><a class="section"  href="#@Fields">Fields</a></td><td>Methods</td><td>Properties</td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTEffect.html">DVSTEffect</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TVstAudioFile = packed record</code></p>
+<h2 class="description">Description</h2>
+&nbsp;<h2 class="overview">Overview</h2>
+<a name="@Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#Flags">Flags</a></b>: <a   href="DVSTEffect.html#TVstAudioFileFlags">TVstAudioFileFlags</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#HostOwned">HostOwned</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#PlugOwned">PlugOwned</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#Name">Name</a></b>: array[0..99] of char;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#UniqueId">UniqueId</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#SampleRate">SampleRate</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#NumChannels">NumChannels</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#NumFrames">NumFrames</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#Format">Format</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#EditCursorPosition">EditCursorPosition</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#SelectionStart">SelectionStart</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#SelectionSize">SelectionSize</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#SelectedChannelsMask">SelectedChannelsMask</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#NumMarkers">NumMarkers</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#TimeRulerUnit">TimeRulerUnit</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#TimeRulerOffset">TimeRulerOffset</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#Tempo">Tempo</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#TimeSigNumerator">TimeSigNumerator</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#TimeSigDenominator">TimeSigDenominator</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#TicksPerBlackNote">TicksPerBlackNote</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#SmpteFrameRate">SmpteFrameRate</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstAudioFile.html#Future">Future</a></b>: array[0..63] of Byte;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Flags"></a><code><b>Flags</b>: <a   href="DVSTEffect.html#TVstAudioFileFlags">TVstAudioFileFlags</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HostOwned"></a><code><b>HostOwned</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+see enum TVstAudioFileFlags</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PlugOwned"></a><code><b>PlugOwned</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+any data private to host</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Name"></a><code><b>Name</b>: array[0..99] of char;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+any data private to plugin</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UniqueId"></a><code><b>UniqueId</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+file title</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SampleRate"></a><code><b>SampleRate</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+uniquely identify a file during a session</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NumChannels"></a><code><b>NumChannels</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+file sample rate</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NumFrames"></a><code><b>NumFrames</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of channels (1 for mono, 2 for stereo...)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Format"></a><code><b>Format</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of frames in the audio file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EditCursorPosition"></a><code><b>EditCursorPosition</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reserved for future</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SelectionStart"></a><code><b>SelectionStart</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-1 if no such cursor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SelectionSize"></a><code><b>SelectionSize</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+frame index of first selected frame, or -1</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SelectedChannelsMask"></a><code><b>SelectedChannelsMask</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of frames in selection, or 0</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NumMarkers"></a><code><b>NumMarkers</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 bit per channel</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TimeRulerUnit"></a><code><b>TimeRulerUnit</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of markers in the file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TimeRulerOffset"></a><code><b>TimeRulerOffset</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+see doc for possible values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Tempo"></a><code><b>Tempo</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+offset in time ruler (positive or negative)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TimeSigNumerator"></a><code><b>TimeSigNumerator</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+as bpm</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TimeSigDenominator"></a><code><b>TimeSigDenominator</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+time signature numerator</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TicksPerBlackNote"></a><code><b>TicksPerBlackNote</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+time signature denominator</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SmpteFrameRate"></a><code><b>SmpteFrameRate</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+resolution</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Future"></a><code><b>Future</b>: array[0..63] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+smpte rate (set as in TVstTimeInfo)</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:19</em>
+</span>
+</body></html>

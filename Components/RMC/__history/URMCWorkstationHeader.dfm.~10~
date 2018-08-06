@@ -1,0 +1,27 @@
+object RMCWorkstationHeader: TRMCWorkstationHeader
+  Left = 0
+  Top = 0
+  Width = 853
+  Height = 37
+  TabOrder = 0
+  object PanelWorkstation: TPanel
+    Left = 0
+    Top = 0
+    Width = 853
+    Height = 37
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'PanelWorkstation Fiets'
+    Color = 7170121
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -23
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end

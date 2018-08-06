@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{B93D56E6-4DFF-4E5A-9B31-120B5C56EC78}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="StkChorus.dll">Chorus\StkChorus.bdsproj</Projects>
+      <Projects Name="StkEcho.dll">Echo\StkEcho.bdsproj</Projects>
+      <Projects Name="StkPitchShift.dll">PitchShift\StkPitchShift.bdsproj</Projects>
+      <Projects Name="StkReverb.dll">Reverb\StkReverb.bdsproj</Projects>
+      <Projects Name="Targets">StkChorus.dll StkEcho.dll StkPitchShift.dll StkReverb.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

@@ -1,0 +1,169 @@
+object FmASIO: TFmASIO
+  Left = 291
+  Top = 266
+  BiDiMode = bdLeftToRight
+  Caption = 'Demo application for ASIO-Host'
+  BorderStyle = bsSingle
+  BorderIcons = [biSystemMenu, biMinimize]
+  ClientHeight = 220
+  ClientWidth = 479
+  Transparency = False
+  Visible = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  StyleLookup = 'backgroundstyle'
+  Left = 291
+  Top = 266
+  object LbDrivername: TLabel
+    Position.Point = '(8,12)'
+    Width = 41.000000000000000000
+    Height = 13.000000000000000000
+    TabOrder = 0
+    Text = 'Driver:'
+    Left = 7
+    Top = 12
+  end
+  object LbChannels: TLabel
+    Position.Point = '(8,37)'
+    Width = 97.000000000000000000
+    Height = 13.000000000000000000
+    TabOrder = 1
+    Text = 'Output Channels:'
+    Left = 7
+    Top = 36
+  end
+  object LbCopyright: TLabel
+    Position.Point = '(93,192)'
+    Width = 293.000000000000000000
+    Height = 13.000000000000000000
+    TabOrder = 2
+    Text = '(C)opyright in 2004-2011 by  Delphi ASIO & VST Project'
+    Left = 87
+    Top = 202
+  end
+  object LbFreq: TLabel
+    Position.Point = '(8,72)'
+    Width = 121.000000000000000000
+    Height = 13.000000000000000000
+    TabOrder = 3
+    Text = 'Frequency: 1000 Hz'
+    Left = 8
+    Top = 72
+  end
+  object LbVolume: TLabel
+    Position.Point = '(8,114)'
+    Width = 153.000000000000000000
+    Height = 13.000000000000000000
+    TabOrder = 4
+    Text = 'Volume: 1,00 equals 0 dB'
+    Left = 8
+    Top = 112
+  end
+  object LbPanorama: TLabel
+    Position.Point = '(8,152)'
+    Width = 89.000000000000000000
+    Height = 13.000000000000000000
+    TabOrder = 5
+    Text = 'Panorama: C'
+    Left = 8
+    Top = 152
+  end
+  object DriverCombo: TComboBox
+    Position.Point = '(52,8)'
+    Width = 273.000000000000000000
+    Height = 21.000000000000000000
+    TabOrder = 6
+    ItemIndex = -1
+    OnChange = DriverComboChange
+    Left = 64
+    Top = 7
+  end
+  object BtControlPanel: TButton
+    Enabled = False
+    Position.Point = '(336,8)'
+    Width = 121.000000000000000000
+    Height = 21.000000000000000000
+    OnClick = BtControlPanelClick
+    TabOrder = 7
+    StaysPressed = False
+    IsPressed = False
+    Text = 'Control Panel'
+    Left = 352
+    Top = 7
+  end
+  object ChannelBox: TComboBox
+    Position.Point = '(104,32)'
+    Width = 220.000000000000000000
+    Height = 21.000000000000000000
+    TabOrder = 8
+    ItemIndex = -1
+    OnChange = ChannelBoxChange
+    Left = 104
+    Top = 32
+  end
+  object BtStartStop: TButton
+    Enabled = False
+    Position.Point = '(336,32)'
+    Width = 121.000000000000000000
+    Height = 21.000000000000000000
+    OnClick = BtStartStopClick
+    TabOrder = 9
+    StaysPressed = False
+    IsPressed = False
+    Text = 'Start Audio'
+    Default = True
+    Left = 352
+    Top = 32
+  end
+  object SbFreq: TScrollBar
+    Position.Point = '(8,88)'
+    Width = 462.000000000000000000
+    Height = 16.000000000000000000
+    TabOrder = 10
+    Max = 100000.000000000000000000
+    Orientation = orHorizontal
+    Value = 56633.000000000000000000
+    SmallChange = 10.000000000000000000
+    OnChange = SbFreqChange
+    Left = 8
+    Top = 88
+  end
+  object SbVolume: TScrollBar
+    Position.Point = '(8,128)'
+    Width = 464.000000000000000000
+    Height = 16.000000000000000000
+    TabOrder = 11
+    Max = 100000.000000000000000000
+    Orientation = orHorizontal
+    Value = 100000.000000000000000000
+    SmallChange = 1.000000000000000000
+    OnChange = SbVolumeChange
+    Left = 8
+    Top = 128
+  end
+  object SbPan: TScrollBar
+    Position.Point = '(8,168)'
+    Width = 465.000000000000000000
+    Height = 16.000000000000000000
+    TabOrder = 12
+    Max = 100.000000000000000000
+    Orientation = orHorizontal
+    Value = 50.000000000000000000
+    SmallChange = 1.000000000000000000
+    OnChange = SbPanChange
+    Left = 8
+    Top = 168
+  end
+  object AsioHost: TAsioHost
+    AsioTime.Speed = 1.000000000000000000
+    AsioTime.SampleRate = 44100.000000000000000000
+    AsioTime.Flags = [atSystemTimeValid, atSamplePositionValid, atSampleRateValid, atSpeedValid]
+    SampleRate = 44100.000000000000000000
+    OnBufferSwitch32 = ASIOHostBufferSwitch32
+    OnBufferSwitch64 = ASIOHostBufferSwitch64
+    OnReset = ASIOHostReset
+    OnSampleRateChanged = ASIOHostSampleRateChanged
+    Left = 144
+    Top = 56
+  end
+end

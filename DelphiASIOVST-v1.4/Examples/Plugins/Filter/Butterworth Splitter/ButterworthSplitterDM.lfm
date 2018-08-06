@@ -1,0 +1,72 @@
+object ButterworthSplitterModule: TButterworthSplitterModule
+  OldCreateOrder = False
+  Version = '1.0'
+  EffectName = 'ButterworthSplitter'
+  ProductName = 'DAV Filter Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 44100
+  numInputs = 1
+  CurrentProgram = 0
+  CurrentProgramName = 'Default'
+  IORatio = 1
+  UniqueID = 'LiRi'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Default'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 10000
+      DisplayName = 'Frequency'
+      Flags = [kVstParameterUsesFloatStep, kVstParameterSupportsDisplayIndex, kVstParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      Max = 20000
+      MaxInteger = 20000
+      Min = 2
+      MinInteger = 2
+      ReportVST2Properties = True
+      ShortLabel = 'Freq'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'Hz'
+      VSTModule = Owner
+      OnParameterChange = ParameterFrequencyChange
+      OnCustomParameterLabel = ParameterFrequencyLabel
+      OnCustomParameterDisplay = ParameterFrequencyDisplay
+    end  
+    item
+      Curve = ctLinear
+      CurveFactor = 1
+      DisplayName = 'Order'
+      Flags = [kVstParameterUsesIntegerMinMax, kVstParameterUsesIntStep, kVstParameterSupportsDisplayIndex, kVstParameterSupportsDisplayCategory]
+      LargeStepFloat = 1
+      LargeStepInteger = 1
+      Max = 16
+      MaxInteger = 16
+      Min = 1
+      MinInteger = 1
+      ReportVST2Properties = True
+      ShortLabel = 'Order'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      VSTModule = Owner
+      OnParameterChange = ParameterOrderChange
+      OnCustomParameterDisplay = ParameterOrderDisplay
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnSampleRateChange = VSTModuleSampleRateChange
+  left = 286
+  top = 77
+  Height = 150
+  HorizontalOffset = 529
+  VerticalOffset = 293
+  Width = 215
+end

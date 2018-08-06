@@ -1,0 +1,528 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DASIOHost</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit DASIOHost</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>uses</td><td><a class="section"  href="#@Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section"  href="#@FuncsProcs">Functions and Procedures</a></td><td><a class="section"  href="#@Types">Types</a></td><td><a class="section"  href="#@Constants">Constants</a></td><td><a class="section"  href="#@Variables">Variables</a></td></tr></table>
+<a name="@Description"></a><h2 class="description">Description</h2>
+&nbsp;<a name="@Uses"></a><h2 class="overview">Overview</h2>
+<a name="@Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="DASIOHost.TAsioDriverDesc.html"><code>TAsioDriverDesc</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DASIOHost.TASIOTimeSub.html"><code>TASIOTimeSub</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DASIOHost.TCustomASIOHostBasic.html"><code>TCustomASIOHostBasic</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DASIOHost.TASIOHostBasic.html"><code>TASIOHostBasic</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DASIOHost.TCustomASIOHost.html"><code>TCustomASIOHost</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DASIOHost.TASIOHost.html"><code>TASIOHost</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="@FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DASIOHost.html#ChannelTypeToString">ChannelTypeToString</a></b>(vType: TASIOSampleType): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DASIOHost.html#ListAsioDrivers">ListAsioDrivers</a></b>(var List: <a   href="DASIOHost.html#TAsioDriverList">TAsioDriverList</a>);</code></td>
+</tr>
+</table>
+<a name="@Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PAsioDriverDesc">PAsioDriverDesc</a></b> = &circ;<a   href="DASIOHost.TAsioDriverDesc.html">TAsioDriverDesc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TASIOBufferList">TASIOBufferList</a></b> = array [0..0] of TASIOBufferInfo;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PASIOBufferList">PASIOBufferList</a></b> = &circ;<a   href="DASIOHost.html#TASIOBufferList">TASIOBufferList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TAsioDriverList">TAsioDriverList</a></b> = array of <a   href="DASIOHost.TAsioDriverDesc.html">TAsioDriverDesc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TASIOCanDo">TASIOCanDo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TASIOCanDos">TASIOCanDos</a></b> = set of <a   href="DASIOHost.html#TASIOCanDo">TASIOCanDo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TASIOOutputDither">TASIOOutputDither</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TConvertMethod">TConvertMethod</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TConvertOptimization">TConvertOptimization</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TConvertOptimizations">TConvertOptimizations</a></b> = set of <a   href="DASIOHost.html#TConvertOptimization">TConvertOptimization</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TSamplePositionUpdateEvent">TSamplePositionUpdateEvent</a></b> = procedure(Sender: TObject; SamplePosition: Int64) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TSample2Event">TSample2Event</a></b> = procedure(Sender: TObject; Sample: array of Single) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TBufferSwitchEvent32">TBufferSwitchEvent32</a></b> = procedure(Sender: TObject; const InBuffer, OutBuffer: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TBufferSwitchEvent64">TBufferSwitchEvent64</a></b> = procedure(Sender: TObject; const InBuffer, OutBuffer: <a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TBufferSwitchEventNative">TBufferSwitchEventNative</a></b> = procedure(Sender: TObject; const BufferInfo: <a   href="DASIOHost.html#PASIOBufferList">PASIOBufferList</a>; const BufferIndex : Integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TBufferPreFill">TBufferPreFill</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TPreventClipping">TPreventClipping</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TInputMonitor">TInputMonitor</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TATFlag">TATFlag</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#TATFlags">TATFlags</a></b> = set of <a   href="DASIOHost.html#TATFlag">TATFlag</a>;</code></td>
+</tr>
+</table>
+<a name="@Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a></b> = WM_User + 1652;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#AM_ResetRequest">AM_ResetRequest</a></b>         = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#AM_BufferSwitch">AM_BufferSwitch</a></b>         = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#AM_BufferSwitchTimeInfo">AM_BufferSwitchTimeInfo</a></b> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#AM_LatencyChanged">AM_LatencyChanged</a></b>       = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PM_UpdateSamplePos">PM_UpdateSamplePos</a></b>      = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PM_BufferSwitch">PM_BufferSwitch</a></b>         = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PM_BufferSwitchTimeInfo">PM_BufferSwitchTimeInfo</a></b> = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PM_Reset">PM_Reset</a></b>                = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 4;</code></td>
+</tr>
+</table>
+<a name="@Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#theHost">theHost</a></b>: <a   href="DASIOHost.TCustomASIOHostBasic.html">TCustomASIOHostBasic</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PMUpdSamplePos">PMUpdSamplePos</a></b>: TLMessage;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PMBufSwitch">PMBufSwitch</a></b>: TLMessage;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PMBufSwitchTimeInfo">PMBufSwitchTimeInfo</a></b>: TLMessage;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DASIOHost.html#PMReset">PMReset</a></b>: TLMessage;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ChannelTypeToString"></a><code>function <b>ChannelTypeToString</b>(vType: TASIOSampleType): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ListAsioDrivers"></a><code>procedure <b>ListAsioDrivers</b>(var List: <a   href="DASIOHost.html#TAsioDriverList">TAsioDriverList</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAsioDriverDesc"></a><code><b>PAsioDriverDesc</b> = &circ;<a   href="DASIOHost.TAsioDriverDesc.html">TAsioDriverDesc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TASIOBufferList"></a><code><b>TASIOBufferList</b> = array [0..0] of TASIOBufferInfo;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PASIOBufferList"></a><code><b>PASIOBufferList</b> = &circ;<a   href="DASIOHost.html#TASIOBufferList">TASIOBufferList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAsioDriverList"></a><code><b>TAsioDriverList</b> = array of <a   href="DASIOHost.TAsioDriverDesc.html">TAsioDriverDesc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TDoubleDynArray = DAVDCommon.TDoubleDynArray; TSingleDynArray = DAVDCommon.TSingleDynArray; TArrayOfDoubleDynArray = DAVDCommon.TArrayOfDoubleDynArray; TArrayOfSingleDynArray = DAVDCommon.TArrayOfSingleDynArray; PArrayOfDoubleDynArray = DAVDCommon.PArrayOfDoubleDynArray; PArrayOfSingleDynArray = DAVDCommon.PArrayOfSingleDynArray;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TASIOCanDo"></a><code><b>TASIOCanDo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+acdInputMonitor: </li>
+<li>
+acdTimeInfo: </li>
+<li>
+acdTimeCode: </li>
+<li>
+acdTransport: </li>
+<li>
+acdInputGain: </li>
+<li>
+acdInputMeter: </li>
+<li>
+acdOutputGain: </li>
+<li>
+acdOutputMeter: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TASIOCanDos"></a><code><b>TASIOCanDos</b> = set of <a   href="DASIOHost.html#TASIOCanDo">TASIOCanDo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TASIOOutputDither"></a><code><b>TASIOOutputDither</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+odNone: </li>
+<li>
+odUDF: </li>
+<li>
+odTDF: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TConvertMethod"></a><code><b>TConvertMethod</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cmNone: </li>
+<li>
+cm32: </li>
+<li>
+cm64: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TConvertOptimization"></a><code><b>TConvertOptimization</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+coSSE: </li>
+<li>
+co3DNow: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TConvertOptimizations"></a><code><b>TConvertOptimizations</b> = set of <a   href="DASIOHost.html#TConvertOptimization">TConvertOptimization</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSamplePositionUpdateEvent"></a><code><b>TSamplePositionUpdateEvent</b> = procedure(Sender: TObject; SamplePosition: Int64) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSample2Event"></a><code><b>TSample2Event</b> = procedure(Sender: TObject; Sample: array of Single) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBufferSwitchEvent32"></a><code><b>TBufferSwitchEvent32</b> = procedure(Sender: TObject; const InBuffer, OutBuffer: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBufferSwitchEvent64"></a><code><b>TBufferSwitchEvent64</b> = procedure(Sender: TObject; const InBuffer, OutBuffer: <a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBufferSwitchEventNative"></a><code><b>TBufferSwitchEventNative</b> = procedure(Sender: TObject; const BufferInfo: <a   href="DASIOHost.html#PASIOBufferList">PASIOBufferList</a>; const BufferIndex : Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBufferPreFill"></a><code><b>TBufferPreFill</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+bpfNone: </li>
+<li>
+bpfZero: </li>
+<li>
+bpfNoise: </li>
+<li>
+bpfCustom: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPreventClipping"></a><code><b>TPreventClipping</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pcNone: </li>
+<li>
+pcDigital: </li>
+<li>
+pcAnalog: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TInputMonitor"></a><code><b>TInputMonitor</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+imDisabled: </li>
+<li>
+imMono: </li>
+<li>
+imStereo: </li>
+<li>
+imAll: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TATFlag"></a><code><b>TATFlag</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+atSystemTimeValid: </li>
+<li>
+atSamplePositionValid: </li>
+<li>
+atSampleRateValid: </li>
+<li>
+atSpeedValid: </li>
+<li>
+atSampleRateChanged: </li>
+<li>
+atClockSourceChanged: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TATFlags"></a><code><b>TATFlags</b> = set of <a   href="DASIOHost.html#TATFlag">TATFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PM_ASIO"></a><code><b>PM_ASIO</b> = WM_User + 1652;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+define D5CP to compile with the ASIO control panel design time for Delphi 5 private message</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AM_ResetRequest"></a><code><b>AM_ResetRequest</b>         = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+unique we hope ASIO message(s), as wParam for PM_ASIO</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AM_BufferSwitch"></a><code><b>AM_BufferSwitch</b>         = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AM_BufferSwitchTimeInfo"></a><code><b>AM_BufferSwitchTimeInfo</b> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+new buffer index in lParam</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AM_LatencyChanged"></a><code><b>AM_LatencyChanged</b>       = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+new buffer index in lParam time passed in MainForm.BufferTime</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PM_UpdateSamplePos"></a><code><b>PM_UpdateSamplePos</b>      = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PM_BufferSwitch"></a><code><b>PM_BufferSwitch</b>         = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+sample pos in wParam (hi) and lParam (lo)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PM_BufferSwitchTimeInfo"></a><code><b>PM_BufferSwitchTimeInfo</b> = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PM_Reset"></a><code><b>PM_Reset</b>                = <a   href="DASIOHost.html#PM_ASIO">PM_ASIO</a> + 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="theHost"></a><code><b>theHost</b>: <a   href="DASIOHost.TCustomASIOHostBasic.html">TCustomASIOHostBasic</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMUpdSamplePos"></a><code><b>PMUpdSamplePos</b>: TLMessage;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMBufSwitch"></a><code><b>PMBufSwitch</b>: TLMessage;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMBufSwitchTimeInfo"></a><code><b>PMBufSwitchTimeInfo</b>: TLMessage;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMReset"></a><code><b>PMReset</b>: TLMessage;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:16</em>
+</span>
+</body></html>

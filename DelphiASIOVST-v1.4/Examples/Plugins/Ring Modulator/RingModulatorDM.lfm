@@ -1,0 +1,58 @@
+object RingModulatorDataModule: TRingModulatorDataModule
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'Ring Modulator'
+  ProductName = 'DAV Effect Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 44100
+  numInputs = 1
+  numOutputs = 1
+  CurrentProgramName = 'Default'
+  IORatio = 1
+  UniqueID = 'RiMo'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Default'
+      VSTModule = Owner
+    end  
+    item
+      DisplayName = 'Very Light'
+      VSTModule = Owner
+    end  
+    item
+      DisplayName = 'Dirty'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 100000
+      DisplayName = 'Frequency'
+      LargeStepFloat = 2
+      Max = 1000
+      MaxInteger = 1000
+      Min = 0.00999999977648
+      ShortLabel = 'Freq.'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParameterFrequencyChange
+      OnCustomParameterLabel = ParameterFrequencyLabel
+      OnCustomParameterDisplay = ParameterFrequencyDisplay
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnEditOpen = VSTModuleEditOpen
+  OnSampleRateChange = VSTModuleSampleRateChange
+  left = 286
+  top = 81
+  Height = 150
+  HorizontalOffset = 344
+  VerticalOffset = 294
+  Width = 215
+end

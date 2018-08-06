@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{B8A7775C-1EF5-4962-B3FC-9CF13B6093A2}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="AdvancedClipper.dll">Advanced Clipper\AdvancedClipper.bdsproj</Projects>
+      <Projects Name="AmpSim.dll">AmpSim\AmpSim.bdsproj</Projects>
+      <Projects Name="ASIOVST.dll">ASIO-Extender\ASIOVST.bdsproj</Projects>
+      <Projects Name="Audio2MidiTrigger.dll">Audio2MidiTrigger\Audio2MidiTrigger.bdsproj</Projects>
+      <Projects Name="AudioAmelioration.dll">Audio Amelioration\AudioAmelioration.bdsproj</Projects>
+      <Projects Name="BarberpoleFlanger.dll">Barberpole\BarberpoleFlanger.bdsproj</Projects>
+      <Projects Name="BarberpoleShifter.dll">Barberpole Shifter\BarberpoleShifter.bdsproj</Projects>
+      <Projects Name="BarberpoleTuner.dll">BarberpoleTuner\BarberpoleTuner.bdsproj</Projects>
+      <Projects Name="BassExtender.dll">BassExtender\BassExtender.bdsproj</Projects>
+      <Projects Name="Baxxpander.dll">Baxxpander Clone\Baxxpander.bdsproj</Projects>
+      <Projects Name="BodeFrequencyShifter.dll">Bode Frequency Shifter\BodeFrequencyShifter.bdsproj</Projects>
+      <Projects Name="ChebyshevWaveshaper.dll">ChebyshevWaveshaper\ChebyshevWaveshaper.bdsproj</Projects>
+      <Projects Name="ChunkDemo.dll">Chunk Demo\ChunkDemo.bdsproj</Projects>
+      <Projects Name="ConvoFx.dll">ConvoFX\ConvoFx.bdsproj</Projects>
+      <Projects Name="Convolution.dll">Simple Convolution Engine\Convolution.bdsproj</Projects>
+      <Projects Name="CrosstalkCancellation.dll">Crosstalk Cancellation\CrosstalkCancellation.bdsproj</Projects>
+      <Projects Name="Decimator.dll">Decimator\Decimator.bdsproj</Projects>
+      <Projects Name="DitherNoiseshaper.dll">Dither &amp; Noiseshaper (IIR)\DitherNoiseshaper.bdsproj</Projects>
+      <Projects Name="Exciter.dll">Chebyshev Exciter\Exciter.bdsproj</Projects>
+      <Projects Name="fReeverb.dll">fReeverb\fReeverb.bdsproj</Projects>
+      <Projects Name="FrequencyDomainPitchShifter.dll">Frequency Domain Pitchshifter\FrequencyDomainPitchShifter.bdsproj</Projects>
+      <Projects Name="GranularPitchshifter.dll">Granular Pitchshifter\GranularPitchshifter.bdsproj</Projects>
+      <Projects Name="HeadphoneMix.dll">HeadphoneMix\HeadphoneMix.bdsproj</Projects>
+      <Projects Name="HRTF3D.dll">HRTF 3D\HRTF3D.bdsproj</Projects>
+      <Projects Name="MaxxBassClone.dll">MaxxBass Clone\MaxxBassClone.bdsproj</Projects>
+      <Projects Name="ModDelay.dll">Mod Delay\ModDelay.bdsproj</Projects>
+      <Projects Name="ModDelay2.dll">Mod Delay 2\ModDelay2.bdsproj</Projects>
+      <Projects Name="OpAmp.dll">NonLinear\OpAmp.bdsproj</Projects>
+      <Projects Name="OversampledTanh.dll">Oversampled Tanh\OversampledTanh.bdsproj</Projects>
+      <Projects Name="PartyDelay.dll">Party-Delay\PartyDelay.bdsproj</Projects>
+      <Projects Name="Phaser.dll">Phaser\Phaser.bdsproj</Projects>
+      <Projects Name="PlateReverb.dll">Plate Reverb\PlateReverb.bdsproj</Projects>
+      <Projects Name="Quadropolis.dll">Quadropolis\Quadropolis.bdsproj</Projects>
+      <Projects Name="RenaissanceBassClone.dll">Renaissance Bass Clone\RenaissanceBassClone.bdsproj</Projects>
+      <Projects Name="RingModulator.dll">Ring Modulator\RingModulator.bdsproj</Projects>
+      <Projects Name="SimpleChorus.dll">Chorus\SimpleChorus.bdsproj</Projects>
+      <Projects Name="SimpleFlanger.dll">Flanger\SimpleFlanger.bdsproj</Projects>
+      <Projects Name="SimpleSampleDelay.dll">Simple Sample Delay\SimpleSampleDelay.bdsproj</Projects>
+      <Projects Name="SimpleVibrato.dll">Vibrato\SimpleVibrato.bdsproj</Projects>
+      <Projects Name="SoundTouchPitchShifter.dll">SoundTouch based Stereo-Pitch-Shifter\SoundTouchPitchShifter.bdsproj</Projects>
+      <Projects Name="SpectralDelayFilter.dll">Spectral Delay Filter\SpectralDelayFilter.bdsproj</Projects>
+      <Projects Name="SpinBugLite.dll">SpinBug Lite\SpinBugLite.bdsproj</Projects>
+      <Projects Name="SplitHarmonizer.dll">Split Harmonizer (SoundTouch based)\SplitHarmonizer.bdsproj</Projects>
+      <Projects Name="SubBoost.dll">SubBoost\SubBoost.bdsproj</Projects>
+      <Projects Name="TanhWaveshaper.dll">Tanh Waveshaper\TanhWaveshaper.bdsproj</Projects>
+      <Projects Name="ThirdOctaveAnalyser.dll">Third Octave Analyser\ThirdOctaveAnalyser.bdsproj</Projects>
+      <Projects Name="TrackPlug.dll">TrackPlug\TrackPlug.bdsproj</Projects>
+      <Projects Name="Tuner.dll">Tuner\Tuner.bdsproj</Projects>
+      <Projects Name="TwoBandDistortion.dll">2-Band Distortion\TwoBandDistortion.bdsproj</Projects>
+      <Projects Name="VariableDelay.dll">Variable Delay\VariableDelay.bdsproj</Projects>
+      <Projects Name="Targets">AdvancedClipper.dll AmpSim.dll ASIOVST.dll Audio2MidiTrigger.dll AudioAmelioration.dll BarberpoleFlanger.dll BarberpoleShifter.dll BarberpoleTuner.dll BassExtender.dll Baxxpander.dll BodeFrequencyShifter.dll ChebyshevWaveshaper.dll ChunkDemo.dll ConvoFx.dll Convolution.dll Convolution.dll CrosstalkCancellation.dll Decimator.dll DitherNoiseshaper.dll DitherNoiseshaper.dll Exciter.dll fReeverb.dll FrequencyDomainPitchShifter.dll GranularPitchshifter.dll HeadphoneMix.dll HRTF3D.dll MaxxBassClone.dll ModDelay.dll ModDelay2.dll OpAmp.dll OversampledTanh.dll PartyDelay.dll Phaser.dll PlateReverb.dll Quadropolis.dll RenaissanceBassClone.dll RingModulator.dll SimpleChorus.dll SimpleFlanger.dll SimpleSampleDelay.dll SimpleVibrato.dll SoundTouchPitchShifter.dll SoundTouchPitchShifter.dll SpectralDelayFilter.dll SpinBugLite.dll SplitHarmonizer.dll SubBoost.dll TanhWaveshaper.dll ThirdOctaveAnalyser.dll TrackPlug.dll Tuner.dll TwoBandDistortion.dll VariableDelay.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

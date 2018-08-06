@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.094,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.508,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthViewFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.471,=C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.557,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.036,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthViewFrame.pas=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthView.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.813,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\prjRMCVATest.dproj=C:\Users\Ruud\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.521,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromDFM\URMCVASynthViewFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.361,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthView.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.210,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthView.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.316,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\XSingletons.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.408,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCConstants.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.588,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVAMain.pas=C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.790,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCShape.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.370,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCEmptyPanel.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.374,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\IRMCShape.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UIRMCShape.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.036,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthViewFrame.dfm=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthView.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.447,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UKnobEditor.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.389,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCControls.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.588,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVAMain.dfm=C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.525,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromDFM\URMCVASynthViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.428,=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBaseControlPanel.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.966,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromRC\URMCVASynthViewFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.428,C:\Users\Ruud\Documents\Projects\Midimania\Common\UVirtCC.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.722,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCADSR.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.586,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromRC\URMCVASynthViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.354,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromRC\URMCVASynthViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.920,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCCheckBox.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.149,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromRC\URMCVASynthViewFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.882,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromRC\URMCVASynthViewFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.779,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCADSR.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.135,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCCheckBox.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.048,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.652,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromDFM\URMCVASynthViewFrame.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.187,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromDFM\URMCVASynthViewFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.911,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.521,=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.079,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UVirtCC.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.864,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\IRMCShape.pas</Transaction>
+    <Transaction>2017-09-21 16:25:41.806,C:\Users\Ruud\Documents\Projects\Midimania\CrumarView\UCrumarView.pas=C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\URMCVASynthView.pas</Transaction>
+    <Transaction>2017-09-21 16:29:20.385,C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Examples\Plugins (Synths)\XSynth\UI\FromRC\URMCVASynthViewFrame.pas=</Transaction>
+    <Transaction>2017-09-21 16:29:46.000,=C:\Users\Ruud\Documents\Projects\Midimania\CrumarView\UCrumarViewFrame.pas</Transaction>
+  </Transactions>
+</BorlandProject>

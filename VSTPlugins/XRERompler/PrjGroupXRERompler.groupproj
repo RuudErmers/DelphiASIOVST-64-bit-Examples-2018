@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A43126C9-4A9D-4B9D-87B8-EE1DE4BAB12B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="prjRomplerVSTVA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="XRERompler.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjRomplerVSTVA">
+        <MSBuild Projects="prjRomplerVSTVA.dproj"/>
+    </Target>
+    <Target Name="prjRomplerVSTVA:Clean">
+        <MSBuild Projects="prjRomplerVSTVA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjRomplerVSTVA:Make">
+        <MSBuild Projects="prjRomplerVSTVA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XRERompler">
+        <MSBuild Projects="XRERompler.dproj"/>
+    </Target>
+    <Target Name="XRERompler:Clean">
+        <MSBuild Projects="XRERompler.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XRERompler:Make">
+        <MSBuild Projects="XRERompler.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjRomplerVSTVA;XRERompler"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjRomplerVSTVA:Clean;XRERompler:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjRomplerVSTVA:Make;XRERompler:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,130 @@
+package DAV_DSP_D12;
+
+{$M+}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $510000}
+{$DESCRIPTION 'ASIO & VST Project - DSP Package'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  rtl,
+  DAV_Common_D12;
+
+contains
+  DAV_DspRegister in '..\..\Source\Dsp\DAV_DspRegister.pas',
+  DAV_ClassesFft in '..\..\Source\DAV_ClassesFft.pas',
+  DAV_DspAmbience in '..\..\Source\Dsp\DAV_DspAmbience.pas',
+  DAV_DspAnalogueFilterPrototypes in '..\..\Source\DSP\DAV_DspAnalogueFilterPrototypes.pas',
+  DAV_DspAudioToMidiTrigger in '..\..\Source\Dsp\DAV_DspAudioToMidiTrigger.pas',
+  DAV_DspBarberpole in '..\..\Source\Dsp\DAV_DspBarberpole.pas',
+  DAV_DspBarberpoleTuner in '..\..\Source\Dsp\DAV_DspBarberpoleTuner.pas',
+  DAV_DspBesselFilter in '..\..\Source\Dsp\DAV_DspBesselFilter.pas',
+  DAV_DspBlockDistribution in '..\..\Source\DSP\DAV_DspBlockDistribution.pas',
+  DAV_DspBufferedAudioFilePlayer in '..\..\Source\Dsp\DAV_DspBufferedAudioFilePlayer.pas',
+  DAV_DspBufferedAudioFileRecorder in '..\..\Source\Dsp\DAV_DspBufferedAudioFileRecorder.pas',
+  DAV_DspBufferedMp3Player in '..\..\Source\Dsp\DAV_DspBufferedMp3Player.pas',
+  DAV_DspBuildingBlocks in '..\..\Source\DSP\DAV_DspBuildingBlocks.pas',
+  DAV_DspCepstrum in '..\..\Source\Dsp\DAV_DspCepstrum.pas',
+  DAV_DspChorus in '..\..\Source\Dsp\DAV_DspChorus.pas',
+  DAV_DspCircularBuffer in '..\..\Source\Dsp\DAV_DspCircularBuffer.pas',
+  DAV_DspComponents in '..\..\Source\DSP\DAV_DspComponents.pas',
+  DAV_DspConvolution in '..\..\Source\Dsp\DAV_DspConvolution.pas',
+  DAV_DspCorrelation in '..\..\Source\Dsp\DAV_DspCorrelation.pas',
+  DAV_DspCrosstalkCancellation in '..\..\Source\Dsp\DAV_DspCrosstalkCancellation.pas',
+  DAV_DspCrosstalkSimulator in '..\..\Source\Dsp\DAV_DspCrosstalkSimulator.pas',
+  DAV_DspCrosstalkSimulatorHRTF in '..\..\Source\Dsp\DAV_DspCrosstalkSimulatorHRTF.pas',
+  DAV_DspDelayLines in '..\..\Source\Dsp\DAV_DspDelayLines.pas',
+  DAV_DspDFT in '..\..\Source\Dsp\DAV_DspDFT.pas',
+  DAV_DspDitherNoiseShaper in '..\..\Source\Dsp\DAV_DspDitherNoiseShaper.pas',
+  DAV_DspDownsampleScheduler in '..\..\Source\Dsp\DAV_DspDownsampleScheduler.pas',
+  DAV_DspDynamics in '..\..\Source\Dsp\DAV_DspDynamics.pas',
+  DAV_DspExciter in '..\..\Source\Dsp\DAV_DspExciter.pas',
+  DAV_DspFDNReverb in '..\..\Source\Dsp\DAV_DspFDNReverb.pas',
+  DAV_DspFeedbackAMOscillator in '..\..\Source\Dsp\DAV_DspFeedbackAMOscillator.pas',
+  DAV_DspFeedbackDelayNetwork in '..\..\Source\Dsp\DAV_DspFeedbackDelayNetwork.pas',
+  DAV_DspFFT in '..\..\Source\Dsp\DAV_DspFFT.pas',
+  DAV_DspFftReal2Complex in '..\..\Source\Dsp\DAV_DspFftReal2Complex.pas',
+  DAV_DspFilter in '..\..\Source\Dsp\DAV_DspFilter.pas',
+  DAV_DspFilterAllpasses in '..\..\Source\Dsp\DAV_DspFilterAllpasses.pas',
+  DAV_DspFilterBasics in '..\..\Source\Dsp\DAV_DspFilterBasics.pas',
+  DAV_DspFilterBasicsAutomatable in '..\..\Source\Dsp\DAV_DspFilterBasicsAutomatable.pas',
+  DAV_DspFilterButterworth in '..\..\Source\Dsp\DAV_DspFilterButterworth.pas',
+  DAV_DspFilterChebyshev in '..\..\Source\Dsp\DAV_DspFilterChebyshev.pas',
+  DAV_DspFilterChebyshevType1 in '..\..\Source\Dsp\DAV_DspFilterChebyshevType1.pas',
+  DAV_DspFilterChebyshevType2 in '..\..\Source\Dsp\DAV_DspFilterChebyshevType2.pas',
+  DAV_DspFilterLinearPhaseCrossover in '..\..\Source\Dsp\DAV_DspFilterLinearPhaseCrossover.pas',
+  DAV_DspFilterLinkwitzRiley in '..\..\Source\Dsp\DAV_DspFilterLinkwitzRiley.pas',
+  DAV_DspFilterManager in '..\..\Source\Dsp\DAV_DspFilterManager.pas',
+  DAV_DspFilterMoog in '..\..\Source\Dsp\DAV_DspFilterMoog.pas',
+  DAV_DspFilterSimple in '..\..\Source\Dsp\DAV_DspFilterSimple.pas',
+  DAV_DspFilterSpectralDelay in '..\..\Source\Dsp\DAV_DspFilterSpectralDelay.pas',
+  DAV_DspFreeverb in '..\..\Source\Dsp\DAV_DspFreeverb.pas',
+  DAV_DspFreeverbFilter in '..\..\Source\Dsp\DAV_DspFreeverbFilter.pas',
+  DAV_DspFrequencyDivider in '..\..\Source\Dsp\DAV_DspFrequencyDivider.pas',
+  DAV_DspFrequencyDomainPitchshifter in '..\..\Source\Dsp\DAV_DspFrequencyDomainPitchshifter.pas',
+  DAV_DspFrequencyShifter in '..\..\Source\Dsp\DAV_DspFrequencyShifter.pas',
+  DAV_DspGranularPitchshifter in '..\..\Source\Dsp\DAV_DspGranularPitchshifter.pas',
+  DAV_DspHRTF in '..\..\Source\Dsp\DAV_DspHRTF.pas',
+  DAV_DspInterpolation in '..\..\Source\Dsp\DAV_DspInterpolation.pas',
+  DAV_DspLeslie in '..\..\Source\Dsp\DAV_DspLeslie.pas',
+  DAV_DspLevelingAmplifier in '..\..\Source\Dsp\DAV_DspLevelingAmplifier.pas',
+  DAV_DspLevinson in '..\..\Source\Dsp\DAV_DspLevinson.pas',
+  DAV_DspLFO in '..\..\Source\Dsp\DAV_DspLFO.pas',
+  DAV_DspLightweightDynamics in '..\..\Source\Dsp\DAV_DspLightweightDynamics.pas',
+  DAV_DspLMS in '..\..\Source\Dsp\DAV_DspLMS.pas',
+  DAV_DspLorenzOscilator in '..\..\Source\Dsp\DAV_DspLorenzOscilator.pas',
+  DAV_DspMetronome in '..\..\Source\Dsp\DAV_DspMetronome.pas',
+  DAV_DspMinBlep in '..\..\Source\Dsp\DAV_DspMinBlep.pas',
+  DAV_DspModDelay in '..\..\Source\Dsp\DAV_DspModDelay.pas',
+  DAV_DspNoiseShapingFilterDesigner in '..\..\Source\Dsp\DAV_DspNoiseShapingFilterDesigner.pas',
+  DAV_DspParametricEQ in '..\..\Source\Dsp\DAV_DspParametricEQ.pas',
+  DAV_DspPhaser in '..\..\Source\Dsp\DAV_DspPhaser.pas',
+  DAV_DspPinkNoiseGenerator in '..\..\Source\Dsp\DAV_DspPinkNoiseGenerator.pas',
+  DAV_DspPlateReverb in '..\..\Source\Dsp\DAV_DspPlateReverb.pas',
+  DAV_DspPolyphaseDownsampler in '..\..\Source\Dsp\DAV_DspPolyphaseDownsampler.pas',
+  DAV_DspPolyphaseFilter in '..\..\Source\Dsp\DAV_DspPolyphaseFilter.pas',
+  DAV_DspPolyphaseHilbert in '..\..\Source\Dsp\DAV_DspPolyphaseHilbert.pas',
+  DAV_DspPolyphaseIirDesigner in '..\..\Source\Dsp\DAV_DspPolyphaseIirDesigner.pas',
+  DAV_DspPolyphaseUpsampler in '..\..\Source\Dsp\DAV_DspPolyphaseUpsampler.pas',
+  DAV_DspPsychoacousticBassEnhancer in '..\..\Source\Dsp\DAV_DspPsychoacousticBassEnhancer.pas',
+  DAV_DspRemez in '..\..\Source\Dsp\DAV_DspRemez.pas',
+  DAV_DspRingModulator in '..\..\Source\Dsp\DAV_DspRingModulator.pas',
+  DAV_DspSimpleOscillator in '..\..\Source\Dsp\DAV_DspSimpleOscillator.pas',
+  DAV_DspSpectralEffects in '..\..\Source\DSP\DAV_DspSpectralEffects.pas',
+  DAV_DspSpectralFilters in '..\..\Source\DSP\DAV_DspSpectralFilters.pas',
+  DAV_DspSpectralNoiseReduction in '..\..\Source\DSP\DAV_DspSpectralNoiseReduction.pas',
+  DAV_DspSpectrumInterpolation in '..\..\Source\DSP\DAV_DspSpectrumInterpolation.pas',
+  DAV_DspStateVariableFilter in '..\..\Source\Dsp\DAV_DspStateVariableFilter.pas',
+  DAV_DspSweepOscillator in '..\..\Source\Dsp\DAV_DspSweepOscillator.pas',
+  DAV_DspTransientProcessor in '..\..\Source\Dsp\DAV_DspTransientProcessor.pas',
+  DAV_DspTuner in '..\..\Source\Dsp\DAV_DspTuner.pas',
+  DAV_DspUpDownsampling in '..\..\Source\Dsp\DAV_DspUpDownsampling.pas',
+  DAV_DspVariableDelay in '..\..\Source\Dsp\DAV_DspVariableDelay.pas',
+  DAV_DspVibrato in '..\..\Source\Dsp\DAV_DspVibrato.pas',
+  DAV_DspVocoder in '..\..\Source\Dsp\DAV_DspVocoder.pas',
+  DAV_DspVoiceSynth in '..\..\Source\Dsp\DAV_DspVoiceSynth.pas',
+  DAV_DspWaveshaper in '..\..\Source\Dsp\DAV_DspWaveshaper.pas',
+  DAV_DspWindowFunctions in '..\..\Source\DSP\DAV_DspWindowFunctions.pas',
+  DAV_DspWindowing in '..\..\Source\Dsp\DAV_DspWindowing.pas';
+
+end.

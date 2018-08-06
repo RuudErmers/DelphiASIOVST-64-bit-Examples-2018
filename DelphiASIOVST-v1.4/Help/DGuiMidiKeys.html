@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DGuiMidiKeys</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit DGuiMidiKeys</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>uses</td><td><a class="section"  href="#@Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#@Types">Types</a></td><td><a class="section"  href="#@Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="@Description"></a><h2 class="description">Description</h2>
+&nbsp;<a name="@Uses"></a><h2 class="overview">Overview</h2>
+<a name="@Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="DGuiMidiKeys.TGuiKbMouseDragInfo.html"><code>TGuiKbMouseDragInfo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="DGuiMidiKeys.TGuiZbMouseDragInfo.html"><code>TGuiZbMouseDragInfo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="DGuiMidiKeys.TGuiColorRect.html"><code>TGuiColorRect</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="DGuiMidiKeys.TGuiSingleKey.html"><code>TGuiSingleKey</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DGuiMidiKeys.TGuiMidiKeys.html"><code>TGuiMidiKeys</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="@Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a></b> = set of (mptOutside, mptInZone, mptOnLowestKey, mptOnHighestKey, mptOnLowestBorder, mptOnHighestBorder);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiKbMouseAction">TGuiKbMouseAction</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiKeyFlags">TGuiKeyFlags</a></b> = set of (kfBlackKey, kfVisible, kfPressed, kfMouseOver, kfByMouse, kfMousePinned);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiKeyDownMode">TGuiKeyDownMode</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiKeyArray">TGuiKeyArray</a></b> = array[0..<a   href="DGuiMidiKeys.html#GUI_KB_HIGHESTKEY">GUI_KB_HIGHESTKEY</a>] of <a   href="DGuiMidiKeys.TGuiSingleKey.html">TGuiSingleKey</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnMouseUpOnMidiKey">TGuiOnMouseUpOnMidiKey</a></b> = procedure (Sender: TObject; KeyNr: Byte; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnMouseDownOnMidiKey">TGuiOnMouseDownOnMidiKey</a></b> = procedure (Sender: TObject; KeyNr: Byte; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnMouseUpOnKeyZoneBar">TGuiOnMouseUpOnKeyZoneBar</a></b> = procedure (Sender: TObject; KeyNr: Byte; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; MouseOverType: <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnMouseDownOnKeyZoneBar">TGuiOnMouseDownOnKeyZoneBar</a></b> = procedure (Sender: TObject; KeyNr: Byte; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; MouseOverType: <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnZoneBarMouseEnter">TGuiOnZoneBarMouseEnter</a></b> = procedure (Sender: TObject; KeyNr: Byte; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnZoneBarMouseLeave">TGuiOnZoneBarMouseLeave</a></b>      = TNotifyEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnZoneMouseEnter">TGuiOnZoneMouseEnter</a></b> = procedure (Sender: TObject; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnZoneMouseLeave">TGuiOnZoneMouseLeave</a></b> = procedure (Sender: TObject; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnZoneMouseOverChanged">TGuiOnZoneMouseOverChanged</a></b> = procedure (Sender: TObject; KeyNr: Byte; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; MouseOverType: <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnZoneSelectionChanged">TGuiOnZoneSelectionChanged</a></b> = procedure (Sender: TObject; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnKeyMouseEnter">TGuiOnKeyMouseEnter</a></b> = procedure (Sender: TObject; KeyNr: Byte; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnKeyMouseLeave">TGuiOnKeyMouseLeave</a></b> = procedure (Sender: TObject; KeyNr: Byte) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnStartZoneBarDragging">TGuiOnStartZoneBarDragging</a></b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiZbMouseDragInfo.html">TGuiZbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnMoveZoneBarDragging">TGuiOnMoveZoneBarDragging</a></b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiZbMouseDragInfo.html">TGuiZbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnEndZoneBarDragging">TGuiOnEndZoneBarDragging</a></b> = procedure (Sender: TObject; var DragInfo: <a   href="DGuiMidiKeys.TGuiZbMouseDragInfo.html">TGuiZbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnStartKeyDragging">TGuiOnStartKeyDragging</a></b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiKbMouseDragInfo.html">TGuiKbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnMoveKeyDragging">TGuiOnMoveKeyDragging</a></b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiKbMouseDragInfo.html">TGuiKbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnEndKeyDragging">TGuiOnEndKeyDragging</a></b> = procedure (Sender: TObject; var DragInfo: <a   href="DGuiMidiKeys.TGuiKbMouseDragInfo.html">TGuiKbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnNoteOn">TGuiOnNoteOn</a></b> = procedure (Sender: TObject; KeyNr: Byte; Velocity: Single) of Object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#TGuiOnNoteOff">TGuiOnNoteOff</a></b> = procedure (Sender: TObject; KeyNr: Byte) of Object;</code></td>
+</tr>
+</table>
+<a name="@Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#GUI_KB_MAXOCTAVES">GUI_KB_MAXOCTAVES</a></b> = 11;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DGuiMidiKeys.html#GUI_KB_HIGHESTKEY">GUI_KB_HIGHESTKEY</a></b> = <a   href="DGuiMidiKeys.html#GUI_KB_MAXOCTAVES">GUI_KB_MAXOCTAVES</a>*12+1;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiZoneMousePosType"></a><code><b>TGuiZoneMousePosType</b> = set of (mptOutside, mptInZone, mptOnLowestKey, mptOnHighestKey, mptOnLowestBorder, mptOnHighestBorder);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Octaves + Highest C</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiKbMouseAction"></a><code><b>TGuiKbMouseAction</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kmaMove: </li>
+<li>
+kmaDown: </li>
+<li>
+kmaUp: </li>
+<li>
+kmaStartDrag: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiKeyFlags"></a><code><b>TGuiKeyFlags</b> = set of (kfBlackKey, kfVisible, kfPressed, kfMouseOver, kfByMouse, kfMousePinned);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiKeyDownMode"></a><code><b>TGuiKeyDownMode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+kdmUp: </li>
+<li>
+kdmFlat: </li>
+<li>
+kdmDown: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiKeyArray"></a><code><b>TGuiKeyArray</b> = array[0..<a   href="DGuiMidiKeys.html#GUI_KB_HIGHESTKEY">GUI_KB_HIGHESTKEY</a>] of <a   href="DGuiMidiKeys.TGuiSingleKey.html">TGuiSingleKey</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnMouseUpOnMidiKey"></a><code><b>TGuiOnMouseUpOnMidiKey</b> = procedure (Sender: TObject; KeyNr: Byte; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnMouseDownOnMidiKey"></a><code><b>TGuiOnMouseDownOnMidiKey</b> = procedure (Sender: TObject; KeyNr: Byte; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnMouseUpOnKeyZoneBar"></a><code><b>TGuiOnMouseUpOnKeyZoneBar</b> = procedure (Sender: TObject; KeyNr: Byte; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; MouseOverType: <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnMouseDownOnKeyZoneBar"></a><code><b>TGuiOnMouseDownOnKeyZoneBar</b> = procedure (Sender: TObject; KeyNr: Byte; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; MouseOverType: <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>; Button: TMouseButton; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnZoneBarMouseEnter"></a><code><b>TGuiOnZoneBarMouseEnter</b> = procedure (Sender: TObject; KeyNr: Byte; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnZoneBarMouseLeave"></a><code><b>TGuiOnZoneBarMouseLeave</b>      = TNotifyEvent;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnZoneMouseEnter"></a><code><b>TGuiOnZoneMouseEnter</b> = procedure (Sender: TObject; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnZoneMouseLeave"></a><code><b>TGuiOnZoneMouseLeave</b> = procedure (Sender: TObject; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnZoneMouseOverChanged"></a><code><b>TGuiOnZoneMouseOverChanged</b> = procedure (Sender: TObject; KeyNr: Byte; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>; MouseOverType: <a   href="DGuiMidiKeys.html#TGuiZoneMousePosType">TGuiZoneMousePosType</a>; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnZoneSelectionChanged"></a><code><b>TGuiOnZoneSelectionChanged</b> = procedure (Sender: TObject; Zone: <a   href="DGuiMidiKeyZones.TGuiKeyZoneItem.html">TGuiKeyZoneItem</a>) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnKeyMouseEnter"></a><code><b>TGuiOnKeyMouseEnter</b> = procedure (Sender: TObject; KeyNr: Byte; Shift: TShiftState; X, Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnKeyMouseLeave"></a><code><b>TGuiOnKeyMouseLeave</b> = procedure (Sender: TObject; KeyNr: Byte) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnStartZoneBarDragging"></a><code><b>TGuiOnStartZoneBarDragging</b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiZbMouseDragInfo.html">TGuiZbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnMoveZoneBarDragging"></a><code><b>TGuiOnMoveZoneBarDragging</b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiZbMouseDragInfo.html">TGuiZbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnEndZoneBarDragging"></a><code><b>TGuiOnEndZoneBarDragging</b> = procedure (Sender: TObject; var DragInfo: <a   href="DGuiMidiKeys.TGuiZbMouseDragInfo.html">TGuiZbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnStartKeyDragging"></a><code><b>TGuiOnStartKeyDragging</b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiKbMouseDragInfo.html">TGuiKbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnMoveKeyDragging"></a><code><b>TGuiOnMoveKeyDragging</b> = procedure (Sender: TObject; KeyNr: Integer; var DragInfo: <a   href="DGuiMidiKeys.TGuiKbMouseDragInfo.html">TGuiKbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnEndKeyDragging"></a><code><b>TGuiOnEndKeyDragging</b> = procedure (Sender: TObject; var DragInfo: <a   href="DGuiMidiKeys.TGuiKbMouseDragInfo.html">TGuiKbMouseDragInfo</a>; Shift: TShiftState; X,Y: Integer) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnNoteOn"></a><code><b>TGuiOnNoteOn</b> = procedure (Sender: TObject; KeyNr: Byte; Velocity: Single) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGuiOnNoteOff"></a><code><b>TGuiOnNoteOff</b> = procedure (Sender: TObject; KeyNr: Byte) of Object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GUI_KB_MAXOCTAVES"></a><code><b>GUI_KB_MAXOCTAVES</b> = 11;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-$DEFINE Debug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GUI_KB_HIGHESTKEY"></a><code><b>GUI_KB_HIGHESTKEY</b> = <a   href="DGuiMidiKeys.html#GUI_KB_MAXOCTAVES">GUI_KB_MAXOCTAVES</a>*12+1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:17</em>
+</span>
+</body></html>

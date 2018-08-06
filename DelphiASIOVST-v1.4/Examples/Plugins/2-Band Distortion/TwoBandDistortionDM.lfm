@@ -1,0 +1,131 @@
+object TwoBandDistortionDataModule: TTwoBandDistortionDataModule
+  OnCreate = VSTModuleCreate
+  OnDestroy = VSTModuleDestroy
+  OldCreateOrder = False
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'TwoBand Distortion'
+  ProductName = 'DAV Effect Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 44100
+  CurrentProgramName = 'Default'
+  IORatio = 1
+  UniqueID = 'CODI'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Default'
+      VSTModule = Owner
+    end  
+    item
+      DisplayName = 'Preset 1'
+      VSTModule = Owner
+    end  
+    item
+      DisplayName = 'Preset 2'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 1000
+      Category = 'Crossover'
+      DisplayName = 'Frequency'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 20000
+      MaxInteger = 20000
+      Min = 20
+      MinInteger = 20
+      ReportVST2Properties = True
+      ShortLabel = 'Freq.'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'Hz'
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParamFrequencyChange
+      OnCustomParameterLabel = ParameterFrequencyLabel
+      OnCustomParameterDisplay = ParameterFrequencyDisplay
+    end  
+    item
+      CurveFactor = 1
+      Category = 'Crossover'
+      DisplayName = 'Order'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 16
+      MaxInteger = 16
+      Min = 2
+      MinInteger = 2
+      ReportVST2Properties = True
+      ShortLabel = 'Order'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      VSTModule = Owner
+      OnParameterChange = ParameterOrderChange
+    end  
+    item
+      CurveFactor = 1
+      Category = 'Distortion'
+      DisplayName = 'Low Distortion'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesFloatStep, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 100
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'LoDist'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = '%'
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParamLowDistChange
+    end  
+    item
+      CurveFactor = 1
+      Category = 'Distortion'
+      DisplayName = 'High Distortion'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesFloatStep, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 100
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'HiDist'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = '%'
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParamHighDistChange
+    end>
+  ParameterCategories = <  
+    item
+      DisplayName = 'Crossover'
+      VSTModule = Owner
+    end  
+    item
+      DisplayName = 'Distortion'
+      VSTModule = Owner
+    end>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnProcess = VSTModuleProcess
+  OnProcess32Replacing = VSTModuleProcess
+  OnResume = VSTModuleResume
+  left = 218
+  top = 81
+  Height = 150
+  HorizontalOffset = 309
+  VerticalOffset = 226
+  Width = 215
+end

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/27 11:01:08.000.204,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.pas</Transaction>
+    <Transaction>2017/10/27 11:03:00.000.678,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.dfm=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.dfm</Transaction>
+    <Transaction>2017/10/27 11:03:00.000.678,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.pas=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.pas</Transaction>
+    <Transaction>2017/10/27 11:52:07.000.413,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit1.pas</Transaction>
+    <Transaction>2017/10/27 11:52:35.000.350,C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMC7Segment.pas</Transaction>
+    <Transaction>2017/10/27 14:18:02.000.726,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.pas</Transaction>
+    <Transaction>2017/10/27 14:18:02.000.726,C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\UFormBitmaps.dfm=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\URMCBitmaps.dfm</Transaction>
+    <Transaction>2017/10/27 14:23:31.000.773,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit1.pas</Transaction>
+    <Transaction>2017/10/27 14:23:45.000.416,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\Unit2.pas</Transaction>
+    <Transaction>2017/10/29 13:19:44.000.868,=C:\Users\Ruud\Documents\Projects\Midimania\RMCShared\RMCCrumarView\URMCCrumarView.pas</Transaction>
+  </Transactions>
+</BorlandProject>

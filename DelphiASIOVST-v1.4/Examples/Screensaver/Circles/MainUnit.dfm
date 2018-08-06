@@ -1,0 +1,27 @@
+object MainForm: TMainForm
+  Left = 299
+  Top = 55
+  Cursor = -1
+  BorderStyle = bsNone
+  Caption = 'ScreenSaver'
+  ClientHeight = 182
+  ClientWidth = 316
+  Color = clBlack
+  Ctl3D = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  OnMouseMove = FormMouseMove
+  OnPaint = FormPaint
+  OnResize = FormResize
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+end

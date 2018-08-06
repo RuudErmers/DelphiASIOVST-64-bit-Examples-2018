@@ -1,0 +1,169 @@
+object FmAnalyser: TFmAnalyser
+  Left = 291
+  Height = 326
+  Top = 266
+  Width = 446
+  HorzScrollBar.Page = 445
+  VertScrollBar.Page = 325
+  ActiveControl = DriverCombo
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Simple ASIO Third Octave Analyser'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object Lb_Drivername: TLabel
+    Left = 7
+    Height = 14
+    Top = 12
+    Width = 34
+    Caption = 'Driver:'
+    Color = clNone
+    ParentColor = False
+  end
+  object Lb_Channels: TLabel
+    Left = 7
+    Height = 14
+    Top = 36
+    Width = 81
+    Caption = 'Output Channel:'
+    Color = clNone
+    ParentColor = False
+  end
+  object LbSpeed: TLabel
+    Left = 7
+    Height = 14
+    Top = 64
+    Width = 35
+    Caption = 'Speed:'
+    Color = clNone
+    ParentColor = False
+  end
+  object LbFullscale: TLabel
+    Left = 205
+    Height = 14
+    Top = 64
+    Width = 55
+    Caption = 'Fullscale = '
+    Color = clNone
+    ParentColor = False
+  end
+  object Lb_dB: TLabel
+    Left = 322
+    Height = 14
+    Top = 64
+    Width = 13
+    Caption = 'dB'
+    Color = clNone
+    ParentColor = False
+  end
+  object DriverCombo: TComboBox
+    Left = 64
+    Height = 21
+    Top = 7
+    Width = 273
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 13
+    MaxLength = 0
+    OnChange = DriverComboChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object Bt_CP: TButton
+    Left = 350
+    Height = 21
+    Top = 8
+    Width = 91
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Control Panel'
+    Enabled = False
+    OnClick = Bt_CPClick
+    TabOrder = 1
+  end
+  object ChannelBox: TComboBox
+    Left = 104
+    Height = 21
+    Top = 32
+    Width = 233
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 13
+    MaxLength = 0
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object Bt_Analyse: TButton
+    Left = 350
+    Height = 50
+    Top = 32
+    Width = 91
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Analyse'
+    Default = True
+    Enabled = False
+    OnClick = Bt_AnalyseClick
+    TabOrder = 3
+  end
+  object RB_Fast: TRadioButton
+    Left = 49
+    Height = 13
+    Top = 63
+    Width = 40
+    Caption = '&Fast'
+    OnClick = RB_FastClick
+    TabOrder = 4
+  end
+  object RB_Medium: TRadioButton
+    Left = 91
+    Height = 13
+    Top = 63
+    Width = 57
+    Caption = '&Medium'
+    Checked = True
+    OnClick = RB_MediumClick
+    State = cbChecked
+    TabOrder = 5
+  end
+  object RB_Slow: TRadioButton
+    Left = 150
+    Height = 13
+    Top = 63
+    Width = 43
+    Caption = '&Slow'
+    OnClick = RB_SlowClick
+    TabOrder = 7
+  end
+  object SEFullscaleGain: TSpinEdit
+    Left = 262
+    Height = 22
+    Top = 60
+    Width = 56
+    MaxValue = 200
+    OnChange = SEFullscaleGainChange
+    TabOrder = 6
+    Value = 120
+  end
+  object AnalyserChart: TBarChart
+    Left = 7
+    Height = 238
+    Top = 88
+    Width = 434
+    BevelOuter = bvNone
+    ChildSizing.Layout = cclTopToBottomThenLeftToRight
+    TabOrder = 8
+    Bars = <>
+    Depth = 5
+    LabelPosition = plCenter
+  end
+  object ASIOHost: TASIOHost
+    PreventClipping = pcDigital
+    PreFillOutBuffer = bpfZero
+    SampleRate = 44100
+    ASIOTime.Speed = 1
+    ASIOTime.SampleRate = 44100
+    ASIOTime.Flags = [atSystemTimeValid, atSamplePositionValid, atSampleRateValid, atSpeedValid]
+    OnBufferSwitch32 = ASIOHostBufferSwitch
+    Left = 252
+    Top = 24
+  end
+end

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.950,C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCPropertyForm.pas=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\Unit3.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.565,C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCSimpleTest.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.213,C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\Unit1.pas=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCSimpleTest.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.180,=C:\Users\Ruud\Documents\Projects2014\Common\UMyScreen.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.881,=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\Unit3.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.565,C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCSimpleTest.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.607,=C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.829,C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCSimpleTest.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.213,C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\Unit1.dfm=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCSimpleTest.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.582,=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCControls.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.290,=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\Unit3.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.286,=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.950,C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\URMCPropertyForm.dfm=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\Unit3.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.860,C:\Users\Ruud\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Ruud\Documents\Projects2014\Midimania\Components\RMC\prjTestMidiControls.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

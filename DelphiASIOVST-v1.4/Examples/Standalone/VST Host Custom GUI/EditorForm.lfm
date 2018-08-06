@@ -1,0 +1,142 @@
+object FmVSTEditor: TFmVSTEditor
+  Left = 383
+  Height = 132
+  Top = 242
+  Width = 320
+  HorzScrollBar.Page = 319
+  VertScrollBar.Page = 131
+  ActiveControl = CBPreset
+  BorderStyle = bsToolWindow
+  Caption = 'ITA VST Plugin Editor'
+  ClientHeight = 132
+  ClientWidth = 320
+  Font.Height = -13
+  Font.Name = 'Verdana'
+  Font.Style = [fsBold]
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  object ToolBar: TToolBar
+    Height = 27
+    Width = 320
+    ButtonHeight = 24
+    Color = clBtnFace
+    EdgeInner = esNone
+    EdgeOuter = esNone
+    ParentColor = False
+    TabOrder = 0
+    object LbPreset: TLabel
+      Left = 5
+      Height = 24
+      Width = 53
+      AutoSize = False
+      Caption = 'Preset: '
+      Color = clNone
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object ToolButton1: TToolButton
+      Left = 1
+      Width = 4
+      Caption = 'ToolButton1'
+      Style = tbsSeparator
+    end
+    object ToolButton2: TToolButton
+      Left = 58
+      Width = 8
+      Caption = 'ToolButton2'
+      ImageIndex = 0
+      Style = tbsSeparator
+    end
+    object CBPreset: TComboBox
+      Left = 66
+      Height = 24
+      Width = 144
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      Color = clBtnFace
+      ItemHeight = 13
+      MaxLength = 0
+      OnChange = CBPresetChange
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object ToolButton3: TToolButton
+      Left = 210
+      Width = 8
+      Caption = 'ToolButton3'
+      ImageIndex = 1
+      Style = tbsSeparator
+    end
+    object BtSetup: TButton
+      Left = 218
+      Height = 24
+      Width = 51
+      BorderSpacing.InnerBorder = 4
+      Caption = '&Setup'
+      OnClick = BtSetupClick
+      TabOrder = 2
+      TabStop = False
+    end
+    object ToolButton4: TToolButton
+      Left = 269
+      Width = 8
+      Caption = 'ToolButton4'
+      ImageIndex = 2
+      Style = tbsSeparator
+    end
+    object BtExit: TButton
+      Left = 277
+      Height = 24
+      Width = 37
+      BorderSpacing.InnerBorder = 4
+      Caption = 'E&xit'
+      OnClick = BtExitClick
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object VSTPanel: TPanel
+    Height = 105
+    Top = 27
+    Width = 320
+    Align = alClient
+    BevelOuter = bvNone
+    Font.Color = 6695441
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    TabOrder = 1
+  end
+  object VstHost: TVstHost
+    VstPlugIns = <    
+      item
+        DisplayName = 'Plugin'
+      end>
+    ParameterQuantization = 0
+    CanDos = [hcdSendVstEvents, hcdSendVstMidiEvent, hcdSendVstTimeInfo, hcdReceiveVstEvents, hcdReceiveVstMidiEvent, hcdReceiveVstTimeInfo, hcdReportConnectionChanges, hcdAcceptIOChanges, hcdSizeWindow, hcdAsyncProcessing, hcdOffline, hcdSupplyIdle, hcdStartStopProcess]
+    Tempo = 120
+    VstVersion = 2300
+    PlugInDir = 'C:\Programme\Audio\Plugins\VST'
+    VstTimeInfo.SampleRate = 44100
+    VstTimeInfo.Tempo = 120
+    VstTimeInfo.Flags = [vtiNanosValid, vtiPpqPosValid, vtiTempoValid, vtiBarsValid, vtiCyclePosValid, vtiTimeSigValid, vtiSmpteValid, vtiClockValid]
+    left = 96
+    top = 75
+  end
+  object ASIOHost: TASIOHost
+    PreventClipping = pcAnalog
+    ConvertOptimizations = [coSSE, co3DNow]
+    SampleRate = 44100
+    ASIOTime.Speed = 1
+    ASIOTime.SampleRate = 44100
+    ASIOTime.Flags = [atSystemTimeValid, atSamplePositionValid, atSampleRateValid, atSpeedValid]
+    OnReset = ASIOHostReset
+    OnLatencyChanged = ASIOHostReset
+    OnBufferSwitch32 = ASIOHostBufferSwitch32
+    left = 124
+    top = 75
+  end
+end

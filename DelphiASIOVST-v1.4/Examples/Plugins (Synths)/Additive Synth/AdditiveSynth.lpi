@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <Icon Value="0"/>
+      <UseXPManifest Value="True"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="AdditiveSynth.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="11" Y="10"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="AdditiveSynthModule.pas"/>
+        <ComponentName Value="VSTSSModule"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="AdditiveSynthModule"/>
+        <CursorPos X="1" Y="28"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="AdditiveSynthGUI.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AdditiveSynthGUI"/>
+        <CursorPos X="33" Y="20"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="AdditiveSynthVoice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+        <SyntaxHighlighter Value="Text"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="VoiceList.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+        <SyntaxHighlighter Value="Text"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="AdditiveSynth.lpr"/>
+        <Caret Line="9" Column="9" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="AdditiveSynth.lpr"/>
+        <Caret Line="10" Column="11" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="AdditiveSynthModule.pas"/>
+        <Caret Line="26" Column="1" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="AdditiveSynthModule.pas"/>
+        <Caret Line="121" Column="5" TopLine="84"/>
+      </Position4>
+      <Position5>
+        <Filename Value="AdditiveSynthModule.pas"/>
+        <Caret Line="97" Column="16" TopLine="74"/>
+      </Position5>
+      <Position6>
+        <Filename Value="AdditiveSynthModule.pas"/>
+        <Caret Line="11" Column="1" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="AdditiveSynthGUI.pas"/>
+        <Caret Line="20" Column="12" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="AdditiveSynthGUI.pas"/>
+        <Caret Line="139" Column="5" TopLine="105"/>
+      </Position8>
+      <Position9>
+        <Filename Value="AdditiveSynthModule.pas"/>
+        <Caret Line="123" Column="1" TopLine="91"/>
+      </Position9>
+      <Position10>
+        <Filename Value="AdditiveSynthGUI.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position10>
+      <Position11>
+        <Filename Value="AdditiveSynthGUI.pas"/>
+        <Caret Line="23" Column="1" TopLine="1"/>
+      </Position11>
+      <Position12>
+        <Filename Value="AdditiveSynthGUI.pas"/>
+        <Caret Line="141" Column="5" TopLine="107"/>
+      </Position12>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\source\"/>
+      <OtherUnitFiles Value="..\..\..\source\"/>
+    </SearchPaths>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

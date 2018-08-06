@@ -1,0 +1,27 @@
+object FmPlotIR: TFmPlotIR
+  Left = 431
+  Height = 198
+  Top = 209
+  Width = 339
+  HorzScrollBar.Page = 338
+  VertScrollBar.Page = 197
+  Caption = 'Impulse Resonse Plot'
+  ClientHeight = 198
+  ClientWidth = 339
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  object Waveform: TWaveform
+    Height = 198
+    Width = 339
+    Align = alClient
+  end
+  object PUDisplay: TPopupMenu
+    left = 8
+    top = 16
+    object MIWaveform: TMenuItem
+      Caption = 'Waveform'
+      Checked = True
+      RadioItem = True
+    end
+  end
+end

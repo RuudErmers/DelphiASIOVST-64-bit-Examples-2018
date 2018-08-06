@@ -1,0 +1,24 @@
+object FmNotepad: TFmNotepad
+  Left = 228
+  Height = 292
+  Top = 51
+  Width = 507
+  BorderStyle = bsNone
+  Caption = 'Notepad'
+  ClientHeight = 292
+  ClientWidth = 507
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '0.9.29'
+  object MeNotepad: TMemo
+    Left = 0
+    Height = 292
+    Top = 0
+    Width = 507
+    Align = alClient
+    OnChange = MeNotepadChange
+    TabOrder = 0
+  end
+end

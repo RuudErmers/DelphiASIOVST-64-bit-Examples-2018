@@ -1,0 +1,126 @@
+object FmVSTPluginScanner: TFmVSTPluginScanner
+  Left = 218
+  Height = 584
+  Top = 81
+  Width = 831
+  Caption = 'VST Plugin Scanner'
+  ClientHeight = 584
+  ClientWidth = 831
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '0.9.29'
+  object BtScan: TButton
+    Left = 786
+    Height = 21
+    Top = 0
+    Width = 45
+    Anchors = [akTop, akRight]
+    Caption = 'Scan!'
+    OnClick = BtScanClick
+    TabOrder = 3
+  end
+  object EdDirectory: TEdit
+    Left = 0
+    Height = 21
+    Top = 0
+    Width = 710
+    Anchors = [akTop, akLeft, akRight]
+    OnChange = EdDirectoryChange
+    OnClick = EdDirectoryClick
+    TabOrder = 0
+  end
+  object BtDirectorySelect: TButton
+    Left = 711
+    Height = 21
+    Top = 0
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = 'Select...'
+    OnClick = BtDirectorySelectClick
+    TabOrder = 1
+  end
+  object ListView: TListView
+    Left = 0
+    Height = 543
+    Top = 21
+    Width = 831
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Columns = <    
+      item
+        Caption = 'Filename'
+        Width = 80
+      end    
+      item
+        Caption = 'Unique ID'
+        Width = 60
+      end    
+      item
+        Caption = 'Programs'
+      end    
+      item
+        Caption = 'Parameters'
+      end    
+      item
+        Caption = 'Inputs'
+        Width = 44
+      end    
+      item
+        Caption = 'Outputs'
+        Width = 51
+      end    
+      item
+        Caption = 'Effect Flags'
+      end    
+      item
+        Caption = 'Initial Delay'
+      end    
+      item
+        Caption = 'Realtime Qualities'
+      end    
+      item
+        Caption = 'Offline Qualities'
+      end    
+      item
+        Caption = 'I/O Ratio'
+      end    
+      item
+        Caption = 'Version'
+      end    
+      item
+        AutoSize = True
+        Caption = 'Effect Name'
+        Width = 192
+      end    
+      item
+        AutoSize = True
+        Caption = 'Product Name'
+        Width = 79
+      end    
+      item
+        AutoSize = True
+        Caption = 'Vendor Name'
+        Width = 76
+      end    
+      item
+        Caption = 'Load Time [ms]'
+      end    
+      item
+        Caption = 'Open Time [ms]'
+      end>
+    ReadOnly = True
+    TabOrder = 2
+    ViewStyle = vsReport
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 20
+    Top = 564
+    Width = 831
+    Panels = <>
+  end
+end

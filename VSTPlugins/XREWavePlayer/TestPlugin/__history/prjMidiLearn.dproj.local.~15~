@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.063,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\network.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.727,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\network.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.271,C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\network.eel=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\lib\TCPFramework.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.870,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\NotGit\test.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.737,=C:\Users\Ruud\Documents\Projects\Common\UAckedSerial.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.773,=C:\Users\Ruud\Documents\Projects\Common\URMSProtocol.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.733,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\.git</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.185,=C:\Users\Ruud\Documents\Projects2014\Midimania\Common\UMidiEvent.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.755,=C:\Users\Ruud\Documents\Projects\Common\UAckedSerialRMSProtocol.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.019,=C:\Users\Ruud\Documents\Projects\Common\UTickCount.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.850,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\ParameterTracking.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.235,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\JS\ReasJSFXBridge</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.727,C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\lib\framework.eel=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\lib\JSFXframework.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.980,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\lib\framework.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.971,C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Ruud\Documents\Projects2014\Midimania\Various\UMain.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.757,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\Readme.txt</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.380,C:\Users\Ruud\Documents\Projects2014\Midimania\Various\prjMidiInOut\prjMidiInOut.dproj=C:\Users\Ruud\Documents\Projects2014\Midimania\Various\prjMidiInOut\prjMidiLearn.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.209,=C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.751,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\License.txt</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.162,=C:\Users\Ruud\Documents\Projects2014\Midimania\Common\UMidiNrpn.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.985,=C:\Users\Ruud\Documents\Projects2014\Midimania\Common\MidiBase.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.667,=C:\Users\Ruud\Documents\Projects\Common\URegVeryEasy.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.971,C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Ruud\Documents\Projects2014\Midimania\Various\UMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.281,=C:\Users\Ruud\Documents\Projects2014\Midimania\Common\Midi.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.697,C:\Users\Ruud\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Ruud\Documents\Projects2014\Midimania\Various\prjMidiInOut.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.856,=C:\Users\Ruud\Documents\Projects\Midimania\Common\UAckedSerialRMSProtocolMidi.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.043,C:\Users\Ruud\Documents\Projects2014\Midimania\Common\Midi.pas=C:\Users\Ruud\Documents\Projects2014\Midimania\Common\MidiBase.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.279,=C:\Users\Ruud\Documents\Projects2014\Midimania\Common\UMidiPorts.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.985,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\lib\functions.eel</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.402,=C:\Users\Ruud\AppData\Roaming\REAPER\Effects\Ruud\JSFXReaScriptBridge\ReaS\MidiThrough.eel</Transaction>
+  </Transactions>
+</BorlandProject>

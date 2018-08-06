@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{282C0A6E-7320-4352-867C-E11E52D2DC1D}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="Adhesive.dll">Adhesive\Adhesive.bdsproj</Projects>
+      <Projects Name="EnhancedGate.dll">Enhanced Gate\EnhancedGate.bdsproj</Projects>
+      <Projects Name="HardKneeCompressor.dll">Hard Knee Compressor\HardKneeCompressor.bdsproj</Projects>
+      <Projects Name="LA1701.dll">LA1701\LA1701.bdsproj</Projects>
+      <Projects Name="LA4029.dll">LA4029\LA4029.bdsproj</Projects>
+      <Projects Name="LightweightCompressor.dll">Lightweight Compressor\LightweightCompressor.bdsproj</Projects>
+      <Projects Name="LightweightFeedbackCompressor.dll">Lightweight Feedback Compressor\LightweightFeedbackCompressor.bdsproj</Projects>
+      <Projects Name="LightweightFeedbackLikeCompressor.dll">Lightweight Feedback Like Compressor\LightweightFeedbackLikeCompressor.bdsproj</Projects>
+      <Projects Name="LightweightGate.dll">Lightweight Gate\LightweightGate.bdsproj</Projects>
+      <Projects Name="LightweightLimiter.dll">Lightweight Limiter\LightweightLimiter.bdsproj</Projects>
+      <Projects Name="LightweightMultibandCompressor.dll">Lightweight Multiband Compressor\LightweightMultibandCompressor.bdsproj</Projects>
+      <Projects Name="LightweightUpwardCompressor.dll">Lightweight Upward Compressor\LightweightUpwardCompressor.bdsproj</Projects>
+      <Projects Name="MultibandCompressor.dll">Multiband Compressor\MultibandCompressor.bdsproj</Projects>
+      <Projects Name="SimpleCompressor.dll">Simple Compressor\SimpleCompressor.bdsproj</Projects>
+      <Projects Name="SimpleFeedbackCompressor.dll">Simple Feedback Compressor\SimpleFeedbackCompressor.bdsproj</Projects>
+      <Projects Name="SimpleGate.dll">Simple Gate\SimpleGate.bdsproj</Projects>
+      <Projects Name="SmoothMultibandCompressor.dll">Smooth Multiband Compressor\Source\SmoothMultibandCompressor.bdsproj</Projects>
+      <Projects Name="SoftKneeFeedbackCompressor.dll">Soft Knee Feedback Compressor\SoftKneeFeedbackCompressor.bdsproj</Projects>
+      <Projects Name="SoftKneeLimiter.dll">Soft Knee Limiter\SoftKneeLimiter.bdsproj</Projects>
+      <Projects Name="LookaheadLimiter.dll">Lookahead Limiter\LookaheadLimiter.bdsproj</Projects>
+      <Projects Name="Targets">Adhesive.dll EnhancedGate.dll HardKneeCompressor.dll LA1701.dll LA4029.dll LightweightCompressor.dll LightweightFeedbackCompressor.dll LightweightFeedbackLikeCompressor.dll LightweightGate.dll LightweightLimiter.dll LightweightMultibandCompressor.dll LightweightUpwardCompressor.dll MultibandCompressor.dll SimpleCompressor.dll SimpleFeedbackCompressor.dll SimpleGate.dll SmoothMultibandCompressor.dll SoftKneeFeedbackCompressor.dll SoftKneeLimiter.dll LookaheadLimiter.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

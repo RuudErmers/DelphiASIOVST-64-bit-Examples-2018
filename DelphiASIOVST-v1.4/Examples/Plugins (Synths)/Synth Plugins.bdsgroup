@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{5C5642C3-B8A4-41E8-96C0-9088427F49DF}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="SimpleSampler.dll">Simple Sampler\SimpleSampler.bdsproj</Projects>
+      <Projects Name="SineSynth.dll">Sine Synth\SineSynth.bdsproj</Projects>
+      <Projects Name="Vocoder.dll">Vocoder\Vocoder.bdsproj</Projects>
+      <Projects Name="XSynth.dll">XSynth\XSynth.bdsproj</Projects>
+      <Projects Name="Targets">SimpleSampler.dll SineSynth.dll Vocoder.dll XSynth.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

@@ -1,0 +1,39 @@
+unit URMCRomplerFrame;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TOnUIChanged = procedure ( Sender: TObject; Index, Value: Integer) of object;
+
+  TRMCRomplerFrame = class(TForm)
+  private
+    { Private declarations }
+    procedure CBUIChanged(Sender: TObject; Index, Value: Integer);
+  public
+    { Public declarations }
+    { property } OnUIChanged:TOnUIChanged;
+    procedure ChangePCC(pcc,Value: Integer);
+  end;
+
+var
+  RMCRomplerFrame: TRMCRomplerFrame;
+
+implementation
+
+{$R *.dfm}
+
+procedure TRMCRomplerFrame.ChangePCC(pcc, Value: Integer);
+begin
+end;
+
+procedure TRMCRomplerFrame.CBUIChanged( Sender: TObject; Index, Value: Integer);
+begin
+  if assigned(OnUIChanged) then
+    OnUIChanged(Sender,Index,Value);
+end;
+
+end.

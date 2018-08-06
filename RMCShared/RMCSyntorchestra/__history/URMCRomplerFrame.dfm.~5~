@@ -1,0 +1,47 @@
+object RMCRomplerFrame: TRMCRomplerFrame
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'RMCRomplerFrame'
+  ClientHeight = 617
+  ClientWidth = 1378
+  Color = 9795430
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  PixelsPerInch = 120
+  TextHeight = 16
+  object RMCElement1: TRMCElement
+    Left = 208
+    Top = 104
+    Width = 89
+    Height = 97
+    Color = clNone
+    ParentColor = False
+    Index = 0
+    Caption = 'RMCElement1'
+    ButtonColorOff = clBlack
+    ButtonColorOn = clBlack
+    SliderColor = 42495
+    TextWithSeg7 = False
+    Shape = tsKnob
+    MinValue = 0
+    MaxValue = 127
+    Value = 0
+    OverLayR1 = 0
+    OverLayR2 = 0
+    OverLayShape = 0
+  end
+  object Label1: TLabel
+    Left = 320
+    Top = 160
+    Width = 37
+    Height = 16
+    Caption = 'Label1'
+  end
+end

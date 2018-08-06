@@ -1,0 +1,10 @@
+object RMCMultiPatternView: TRMCMultiPatternView
+  Left = 0
+  Top = 0
+  Width = 890
+  Height = 70
+  Color = 6956042
+  ParentBackground = False
+  ParentColor = False
+  TabOrder = 0
+end

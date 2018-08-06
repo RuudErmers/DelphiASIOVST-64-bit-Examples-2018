@@ -1,0 +1,161 @@
+object SpectralNoiseGateModule: TSpectralNoiseGateModule
+  OnCreate = VSTModuleCreate
+  OnDestroy = VSTModuleDestroy
+  OldCreateOrder = False
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'Spectral Noise Gate'
+  ProductName = 'DAV FFT Effect Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 44100
+  BlockSize = 512
+  CurrentProgram = -1
+  BlockModeSize = 512
+  BlockModeOverlap = 256
+  InitialDelay = 384
+  IORatio = 1
+  UniqueID = 'Fsng'
+  ShellPlugins = <>
+  Programs = <>
+  ParameterProperties = <  
+    item
+      CurveFactor = 1
+      DisplayName = 'Threshold'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 6
+      MaxInteger = 6
+      Min = -90
+      MinInteger = -90
+      ShortLabel = 'Thresh.'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'dB'
+      VSTModule = Owner
+      OnParameterChange = ParameterThresholdChange
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'FFT Order'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 1
+      LargeStepInteger = 1
+      Max = 14
+      MaxInteger = 14
+      Min = 6
+      MinInteger = 6
+      ReportVST2Properties = True
+      ShortLabel = 'Order'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      VSTModule = Owner
+      OnParameterChange = ParameterFftOrderChange
+      OnCustomParameterDisplay = ParameterFftOrderDisplay
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Window Function'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 1
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'Window'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      VSTModule = Owner
+      OnParameterChange = ParameterWindowFunctionChange
+      OnCustomParameterDisplay = ParameterWindowFunctionDisplay
+    end  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 100
+      DisplayName = 'Ratio'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 100
+      Min = 1
+      MinInteger = 1
+      ReportVST2Properties = True
+      ShortLabel = 'Ratio'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = ' : 1'
+      VSTModule = Owner
+      OnParameterChange = ParameterRatioChange
+      OnCustomParameterDisplay = Parameter2DigitDisplay
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Knee'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 10
+      MaxInteger = 10
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'Knee'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'dB'
+      VSTModule = Owner
+      OnParameterChange = ParameterKneeChange
+      OnCustomParameterDisplay = Parameter2DigitDisplay
+    end  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 10000
+      DisplayName = 'Attack'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 100
+      Min = 0.00999999977648
+      MinInteger = 1
+      ReportVST2Properties = True
+      ShortLabel = 'Attack'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'ms'
+      VSTModule = Owner
+      OnParameterChange = ParameterAttackChange
+      OnCustomParameterDisplay = Parameter2DigitDisplay
+    end  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 600
+      DisplayName = 'Release'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 300
+      MaxInteger = 300
+      Min = 0.5
+      MinInteger = 1
+      ReportVST2Properties = True
+      ShortLabel = 'Release'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'ms'
+      VSTModule = Owner
+      OnParameterChange = ParameterReleaseChange
+      OnCustomParameterDisplay = Parameter2DigitDisplay
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnEditOpen = VSTModuleEditOpen
+  OnSampleRateChange = VSTModuleSampleRateChange
+  left = 286
+  top = 77
+  Height = 150
+  HorizontalOffset = 388
+  VerticalOffset = 266
+  Width = 215
+end

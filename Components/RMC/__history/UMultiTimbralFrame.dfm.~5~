@@ -1,0 +1,20 @@
+object RMCMultitimbralFrame: TRMCMultitimbralFrame
+  Left = 0
+  Top = 0
+  Width = 1000
+  Height = 130
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1000
+    Height = 130
+    Align = alClient
+    Caption = ''
+    RoundRect = 0
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    ExplicitHeight = 143
+  end
+end

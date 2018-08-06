@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{88B49DF7-4A24-46A9-99E7-33EDBE6C721A}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="SEAudioFileOscillator.sem">SE Modules\Audio File Oscillator\SEAudioFileOscillator.bdsproj</Projects>
+      <Projects Name="SimpleSemEmbedAudiofile.exe">Standalone\Simple SEM Embed Audiofile\SimpleSemEmbedAudiofile.bdsproj</Projects>
+      <Projects Name="SemEmbedAudioFile.exe">Standalone\SEM Embed Audiofile\SemEmbedAudioFile.bdsproj</Projects>
+      <Projects Name="Targets">SEAudioFileOscillator.sem SimpleSemEmbedAudiofile.exe SemEmbedAudioFile.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

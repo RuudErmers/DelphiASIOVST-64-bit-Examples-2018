@@ -1,0 +1,1446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTCustomModule: Class TCustomVSTModule</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TCustomVSTModule"></a><h1 class="cio">Class TCustomVSTModule</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTCustomModule.html">DVSTCustomModule</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TCustomVSTModule = class(<a class="normal"  href="DVSTBasicModule.TBasicVSTModule.html">TBasicVSTModule</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TBasicVSTModule description follows</div><p>
+-$DEFINE Debug</p>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TDataModule</li>
+<li class="ancestor"><a class="normal"  href="DVSTBasicModule.TBasicVSTModule.html">TBasicVSTModule</a></li>
+<li class="thisitem">TCustomVSTModule</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DVSTCustomModule.TCustomVSTModule.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DVSTCustomModule.TCustomVSTModule.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTCustomModule.TCustomVSTModule.html#EditorPostUpdate">EditorPostUpdate</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallDispatchEffect">HostCallDispatchEffect</a></b>(opcode : <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>; Index, Value: Integer; ptr: pointer; opt: Single); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallProcess">HostCallProcess</a></b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallProcessReplacing">HostCallProcessReplacing</a></b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallProcessDoubleReplacing">HostCallProcessDoubleReplacing</a></b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPDouble">PPDouble</a>; const SampleFrames: Integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallOpen">HostCallOpen</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallClose">HostCallClose</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetVu">HostCallGetVu</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetSampleRate">HostCallSetSampleRate</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetBlockSize">HostCallSetBlockSize</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallMainsChanged">HostCallMainsChanged</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditGetRect">HostCallEditGetRect</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditOpen">HostCallEditOpen</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditClose">HostCallEditClose</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditIdle">HostCallEditIdle</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditTop">HostCallEditTop</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditSleep">HostCallEditSleep</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallProcessEvents">HostCallProcessEvents</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallConnectInput">HostCallConnectInput</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallConnectOutput">HostCallConnectOutput</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetInputProperties">HostCallGetInputProperties</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetOutputProperties">HostCallGetOutputProperties</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetPlugCategory">HostCallGetPlugCategory</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallOfflineNotify">HostCallOfflineNotify</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallOfflinePrepare">HostCallOfflinePrepare</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallOfflineRun">HostCallOfflineRun</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallProcessVarIo">HostCallProcessVarIo</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetBlockSizeAndSampleRate">HostCallSetBlockSizeAndSampleRate</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetBypass">HostCallSetBypass</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetEffectName">HostCallGetEffectName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetVendorString">HostCallGetVendorString</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetProductString">HostCallGetProductString</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetVendorVersion">HostCallGetVendorVersion</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallVendorSpecific">HostCallVendorSpecific</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallCanDo">HostCallCanDo</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetTailSize">HostCallGetTailSize</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallKeysRequired">HostCallKeysRequired</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetVstVersion">HostCallGetVstVersion</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditKeyDown">HostCallEditKeyDown</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallEditKeyUp">HostCallEditKeyUp</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetEditKnobMode">HostCallSetEditKnobMode</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallGetSpeakerArrangement">HostCallGetSpeakerArrangement</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallShellGetNextPlugin">HostCallShellGetNextPlugin</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallStartProcess">HostCallStartProcess</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallStopProcess">HostCallStopProcess</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetTotalSampleToProcess">HostCallSetTotalSampleToProcess</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetPanLaw">HostCallSetPanLaw</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostCallSetProcessPrecision">HostCallSetProcessPrecision</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#UpdateSampleRate">UpdateSampleRate</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTCustomModule.TCustomVSTModule.html#UpdateBlockSize">UpdateBlockSize</a></b>: Integer; override;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#EditorForm">EditorForm</a></b>: TForm read FEditorForm;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#EditorNeedUpdate">EditorNeedUpdate</a></b>: Boolean read FEditorNeedUpdate write FEditorNeedUpdate;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#Flags">Flags</a></b>: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a> read GetPluginFlags write SetPluginFlags;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#SampleRate">SampleRate</a></b>: Single read fSampleRate write SetSampleRate;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#numInputs">numInputs</a></b>: Integer read FEffect.numInputs write SetNumInputs default 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#numOutputs">numOutputs</a></b>: Integer read FEffect.numOutputs write SetNumOutputs default 2;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#InitialDelay">InitialDelay</a></b>: Integer read FEffect.initialDelay write SetInitialDelay default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#RealQualities">RealQualities</a></b>: Integer read FEffect.realQualities write FEffect.realQualities default 0;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OffQualities">OffQualities</a></b>: Integer read FEffect.offQualities write FEffect.offQualities default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#IORatio">IORatio</a></b>: Integer read FEffect.ioRatio write FEffect.ioRatio default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#About">About</a></b>: string read FAbout write ReadOnlyString stored False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#Version">Version</a></b>: string read FVersion write FVersion;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#UniqueID">UniqueID</a></b>: string read GetUniqueID write setUniqueID;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#numCategories">numCategories</a></b>: Integer read fNumCategories write fNumCategories default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#EffectName">EffectName</a></b>: string read FEffectName write SetEffectName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#ProductName">ProductName</a></b>: string read fProductName write fProductName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#VendorName">VendorName</a></b>: string read fVendorName write fVendorName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#VersionMajor">VersionMajor</a></b>: Integer read FVersionMajor write SetVersionMajor default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#VersionMinor">VersionMinor</a></b>: Integer read FVersionMinor write SetVersionMinor default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#VersionRelease">VersionRelease</a></b>: Integer read FVersionRelease write SetVersionRelease default 0;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#PlugCategory">PlugCategory</a></b>: <a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a> read fPlugCategory write fPlugCategory default vpcUnknown;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#ProcessPrecisition">ProcessPrecisition</a></b>: <a   href="DVSTEffect.html#TProcessPrecision">TProcessPrecision</a> read FProcessPrecisition write FProcessPrecisition default pp32;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#KeysRequired">KeysRequired</a></b>: Boolean read FKeysRequired write SetKeysRequired default False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#Tempo">Tempo</a></b>: Single read fTempo;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#ShellPlugins">ShellPlugins</a></b>: <a   href="DVSTShellPlugins.TCustomVstShellPlugins.html">TCustomVstShellPlugins</a> read FVstShellPlugins write SetVstShellPlugins;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#TailSize">TailSize</a></b>: Integer read FTailSize write FTailSize default 0;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#CanDos">CanDos</a></b>: <a   href="DVSTCustomModule.html#TVstCanDos">TVstCanDos</a> read fCanDos write fCanDos;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostProduct">HostProduct</a></b>: string read GetHostProduct stored false;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostVendor">HostVendor</a></b>: string read GetHostVendor stored false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#HostVersion">HostVersion</a></b>: Integer read GetHostVendorVersion stored false;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnBlockSizeChange">OnBlockSizeChange</a></b>: <a   href="DVSTCustomModule.html#TBlockSizeChangeEvent">TBlockSizeChangeEvent</a> read fBlockSizeChangeEvent write fBlockSizeChangeEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnOpen">OnOpen</a></b>: TNotifyEvent read FOnOpen write FOnOpen;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnClose">OnClose</a></b>: TNotifyEvent read FOnClose write FOnClose;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnResume">OnResume</a></b>: TNotifyEvent read FOnResume write FOnResume;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnSuspend">OnSuspend</a></b>: TNotifyEvent read FOnSuspend write FOnSuspend;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditOpen">OnEditOpen</a></b>: <a   href="DVSTCustomModule.html#TGetEditorEvent">TGetEditorEvent</a> read FOnEditOpen write FOnEditOpen;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditClose">OnEditClose</a></b>: TNotifyEvent read FOnEditClose write FOnEditClose;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditIdle">OnEditIdle</a></b>: TNotifyEvent read FOnEditIdle write FOnEditIdle;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditTop">OnEditTop</a></b>: TNotifyEvent read FOnEditTop write FOnEditTop;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditSleep">OnEditSleep</a></b>: TNotifyEvent read FOnEditSleep write FOnEditSleep;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnSampleRateChange">OnSampleRateChange</a></b>: <a   href="DVSTCustomModule.html#TSampleRateChangeEvent">TSampleRateChangeEvent</a> read fSampleRateChangeEvent write fSampleRateChangeEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnGetVU">OnGetVU</a></b>: <a   href="DVSTCustomModule.html#TGetVUEvent">TGetVUEvent</a> read FOnGetVUEvent write FOnGetVUEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnInitialize">OnInitialize</a></b>: TNotifyEvent read FOnInitialize write FOnInitialize;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnDispatcher">OnDispatcher</a></b>: <a   href="DVSTCustomModule.html#TOnDispatcherEvent">TOnDispatcherEvent</a> read FOnDispatcher write FOnDispatcher;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnSoftBypass">OnSoftBypass</a></b>: <a   href="DVSTCustomModule.html#TSoftBypassEvent">TSoftBypassEvent</a> read FOnSoftBypass write FOnSoftBypass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnInConnected">OnInConnected</a></b>: <a   href="DVSTCustomModule.html#TInOutConnectedEvent">TInOutConnectedEvent</a> read FOnInConnected write FOnInConnected;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnOutConnected">OnOutConnected</a></b>: <a   href="DVSTCustomModule.html#TInOutConnectedEvent">TInOutConnectedEvent</a> read FOnOutConnected write FOnOutConnected;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnStartProcess">OnStartProcess</a></b>: TNotifyEvent read FOnStartProcess write FOnStartProcess;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnStopProcess">OnStopProcess</a></b>: TNotifyEvent read FOnStopProcess write FOnStopProcess;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditorKeyUp">OnEditorKeyUp</a></b>: <a   href="DVSTCustomModule.html#TVSTKeyEvent">TVSTKeyEvent</a> read FOnKeyUp write FOnKeyUp;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditorKeyDown">OnEditorKeyDown</a></b>: <a   href="DVSTCustomModule.html#TVSTKeyEvent">TVSTKeyEvent</a> read FOnKeyDown write FOnKeyDown;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnEditorKnobMode">OnEditorKnobMode</a></b>: <a   href="DVSTCustomModule.html#TSetKnobModeEvent">TSetKnobModeEvent</a> read FOnSetKnobMode write FOnSetKnobMode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnOfflineNotify">OnOfflineNotify</a></b>: <a   href="DVSTCustomModule.html#TOfflineNotifyEvent">TOfflineNotifyEvent</a> read FOnOfflineNotify write FOnOfflineNotify;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnOfflinePrepare">OnOfflinePrepare</a></b>: <a   href="DVSTCustomModule.html#TOfflinePrepareEvent">TOfflinePrepareEvent</a> read FOnOfflinePrepare write FOnOfflinePrepare;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnOfflineRun">OnOfflineRun</a></b>: <a   href="DVSTCustomModule.html#TOfflineRunEvent">TOfflineRunEvent</a> read FOnOfflineRun write FOnOfflineRun;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnProcessVarIO">OnProcessVarIO</a></b>: <a   href="DVSTCustomModule.html#TProcessVarIOEvent">TProcessVarIOEvent</a> read FOnProcessVarIO write FOnProcessVarIO;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnSetPanLaw">OnSetPanLaw</a></b>: <a   href="DVSTCustomModule.html#TOnSetPanLawEvent">TOnSetPanLawEvent</a> read FOnSetPanLaw write FOnSetPanLaw;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnVendorSpecific">OnVendorSpecific</a></b>: <a   href="DVSTCustomModule.html#TOnVendorSpecificEvent">TOnVendorSpecificEvent</a> read FOnVendorSpecific write FOnVendorSpecific;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnCanDo">OnCanDo</a></b>: <a   href="DVSTCustomModule.html#TOnCanDoEvent">TOnCanDoEvent</a> read FOnCanDo write FOnCanDo;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnCheckKey">OnCheckKey</a></b>: <a   href="DVSTCustomModule.html#TOnCheckKey">TOnCheckKey</a> read FOnCheckKey write FOnCheckKey;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnInputProperties">OnInputProperties</a></b>: <a   href="DVSTCustomModule.html#TOnGetChannelPropertiesEvent">TOnGetChannelPropertiesEvent</a> read FOnGetInputProperties write FOnGetInputProperties;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnOutputProperties">OnOutputProperties</a></b>: <a   href="DVSTCustomModule.html#TOnGetChannelPropertiesEvent">TOnGetChannelPropertiesEvent</a> read FOnGetOutputProperties write FOnGetOutputProperties;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnProcess">OnProcess</a></b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcessEx write FOnProcessEx;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnProcessReplacing">OnProcessReplacing</a></b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcessReplacingEx write FOnProcessReplacingEx;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTCustomModule.TCustomVSTModule.html#OnProcessDoubleReplacing">OnProcessDoubleReplacing</a></b>: <a   href="DVSTCustomModule.html#TProcessDoubleEvent">TProcessDoubleEvent</a> read FOnProcessDoublesEx write FOnProcessDoublesEx;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&quot;to&quot; is deleted, then created and initialized with the same Values as &quot;from&quot; ones (&quot;from&quot; must exist).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditorPostUpdate"></a><code>procedure <b>EditorPostUpdate</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallDispatchEffect"></a><code>procedure <b>HostCallDispatchEffect</b>(opcode : <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>; Index, Value: Integer; ptr: pointer; opt: Single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcess"></a><code>procedure <b>HostCallProcess</b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessReplacing"></a><code>procedure <b>HostCallProcessReplacing</b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessDoubleReplacing"></a><code>procedure <b>HostCallProcessDoubleReplacing</b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPDouble">PPDouble</a>; const SampleFrames: Integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOpen"></a><code>function <b>HostCallOpen</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallClose"></a><code>function <b>HostCallClose</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVu"></a><code>function <b>HostCallGetVu</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetSampleRate"></a><code>function <b>HostCallSetSampleRate</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetBlockSize"></a><code>function <b>HostCallSetBlockSize</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallMainsChanged"></a><code>function <b>HostCallMainsChanged</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditGetRect"></a><code>function <b>HostCallEditGetRect</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditOpen"></a><code>function <b>HostCallEditOpen</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditClose"></a><code>function <b>HostCallEditClose</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditIdle"></a><code>function <b>HostCallEditIdle</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditTop"></a><code>function <b>HostCallEditTop</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditSleep"></a><code>function <b>HostCallEditSleep</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessEvents"></a><code>function <b>HostCallProcessEvents</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallConnectInput"></a><code>function <b>HostCallConnectInput</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallConnectOutput"></a><code>function <b>HostCallConnectOutput</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetInputProperties"></a><code>function <b>HostCallGetInputProperties</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetOutputProperties"></a><code>function <b>HostCallGetOutputProperties</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetPlugCategory"></a><code>function <b>HostCallGetPlugCategory</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOfflineNotify"></a><code>function <b>HostCallOfflineNotify</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOfflinePrepare"></a><code>function <b>HostCallOfflinePrepare</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOfflineRun"></a><code>function <b>HostCallOfflineRun</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessVarIo"></a><code>function <b>HostCallProcessVarIo</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetBlockSizeAndSampleRate"></a><code>function <b>HostCallSetBlockSizeAndSampleRate</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetBypass"></a><code>function <b>HostCallSetBypass</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetEffectName"></a><code>function <b>HostCallGetEffectName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVendorString"></a><code>function <b>HostCallGetVendorString</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProductString"></a><code>function <b>HostCallGetProductString</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVendorVersion"></a><code>function <b>HostCallGetVendorVersion</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallVendorSpecific"></a><code>function <b>HostCallVendorSpecific</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallCanDo"></a><code>function <b>HostCallCanDo</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetTailSize"></a><code>function <b>HostCallGetTailSize</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallKeysRequired"></a><code>function <b>HostCallKeysRequired</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVstVersion"></a><code>function <b>HostCallGetVstVersion</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditKeyDown"></a><code>function <b>HostCallEditKeyDown</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditKeyUp"></a><code>function <b>HostCallEditKeyUp</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetEditKnobMode"></a><code>function <b>HostCallSetEditKnobMode</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetSpeakerArrangement"></a><code>function <b>HostCallGetSpeakerArrangement</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallShellGetNextPlugin"></a><code>function <b>HostCallShellGetNextPlugin</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallStartProcess"></a><code>function <b>HostCallStartProcess</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallStopProcess"></a><code>function <b>HostCallStopProcess</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetTotalSampleToProcess"></a><code>function <b>HostCallSetTotalSampleToProcess</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetPanLaw"></a><code>function <b>HostCallSetPanLaw</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetProcessPrecision"></a><code>function <b>HostCallSetProcessPrecision</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UpdateSampleRate"></a><code>function <b>UpdateSampleRate</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UpdateBlockSize"></a><code>function <b>UpdateBlockSize</b>: Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditorForm"></a><code>property <b>EditorForm</b>: TForm read FEditorForm;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Properties</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditorNeedUpdate"></a><code>property <b>EditorNeedUpdate</b>: Boolean read FEditorNeedUpdate write FEditorNeedUpdate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Flags"></a><code>property <b>Flags</b>: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a> read GetPluginFlags write SetPluginFlags;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SampleRate"></a><code>property <b>SampleRate</b>: Single read fSampleRate write SetSampleRate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="numInputs"></a><code>property <b>numInputs</b>: Integer read FEffect.numInputs write SetNumInputs default 2;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="numOutputs"></a><code>property <b>numOutputs</b>: Integer read FEffect.numOutputs write SetNumOutputs default 2;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InitialDelay"></a><code>property <b>InitialDelay</b>: Integer read FEffect.initialDelay write SetInitialDelay default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RealQualities"></a><code>property <b>RealQualities</b>: Integer read FEffect.realQualities write FEffect.realQualities default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OffQualities"></a><code>property <b>OffQualities</b>: Integer read FEffect.offQualities write FEffect.offQualities default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IORatio"></a><code>property <b>IORatio</b>: Integer read FEffect.ioRatio write FEffect.ioRatio default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="About"></a><code>property <b>About</b>: string read FAbout write ReadOnlyString stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: string read FVersion write FVersion;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UniqueID"></a><code>property <b>UniqueID</b>: string read GetUniqueID write setUniqueID;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="numCategories"></a><code>property <b>numCategories</b>: Integer read fNumCategories write fNumCategories default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EffectName"></a><code>property <b>EffectName</b>: string read FEffectName write SetEffectName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProductName"></a><code>property <b>ProductName</b>: string read fProductName write fProductName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VendorName"></a><code>property <b>VendorName</b>: string read fVendorName write fVendorName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VersionMajor"></a><code>property <b>VersionMajor</b>: Integer read FVersionMajor write SetVersionMajor default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VersionMinor"></a><code>property <b>VersionMinor</b>: Integer read FVersionMinor write SetVersionMinor default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VersionRelease"></a><code>property <b>VersionRelease</b>: Integer read FVersionRelease write SetVersionRelease default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PlugCategory"></a><code>property <b>PlugCategory</b>: <a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a> read fPlugCategory write fPlugCategory default vpcUnknown;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessPrecisition"></a><code>property <b>ProcessPrecisition</b>: <a   href="DVSTEffect.html#TProcessPrecision">TProcessPrecision</a> read FProcessPrecisition write FProcessPrecisition default pp32;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="KeysRequired"></a><code>property <b>KeysRequired</b>: Boolean read FKeysRequired write SetKeysRequired default False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Tempo"></a><code>property <b>Tempo</b>: Single read fTempo;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShellPlugins"></a><code>property <b>ShellPlugins</b>: <a   href="DVSTShellPlugins.TCustomVstShellPlugins.html">TCustomVstShellPlugins</a> read FVstShellPlugins write SetVstShellPlugins;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TailSize"></a><code>property <b>TailSize</b>: Integer read FTailSize write FTailSize default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanDos"></a><code>property <b>CanDos</b>: <a   href="DVSTCustomModule.html#TVstCanDos">TVstCanDos</a> read fCanDos write fCanDos;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostProduct"></a><code>property <b>HostProduct</b>: string read GetHostProduct stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostVendor"></a><code>property <b>HostVendor</b>: string read GetHostVendor stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostVersion"></a><code>property <b>HostVersion</b>: Integer read GetHostVendorVersion stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBlockSizeChange"></a><code>property <b>OnBlockSizeChange</b>: <a   href="DVSTCustomModule.html#TBlockSizeChangeEvent">TBlockSizeChangeEvent</a> read fBlockSizeChangeEvent write fBlockSizeChangeEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnOpen"></a><code>property <b>OnOpen</b>: TNotifyEvent read FOnOpen write FOnOpen;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnClose"></a><code>property <b>OnClose</b>: TNotifyEvent read FOnClose write FOnClose;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnResume"></a><code>property <b>OnResume</b>: TNotifyEvent read FOnResume write FOnResume;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnSuspend"></a><code>property <b>OnSuspend</b>: TNotifyEvent read FOnSuspend write FOnSuspend;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditOpen"></a><code>property <b>OnEditOpen</b>: <a   href="DVSTCustomModule.html#TGetEditorEvent">TGetEditorEvent</a> read FOnEditOpen write FOnEditOpen;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditClose"></a><code>property <b>OnEditClose</b>: TNotifyEvent read FOnEditClose write FOnEditClose;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditIdle"></a><code>property <b>OnEditIdle</b>: TNotifyEvent read FOnEditIdle write FOnEditIdle;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditTop"></a><code>property <b>OnEditTop</b>: TNotifyEvent read FOnEditTop write FOnEditTop;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditSleep"></a><code>property <b>OnEditSleep</b>: TNotifyEvent read FOnEditSleep write FOnEditSleep;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnSampleRateChange"></a><code>property <b>OnSampleRateChange</b>: <a   href="DVSTCustomModule.html#TSampleRateChangeEvent">TSampleRateChangeEvent</a> read fSampleRateChangeEvent write fSampleRateChangeEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnGetVU"></a><code>property <b>OnGetVU</b>: <a   href="DVSTCustomModule.html#TGetVUEvent">TGetVUEvent</a> read FOnGetVUEvent write FOnGetVUEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnInitialize"></a><code>property <b>OnInitialize</b>: TNotifyEvent read FOnInitialize write FOnInitialize;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnDispatcher"></a><code>property <b>OnDispatcher</b>: <a   href="DVSTCustomModule.html#TOnDispatcherEvent">TOnDispatcherEvent</a> read FOnDispatcher write FOnDispatcher;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnSoftBypass"></a><code>property <b>OnSoftBypass</b>: <a   href="DVSTCustomModule.html#TSoftBypassEvent">TSoftBypassEvent</a> read FOnSoftBypass write FOnSoftBypass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnInConnected"></a><code>property <b>OnInConnected</b>: <a   href="DVSTCustomModule.html#TInOutConnectedEvent">TInOutConnectedEvent</a> read FOnInConnected write FOnInConnected;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnOutConnected"></a><code>property <b>OnOutConnected</b>: <a   href="DVSTCustomModule.html#TInOutConnectedEvent">TInOutConnectedEvent</a> read FOnOutConnected write FOnOutConnected;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnStartProcess"></a><code>property <b>OnStartProcess</b>: TNotifyEvent read FOnStartProcess write FOnStartProcess;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnStopProcess"></a><code>property <b>OnStopProcess</b>: TNotifyEvent read FOnStopProcess write FOnStopProcess;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditorKeyUp"></a><code>property <b>OnEditorKeyUp</b>: <a   href="DVSTCustomModule.html#TVSTKeyEvent">TVSTKeyEvent</a> read FOnKeyUp write FOnKeyUp;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditorKeyDown"></a><code>property <b>OnEditorKeyDown</b>: <a   href="DVSTCustomModule.html#TVSTKeyEvent">TVSTKeyEvent</a> read FOnKeyDown write FOnKeyDown;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEditorKnobMode"></a><code>property <b>OnEditorKnobMode</b>: <a   href="DVSTCustomModule.html#TSetKnobModeEvent">TSetKnobModeEvent</a> read FOnSetKnobMode write FOnSetKnobMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnOfflineNotify"></a><code>property <b>OnOfflineNotify</b>: <a   href="DVSTCustomModule.html#TOfflineNotifyEvent">TOfflineNotifyEvent</a> read FOnOfflineNotify write FOnOfflineNotify;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnOfflinePrepare"></a><code>property <b>OnOfflinePrepare</b>: <a   href="DVSTCustomModule.html#TOfflinePrepareEvent">TOfflinePrepareEvent</a> read FOnOfflinePrepare write FOnOfflinePrepare;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnOfflineRun"></a><code>property <b>OnOfflineRun</b>: <a   href="DVSTCustomModule.html#TOfflineRunEvent">TOfflineRunEvent</a> read FOnOfflineRun write FOnOfflineRun;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnProcessVarIO"></a><code>property <b>OnProcessVarIO</b>: <a   href="DVSTCustomModule.html#TProcessVarIOEvent">TProcessVarIOEvent</a> read FOnProcessVarIO write FOnProcessVarIO;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnSetPanLaw"></a><code>property <b>OnSetPanLaw</b>: <a   href="DVSTCustomModule.html#TOnSetPanLawEvent">TOnSetPanLawEvent</a> read FOnSetPanLaw write FOnSetPanLaw;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnVendorSpecific"></a><code>property <b>OnVendorSpecific</b>: <a   href="DVSTCustomModule.html#TOnVendorSpecificEvent">TOnVendorSpecificEvent</a> read FOnVendorSpecific write FOnVendorSpecific;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnCanDo"></a><code>property <b>OnCanDo</b>: <a   href="DVSTCustomModule.html#TOnCanDoEvent">TOnCanDoEvent</a> read FOnCanDo write FOnCanDo;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnCheckKey"></a><code>property <b>OnCheckKey</b>: <a   href="DVSTCustomModule.html#TOnCheckKey">TOnCheckKey</a> read FOnCheckKey write FOnCheckKey;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnInputProperties"></a><code>property <b>OnInputProperties</b>: <a   href="DVSTCustomModule.html#TOnGetChannelPropertiesEvent">TOnGetChannelPropertiesEvent</a> read FOnGetInputProperties write FOnGetInputProperties;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnOutputProperties"></a><code>property <b>OnOutputProperties</b>: <a   href="DVSTCustomModule.html#TOnGetChannelPropertiesEvent">TOnGetChannelPropertiesEvent</a> read FOnGetOutputProperties write FOnGetOutputProperties;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnProcess"></a><code>property <b>OnProcess</b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcessEx write FOnProcessEx;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnProcessReplacing"></a><code>property <b>OnProcessReplacing</b>: <a   href="DVSTCustomModule.html#TProcessAudioEvent">TProcessAudioEvent</a> read FOnProcessReplacingEx write FOnProcessReplacingEx;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnProcessDoubleReplacing"></a><code>property <b>OnProcessDoubleReplacing</b>: <a   href="DVSTCustomModule.html#TProcessDoubleEvent">TProcessDoubleEvent</a> read FOnProcessDoublesEx write FOnProcessDoublesEx;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:19</em>
+</span>
+</body></html>

@@ -1,0 +1,22 @@
+object FmTetris: TFmTetris
+  Left = 295
+  Height = 436
+  Top = 63
+  Width = 215
+  HorzScrollBar.Page = 214
+  VertScrollBar.Page = 435
+  BorderStyle = bsNone
+  Caption = 'FmTetris'
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnMouseDown = FormMouseDown
+  OnPaint = FormPaint
+  object TetrisTimer: TTimer
+    OnTimer = TetrisOnTimer
+    left = 8
+    top = 8
+  end
+end

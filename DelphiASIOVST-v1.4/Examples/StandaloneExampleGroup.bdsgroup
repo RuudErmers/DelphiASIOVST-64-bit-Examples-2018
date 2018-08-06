@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{C03E4340-6298-4A6A-9A94-CE9DD8211AA1}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="Analyser.exe">Standalone\Analyser\Analyser.bdsproj</Projects>
+      <Projects Name="ASIODemo.exe">Standalone\ASIO-Host Demo\ASIODemo.bdsproj</Projects>
+      <Projects Name="BMTestDouble.exe">Standalone\Buffer Math Test\BMTestDouble.bdsproj</Projects>
+      <Projects Name="BMTestSingle.exe">Standalone\Buffer Math Test\BMTestSingle.bdsproj</Projects>
+      <Projects Name="Metronome.exe">Standalone\Metronome\Metronome.bdsproj</Projects>
+      <Projects Name="MidiGui.exe">Standalone\Midikeyboard Gui\MidiGui.bdsproj</Projects>
+      <Projects Name="MiniHost.exe">Standalone\MiniHost Core\MiniHost.bdsproj</Projects>
+      <Projects Name="LunchBox.exe">Standalone\Simple Lunch-Box\LunchBox.bdsproj</Projects>
+      <Projects Name="VSTAnalyser.exe">Standalone\Simple VST Plugin Analyser\VSTAnalyser.bdsproj</Projects>
+      <Projects Name="VSTEditor.exe">Standalone\Standalone Editor\VSTEditor.bdsproj</Projects>
+      <Projects Name="SemExplorer.exe">Standalone\SEM Explorer\SemExplorer.bdsproj</Projects>
+      <Projects Name="SimpleHDRecorder.exe">Standalone\Simple HD Recorder\SimpleHDRecorder.bdsproj</Projects>
+      <Projects Name="VSTPluginScanner.exe">Standalone\VST Plugin Scanner\VSTPluginScanner.bdsproj</Projects>
+      <Projects Name="VST2SEM.exe">Standalone\VST to SEM converter\VST2SEM.bdsproj</Projects>
+      <Projects Name="NoiseGen.exe">Standalone\Noise Generator\NoiseGen.bdsproj</Projects>
+      <Projects Name="FunctionPlotter.exe">Standalone\Function Plot\FunctionPlotter.bdsproj</Projects>
+      <Projects Name="Targets">Analyser.exe ASIODemo.exe BMTestDouble.exe BMTestSingle.exe Metronome.exe MidiGui.exe MiniHost.exe LunchBox.exe VSTAnalyser.exe VSTEditor.exe SemExplorer.exe SimpleHDRecorder.exe VSTPluginScanner.exe VST2SEM.exe NoiseGen.exe FunctionPlotter.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

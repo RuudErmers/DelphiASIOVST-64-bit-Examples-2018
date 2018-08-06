@@ -1,0 +1,313 @@
+object RMCPropertyForm: TRMCPropertyForm
+  Left = 0
+  Top = 0
+  Caption = 'RMCPropertyForm'
+  ClientHeight = 578
+  ClientWidth = 797
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 120
+  TextHeight = 16
+  object Label4: TLabel
+    Left = 206
+    Top = 358
+    Width = 66
+    Height = 16
+    Caption = '(Back)Color'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 112
+    Top = 520
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 400
+    Top = 520
+    Width = 75
+    Height = 25
+    Caption = 'OK'
+    Default = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 286
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = '>'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 24
+    Top = 16
+    Width = 75
+    Height = 25
+    Caption = '<'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button4Click
+  end
+  object PanelEdit: TPanel
+    Left = 24
+    Top = 47
+    Width = 337
+    Height = 305
+    BevelOuter = bvNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    object RMCElement1: TRMCElement
+      Left = 104
+      Top = 56
+      Width = 101
+      Height = 97
+      Color = clNone
+      ParentColor = False
+      Index = 0
+      Caption = 'Fiets'
+      Options.ButtonColorOff = clBlack
+      Options.ButtonColorOn = clBlack
+      Options.SliderColor = 42495
+      Options.TextWithSeg7 = False
+      Options.Shape = trKnob
+      MinValue = 0
+      MaxValue = 127
+      Value = 0
+      OverLayR1 = 0
+      OverLayR2 = 0
+      OverLayShape = 0
+    end
+  end
+  object PanelColors: TPanel
+    Left = 8
+    Top = 389
+    Width = 289
+    Height = 105
+    BevelOuter = bvNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    object Label1: TLabel
+      Left = 24
+      Top = 22
+      Width = 57
+      Height = 16
+      Caption = 'Button Off'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 24
+      Top = 61
+      Width = 56
+      Height = 16
+      Caption = 'Button On'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object ColorBoxButtonOff: TColorBox
+      Left = 119
+      Top = 22
+      Width = 145
+      Height = 22
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnCloseUp = ColorBoxButtonOffCloseUp
+    end
+    object ColorBoxButtonOn: TColorBox
+      Left = 119
+      Top = 62
+      Width = 145
+      Height = 22
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnCloseUp = ColorBoxButtonOnCloseUp
+    end
+  end
+  object RadioGroupStyle: TRadioGroup
+    Left = 376
+    Top = 47
+    Width = 99
+    Height = 170
+    Caption = 'Style'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Items.Strings = (
+      'Default'
+      'Roland'
+      'VASynth'
+      'Twinkle'
+      'Overlay')
+    ParentFont = False
+    TabOrder = 6
+    OnClick = RadioGroupStyleClick
+  end
+  object RadioGroupShape: TRadioGroup
+    Left = 481
+    Top = 47
+    Width = 185
+    Height = 266
+    Caption = 'Shape'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8')
+    ParentFont = False
+    TabOrder = 7
+    OnClick = RadioGroupShapeClick
+  end
+  object CheckBox7Seg: TCheckBox
+    Left = 8
+    Top = 389
+    Width = 185
+    Height = 17
+    Caption = 'Text With 7 Segment Only'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = CheckBox7SegClick
+  end
+  object PanelSliderColor: TPanel
+    Left = 24
+    Top = 389
+    Width = 321
+    Height = 51
+    BevelOuter = bvNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    object Label3: TLabel
+      Left = 8
+      Top = 14
+      Width = 67
+      Height = 16
+      Caption = 'Slider Color'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object ColorBoxSlider: TColorBox
+      Left = 111
+      Top = 14
+      Width = 145
+      Height = 22
+      Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeNone]
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnCloseUp = ColorBoxSliderCloseUp
+    end
+  end
+  object ButtonResize: TButton
+    Left = 8
+    Top = 358
+    Width = 179
+    Height = 25
+    Caption = 'Resize To Preferred Size'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+  end
+  object ColorBoxBackColor: TColorBox
+    Left = 278
+    Top = 361
+    Width = 145
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnCloseUp = ColorBoxBackColorCloseUp
+  end
+end

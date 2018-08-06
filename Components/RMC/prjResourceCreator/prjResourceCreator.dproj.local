@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.727,=C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.866,C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\prjResourceCreator\UMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.866,C:\Users\Ruud\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\prjResourceCreator\UMain.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.114,C:\Users\Ruud\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\prjResourceCreator\prjResourceCreator.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,38 @@
+unit URMCWavePlayerFrame;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, URMCControls,
+  URMCEmptyPanel;
+
+type
+  TOnUIChanged = procedure ( Sender: TObject; Index, Value: Integer) of object;
+
+  TRMCWavePlayerFrame = class(TForm)
+    RMCEmptyPanel1: TRMCEmptyPanel;
+  private
+    { Private declarations }
+    procedure CBUIChanged(Sender: TObject; Index, Value: Integer);
+  public
+    { Public declarations }
+    { property } OnUIChanged:TOnUIChanged;
+  end;
+
+var
+  RMCWavePlayerFrame: TRMCWavePlayerFrame;
+
+implementation
+
+{$R *.dfm}
+
+uses UVirtCC;
+
+procedure TRMCWavePlayerFrame.CBUIChanged( Sender: TObject; Index, Value: Integer);
+begin
+  if assigned(OnUIChanged) then
+    OnUIChanged(Sender,Index,Value);
+end;
+
+end.

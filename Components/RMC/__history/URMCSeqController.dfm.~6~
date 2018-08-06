@@ -1,0 +1,42 @@
+object RMCSeqControllerFrame: TRMCSeqControllerFrame
+  Left = 0
+  Top = 0
+  Width = 1360
+  Height = 140
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1360
+    Height = 140
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    object PianoKeyboard1: TPianoKeyboard
+      Left = 838
+      Top = 20
+      Width = 300
+      Height = 100
+      PianoGroup = 2
+      PianoColor = pcGreen
+      AutoWidth = False
+      AutoUpdate = False
+      Caption = 'PianoKeyboard1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+end

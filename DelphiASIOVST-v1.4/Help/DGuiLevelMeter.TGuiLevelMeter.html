@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DGuiLevelMeter: Class TGuiLevelMeter</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGuiLevelMeter"></a><h1 class="cio">Class TGuiLevelMeter</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DGuiLevelMeter.html">DGuiLevelMeter</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGuiLevelMeter = class(<a class="normal"  href="DGuiBaseControl.TGuiBaseControl.html">TGuiBaseControl</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TGuiBaseControl description follows</div><a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TGraphicControl</li>
+<li class="ancestor"><a class="normal"  href="DGuiBaseControl.TGuiBaseControl.html">TGuiBaseControl</a></li>
+<li class="thisitem">TGuiLevelMeter</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#RedrawBuffer">RedrawBuffer</a></b>(doBufferFlip: Boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ResetPeaks">ResetPeaks</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ProcessBufferIndirect">ProcessBufferIndirect</a></b>(NewWaveData: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; Channels, SampleFrames: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ProcessBuffer">ProcessBuffer</a></b>(NewWaveData: <a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>; InpLen: Integer = -1); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ProcessBuffer">ProcessBuffer</a></b>(NewWaveData: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; InpLen: Integer = -1); overload;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#Transparent">Transparent</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#LineWidth">LineWidth</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#LineColor">LineColor</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#Color">Color</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#RedrawInterval">RedrawInterval</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#FillColor">FillColor</a></b>: TColor read FFillColor write SetFillColor default clGreen;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#FillStyle">FillStyle</a></b>: TBrushStyle read FFillStyle write SetFillStyle default bsSolid;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#LineStyle">LineStyle</a></b>: TPenStyle read FLineStyle write SetLineStyle default psSolid;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#MaxLineColor">MaxLineColor</a></b>: TColor read FMaxLineColor write SetMaxLineColor default clBlue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#MaxLineStyle">MaxLineStyle</a></b>: TPenStyle read FMaxLineStyle write SetMaxLineStyle default psSolid;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#MaxLineWidth">MaxLineWidth</a></b>: Integer read FMaxLineWidth write SetMaxLineWidth default 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ClippingLineColor">ClippingLineColor</a></b>: TColor read FClippingLineColor write SetClippingLineColor default clBlack;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ClippingLineStyle">ClippingLineStyle</a></b>: TPenStyle read FClippingLineStyle write SetClippingLineStyle default psSolid;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ClippingLineWidth">ClippingLineWidth</a></b>: Integer read FClippingLineWidth write SetClippingLineWidth default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ClippingFillColor">ClippingFillColor</a></b>: TColor read FClippingFillColor write SetClippingFillColor default clRed;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ClippingFillStyle">ClippingFillStyle</a></b>: TBrushStyle read FClippingFillStyle write SetClippingFillStyle default bsSolid;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ClippingBoxSize">ClippingBoxSize</a></b>: Integer read FClippingBoxSize write SetClippingBoxSize default 5;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ShowMaximum">ShowMaximum</a></b>: Boolean read FShowMaximum write SetShowMaximum default true;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#ShowClipping">ShowClipping</a></b>: <a   href="DGuiLevelMeter.html#TGuiShowClipping">TGuiShowClipping</a> read FShowClipping write SetShowClipping default scTop;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#SampleRate">SampleRate</a></b>: single read GetSampleRate write SetSampleRate;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#MaximumTimeFactor">MaximumTimeFactor</a></b>: Single read FMaximumTimeFactor write SetMaximumTimeFactor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#LevelAttack">LevelAttack</a></b>: Single read GetLevelAttack write SetLevelAttack;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#LevelRelease">LevelRelease</a></b>: Single read GetLevelRelease write SetLevelRelease;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#LevelDirection">LevelDirection</a></b>: <a   href="DGuiLevelMeter.html#TGuiLevelDirection">TGuiLevelDirection</a> read FLevelDirection write SetLevelDirection default ldmVertical;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#DisplayChannels">DisplayChannels</a></b>: Integer read FDisplayChannels write SetDisplayChannels default 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DGuiLevelMeter.TGuiLevelMeter.html#BarWidthPercentage">BarWidthPercentage</a></b>: Single read FBarWidthPercentage write SetBarWidthPercentage;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RedrawBuffer"></a><code>procedure <b>RedrawBuffer</b>(doBufferFlip: Boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ResetPeaks"></a><code>procedure <b>ResetPeaks</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessBufferIndirect"></a><code>procedure <b>ProcessBufferIndirect</b>(NewWaveData: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; Channels, SampleFrames: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessBuffer"></a><code>procedure <b>ProcessBuffer</b>(NewWaveData: <a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>; InpLen: Integer = -1); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessBuffer"></a><code>procedure <b>ProcessBuffer</b>(NewWaveData: <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>; InpLen: Integer = -1); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Transparent"></a><code>property <b>Transparent</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LineWidth"></a><code>property <b>LineWidth</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LineColor"></a><code>property <b>LineColor</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="RedrawInterval"></a><code>property <b>RedrawInterval</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FillColor"></a><code>property <b>FillColor</b>: TColor read FFillColor write SetFillColor default clGreen;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FillStyle"></a><code>property <b>FillStyle</b>: TBrushStyle read FFillStyle write SetFillStyle default bsSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LineStyle"></a><code>property <b>LineStyle</b>: TPenStyle read FLineStyle write SetLineStyle default psSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxLineColor"></a><code>property <b>MaxLineColor</b>: TColor read FMaxLineColor write SetMaxLineColor default clBlue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxLineStyle"></a><code>property <b>MaxLineStyle</b>: TPenStyle read FMaxLineStyle write SetMaxLineStyle default psSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxLineWidth"></a><code>property <b>MaxLineWidth</b>: Integer read FMaxLineWidth write SetMaxLineWidth default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ClippingLineColor"></a><code>property <b>ClippingLineColor</b>: TColor read FClippingLineColor write SetClippingLineColor default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ClippingLineStyle"></a><code>property <b>ClippingLineStyle</b>: TPenStyle read FClippingLineStyle write SetClippingLineStyle default psSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ClippingLineWidth"></a><code>property <b>ClippingLineWidth</b>: Integer read FClippingLineWidth write SetClippingLineWidth default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ClippingFillColor"></a><code>property <b>ClippingFillColor</b>: TColor read FClippingFillColor write SetClippingFillColor default clRed;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ClippingFillStyle"></a><code>property <b>ClippingFillStyle</b>: TBrushStyle read FClippingFillStyle write SetClippingFillStyle default bsSolid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ClippingBoxSize"></a><code>property <b>ClippingBoxSize</b>: Integer read FClippingBoxSize write SetClippingBoxSize default 5;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowMaximum"></a><code>property <b>ShowMaximum</b>: Boolean read FShowMaximum write SetShowMaximum default true;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowClipping"></a><code>property <b>ShowClipping</b>: <a   href="DGuiLevelMeter.html#TGuiShowClipping">TGuiShowClipping</a> read FShowClipping write SetShowClipping default scTop;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SampleRate"></a><code>property <b>SampleRate</b>: single read GetSampleRate write SetSampleRate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaximumTimeFactor"></a><code>property <b>MaximumTimeFactor</b>: Single read FMaximumTimeFactor write SetMaximumTimeFactor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LevelAttack"></a><code>property <b>LevelAttack</b>: Single read GetLevelAttack write SetLevelAttack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LevelRelease"></a><code>property <b>LevelRelease</b>: Single read GetLevelRelease write SetLevelRelease;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LevelDirection"></a><code>property <b>LevelDirection</b>: <a   href="DGuiLevelMeter.html#TGuiLevelDirection">TGuiLevelDirection</a> read FLevelDirection write SetLevelDirection default ldmVertical;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DisplayChannels"></a><code>property <b>DisplayChannels</b>: Integer read FDisplayChannels write SetDisplayChannels default 2;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BarWidthPercentage"></a><code>property <b>BarWidthPercentage</b>: Single read FBarWidthPercentage write SetBarWidthPercentage;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:17</em>
+</span>
+</body></html>

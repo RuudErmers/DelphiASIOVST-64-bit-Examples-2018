@@ -1,0 +1,37 @@
+{ Das ist eine automatisch erzeugte Lazarus-Ressourcendatei }
+
+LazarusResources.Add('TFmASIO','FORMDATA',[
+  'TPF0'#7'TFmASIO'#6'FmASIO'#4'Left'#3'#'#1#6'Height'#2'Q'#3'Top'#3#10#1#5'Wid'
+  +'th'#3#242#0#18'HorzScrollBar.Page'#3#241#0#13'ActiveControl'#7#11'DriverCom'
+  +'bo'#11'BorderIcons'#11#12'biSystemMenu'#10'biMinimize'#0#11'BorderStyle'#7#8
+  +'bsSingle'#7'Caption'#6#16'Simple Metronome'#11'Font.Height'#2#245#9'Font.Na'
+  +'me'#6#13'MS Sans Serif'#8'OnCreate'#7#10'FormCreate'#9'OnDestroy'#7#11'Form'
+  +'Destroy'#0#6'TLabel'#13'Lb_Drivername'#4'Left'#2#8#6'Height'#2#14#3'Top'#2#8
+  +#5'Width'#2'"'#7'Caption'#6#7'Driver:'#5'Color'#7#6'clNone'#11'ParentColor'#8
+  +#0#0#6'TLabel'#7'LbTempo'#4'Left'#2#8#6'Height'#2#14#3'Top'#2'#'#5'Width'#2
+  +'%'#7'Caption'#6#6'Tempo:'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLab'
+  +'el'#5'LbBPM'#4'Left'#2'o'#6'Height'#2#14#3'Top'#2'$'#5'Width'#2#21#7'Captio'
+  +'n'#6#3'BPM'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#8'LbVolume'
+  +#4'Left'#2#8#6'Height'#2#14#3'Top'#2'<'#5'Width'#2''''#7'Caption'#6#7'Volume'
+  +':'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#9'TComboBox'#11'DriverCombo'#4
+  +'Left'#2'-'#6'Height'#2#21#3'Top'#2#5#5'Width'#2'i'#16'AutoCompleteText'#11
+  +#22'cbactEndOfLineComplete'#20'cbactSearchAscending'#0#10'ItemHeight'#2#13#9
+  +'MaxLength'#2#0#8'OnChange'#7#17'DriverComboChange'#5'Style'#7#14'csDropDown'
+  +'List'#8'TabOrder'#2#0#0#0#7'TButton'#5'Bt_CP'#4'Left'#3#156#0#6'Height'#2#21
+  +#3'Top'#2#5#5'Width'#2'Q'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#13
+  +'Control Panel'#7'Enabled'#8#7'OnClick'#7#10'Bt_CPClick'#8'TabOrder'#2#1#0#0
+  +#7'TButton'#7'Bt_Play'#4'Left'#3#156#0#6'Height'#2#21#3'Top'#2' '#5'Width'#2
+  +'Q'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#11'Start Audio'#7'Default'
+  +#9#7'Enabled'#8#7'OnClick'#7#12'Bt_PlayClick'#8'TabOrder'#2#2#0#0#9'TSpinEdi'
+  +'t'#7'SETempo'#4'Left'#2'2'#6'Height'#2#22#3'Top'#2' '#5'Width'#2'7'#8'MaxVa'
+  +'lue'#3','#1#8'MinValue'#2#20#8'OnChange'#7#13'SETempoChange'#8'TabOrder'#2#3
+  +#5'Value'#2'x'#0#0#10'TScrollBar'#8'SBVolume'#4'Left'#2'4'#6'Height'#2#16#3
+  +'Top'#2';'#5'Width'#3#185#0#3'Max'#2#0#3'Min'#2#156#8'TabOrder'#2#4#8'OnChan'
+  +'ge'#7#14'SbVolumeChange'#0#0#9'TASIOHost'#8'ASIOHost'#15'PreventClipping'#7
+  +#9'pcDigital'#20'ConvertOptimizations'#11#5'coSSE'#0#10'SampleRate'#5#0#0#0#0
+  +#0#0'D'#172#14'@'#14'ASIOTime.Speed'#5#0#0#0#0#0#0#0#128#255'?'#19'ASIOTime.'
+  +'SampleRate'#5#0#0#0#0#0#0'D'#172#14'@'#14'ASIOTime.Flags'#11#17'atSystemTim'
+  +'eValid'#21'atSamplePositionValid'#17'atSampleRateValid'#12'atSpeedValid'#0
+  +#19'OnSampleRateChanged'#7#25'ASIOHostSampleRateChanged'#16'OnBufferSwitch32'
+  +#7#20'ASIOHostBufferSwitch'#4'left'#2'4'#3'top'#2#8#0#0#0
+]);

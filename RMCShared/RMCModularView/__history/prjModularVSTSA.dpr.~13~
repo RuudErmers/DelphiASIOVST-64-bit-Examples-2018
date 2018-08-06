@@ -1,0 +1,46 @@
+program prjModularVSTSA;
+
+uses
+  Vcl.Forms,
+  URMCEmptyPanel in '..\..\Components\RMC\URMCEmptyPanel.pas',
+  URMCControls in '..\..\Components\RMC\URMCControls.pas',
+  URMCConstants in '..\..\Components\RMC\URMCConstants.pas',
+  URMCBaseControlPanel in '..\..\Components\RMC\URMCBaseControlPanel.pas',
+  UKnobEditor in '..\..\Components\RMC\UKnobEditor.pas',
+  URMCShape in '..\..\Components\RMC\URMCShape.pas',
+  URMCModularView in 'URMCModularView.pas',
+  UVirtCC in '..\..\Common\UVirtCC.pas',
+  UMidiPorts in '..\..\Common\UMidiPorts.pas',
+  UMidiEvent in '..\..\Common\UMidiEvent.pas',
+  UMidiNrpn in '..\..\Common\UMidiNrpn.pas',
+  MidiBase in '..\..\Common\MidiBase.pas',
+  URMCVSTView in '..\URMCVSTView.pas',
+  UTickCount in '..\..\..\Common\UTickCount.pas',
+  URMCBitmaps in '..\..\Components\RMC\URMCBitmaps.pas',
+  URMC7Segment in '..\..\Components\RMC\URMC7Segment.pas',
+  URMCSunriseControlPanel in 'URMCSunriseControlPanel.pas',
+  URMCSunriseFrame in 'URMCSunriseFrame.pas' {RMCSunriseFrame},
+  URMCSunriseLFO in 'URMCSunriseLFO.pas' {RMCSunriseLFOFrame},
+  URMCSunriseOSC in 'URMCSunriseOSC.pas' {RMCSunriseOSCFrame},
+  URMCSunrisePERF in 'URMCSunrisePERF.pas' {RMCSunrisePERFFrame},
+  URMCSunriseVCA in 'URMCSunriseVCA.pas' {RMCSunriseVCAFrame},
+  URMCSunriseVCF in 'URMCSunriseVCF.pas' {RMCSunriseVCFFrame},
+  UViewASIOForm in '..\UViewASIOForm.pas' {ViewASIOForm},
+  XSynthModel in '..\RMCVST\XREMODULAR\XSynthModel.pas',
+  XDelay in '..\RMCVST\XDelay.pas',
+  XReverb in '..\RMCVST\XReverb.pas',
+  XChorus in '..\RMCVST\XChorus.pas',
+  XSynthModelBase in '..\RMCVST\XSynthModelBase.pas',
+  DAV_DspPhaser in '..\..\DelphiASIOVST-v1.4\Source\DSP\DAV_DspPhaser.pas',
+  XPhaser in '..\RMCVST\XPhaser.pas',
+  UAddPlugin in 'C:\Temp\UAddPlugin.pas',
+  XEffects in '..\RMCVST\XEffects.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TViewASIOForm, ViewASIOForm);
+  Application.Run;
+end.

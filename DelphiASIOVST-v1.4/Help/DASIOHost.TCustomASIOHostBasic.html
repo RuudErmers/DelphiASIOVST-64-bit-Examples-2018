@@ -1,0 +1,531 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DASIOHost: Class TCustomASIOHostBasic</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TCustomASIOHostBasic"></a><h1 class="cio">Class TCustomASIOHostBasic</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td><a class="section"  href="#@Fields">Fields</a></td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DASIOHost.html">DASIOHost</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TCustomASIOHostBasic = class(TComponent)</code></p>
+<h2 class="description">Description</h2>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TCustomASIOHostBasic</li></ul><h2 class="overview">Overview</h2>
+<a name="@Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="DASIOHost.TCustomASIOHostBasic.html#InputChannelInfos">InputChannelInfos</a></b>: array of TASIOChannelInfo;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="DASIOHost.TCustomASIOHostBasic.html#OutputChannelInfos">OutputChannelInfos</a></b>: array of TASIOChannelInfo;</code></td>
+</tr>
+</table>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DASIOHost.TCustomASIOHostBasic.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DASIOHost.TCustomASIOHostBasic.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DASIOHost.TCustomASIOHostBasic.html#ControlPanel">ControlPanel</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DASIOHost.TCustomASIOHostBasic.html#Reset">Reset</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DASIOHost.TCustomASIOHostBasic.html#GetNumDrivers">GetNumDrivers</a></b>: integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OpenDriver">OpenDriver</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DASIOHost.TCustomASIOHostBasic.html#CloseDriver">CloseDriver</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DASIOHost.TCustomASIOHostBasic.html#CanSampleRate">CanSampleRate</a></b>(sampleRate: TASIOSampleRate): TASIOError; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DASIOHost.TCustomASIOHostBasic.html#GetOutputGain">GetOutputGain</a></b>(Channel, Gain: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DASIOHost.TCustomASIOHostBasic.html#SetInputGain">SetInputGain</a></b>(Channel, Gain: Integer); virtual;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#InputMeter">InputMeter</a></b>[Channel:Integer]: Integer read GetInputMeter;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OutputMeter">OutputMeter</a></b>[Channel:Integer]: Integer read GetOutputMeter;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#Active">Active</a></b>: Boolean read FActive write SetActive default false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#CanDos">CanDos</a></b> : <a   href="DASIOHost.html#TASIOCanDos">TASIOCanDos</a> read fASIOCanDos write SetASIOCanDos;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#DriverName">DriverName</a></b>: string read FDriverName write SetDriverName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#DriverVersion">DriverVersion</a></b>: integer read FDriverVersion;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#DriverIndex">DriverIndex</a></b>: Integer read FDriverIndex Write SetDriverIndex default -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#BufferSize">BufferSize</a></b>: Cardinal read fBufferSize stored false default 1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#BufferMinimum">BufferMinimum</a></b>: Integer read Fmin stored false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#BufferMaximum">BufferMaximum</a></b>: Integer read Fmax stored false;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#BufferPreferredSize">BufferPreferredSize</a></b>: Integer read Fpref stored false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#BufferGranularity">BufferGranularity</a></b>: Integer read Fgran stored false;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#InputLatency">InputLatency</a></b>: Integer read FInputLatency stored false default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#InputChannelCount">InputChannelCount</a></b>: Integer read FInputChannelCount stored false default 0;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OutputLatency">OutputLatency</a></b>: Integer read FOutputLatency stored false default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OutputChannelCount">OutputChannelCount</a></b>: Integer read FOutputChannelCount stored false default 0;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#SampleRate">SampleRate</a></b>: Double read fSampleRate write SetSampleRate;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#ASIOTime">ASIOTime</a></b>: <a   href="DASIOHost.TASIOTimeSub.html">TASIOTimeSub</a> read FASIOTime Write FASIOTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnCreate">OnCreate</a></b>: TNotifyEvent read FOnCreate write FOnCreate;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnDestroy">OnDestroy</a></b>: TNotifyEvent read FOnDestroy write FOnDestroy;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnUpdateSamplePos">OnUpdateSamplePos</a></b>: <a   href="DASIOHost.html#TSamplePositionUpdateEvent">TSamplePositionUpdateEvent</a> read FOnUpdateSamplePos write FOnUpdateSamplePos;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnReset">OnReset</a></b>: TNotifyEvent read FOnReset write FOnReset;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnDriverChanged">OnDriverChanged</a></b>: TNotifyEvent read FOnDriverChanged write FOnDriverChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnLatencyChanged">OnLatencyChanged</a></b>: TNotifyEvent read FOnLatencyChanged write FOnLatencyChanged;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnSampleRateChanged">OnSampleRateChanged</a></b>: TNotifyEvent read FOnSampleRateChanged write FOnSampleRateChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnBufferSwitch">OnBufferSwitch</a></b>: <a   href="DASIOHost.html#TBufferSwitchEventNative">TBufferSwitchEventNative</a> read FOnBufferSwitchNative write FOnBufferSwitchNative;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnBuffersCreate">OnBuffersCreate</a></b>: TNotifyEvent read FOnBuffersCreate write FOnBuffersCreate;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#OnBuffersDestroy">OnBuffersDestroy</a></b>: TNotifyEvent read FOnBuffersDestroy write FOnBuffersDestroy;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DASIOHost.TCustomASIOHostBasic.html#DriverList">DriverList</a></b>: TStrings read FDriverList;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InputChannelInfos"></a><code><b>InputChannelInfos</b>: array of TASIOChannelInfo;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OutputChannelInfos"></a><code><b>OutputChannelInfos</b>: array of TASIOChannelInfo;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ControlPanel"></a><code>procedure <b>ControlPanel</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Reset"></a><code>procedure <b>Reset</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetNumDrivers"></a><code>function <b>GetNumDrivers</b>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OpenDriver"></a><code>procedure <b>OpenDriver</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CloseDriver"></a><code>procedure <b>CloseDriver</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanSampleRate"></a><code>function <b>CanSampleRate</b>(sampleRate: TASIOSampleRate): TASIOError; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetOutputGain"></a><code>procedure <b>GetOutputGain</b>(Channel, Gain: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetInputGain"></a><code>procedure <b>SetInputGain</b>(Channel, Gain: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InputMeter"></a><code>property <b>InputMeter</b>[Channel:Integer]: Integer read GetInputMeter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OutputMeter"></a><code>property <b>OutputMeter</b>[Channel:Integer]: Integer read GetOutputMeter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Active"></a><code>property <b>Active</b>: Boolean read FActive write SetActive default false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanDos"></a><code>property <b>CanDos</b> : <a   href="DASIOHost.html#TASIOCanDos">TASIOCanDos</a> read fASIOCanDos write SetASIOCanDos;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DriverName"></a><code>property <b>DriverName</b>: string read FDriverName write SetDriverName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DriverVersion"></a><code>property <b>DriverVersion</b>: integer read FDriverVersion;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DriverIndex"></a><code>property <b>DriverIndex</b>: Integer read FDriverIndex Write SetDriverIndex default -1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BufferSize"></a><code>property <b>BufferSize</b>: Cardinal read fBufferSize stored false default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BufferMinimum"></a><code>property <b>BufferMinimum</b>: Integer read Fmin stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BufferMaximum"></a><code>property <b>BufferMaximum</b>: Integer read Fmax stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BufferPreferredSize"></a><code>property <b>BufferPreferredSize</b>: Integer read Fpref stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BufferGranularity"></a><code>property <b>BufferGranularity</b>: Integer read Fgran stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InputLatency"></a><code>property <b>InputLatency</b>: Integer read FInputLatency stored false default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InputChannelCount"></a><code>property <b>InputChannelCount</b>: Integer read FInputChannelCount stored false default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OutputLatency"></a><code>property <b>OutputLatency</b>: Integer read FOutputLatency stored false default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OutputChannelCount"></a><code>property <b>OutputChannelCount</b>: Integer read FOutputChannelCount stored false default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SampleRate"></a><code>property <b>SampleRate</b>: Double read fSampleRate write SetSampleRate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ASIOTime"></a><code>property <b>ASIOTime</b>: <a   href="DASIOHost.TASIOTimeSub.html">TASIOTimeSub</a> read FASIOTime Write FASIOTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnCreate"></a><code>property <b>OnCreate</b>: TNotifyEvent read FOnCreate write FOnCreate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnDestroy"></a><code>property <b>OnDestroy</b>: TNotifyEvent read FOnDestroy write FOnDestroy;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnUpdateSamplePos"></a><code>property <b>OnUpdateSamplePos</b>: <a   href="DASIOHost.html#TSamplePositionUpdateEvent">TSamplePositionUpdateEvent</a> read FOnUpdateSamplePos write FOnUpdateSamplePos;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnReset"></a><code>property <b>OnReset</b>: TNotifyEvent read FOnReset write FOnReset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnDriverChanged"></a><code>property <b>OnDriverChanged</b>: TNotifyEvent read FOnDriverChanged write FOnDriverChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnLatencyChanged"></a><code>property <b>OnLatencyChanged</b>: TNotifyEvent read FOnLatencyChanged write FOnLatencyChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnSampleRateChanged"></a><code>property <b>OnSampleRateChanged</b>: TNotifyEvent read FOnSampleRateChanged write FOnSampleRateChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBufferSwitch"></a><code>property <b>OnBufferSwitch</b>: <a   href="DASIOHost.html#TBufferSwitchEventNative">TBufferSwitchEventNative</a> read FOnBufferSwitchNative write FOnBufferSwitchNative;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBuffersCreate"></a><code>property <b>OnBuffersCreate</b>: TNotifyEvent read FOnBuffersCreate write FOnBuffersCreate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBuffersDestroy"></a><code>property <b>OnBuffersDestroy</b>: TNotifyEvent read FOnBuffersDestroy write FOnBuffersDestroy;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DriverList"></a><code>property <b>DriverList</b>: TStrings read FDriverList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:16</em>
+</span>
+</body></html>

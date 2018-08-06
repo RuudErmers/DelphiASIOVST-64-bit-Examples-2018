@@ -1,0 +1,14 @@
+var
+  Temp : Array [0..1] of Double;
+
+procedure SEProcessSample(Channel: Integer; var Data: Single);
+begin
+ // simple lowpass filter
+ Data := 0.1 * Data + 0.9 * Temp[Channel];
+ Temp[Channel] := Data;
+end;
+
+procedure SEProcessBlock(Channel: Integer);
+begin
+ // do nothing
+end;

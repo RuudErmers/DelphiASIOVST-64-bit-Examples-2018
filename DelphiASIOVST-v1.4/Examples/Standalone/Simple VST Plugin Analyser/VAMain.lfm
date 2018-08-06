@@ -1,0 +1,103 @@
+object FmVSTAnalyser: TFmVSTAnalyser
+  Left = 281
+  Height = 53
+  Top = 224
+  Width = 223
+  HorzScrollBar.Page = 222
+  VertScrollBar.Page = 33
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Simple VST Plugin Analyser'
+  ClientHeight = 34
+  ClientWidth = 223
+  Font.Height = -13
+  Font.Name = 'Verdana'
+  Font.Style = [fsBold]
+  Menu = MainMenu
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  object VSTPanel: TPanel
+    Height = 34
+    Width = 223
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = '(empty)'
+    Font.Color = 6695441
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    TabOrder = 0
+    OnClick = VSTPanelClick
+  end
+  object VstHost: TVstHost
+    VstPlugIns = <    
+      item
+        DisplayName = 'Plugin'
+      end>
+    ParameterQuantization = 0
+    BlockSize = 1024
+    CanDos = [hcdSendVstEvents, hcdSendVstMidiEvent, hcdSendVstTimeInfo, hcdReceiveVstEvents, hcdReceiveVstMidiEvent, hcdReceiveVstTimeInfo, hcdReportConnectionChanges, hcdAcceptIOChanges, hcdSizeWindow, hcdAsyncProcessing, hcdOffline, hcdSupplyIdle, hcdStartStopProcess]
+    Tempo = 120
+    VstVersion = 2300
+    VendorString = 'Delphi ASIO&VST Project'
+    ProductString = 'Simple VST Plugin Analyser'
+    PlugInDir = 'C:\Programme\Audio\Plugins\VST'
+    VstTimeInfo.SampleRate = 44100
+    VstTimeInfo.Tempo = 120
+    VstTimeInfo.Flags = [vtiNanosValid, vtiPpqPosValid, vtiTempoValid, vtiBarsValid, vtiCyclePosValid, vtiTimeSigValid, vtiSmpteValid, vtiClockValid]
+    left = 4
+    top = 3
+  end
+  object MainMenu: TMainMenu
+    left = 32
+    top = 3
+    object MIFile: TMenuItem
+      Caption = '&VST Plugin'
+      object MIOpen: TMenuItem
+        Caption = '&Open'
+        OnClick = MIOpenClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MIQuit: TMenuItem
+        Caption = '&Quit'
+        OnClick = MIQuitClick
+      end
+    end
+    object MIPrograms: TMenuItem
+      Caption = 'Programs'
+      object MILoad: TMenuItem
+        Caption = '&Load...'
+        OnClick = MILoadClick
+      end
+      object MISave: TMenuItem
+        Caption = '&Save...'
+        OnClick = MISaveClick
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+    end
+    object MIIR: TMenuItem
+      Caption = 'Impulse Response'
+      object MIPlotIR: TMenuItem
+        Caption = 'Plot Impulse Response...'
+        OnClick = MIPlotIRClick
+      end
+      object MIRenderIR: TMenuItem
+        Caption = 'Render Impulse Response...'
+        Enabled = False
+      end
+    end
+  end
+  object OD: TOpenDialog
+    Title = 'Load VST Plugin'
+    DefaultExt = '.DLL'
+    Filter = 'VST Plugin (*.dll)|*.dll'
+    FilterIndex = 0
+    left = 60
+    top = 3
+  end
+end

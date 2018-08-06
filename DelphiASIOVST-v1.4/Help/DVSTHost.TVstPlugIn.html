@@ -1,0 +1,1755 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTHost: Class TVstPlugIn</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TVstPlugIn"></a><h1 class="cio">Class TVstPlugIn</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td><a class="section"  href="#@Fields">Fields</a></td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTHost.html">DVSTHost</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TVstPlugIn = class(TCollectionItem)</code></p>
+<h2 class="description">Description</h2>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TCollectionItem</li>
+<li class="thisitem">TVstPlugIn</li></ul><h2 class="overview">Overview</h2>
+<a name="@Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="DVSTHost.TVstPlugIn.html#PVstEffect">PVstEffect</a></b>: <a   href="DVSTHost.TVstPlugIn.html#PVstEffect">PVSTEffect</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="DVSTHost.TVstPlugIn.html#GUIForm">GUIForm</a></b>: TForm;</code></td>
+</tr>
+</table>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DVSTHost.TVstPlugIn.html#Create">Create</a></b>(Collection: TCollection); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DVSTHost.TVstPlugIn.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetDisplayName">GetDisplayName</a></b>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetVendorString">GetVendorString</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetProductString">GetProductString</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetVendorVersion">GetVendorVersion</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetProgram">GetProgram</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetProgram">SetProgram</a></b>(lValue: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetProgramName">GetProgramName</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetProgramName">SetProgramName</a></b>(newName: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetSampleRate">SetSampleRate</a></b>(fSR: double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#Open">Open</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#Close">Close</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#Load">Load</a></b>(PluginDll: TFilename): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#UnLoad">UnLoad</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#ShowEdit">ShowEdit</a></b>(Form: TForm); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#ShowEdit">ShowEdit</a></b>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#EditGetRect">EditGetRect</a></b>: <a   href="DVSTEffect.ERect.html">ERect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#EditOpen">EditOpen</a></b>(Handle: THandle): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#EditClose">EditClose</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#CloseEdit">CloseEdit</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#MainsChanged">MainsChanged</a></b>(bOn: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetParameter">SetParameter</a></b>(index: Integer; parameter: Single); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetParameter">GetParameter</a></b>(index: Integer): Single; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetParamLabel">GetParamLabel</a></b>(index: Integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetParamDisplay">GetParamDisplay</a></b>(index: Integer): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetParamName">GetParamName</a></b>(index: Integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetVu">GetVu</a></b>: Single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#Identify">Identify</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#Process">Process</a></b>(inputs, outputs: <a   href="DVSTEffect.html#PPSingle">ppSingle</a>; Sampleframes: Integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#ProcessReplacing">ProcessReplacing</a></b>(inputs, outputs: <a   href="DVSTEffect.html#PPSingle">ppSingle</a>; Sampleframes: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#ProcessDoubleReplacing">ProcessDoubleReplacing</a></b>(inputs, outputs: <a   href="DVSTEffect.html#PPDouble">ppDouble</a>; Sampleframes: Integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#ProcessAudio">ProcessAudio</a></b>(inputs, outputs: <a   href="DVSTEffect.html#PPSingle">ppSingle</a>; Sampleframes: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetChunk">GetChunk</a></b>(pntr: pointer; isPreset: boolean = false): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#SetChunk">SetChunk</a></b>(data: pointer; byteSize: Integer; isPreset: boolean = false): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#ProcessEvents">ProcessEvents</a></b>(pntr: <a   href="DVSTEffect.html#PVstEvents">PVstEvents</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#CanBeAutomated">CanBeAutomated</a></b>(index: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#String2Parameter">String2Parameter</a></b>(ParameterName: string): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetNumProgramCategories">GetNumProgramCategories</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetProgramNameIndexed">GetProgramNameIndexed</a></b>(category, index: Integer; ProgramName: PChar): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#CopyCurrentProgramTo">CopyCurrentProgramTo</a></b>(Destination: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#ConnectInput">ConnectInput</a></b>(InputNr: Integer; state: boolean): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#ConnectOutput">ConnectOutput</a></b>(OutputNr: Integer; state: boolean): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetInputProperties">GetInputProperties</a></b>(InputNr: Integer): <a   href="DVSTEffect.TVstPinProperties.html">TVstPinProperties</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetOutputProperties">GetOutputProperties</a></b>(OutputNr: Integer): <a   href="DVSTEffect.TVstPinProperties.html">TVstPinProperties</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetPlugCategory">GetPlugCategory</a></b>: <a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetCurrentPosition">GetCurrentPosition</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetDestinationBuffer">GetDestinationBuffer</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#OfflineNotify">OfflineNotify</a></b>(pntr: <a   href="DVSTEffect.html#PVstAudioFile">PVstAudioFile</a>; numAudioFiles: Integer; start: boolean): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#OfflinePrepare">OfflinePrepare</a></b>(pntr: <a   href="DVSTEffect.html#PVstOfflineTask">PVstOfflineTask</a>; count: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#OfflineRun">OfflineRun</a></b>(pntr: <a   href="DVSTEffect.html#PVstOfflineTask">PVstOfflineTask</a>; count :Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#ProcessVarIo">ProcessVarIo</a></b>(varIo: <a   href="DVSTEffect.html#PVstVariableIo">PVstVariableIo</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#SetSpeakerArrangement">SetSpeakerArrangement</a></b>(pluginInput: <a   href="DVSTEffect.html#PVstSpeakerArrangement">PVstSpeakerArrangement</a>; pluginOutput: <a   href="DVSTEffect.html#PVstSpeakerArrangement">PVstSpeakerArrangement</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#SetBlockSizeAndSampleRate">SetBlockSizeAndSampleRate</a></b>(blockSize: Integer; sampleRate: Single): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#SetBypass">SetBypass</a></b>(onOff: Boolean): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetEffectName">GetEffectName</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetErrorText">GetErrorText</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetTailSize">GetTailSize</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetIcon">GetIcon</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetVstVersion">GetVstVersion</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetSpeakerArrangement">GetSpeakerArrangement</a></b>(SpeakerIn, SpeakerOut:<a   href="DVSTEffect.html#PVstSpeakerArrangement">PVstSpeakerArrangement</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#ShellGetNextPlugin">ShellGetNextPlugin</a></b>(var PluginName:String): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#EditKeyDown">EditKeyDown</a></b>(Key : Char; VirtualKeycode : Integer; Modifier :Double): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#EditKeyUp">EditKeyUp</a></b>(Key : Char; VirtualKeycode : Integer; Modifier :Double): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetEditKnobMode">SetEditKnobMode</a></b>(Mode : <a   href="DVSTHost.html#TKnobMode">TKnobMode</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#StartProcess">StartProcess</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#StopProcess">StopProcess</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetTotalSampleToProcess">SetTotalSampleToProcess</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#BeginSetProgram">BeginSetProgram</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#EndSetProgram">EndSetProgram</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetPanLaw">SetPanLaw</a></b>(PanLaw: <a   href="DVSTEffect.html#TVstPanLawType">TVstPanLawType</a>; Gain: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetMidiProgramName">GetMidiProgramName</a></b>(MidiProgramNamePointer : <a   href="DVSTEffect.html#PMidiProgramName">PMidiProgramName</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetCurrentMidiProgram">GetCurrentMidiProgram</a></b>(MidiProgramNamePointer : <a   href="DVSTEffect.html#PMidiProgramName">PMidiProgramName</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetMidiProgramCategory">GetMidiProgramCategory</a></b>(MidiProgramCategoryPointer : <a   href="DVSTEffect.html#PMidiProgramCategory">PMidiProgramCategory</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#HasMidiProgramsChanged">HasMidiProgramsChanged</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetMidiKeyName">GetMidiKeyName</a></b>(MidiKeyNamePointer: <a   href="DVSTEffect.html#PMidiKeyName">PMidiKeyName</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#BeginLoadBank">BeginLoadBank</a></b>(PatchChunkInfo : <a   href="DVSTEffect.html#PVstPatchChunkInfo">PVstPatchChunkInfo</a>): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#BeginLoadProgram">BeginLoadProgram</a></b>(PatchChunkInfo : <a   href="DVSTEffect.html#PVstPatchChunkInfo">PVstPatchChunkInfo</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetRect">GetRect</a></b>: TRect;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#GetParameterProperties">GetParameterProperties</a></b>(Parameter: Integer): <a   href="DVSTEffect.TVstParameterProperties.html">TVstParameterProperties</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#VendorSpecific">VendorSpecific</a></b>(index, value:Integer; pntr: pointer; opt: single): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#CanDo">CanDo</a></b>(pntr: pchar): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#Idle">Idle</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#EditIdle">EditIdle</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#EditActivate">EditActivate</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#EditDeactivate">EditDeactivate</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SetViewPosition">SetViewPosition</a></b>(x, y: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTHost.TVstPlugIn.html#KeysRequired">KeysRequired</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SavePreset">SavePreset</a></b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SavePreset">SavePreset</a></b>(Stream: TStream); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#LoadPreset">LoadPreset</a></b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#LoadPreset">LoadPreset</a></b>(Stream: TStream); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SaveBank">SaveBank</a></b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#SaveBank">SaveBank</a></b>(Stream: TStream); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#LoadBank">LoadBank</a></b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.TVstPlugIn.html#LoadBank">LoadBank</a></b>(Stream: TStream); overload;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#Parameters">Parameters</a></b>[Index: Integer]: Single read <a   href="DVSTHost.TVstPlugIn.html#GetParameter">GetParameter</a> write <a   href="DVSTHost.TVstPlugIn.html#SetParameter">SetParameter</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#VstOfflineTask">VstOfflineTask</a></b> : <a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a> read FVstOfflineTask;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#Active">Active</a></b>: boolean read FActive write Activate default false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#DisplayName">DisplayName</a></b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetDisplayName">GetDisplayName</a> write FDisplayName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#numInputs">numInputs</a></b>: Integer read GetnumInputs stored False default -1 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#numOutputs">numOutputs</a></b>: Integer read GetnumOutputs stored False default -1 ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#numPrograms">numPrograms</a></b>: Integer read GetnumPrograms stored False default -1 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#numParams">numParams</a></b>: Integer read GetnumParams stored False default -1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#Version">Version</a></b>: Integer read Fversion stored False default -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#InitialDelay">InitialDelay</a></b>: Integer read GetInitialDelay stored False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#ReplaceOrAccumulate">ReplaceOrAccumulate</a></b>: <a   href="DVSTHost.html#TReplaceOrAccumulate">TReplaceOrAccumulate</a> read FReplaceOrAccumulate write FReplaceOrAccumulate default roa0NotSupported;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#CurrentProcessLevel">CurrentProcessLevel</a></b>: <a   href="DVSTHost.html#TCurrentProcessLevel">TCurrentProcessLevel</a> read FProcessLevel write FProcessLevel default cpl0NotSupported;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#AutomationState">AutomationState</a></b>: <a   href="DVSTHost.html#TAutomationState">TAutomationState</a> read FAutomationState Write FAutomationState default as0NotSupported;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#uID">uID</a></b>: string read FuID stored False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#PluginVstVersion">PluginVstVersion</a></b>: Integer read FVstVersion stored False default -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#EditVisible">EditVisible</a></b>: Boolean read FEditOpen;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#EffectOptions">EffectOptions</a></b>: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a> read GetEffOptions stored False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#PlugCategory">PlugCategory</a></b>: <a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a> read FPlugCategory stored False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#ProgramNr">ProgramNr</a></b>: Integer read <a   href="DVSTHost.TVstPlugIn.html#GetProgram">GetProgram</a> write <a   href="DVSTHost.TVstPlugIn.html#SetProgram">SetProgram</a> default -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#ProgramName">ProgramName</a></b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetProgramName">GetProgramName</a> write <a   href="DVSTHost.TVstPlugIn.html#SetProgramName">SetProgramName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#VendorString">VendorString</a></b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetVendorString">GetVendorString</a> stored False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#VendorVersion">VendorVersion</a></b>: Integer read <a   href="DVSTHost.TVstPlugIn.html#GetVendorVersion">GetVendorVersion</a> stored False default -1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#ProductString">ProductString</a></b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetProductString">GetProductString</a> stored False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterAutomate">OnAudioMasterAutomate</a></b>: <a   href="DVSTHost.html#TVstAutomateEvent">TVstAutomateEvent</a> read FOnAMAutomate write FOnAMAutomate;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterIdle">OnAudioMasterIdle</a></b>: TNotifyEvent read FOnAMIdle write FOnAMIdle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterNeedIdle">OnAudioMasterNeedIdle</a></b>: TNotifyEvent read FOnAMNeedIdle write FOnAMNeedIdle;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterIOChanged">OnAudioMasterIOChanged</a></b>: TNotifyEvent read FOnAMIOChanged write FOnAMIOChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterWantMidi">OnAudioMasterWantMidi</a></b>: TNotifyEvent read FOnAMWantMidi write FOnAMWantMidi;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterOfflineStart">OnAudioMasterOfflineStart</a></b>: TNotifyEvent read FOnAMOfflineStart write FOnAMOfflineStart;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterOfflineRead">OnAudioMasterOfflineRead</a></b>: <a   href="DVSTHost.html#TVstOfflineEvent">TVstOfflineEvent</a> read FOnAMOfflineRead write FOnAMOfflineRead;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterOfflineWrite">OnAudioMasterOfflineWrite</a></b>: <a   href="DVSTHost.html#TVstOfflineEvent">TVstOfflineEvent</a> read FOnAMOfflineWrite write FOnAMOfflineWrite;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterOfflineGetCurrentPass">OnAudioMasterOfflineGetCurrentPass</a></b>: TNotifyEvent read FOnAMOfflineGetCurrentPass write FOnAMOfflineGetCurrentPass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterOfflineGetCurrentMetaPass">OnAudioMasterOfflineGetCurrentMetaPass</a></b>: TNotifyEvent read FOnAMOfflineGetCurrentMetaPass write FOnAMOfflineGetCurrentMetaPass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterSetOutputSampleRate">OnAudioMasterSetOutputSampleRate</a></b>: <a   href="DVSTHost.html#TVstSampleRateChangedEvent">TVstSampleRateChangedEvent</a> read FOnAMSetOutputSampleRate write FOnAMSetOutputSampleRate;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterUpdateDisplay">OnAudioMasterUpdateDisplay</a></b>: TNotifyEvent read FOnAMUpdateDisplay write FOnAMUpdateDisplay;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterBeginEdit">OnAudioMasterBeginEdit</a></b>: <a   href="DVSTHost.html#TVstAutomationNotifyEvent">TVstAutomationNotifyEvent</a> read FOnAMBeginEdit write FOnAMBeginEdit;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterEndEdit">OnAudioMasterEndEdit</a></b>: <a   href="DVSTHost.html#TVstAutomationNotifyEvent">TVstAutomationNotifyEvent</a> read FOnAMEndEdit write FOnAMEndEdit;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAudioMasterPinConnected">OnAudioMasterPinConnected</a></b>: <a   href="DVSTHost.html#TVstPinConnectedEvent">TVstPinConnectedEvent</a> read FOnAMPinConnected write FOnAMPinConnected;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnVendorSpecific">OnVendorSpecific</a></b>: <a   href="DVSTHost.html#TVendorSpecificEvent">TVendorSpecificEvent</a> read FOnVendorSpecific write FOnVendorSpecific;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnShowEdit">OnShowEdit</a></b>: <a   href="DVSTHost.html#TVstShowEditEvent">TVstShowEditEvent</a> read FOnShowEdit write FOnShowEdit;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnCloseEdit">OnCloseEdit</a></b>: TNotifyEvent read FOnCloseEdit write FOnCloseEdit;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnAfterLoad">OnAfterLoad</a></b>: TNotifyEvent read FOnAfterLoad write FOnAfterLoad;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#OnProcessEvents">OnProcessEvents</a></b>: <a   href="DVSTHost.html#TVstProcessEventsEvent">TVstProcessEventsEvent</a> read FOnProcessEvents write FOnProcessEvents;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#DLLFileName">DLLFileName</a></b>: TFileName read FDLLFileName write SetDLLFileName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTHost.TVstPlugIn.html#GUIStyle">GUIStyle</a></b> : <a   href="DVSTHost.html#TGUIStyle">TGUIStyle</a> read fGUIStyle write SetGUIStyle default gsDefault;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PVstEffect"></a><code><b>PVstEffect</b>: <a   href="DVSTHost.TVstPlugIn.html#PVstEffect">PVSTEffect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GUIForm"></a><code><b>GUIForm</b>: TForm;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(Collection: TCollection); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDisplayName"></a><code>function <b>GetDisplayName</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVendorString"></a><code>function <b>GetVendorString</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetProductString"></a><code>function <b>GetProductString</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVendorVersion"></a><code>function <b>GetVendorVersion</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetProgram"></a><code>function <b>GetProgram</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetProgram"></a><code>procedure <b>SetProgram</b>(lValue: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetProgramName"></a><code>function <b>GetProgramName</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetProgramName"></a><code>procedure <b>SetProgramName</b>(newName: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetSampleRate"></a><code>procedure <b>SetSampleRate</b>(fSR: double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Open"></a><code>procedure <b>Open</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Close"></a><code>procedure <b>Close</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Load"></a><code>function <b>Load</b>(PluginDll: TFilename): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UnLoad"></a><code>procedure <b>UnLoad</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShowEdit"></a><code>procedure <b>ShowEdit</b>(Form: TForm); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShowEdit"></a><code>procedure <b>ShowEdit</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditGetRect"></a><code>function <b>EditGetRect</b>: <a   href="DVSTEffect.ERect.html">ERect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditOpen"></a><code>function <b>EditOpen</b>(Handle: THandle): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditClose"></a><code>procedure <b>EditClose</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CloseEdit"></a><code>procedure <b>CloseEdit</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MainsChanged"></a><code>procedure <b>MainsChanged</b>(bOn: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetParameter"></a><code>procedure <b>SetParameter</b>(index: Integer; parameter: Single); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetParameter"></a><code>function <b>GetParameter</b>(index: Integer): Single; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetParamLabel"></a><code>function <b>GetParamLabel</b>(index: Integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetParamDisplay"></a><code>function <b>GetParamDisplay</b>(index: Integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetParamName"></a><code>function <b>GetParamName</b>(index: Integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVu"></a><code>function <b>GetVu</b>: Single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Identify"></a><code>function <b>Identify</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Process"></a><code>procedure <b>Process</b>(inputs, outputs: <a   href="DVSTEffect.html#PPSingle">ppSingle</a>; Sampleframes: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessReplacing"></a><code>procedure <b>ProcessReplacing</b>(inputs, outputs: <a   href="DVSTEffect.html#PPSingle">ppSingle</a>; Sampleframes: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessDoubleReplacing"></a><code>procedure <b>ProcessDoubleReplacing</b>(inputs, outputs: <a   href="DVSTEffect.html#PPDouble">ppDouble</a>; Sampleframes: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessAudio"></a><code>procedure <b>ProcessAudio</b>(inputs, outputs: <a   href="DVSTEffect.html#PPSingle">ppSingle</a>; Sampleframes: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetChunk"></a><code>function <b>GetChunk</b>(pntr: pointer; isPreset: boolean = false): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetChunk"></a><code>function <b>SetChunk</b>(data: pointer; byteSize: Integer; isPreset: boolean = false): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessEvents"></a><code>function <b>ProcessEvents</b>(pntr: <a   href="DVSTEffect.html#PVstEvents">PVstEvents</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanBeAutomated"></a><code>function <b>CanBeAutomated</b>(index: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="String2Parameter"></a><code>function <b>String2Parameter</b>(ParameterName: string): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetNumProgramCategories"></a><code>function <b>GetNumProgramCategories</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetProgramNameIndexed"></a><code>function <b>GetProgramNameIndexed</b>(category, index: Integer; ProgramName: PChar): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyCurrentProgramTo"></a><code>function <b>CopyCurrentProgramTo</b>(Destination: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConnectInput"></a><code>function <b>ConnectInput</b>(InputNr: Integer; state: boolean): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConnectOutput"></a><code>function <b>ConnectOutput</b>(OutputNr: Integer; state: boolean): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetInputProperties"></a><code>function <b>GetInputProperties</b>(InputNr: Integer): <a   href="DVSTEffect.TVstPinProperties.html">TVstPinProperties</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetOutputProperties"></a><code>function <b>GetOutputProperties</b>(OutputNr: Integer): <a   href="DVSTEffect.TVstPinProperties.html">TVstPinProperties</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPlugCategory"></a><code>function <b>GetPlugCategory</b>: <a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCurrentPosition"></a><code>function <b>GetCurrentPosition</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDestinationBuffer"></a><code>function <b>GetDestinationBuffer</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OfflineNotify"></a><code>function <b>OfflineNotify</b>(pntr: <a   href="DVSTEffect.html#PVstAudioFile">PVstAudioFile</a>; numAudioFiles: Integer; start: boolean): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OfflinePrepare"></a><code>function <b>OfflinePrepare</b>(pntr: <a   href="DVSTEffect.html#PVstOfflineTask">PVstOfflineTask</a>; count: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OfflineRun"></a><code>function <b>OfflineRun</b>(pntr: <a   href="DVSTEffect.html#PVstOfflineTask">PVstOfflineTask</a>; count :Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProcessVarIo"></a><code>function <b>ProcessVarIo</b>(varIo: <a   href="DVSTEffect.html#PVstVariableIo">PVstVariableIo</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetSpeakerArrangement"></a><code>function <b>SetSpeakerArrangement</b>(pluginInput: <a   href="DVSTEffect.html#PVstSpeakerArrangement">PVstSpeakerArrangement</a>; pluginOutput: <a   href="DVSTEffect.html#PVstSpeakerArrangement">PVstSpeakerArrangement</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetBlockSizeAndSampleRate"></a><code>function <b>SetBlockSizeAndSampleRate</b>(blockSize: Integer; sampleRate: Single): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetBypass"></a><code>function <b>SetBypass</b>(onOff: Boolean): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetEffectName"></a><code>function <b>GetEffectName</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetErrorText"></a><code>function <b>GetErrorText</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetTailSize"></a><code>function <b>GetTailSize</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetIcon"></a><code>function <b>GetIcon</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVstVersion"></a><code>function <b>GetVstVersion</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSpeakerArrangement"></a><code>function <b>GetSpeakerArrangement</b>(SpeakerIn, SpeakerOut:<a   href="DVSTEffect.html#PVstSpeakerArrangement">PVstSpeakerArrangement</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShellGetNextPlugin"></a><code>function <b>ShellGetNextPlugin</b>(var PluginName:String): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditKeyDown"></a><code>function <b>EditKeyDown</b>(Key : Char; VirtualKeycode : Integer; Modifier :Double): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditKeyUp"></a><code>function <b>EditKeyUp</b>(Key : Char; VirtualKeycode : Integer; Modifier :Double): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetEditKnobMode"></a><code>procedure <b>SetEditKnobMode</b>(Mode : <a   href="DVSTHost.html#TKnobMode">TKnobMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StartProcess"></a><code>procedure <b>StartProcess</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StopProcess"></a><code>procedure <b>StopProcess</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetTotalSampleToProcess"></a><code>procedure <b>SetTotalSampleToProcess</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BeginSetProgram"></a><code>procedure <b>BeginSetProgram</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EndSetProgram"></a><code>procedure <b>EndSetProgram</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetPanLaw"></a><code>procedure <b>SetPanLaw</b>(PanLaw: <a   href="DVSTEffect.html#TVstPanLawType">TVstPanLawType</a>; Gain: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetMidiProgramName"></a><code>function <b>GetMidiProgramName</b>(MidiProgramNamePointer : <a   href="DVSTEffect.html#PMidiProgramName">PMidiProgramName</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCurrentMidiProgram"></a><code>function <b>GetCurrentMidiProgram</b>(MidiProgramNamePointer : <a   href="DVSTEffect.html#PMidiProgramName">PMidiProgramName</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetMidiProgramCategory"></a><code>function <b>GetMidiProgramCategory</b>(MidiProgramCategoryPointer : <a   href="DVSTEffect.html#PMidiProgramCategory">PMidiProgramCategory</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HasMidiProgramsChanged"></a><code>function <b>HasMidiProgramsChanged</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetMidiKeyName"></a><code>function <b>GetMidiKeyName</b>(MidiKeyNamePointer: <a   href="DVSTEffect.html#PMidiKeyName">PMidiKeyName</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BeginLoadBank"></a><code>function <b>BeginLoadBank</b>(PatchChunkInfo : <a   href="DVSTEffect.html#PVstPatchChunkInfo">PVstPatchChunkInfo</a>): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BeginLoadProgram"></a><code>procedure <b>BeginLoadProgram</b>(PatchChunkInfo : <a   href="DVSTEffect.html#PVstPatchChunkInfo">PVstPatchChunkInfo</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetRect"></a><code>function <b>GetRect</b>: TRect;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetParameterProperties"></a><code>function <b>GetParameterProperties</b>(Parameter: Integer): <a   href="DVSTEffect.TVstParameterProperties.html">TVstParameterProperties</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VendorSpecific"></a><code>function <b>VendorSpecific</b>(index, value:Integer; pntr: pointer; opt: single): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanDo"></a><code>function <b>CanDo</b>(pntr: pchar): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Idle"></a><code>function <b>Idle</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditIdle"></a><code>function <b>EditIdle</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditActivate"></a><code>procedure <b>EditActivate</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditDeactivate"></a><code>procedure <b>EditDeactivate</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetViewPosition"></a><code>procedure <b>SetViewPosition</b>(x, y: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="KeysRequired"></a><code>function <b>KeysRequired</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SavePreset"></a><code>procedure <b>SavePreset</b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SavePreset"></a><code>procedure <b>SavePreset</b>(Stream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadPreset"></a><code>procedure <b>LoadPreset</b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadPreset"></a><code>procedure <b>LoadPreset</b>(Stream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveBank"></a><code>procedure <b>SaveBank</b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveBank"></a><code>procedure <b>SaveBank</b>(Stream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadBank"></a><code>procedure <b>LoadBank</b>(FileName: TFileName); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadBank"></a><code>procedure <b>LoadBank</b>(Stream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Parameters"></a><code>property <b>Parameters</b>[Index: Integer]: Single read <a   href="DVSTHost.TVstPlugIn.html#GetParameter">GetParameter</a> write <a   href="DVSTHost.TVstPlugIn.html#SetParameter">SetParameter</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VstOfflineTask"></a><code>property <b>VstOfflineTask</b> : <a   href="DVSTEffect.TVstOfflineTask.html">TVstOfflineTask</a> read FVstOfflineTask;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Active"></a><code>property <b>Active</b>: boolean read FActive write Activate default false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DisplayName"></a><code>property <b>DisplayName</b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetDisplayName">GetDisplayName</a> write FDisplayName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="numInputs"></a><code>property <b>numInputs</b>: Integer read GetnumInputs stored False default -1 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="numOutputs"></a><code>property <b>numOutputs</b>: Integer read GetnumOutputs stored False default -1 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="numPrograms"></a><code>property <b>numPrograms</b>: Integer read GetnumPrograms stored False default -1 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="numParams"></a><code>property <b>numParams</b>: Integer read GetnumParams stored False default -1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: Integer read Fversion stored False default -1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="InitialDelay"></a><code>property <b>InitialDelay</b>: Integer read GetInitialDelay stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReplaceOrAccumulate"></a><code>property <b>ReplaceOrAccumulate</b>: <a   href="DVSTHost.html#TReplaceOrAccumulate">TReplaceOrAccumulate</a> read FReplaceOrAccumulate write FReplaceOrAccumulate default roa0NotSupported;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CurrentProcessLevel"></a><code>property <b>CurrentProcessLevel</b>: <a   href="DVSTHost.html#TCurrentProcessLevel">TCurrentProcessLevel</a> read FProcessLevel write FProcessLevel default cpl0NotSupported;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AutomationState"></a><code>property <b>AutomationState</b>: <a   href="DVSTHost.html#TAutomationState">TAutomationState</a> read FAutomationState Write FAutomationState default as0NotSupported;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="uID"></a><code>property <b>uID</b>: string read FuID stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PluginVstVersion"></a><code>property <b>PluginVstVersion</b>: Integer read FVstVersion stored False default -1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="EditVisible"></a><code>property <b>EditVisible</b>: Boolean read FEditOpen;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="EffectOptions"></a><code>property <b>EffectOptions</b>: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a> read GetEffOptions stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PlugCategory"></a><code>property <b>PlugCategory</b>: <a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a> read FPlugCategory stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProgramNr"></a><code>property <b>ProgramNr</b>: Integer read <a   href="DVSTHost.TVstPlugIn.html#GetProgram">GetProgram</a> write <a   href="DVSTHost.TVstPlugIn.html#SetProgram">SetProgram</a> default -1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProgramName"></a><code>property <b>ProgramName</b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetProgramName">GetProgramName</a> write <a   href="DVSTHost.TVstPlugIn.html#SetProgramName">SetProgramName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="VendorString"></a><code>property <b>VendorString</b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetVendorString">GetVendorString</a> stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="VendorVersion"></a><code>property <b>VendorVersion</b>: Integer read <a   href="DVSTHost.TVstPlugIn.html#GetVendorVersion">GetVendorVersion</a> stored False default -1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProductString"></a><code>property <b>ProductString</b>: string read <a   href="DVSTHost.TVstPlugIn.html#GetProductString">GetProductString</a> stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterAutomate"></a><code>property <b>OnAudioMasterAutomate</b>: <a   href="DVSTHost.html#TVstAutomateEvent">TVstAutomateEvent</a> read FOnAMAutomate write FOnAMAutomate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterIdle"></a><code>property <b>OnAudioMasterIdle</b>: TNotifyEvent read FOnAMIdle write FOnAMIdle;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterNeedIdle"></a><code>property <b>OnAudioMasterNeedIdle</b>: TNotifyEvent read FOnAMNeedIdle write FOnAMNeedIdle;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterIOChanged"></a><code>property <b>OnAudioMasterIOChanged</b>: TNotifyEvent read FOnAMIOChanged write FOnAMIOChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterWantMidi"></a><code>property <b>OnAudioMasterWantMidi</b>: TNotifyEvent read FOnAMWantMidi write FOnAMWantMidi;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterOfflineStart"></a><code>property <b>OnAudioMasterOfflineStart</b>: TNotifyEvent read FOnAMOfflineStart write FOnAMOfflineStart;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterOfflineRead"></a><code>property <b>OnAudioMasterOfflineRead</b>: <a   href="DVSTHost.html#TVstOfflineEvent">TVstOfflineEvent</a> read FOnAMOfflineRead write FOnAMOfflineRead;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterOfflineWrite"></a><code>property <b>OnAudioMasterOfflineWrite</b>: <a   href="DVSTHost.html#TVstOfflineEvent">TVstOfflineEvent</a> read FOnAMOfflineWrite write FOnAMOfflineWrite;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterOfflineGetCurrentPass"></a><code>property <b>OnAudioMasterOfflineGetCurrentPass</b>: TNotifyEvent read FOnAMOfflineGetCurrentPass write FOnAMOfflineGetCurrentPass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterOfflineGetCurrentMetaPass"></a><code>property <b>OnAudioMasterOfflineGetCurrentMetaPass</b>: TNotifyEvent read FOnAMOfflineGetCurrentMetaPass write FOnAMOfflineGetCurrentMetaPass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterSetOutputSampleRate"></a><code>property <b>OnAudioMasterSetOutputSampleRate</b>: <a   href="DVSTHost.html#TVstSampleRateChangedEvent">TVstSampleRateChangedEvent</a> read FOnAMSetOutputSampleRate write FOnAMSetOutputSampleRate;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterUpdateDisplay"></a><code>property <b>OnAudioMasterUpdateDisplay</b>: TNotifyEvent read FOnAMUpdateDisplay write FOnAMUpdateDisplay;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterBeginEdit"></a><code>property <b>OnAudioMasterBeginEdit</b>: <a   href="DVSTHost.html#TVstAutomationNotifyEvent">TVstAutomationNotifyEvent</a> read FOnAMBeginEdit write FOnAMBeginEdit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterEndEdit"></a><code>property <b>OnAudioMasterEndEdit</b>: <a   href="DVSTHost.html#TVstAutomationNotifyEvent">TVstAutomationNotifyEvent</a> read FOnAMEndEdit write FOnAMEndEdit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAudioMasterPinConnected"></a><code>property <b>OnAudioMasterPinConnected</b>: <a   href="DVSTHost.html#TVstPinConnectedEvent">TVstPinConnectedEvent</a> read FOnAMPinConnected write FOnAMPinConnected;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnVendorSpecific"></a><code>property <b>OnVendorSpecific</b>: <a   href="DVSTHost.html#TVendorSpecificEvent">TVendorSpecificEvent</a> read FOnVendorSpecific write FOnVendorSpecific;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnShowEdit"></a><code>property <b>OnShowEdit</b>: <a   href="DVSTHost.html#TVstShowEditEvent">TVstShowEditEvent</a> read FOnShowEdit write FOnShowEdit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnCloseEdit"></a><code>property <b>OnCloseEdit</b>: TNotifyEvent read FOnCloseEdit write FOnCloseEdit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAfterLoad"></a><code>property <b>OnAfterLoad</b>: TNotifyEvent read FOnAfterLoad write FOnAfterLoad;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnProcessEvents"></a><code>property <b>OnProcessEvents</b>: <a   href="DVSTHost.html#TVstProcessEventsEvent">TVstProcessEventsEvent</a> read FOnProcessEvents write FOnProcessEvents;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DLLFileName"></a><code>property <b>DLLFileName</b>: TFileName read FDLLFileName write SetDLLFileName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="GUIStyle"></a><code>property <b>GUIStyle</b> : <a   href="DVSTHost.html#TGUIStyle">TGUIStyle</a> read fGUIStyle write SetGUIStyle default gsDefault;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:20</em>
+</span>
+</body></html>

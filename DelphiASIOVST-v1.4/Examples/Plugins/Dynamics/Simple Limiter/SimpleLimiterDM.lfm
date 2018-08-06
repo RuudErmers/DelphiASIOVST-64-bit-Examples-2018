@@ -1,0 +1,9 @@
+object SimpleLimiterDataModule: TSimpleLimiterDataModule
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'Simple Limiter'
+  ProductName = 'DAV Dynamics Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 0
+end

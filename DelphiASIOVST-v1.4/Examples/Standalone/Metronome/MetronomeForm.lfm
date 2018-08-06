@@ -1,0 +1,119 @@
+object FmASIO: TFmASIO
+  Left = 291
+  Height = 81
+  Top = 266
+  Width = 242
+  HorzScrollBar.Page = 241
+  ActiveControl = DriverCombo
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Simple Metronome'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object Lb_Drivername: TLabel
+    Left = 8
+    Height = 14
+    Top = 8
+    Width = 34
+    Caption = 'Driver:'
+    Color = clNone
+    ParentColor = False
+  end
+  object LbTempo: TLabel
+    Left = 8
+    Height = 14
+    Top = 35
+    Width = 37
+    Caption = 'Tempo:'
+    Color = clNone
+    ParentColor = False
+  end
+  object LbBPM: TLabel
+    Left = 111
+    Height = 14
+    Top = 36
+    Width = 21
+    Caption = 'BPM'
+    Color = clNone
+    ParentColor = False
+  end
+  object LbVolume: TLabel
+    Left = 8
+    Height = 14
+    Top = 60
+    Width = 39
+    Caption = 'Volume:'
+    Color = clNone
+    ParentColor = False
+  end
+  object DriverCombo: TComboBox
+    Left = 45
+    Height = 21
+    Top = 5
+    Width = 105
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 13
+    MaxLength = 0
+    OnChange = DriverComboChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object Bt_CP: TButton
+    Left = 156
+    Height = 21
+    Top = 5
+    Width = 81
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Control Panel'
+    Enabled = False
+    OnClick = Bt_CPClick
+    TabOrder = 1
+  end
+  object Bt_Play: TButton
+    Left = 156
+    Height = 21
+    Top = 32
+    Width = 81
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Start Audio'
+    Default = True
+    Enabled = False
+    OnClick = Bt_PlayClick
+    TabOrder = 2
+  end
+  object SETempo: TSpinEdit
+    Left = 50
+    Height = 22
+    Top = 32
+    Width = 55
+    MaxValue = 300
+    MinValue = 20
+    OnChange = SETempoChange
+    TabOrder = 3
+    Value = 120
+  end
+  object SBVolume: TScrollBar
+    Left = 52
+    Height = 16
+    Top = 59
+    Width = 185
+    Max = 0
+    Min = -100
+    TabOrder = 4
+    OnChange = SbVolumeChange
+  end
+  object ASIOHost: TASIOHost
+    PreventClipping = pcDigital
+    ConvertOptimizations = [coSSE]
+    SampleRate = 44100
+    ASIOTime.Speed = 1
+    ASIOTime.SampleRate = 44100
+    ASIOTime.Flags = [atSystemTimeValid, atSamplePositionValid, atSampleRateValid, atSpeedValid]
+    OnSampleRateChanged = ASIOHostSampleRateChanged
+    OnBufferSwitch32 = ASIOHostBufferSwitch
+    left = 52
+    top = 8
+  end
+end

@@ -1,0 +1,11 @@
+{ Das ist eine automatisch erzeugte Lazarus-Ressourcendatei }
+
+LazarusResources.Add('TFmPlotIR','FORMDATA',[
+  'TPF0'#9'TFmPlotIR'#8'FmPlotIR'#4'Left'#3#175#1#6'Height'#3#198#0#3'Top'#3#209
+  +#0#5'Width'#3'S'#1#18'HorzScrollBar.Page'#3'R'#1#18'VertScrollBar.Page'#3#197
+  +#0#7'Caption'#6#20'Impulse Resonse Plot'#12'ClientHeight'#3#198#0#11'ClientW'
+  +'idth'#3'S'#1#11'Font.Height'#2#245#9'Font.Name'#6#6'Tahoma'#0#9'TWaveform'#8
+  +'Waveform'#6'Height'#3#198#0#5'Width'#3'S'#1#5'Align'#7#8'alClient'#0#0#10'T'
+  +'PopupMenu'#9'PUDisplay'#4'left'#2#8#3'top'#2#16#0#9'TMenuItem'#10'MIWavefor'
+  +'m'#7'Caption'#6#8'Waveform'#7'Checked'#9#9'RadioItem'#9#0#0#0#0
+]);

@@ -1,0 +1,158 @@
+unit URMCSunriseLFO;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, URMCControls,URMCConstants,URMCBaseControlPanel,
+  URMCSunriseControlPanel;
+
+type
+  TRMCSunriseLFOFrame = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+  TRMCSunriseLFO = class (TRMCSunriseControlPanel)
+  private
+     frame: TRMCSunriseLFOFrame;
+     FCurWave:integer;
+     FLFO:integer;
+     FCaptionPanel:TPanel;
+     procedure Load(aBasePanel:TWinControl); override;
+    procedure UIChanged(Sender: TObject; Index, Value: Integer);
+    procedure setWave(index: integer; fromButton: boolean);
+    procedure SetLFO(lfo:integer);
+    procedure lfoDeOffset(var pcc, lfo: integer);
+    function lfoOffset(pcc: integer): integer;
+    procedure genPCC(pcc, value: integer);override;
+  public
+    constructor Create(aowner:TComponent;lfo:integer);
+    procedure ChangePCC(pcc, Value: Integer);override;
+  end;
+
+var
+  RMCSunriseLFOFrame: TRMCSunriseLFOFrame;
+
+implementation
+
+{$R *.dfm}
+
+uses UVirtCC;
+
+const ID_LED = 10;
+const ID_KNOB = 20;
+const ID_BUTTON = 30;
+
+procedure TRMCSunriseLFO.lfoDeOffset(VAR pcc,lfo:integer);
+const d = VirtCC_LFO2_WAVE-VirtCC_LFO1_WAVE;
+begin
+  lfo:= (pcc - VirtCC_LFO1_WAVE) DIV d;
+  pcc:= pcc - lfo * d;
+end;
+
+function TRMCSunriseLFO.lfoOffset(pcc:integer):integer;
+const d = VirtCC_LFO2_WAVE-VirtCC_LFO1_WAVE;
+begin
+  result:=pcc+ FLfo * d;
+end;
+
+procedure TRMCSunriseLFO.ChangePCC(pcc, Value: Integer);
+VAR lfo:integer;
+begin
+  lfoDeOffset(pcc,lfo);
+  if lfo <> FLFO then exit;
+  case pcc of
+    VirtCC_LFO1_WAVE:             setWave( round(3*Value / 127),false);
+    VirtCC_LFO1_RATE:             setValue(ID_KNOB,value);
+    VirtCC_LFO1_DELAY:            setValue(ID_KNOB+1,value);
+    VirtCC_LFO1_DELAYENABLED:     setValue(ID_BUTTON+8,value);
+  end;
+end;
+
+constructor TRMCSunriseLFO.Create(aowner: TComponent;lfo:integer);
+begin
+  DebugName:='TRMCSunriseLFO';
+  FLfo:=lfo;
+  inherited Create(aowner);
+  Parent:=TWinControl(aowner); // changed
+  Scalable:=false;
+  frame:=TRMCSunriseLFOFrame.Create(self);
+  frame.Width:=335;
+  frame.Height:=133;
+  width:=frame.width;
+  height:=frame.height;
+  frame.parent:=self;
+  frame.Visible:=true;
+  frame.align:=alClient;
+  Load(frame);
+  setDefaultOnChangeHandler;
+  OnChanged:=UIChanged;
+  setWave(0,false);
+end;
+
+
+procedure TRMCSunriseLFO.Load(aBasePanel: TWinControl);
+VAR i:integer;
+const DEF_LEFT = 110;
+const DEF_WIDTH = 62;
+VAR x,y:integer;
+begin
+  inherited;
+  FCaptionPanel:=CreateControlPanel(Rect(15,7,54,22),'LFO'+inttostr(FLfo+1));
+  CreateControl(DEF_LEFT+2*DEF_WIDTH,30,tsButton,ID_BUTTON+8);
+
+  x:=DEF_LEFT;
+  y:=40;
+  CreateControl(x,y,tsKnob,ID_KNOB);
+  CreateControlText(Rect(x-20,y+28,x+20,y+28+12),'RATE');
+  x:=DEF_LEFT+DEF_WIDTH;
+  CreateControl(x,y,tsKnob,ID_KNOB+1);
+  CreateControlText(Rect(x-20,y+28,x+20,y+28+12),'DELAY');
+
+  CreateControl(DEF_LEFT,116,tsButton,ID_BUTTON+4);
+  CreateControl(DEF_LEFT+DEF_WIDTH,116,tsButton,ID_BUTTON+5);
+  CreateControl(DEF_LEFT+2*DEF_WIDTH,116,tsButton,ID_BUTTON+6);
+  CreateControl(DEF_LEFT+3*DEF_WIDTH,116,tsButton,ID_BUTTON+7);
+
+  CreateControlWave(DEF_LEFT,100,0);
+  CreateControlWave(DEF_LEFT+DEF_WIDTH,100,1);
+  CreateControlWave(DEF_LEFT+2*DEF_WIDTH,100,2);
+  CreateControlWave(DEF_LEFT+3*DEF_WIDTH,100,4);
+end;
+
+procedure TRMCSunriseLFO.genPCC(pcc,value:integer);
+begin
+  inherited genPCC(lfoOffset(pcc),value);
+end;
+
+procedure TRMCSunriseLFO.SetLFO(lfo: integer);
+begin
+  FLFO:=lfo;
+  FCaptionPanel.Caption:='LFO'+inttostr(lfo+1);
+end;
+
+procedure TRMCSunriseLFO.setWave(index:integer;fromButton:boolean);
+VAR i:integer;
+begin
+  FCurWave:=index;
+  for i:=0 to 3 do setValue(ID_BUTTON+i+4,127*ord(index = i));
+  if fromButton then
+    genPCC(VirtCC_LFO1_WAVE,round(127*FCurWave/3));
+end;
+
+
+procedure TRMCSunriseLFO.UIChanged(Sender: TObject; Index, Value: Integer);
+VAR ind:integer;
+begin
+  case index of
+    ID_KNOB  : genPCC(VirtCC_LFO1_RATE,value);
+    ID_KNOB+1: genPCC(VirtCC_LFO1_DELAY,value);
+    ID_BUTTON+8:genPCC(VirtCC_LFO1_DELAYENABLED,value);
+  end;
+  if ( Index>=ID_BUTTON+4) and (index<=ID_BUTTON+7) then
+    setWave(index-ID_BUTTON-4,true);
+end;
+
+end.

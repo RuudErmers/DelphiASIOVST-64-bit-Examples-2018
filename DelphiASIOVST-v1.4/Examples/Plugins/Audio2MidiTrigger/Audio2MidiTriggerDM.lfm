@@ -1,0 +1,122 @@
+object Audio2MidiTriggerModule: TAudio2MidiTriggerModule
+  Version = '1.0'
+  EffectName = 'Audio to Midi Trigger'
+  ProductName = 'DAV Effect Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 44100
+  numInputs = 1
+  numOutputs = 1
+  CurrentProgramName = 'Default'
+  IORatio = 1
+  UniqueID = 'A2MT'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Default'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      CurveFactor = 1
+      DisplayName = 'Threshold'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 6
+      MaxInteger = 6
+      Min = -54
+      MinInteger = -54
+      ReportVST2Properties = True
+      ShortLabel = 'Thr.'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'dB'
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParameterThresholdChange
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Gain'
+      Flags = [ppfParameterIsSwitch, ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex, ppfParameterSupportsDisplayCategory]
+      LargeStepFloat = 2
+      Max = 15
+      MaxInteger = 15
+      Min = -15
+      MinInteger = -15
+      ReportVST2Properties = True
+      ShortLabel = 'Gain'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'dB'
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Interval'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 1000
+      MaxInteger = 1000
+      Min = 0.00100000004749
+      ReportVST2Properties = True
+      ShortLabel = 'Interv.'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'ms'
+      VSTModule = Owner
+      OnParameterChange = ParameterIntervalChange
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'MidiNote'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 127
+      MaxInteger = 127
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'Note'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParameterMidiNoteChange
+      OnCustomParameterDisplay = ParameterMidiNoteDisplay
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Velocity Shift'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 127
+      MaxInteger = 127
+      Min = -127
+      MinInteger = -127
+      ReportVST2Properties = True
+      ShortLabel = 'VShift'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      UseDefaultString2ParameterHandler = True
+      VSTModule = Owner
+      OnParameterChange = ParameterVelocityShiftChange
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnEditOpen = VSTModuleEditOpen
+  OnSampleRateChange = VSTModuleSampleRateChange
+  left = 286
+  top = 77
+  Height = 150
+  HorizontalOffset = 584
+  VerticalOffset = 319
+  Width = 215
+end

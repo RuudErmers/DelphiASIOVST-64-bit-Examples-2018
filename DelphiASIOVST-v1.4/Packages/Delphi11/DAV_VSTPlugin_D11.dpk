@@ -1,0 +1,57 @@
+package DAV_VSTPlugin_D11;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $560000}
+{$DESCRIPTION 'ASIO & VST Project - VST Plugin Project Wizard (design-time)'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  DAV_Common_D11;
+
+contains
+  DAV_VSTPluginConfig in '..\..\Source\VST\DAV_VSTPluginConfig.pas',
+  DAV_VSTEditorCreator in '..\..\Source\VST\DAV_VSTEditorCreator.pas',
+  DAV_VSTModule in '..\..\Source\VST\DAV_VSTModule.pas',
+  DAV_VSTModuleCreator in '..\..\Source\VST\DAV_VSTModuleCreator.pas',
+  DAV_VSTPluginWizard in '..\..\Source\VST\DAV_VSTPluginWizard.pas',
+  DAV_VSTPluginWizardFrm in '..\..\Source\VST\DAV_VSTPluginWizardFrm.pas' {VSTPluginWizardForm},
+  DAV_VSTPluginWizardReg in '..\..\Source\VST\DAV_VSTPluginWizardReg.pas',
+  DAV_VSTProjectCreator in '..\..\Source\VST\DAV_VSTProjectCreator.pas',
+  DAV_VSTBasicModule in '..\..\Source\VST\DAV_VSTBasicModule.pas',
+  DAV_VSTChannels in '..\..\Source\VST\DAV_VSTChannels.pas',
+  DAV_VSTModuleWithDsp in '..\..\Source\VST\DAV_VSTModuleWithDsp.pas',
+  DAV_VSTModuleWithMidi in '..\..\Source\VST\DAV_VSTModuleWithMidi.pas',
+  DAV_VSTModuleWithPrograms in '..\..\Source\VST\DAV_VSTModuleWithPrograms.pas',
+  DAV_VSTPrograms in '..\..\Source\VST\DAV_VSTPrograms.pas',
+  DAV_VSTShellPlugins in '..\..\Source\VST\DAV_VSTShellPlugins.pas',
+  DAV_VSTCustomModule in '..\..\Source\VST\DAV_VSTCustomModule.pas',
+  DAV_VSTEffect in '..\..\Source\VST\DAV_VSTEffect.pas',
+  DAV_VSTParameters in '..\..\Source\VST\DAV_VSTParameters.pas',
+  DAV_VSTOfflineTask in '..\..\Source\VST\DAV_VSTOfflineTask.pas',
+  DAV_WinAmp in '..\..\Source\DAV_WinAmp.pas';
+
+end.

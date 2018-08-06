@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="DAV_ASIOHost_Lazarus"/>
+    <AddToProjectUsesSection Value="True"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\Source;..\..\Source\ASIO;..\..\Resources"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <CStyleOperator Value="False"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Version Minor="3"/>
+    <Files Count="10">
+      <Item1>
+        <Filename Value="..\..\Source\ASIO\DAV_ASIO.pas"/>
+        <UnitName Value="DAV_ASIO"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\Source\ASIO\DAV_OpenASIO.pas"/>
+        <UnitName Value="DAV_OpenASIO"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\Source\ASIO\DAV_ASIOConvert.pas"/>
+        <UnitName Value="DAV_ASIOConvert"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\Source\ASIO\DAV_ASIOGenerator.pas"/>
+        <UnitName Value="DAV_ASIOGenerator"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\Source\ASIO\DAV_ASIOHost.pas"/>
+        <UnitName Value="DAV_ASIOHost"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\Source\ASIO\DAV_ASIOMixer.pas"/>
+        <UnitName Value="DAV_ASIOMixer"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\Source\ASIO\DAV_ASIORegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="DAV_ASIORegister"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\Resources\DAV_ASIOHostRegister.lrs"/>
+        <Type Value="LRS"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\Source\DAV_Compiler.inc"/>
+        <Type Value="Include"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\Source\ASIO\DAV_AsioInterface.pas"/>
+        <UnitName Value="DAV_AsioInterface"/>
+      </Item10>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="DAV_Common_Lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="$(TestDir)\publishedpackage\"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

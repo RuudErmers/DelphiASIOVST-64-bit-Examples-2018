@@ -1,0 +1,765 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DAVDCommon</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit DAVDCommon</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>uses</td><td>Classes, Interfaces, Objects and Records</td><td><a class="section"  href="#@FuncsProcs">Functions and Procedures</a></td><td><a class="section"  href="#@Types">Types</a></td><td>Constants</td><td><a class="section"  href="#@Variables">Variables</a></td></tr></table>
+<a name="@Description"></a><h2 class="description">Description</h2>
+&nbsp;<a name="@Uses"></a><h2 class="overview">Overview</h2>
+<a name="@FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#ms2smp">ms2smp</a></b>(ms, SampleRate: Single): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#smp2ms">smp2ms</a></b>(smp, SampleRate: Single): Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#getSyncFactor">getSyncFactor</a></b>(base_factor: Single; dotted, triads: boolean): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Sync2Smp">Sync2Smp</a></b>(SyncFactor, bpm, SampleRate: Single): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Factorial">Factorial</a></b>(Order : Integer) : Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Limit">f_Limit</a></b>(v:Single;l:Single=-1;u:Single=1):Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Limit">f_Limit</a></b>(v:Double;l:Double=-1;u:Double=1):Double; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Clip">f_Clip</a></b>(x,l,h:Single):Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Cliplo">f_Cliplo</a></b>(x,l:Single):Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Cliphi">f_Cliphi</a></b>(x,h:Single):Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#dB_to_Amp">dB_to_Amp</a></b>(g:Single):Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Amp_to_dB">Amp_to_dB</a></b>(v:Single):Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Smallest">Smallest</a></b>(A, B: Single): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Largest">Largest</a></b>(A, B: Single): Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#LimitAngle">LimitAngle</a></b>(const Angle: Single): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Ln2">f_Ln2</a></b>(f:Single):Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Floorln2">f_Floorln2</a></b>(f:Single):Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Arctan">f_Arctan</a></b>(Value:Single):Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#f_Arctan">f_Arctan</a></b>(Value:Double):Double; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#FreqLinearToLog">FreqLinearToLog</a></b>(value:Single):Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#FreqLogToLinear">FreqLogToLinear</a></b>(value:Single):Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DAVDCommon.html#GetSinCos">GetSinCos</a></b>(Frequency: Double; var SinValue, CosValue : Double); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="DAVDCommon.html#GetSinCos">GetSinCos</a></b>(Frequency: Extended; var SinValue, CosValue : Extended); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DAVDCommon.html#GetSinCos">GetSinCos</a></b>(Frequency: Single; var SinValue, CosValue : Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#RoundToPowerOf2">RoundToPowerOf2</a></b>(Value:Integer) : Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#TruncToPowerOf2">TruncToPowerOf2</a></b>(Value:Integer) : Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#OnOff">OnOff</a></b>(value:Single) : Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#unDenormalize">unDenormalize</a></b>(value:Single) : Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Tanh2a">Tanh2a</a></b>(x:Single):Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Tanh2b">Tanh2b</a></b>(x:Single):Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Tanh2c">Tanh2c</a></b>(x:Single):Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Tanh2d">Tanh2d</a></b>(x:Single):Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Sigmoid">Sigmoid</a></b>(x:Single):Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#Sinc">Sinc</a></b>(x:Double):Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#FindMaximum">FindMaximum</a></b>(InBuffer: PSingle; Samples: Integer): Integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DAVDCommon.html#FindMaximum">FindMaximum</a></b>(InBuffer: PDouble; Samples: Integer): Integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="DAVDCommon.html#DCSubstract">DCSubstract</a></b>(InBuffer: PSingle; Samples: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DAVDCommon.html#DCSubstract">DCSubstract</a></b>(InBuffer: PDouble; Samples: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="DAVDCommon.html#ConvertSingleToDouble">ConvertSingleToDouble</a></b>(Singles : PSingle; Doubles : PDouble; SampleFrames:Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="DAVDCommon.html#ConvertDoubleToSingle">ConvertDoubleToSingle</a></b>(Doubles : PDouble; Singles : PSingle; SampleFrames:Integer);</code></td>
+</tr>
+</table>
+<a name="@Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a></b> = Types.TSingleDynArray;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDDoubleDynArray">TAVDDoubleDynArray</a></b> = Types.TDoubleDynArray;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDSingleDynArray">PAVDSingleDynArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDDoubleDynArray">PAVDDoubleDynArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDDoubleDynArray">TAVDDoubleDynArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDSingleFixedArray">TAVDSingleFixedArray</a></b> = Array [0..0] of Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDSingleFixedArray">PAVDSingleFixedArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDSingleFixedArray">TAVDSingleFixedArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDDoubleFixedArray">TAVDDoubleFixedArray</a></b> = Array [0..0] of Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDDoubleFixedArray">PAVDDoubleFixedArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDDoubleFixedArray">TAVDDoubleFixedArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a></b> = array of <a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDArrayOfSingleDynArray">PAVDArrayOfSingleDynArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a></b> = array of <a   href="DAVDCommon.html#TAVDDoubleDynArray">TAVDDoubleDynArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDArrayOfDoubleDynArray">PAVDArrayOfDoubleDynArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDArrayOfSingleFixedArray">TAVDArrayOfSingleFixedArray</a></b> = array [0..0] of <a   href="DAVDCommon.html#TAVDSingleFixedArray">TAVDSingleFixedArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDArrayOfSingleFixedArray">PAVDArrayOfSingleFixedArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfSingleFixedArray">TAVDArrayOfSingleFixedArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDArrayOfDoubleFixedArray">TAVDArrayOfDoubleFixedArray</a></b> = array [0..0] of <a   href="DAVDCommon.html#TAVDDoubleFixedArray">TAVDDoubleFixedArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDArrayOfDoubleFixedArray">PAVDArrayOfDoubleFixedArray</a></b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfDoubleFixedArray">TAVDArrayOfDoubleFixedArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDSingleDynMatrix">TAVDSingleDynMatrix</a></b> = <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDSingleDynMatrix">PAVDSingleDynMatrix</a></b> = &circ;<a   href="DAVDCommon.html#TAVDSingleDynMatrix">TAVDSingleDynMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TAVDDoubleDynMatrix">TAVDDoubleDynMatrix</a></b> = <a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#PAVDDoubleDynMatrix">PAVDDoubleDynMatrix</a></b> = &circ;<a   href="DAVDCommon.html#TAVDDoubleDynMatrix">TAVDDoubleDynMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#T4SingleArray">T4SingleArray</a></b> = array[0..3] of Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#P4SingleArray">P4SingleArray</a></b> = &circ;<a   href="DAVDCommon.html#T4SingleArray">T4SingleArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#T4DoubleArray">T4DoubleArray</a></b> = array[0..3] of Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#P4DoubleArray">P4DoubleArray</a></b> = &circ;<a   href="DAVDCommon.html#T4DoubleArray">T4DoubleArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#T2SingleArray">T2SingleArray</a></b> = array [0..1] of Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#P2SingleArray">P2SingleArray</a></b> = &circ;<a   href="DAVDCommon.html#T2SingleArray">T2SingleArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#T2DoubleArray">T2DoubleArray</a></b> = array [0..1] of Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#P2DoubleArray">P2DoubleArray</a></b> = &circ;<a   href="DAVDCommon.html#T2SingleArray">T2SingleArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#TStrArray">TStrArray</a></b> = array of string;</code></td>
+</tr>
+</table>
+<a name="@Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#ln10">ln10</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#ln2">ln2</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#ln22">ln22</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DAVDCommon.html#ln2Rez">ln2Rez</a></b>: Double;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ms2smp"></a><code>function <b>ms2smp</b>(ms, SampleRate: Single): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="smp2ms"></a><code>function <b>smp2ms</b>(smp, SampleRate: Single): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="getSyncFactor"></a><code>function <b>getSyncFactor</b>(base_factor: Single; dotted, triads: boolean): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Sync2Smp"></a><code>function <b>Sync2Smp</b>(SyncFactor, bpm, SampleRate: Single): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Factorial"></a><code>function <b>Factorial</b>(Order : Integer) : Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Limit"></a><code>function <b>f_Limit</b>(v:Single;l:Single=-1;u:Single=1):Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Limit"></a><code>function <b>f_Limit</b>(v:Double;l:Double=-1;u:Double=1):Double; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Clip"></a><code>function <b>f_Clip</b>(x,l,h:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Cliplo"></a><code>function <b>f_Cliplo</b>(x,l:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Cliphi"></a><code>function <b>f_Cliphi</b>(x,h:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="dB_to_Amp"></a><code>function <b>dB_to_Amp</b>(g:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Amp_to_dB"></a><code>function <b>Amp_to_dB</b>(v:Single):Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Smallest"></a><code>function <b>Smallest</b>(A, B: Single): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Largest"></a><code>function <b>Largest</b>(A, B: Single): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LimitAngle"></a><code>function <b>LimitAngle</b>(const Angle: Single): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Ln2"></a><code>function <b>f_Ln2</b>(f:Single):Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Floorln2"></a><code>function <b>f_Floorln2</b>(f:Single):Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Arctan"></a><code>function <b>f_Arctan</b>(Value:Single):Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="f_Arctan"></a><code>function <b>f_Arctan</b>(Value:Double):Double; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FreqLinearToLog"></a><code>function <b>FreqLinearToLog</b>(value:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+scale logarithmically from 20 Hz to 20 kHz</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FreqLogToLinear"></a><code>function <b>FreqLogToLinear</b>(value:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetSinCos"></a><code>procedure <b>GetSinCos</b>(Frequency: Double; var SinValue, CosValue : Double); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetSinCos"></a><code>procedure <b>GetSinCos</b>(Frequency: Extended; var SinValue, CosValue : Extended); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetSinCos"></a><code>procedure <b>GetSinCos</b>(Frequency: Single; var SinValue, CosValue : Single); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RoundToPowerOf2"></a><code>function <b>RoundToPowerOf2</b>(Value:Integer) : Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TruncToPowerOf2"></a><code>function <b>TruncToPowerOf2</b>(Value:Integer) : Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OnOff"></a><code>function <b>OnOff</b>(value:Single) : Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="unDenormalize"></a><code>function <b>unDenormalize</b>(value:Single) : Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Tanh2a"></a><code>function <b>Tanh2a</b>(x:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Tanh2b"></a><code>function <b>Tanh2b</b>(x:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Tanh2c"></a><code>function <b>Tanh2c</b>(x:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Tanh2d"></a><code>function <b>Tanh2d</b>(x:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Sigmoid"></a><code>function <b>Sigmoid</b>(x:Single):Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Sinc"></a><code>function <b>Sinc</b>(x:Double):Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FindMaximum"></a><code>function <b>FindMaximum</b>(InBuffer: PSingle; Samples: Integer): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FindMaximum"></a><code>function <b>FindMaximum</b>(InBuffer: PDouble; Samples: Integer): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DCSubstract"></a><code>procedure <b>DCSubstract</b>(InBuffer: PSingle; Samples: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DCSubstract"></a><code>procedure <b>DCSubstract</b>(InBuffer: PDouble; Samples: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ConvertSingleToDouble"></a><code>procedure <b>ConvertSingleToDouble</b>(Singles : PSingle; Doubles : PDouble; SampleFrames:Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ConvertDoubleToSingle"></a><code>procedure <b>ConvertDoubleToSingle</b>(Doubles : PDouble; Singles : PSingle; SampleFrames:Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDSingleDynArray"></a><code><b>TAVDSingleDynArray</b> = Types.TSingleDynArray;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-$DEFINE Debug</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDDoubleDynArray"></a><code><b>TAVDDoubleDynArray</b> = Types.TDoubleDynArray;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDSingleDynArray"></a><code><b>PAVDSingleDynArray</b> = &circ;<a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDDoubleDynArray"></a><code><b>PAVDDoubleDynArray</b> = &circ;<a   href="DAVDCommon.html#TAVDDoubleDynArray">TAVDDoubleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDSingleFixedArray"></a><code><b>TAVDSingleFixedArray</b> = Array [0..0] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDSingleFixedArray"></a><code><b>PAVDSingleFixedArray</b> = &circ;<a   href="DAVDCommon.html#TAVDSingleFixedArray">TAVDSingleFixedArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDDoubleFixedArray"></a><code><b>TAVDDoubleFixedArray</b> = Array [0..0] of Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDDoubleFixedArray"></a><code><b>PAVDDoubleFixedArray</b> = &circ;<a   href="DAVDCommon.html#TAVDDoubleFixedArray">TAVDDoubleFixedArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDArrayOfSingleDynArray"></a><code><b>TAVDArrayOfSingleDynArray</b> = array of <a   href="DAVDCommon.html#TAVDSingleDynArray">TAVDSingleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDArrayOfSingleDynArray"></a><code><b>PAVDArrayOfSingleDynArray</b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDArrayOfDoubleDynArray"></a><code><b>TAVDArrayOfDoubleDynArray</b> = array of <a   href="DAVDCommon.html#TAVDDoubleDynArray">TAVDDoubleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDArrayOfDoubleDynArray"></a><code><b>PAVDArrayOfDoubleDynArray</b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDArrayOfSingleFixedArray"></a><code><b>TAVDArrayOfSingleFixedArray</b> = array [0..0] of <a   href="DAVDCommon.html#TAVDSingleFixedArray">TAVDSingleFixedArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDArrayOfSingleFixedArray"></a><code><b>PAVDArrayOfSingleFixedArray</b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfSingleFixedArray">TAVDArrayOfSingleFixedArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDArrayOfDoubleFixedArray"></a><code><b>TAVDArrayOfDoubleFixedArray</b> = array [0..0] of <a   href="DAVDCommon.html#TAVDDoubleFixedArray">TAVDDoubleFixedArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDArrayOfDoubleFixedArray"></a><code><b>PAVDArrayOfDoubleFixedArray</b> = &circ;<a   href="DAVDCommon.html#TAVDArrayOfDoubleFixedArray">TAVDArrayOfDoubleFixedArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDSingleDynMatrix"></a><code><b>TAVDSingleDynMatrix</b> = <a   href="DAVDCommon.html#TAVDArrayOfSingleDynArray">TAVDArrayOfSingleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDSingleDynMatrix"></a><code><b>PAVDSingleDynMatrix</b> = &circ;<a   href="DAVDCommon.html#TAVDSingleDynMatrix">TAVDSingleDynMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAVDDoubleDynMatrix"></a><code><b>TAVDDoubleDynMatrix</b> = <a   href="DAVDCommon.html#TAVDArrayOfDoubleDynArray">TAVDArrayOfDoubleDynArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAVDDoubleDynMatrix"></a><code><b>PAVDDoubleDynMatrix</b> = &circ;<a   href="DAVDCommon.html#TAVDDoubleDynMatrix">TAVDDoubleDynMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="T4SingleArray"></a><code><b>T4SingleArray</b> = array[0..3] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="P4SingleArray"></a><code><b>P4SingleArray</b> = &circ;<a   href="DAVDCommon.html#T4SingleArray">T4SingleArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="T4DoubleArray"></a><code><b>T4DoubleArray</b> = array[0..3] of Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="P4DoubleArray"></a><code><b>P4DoubleArray</b> = &circ;<a   href="DAVDCommon.html#T4DoubleArray">T4DoubleArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="T2SingleArray"></a><code><b>T2SingleArray</b> = array [0..1] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="P2SingleArray"></a><code><b>P2SingleArray</b> = &circ;<a   href="DAVDCommon.html#T2SingleArray">T2SingleArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="T2DoubleArray"></a><code><b>T2DoubleArray</b> = array [0..1] of Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="P2DoubleArray"></a><code><b>P2DoubleArray</b> = &circ;<a   href="DAVDCommon.html#T2SingleArray">T2SingleArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TStrArray"></a><code><b>TStrArray</b> = array of string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ln10"></a><code><b>ln10</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ln2"></a><code><b>ln2</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ln22"></a><code><b>ln22</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ln2Rez"></a><code><b>ln2Rez</b>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:16</em>
+</span>
+</body></html>

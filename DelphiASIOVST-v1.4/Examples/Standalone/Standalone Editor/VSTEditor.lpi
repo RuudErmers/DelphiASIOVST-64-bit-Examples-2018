@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1" Active="Release">
+      <Item1 Name="Release" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="DAV_ASIOHost_Lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="DAV_VSTHost_Lazarus"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="VSTEditor.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="10" Y="7"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="EditorForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmVSTEditor"/>
+        <HasResources Value="True"/>
+        <UnitName Value="EditorForm"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="27" Y="37"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="EditorSetup.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmSetup"/>
+        <HasResources Value="True"/>
+        <UnitName Value="EditorSetup"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="8"/>
+        <CursorPos X="5" Y="35"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\..\..\Programme\Lazarus\lcl\interfaces\win32\interfaces.pp"/>
+        <UnitName Value="Interfaces"/>
+        <TopLine Value="1"/>
+        <CursorPos X="42" Y="4"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="EditorSetup.lfm"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="EditorForm.lfm"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\Source\DVSTHost.pas"/>
+        <UnitName Value="DVSTHost"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="26"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHostRegister.pas"/>
+        <UnitName Value="DAV_VSTHostRegister"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="17"/>
+        <CursorPos X="68" Y="47"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_VSTHost_Lazarus.pas"/>
+        <UnitName Value="DAV_VSTHost_Lazarus"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="35" Y="17"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="33" Column="24" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="18" Column="106" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="35" Column="24" TopLine="8"/>
+      </Position3>
+      <Position4>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="45" Column="87" TopLine="8"/>
+      </Position4>
+      <Position5>
+        <Filename Value="EditorSetup.pas"/>
+        <Caret Line="8" Column="36" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="35" Column="5" TopLine="8"/>
+      </Position6>
+      <Position7>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="148" Column="31" TopLine="122"/>
+      </Position7>
+      <Position8>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position8>
+      <Position9>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="126" Column="1" TopLine="116"/>
+      </Position9>
+      <Position10>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="35" Column="5" TopLine="1"/>
+      </Position10>
+      <Position11>
+        <Filename Value="EditorForm.pas"/>
+        <Caret Line="139" Column="9" TopLine="122"/>
+      </Position11>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source"/>
+      <OtherUnitFiles Value="..\..\..\Source;..\..\..\Source\VST;..\..\..\Source\ASIO"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\ASIO-Host Demo\ASIODemoForm.pas"/>
+        <Line Value="126"/>
+      </Item1>
+    </BreakPoints>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

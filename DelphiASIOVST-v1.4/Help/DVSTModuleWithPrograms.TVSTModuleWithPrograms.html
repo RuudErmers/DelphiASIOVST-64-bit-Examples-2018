@@ -1,0 +1,532 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTModuleWithPrograms: Class TVSTModuleWithPrograms</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TVSTModuleWithPrograms"></a><h1 class="cio">Class TVSTModuleWithPrograms</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTModuleWithPrograms.html">DVSTModuleWithPrograms</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TVSTModuleWithPrograms = class(<a class="normal"  href="DVSTModuleWithMidi.TVSTModuleWithMidi.html">TVSTModuleWithMidi</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TVSTModuleWithMidi description follows</div><div class="nodescription">no description available, TCustomVSTModule description follows</div><div class="nodescription">no description available, TBasicVSTModule description follows</div><p>
+-$DEFINE Debug</p>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TDataModule</li>
+<li class="ancestor"><a class="normal"  href="DVSTBasicModule.TBasicVSTModule.html">TBasicVSTModule</a></li>
+<li class="ancestor"><a class="normal"  href="DVSTCustomModule.TCustomVSTModule.html">TCustomVSTModule</a></li>
+<li class="ancestor"><a class="normal"  href="DVSTModuleWithMidi.TVSTModuleWithMidi.html">TVSTModuleWithMidi</a></li>
+<li class="thisitem">TVSTModuleWithPrograms</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#SetParameterCount">SetParameterCount</a></b>(cnt: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetParameter">HostCallGetParameter</a></b>(Index: Integer): Single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallSetParameter">HostCallSetParameter</a></b>(Index: Integer; Value: Single); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallEditOpen">HostCallEditOpen</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallSetProgramm">HostCallSetProgramm</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetProgramm">HostCallGetProgramm</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallSetProgramName">HostCallSetProgramName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetProgramName">HostCallGetProgramName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetParamLabel">HostCallGetParamLabel</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetParamDisplay">HostCallGetParamDisplay</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetParamName">HostCallGetParamName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetChunk">HostCallGetChunk</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallSetChunk">HostCallSetChunk</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallCanBeAutomated">HostCallCanBeAutomated</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallString2Parameter">HostCallString2Parameter</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetNumProgramCategories">HostCallGetNumProgramCategories</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetProgramNameIndexed">HostCallGetProgramNameIndexed</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallGetParameterProperties">HostCallGetParameterProperties</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallBeginSetProgram">HostCallBeginSetProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallEndSetProgram">HostCallEndSetProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallBeginLoadBank">HostCallBeginLoadBank</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#HostCallBeginLoadProgram">HostCallBeginLoadProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#numParams">numParams</a></b>: Integer read FEffect.numParams write SetNumParams stored false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#numPrograms">numPrograms</a></b>: Integer read FEffect.numPrograms write SetNumPrograms stored false;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#CurrentProgram">CurrentProgram</a></b>: Integer read FCurProgram write SetProgram;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#CurrentProgramName">CurrentProgramName</a></b>: string read GetCurrentProgramName write SetCurrentProgramName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#Chunk">Chunk</a></b>: TMemoryStream read fChunkData write fChunkData;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#Programs">Programs</a></b>: <a   href="DVSTPrograms.TCustomVstPrograms.html">TCustomVstPrograms</a> read FVstPrograms write SetVstPrograms;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#ParameterProperties">ParameterProperties</a></b>: <a   href="DVSTParameters.TCustomVstParameterProperties.html">TCustomVstParameterProperties</a> read FParameterProperties write SetParameterProperties;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#Parameter">Parameter</a></b>[Index: Integer]: Single read getParameter write setParameterAutomated;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnParameterChange">OnParameterChange</a></b>: <a   href="DVSTParameters.html#TParameterChangeEvent">TParameterChangeEvent</a> read FOnParameterChangeEvent write FOnParameterChangeEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnBeginSetProgram">OnBeginSetProgram</a></b>: TNotifyEvent read FOnBeginSetProgram write FOnBeginSetProgram;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnEndSetProgram">OnEndSetProgram</a></b>: TNotifyEvent read FOnEndSetProgram write FOnEndSetProgram;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnBeginLoadBank">OnBeginLoadBank</a></b>: <a   href="DVSTModuleWithPrograms.html#TOnBeginLoadBankEvent">TOnBeginLoadBankEvent</a> read FOnBeginLoadBank write FOnBeginLoadBank;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnBeginLoadProgram">OnBeginLoadProgram</a></b>: <a   href="DVSTModuleWithPrograms.html#TOnBeginLoadProgramEvent">TOnBeginLoadProgramEvent</a> read FOnBeginLoadProgram write FOnBeginLoadProgram;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnParameterSizeFailed">OnParameterSizeFailed</a></b>: TNotifyEvent read FOnParameterSizeFailed write FOnParameterSizeFailed;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnBeforeProgramChange">OnBeforeProgramChange</a></b>: TNotifyEvent read FOnBeforeProgramChange write FOnBeforeProgramChange;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnAfterProgramChange">OnAfterProgramChange</a></b>: TNotifyEvent read FOnAfterProgramChange write FOnAfterProgramChange;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTModuleWithPrograms.TVSTModuleWithPrograms.html#OnGetChunkParameter">OnGetChunkParameter</a></b>: <a   href="DVSTModuleWithPrograms.html#TGetChunkParameterEvent">TGetChunkParameterEvent</a> read FOnGetChunkParamEvent write FOnGetChunkParamEvent;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetParameterCount"></a><code>procedure <b>SetParameterCount</b>(cnt: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParameter"></a><code>function <b>HostCallGetParameter</b>(Index: Integer): Single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetParameter"></a><code>procedure <b>HostCallSetParameter</b>(Index: Integer; Value: Single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditOpen"></a><code>function <b>HostCallEditOpen</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetProgramm"></a><code>function <b>HostCallSetProgramm</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProgramm"></a><code>function <b>HostCallGetProgramm</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetProgramName"></a><code>function <b>HostCallSetProgramName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProgramName"></a><code>function <b>HostCallGetProgramName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParamLabel"></a><code>function <b>HostCallGetParamLabel</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParamDisplay"></a><code>function <b>HostCallGetParamDisplay</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParamName"></a><code>function <b>HostCallGetParamName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetChunk"></a><code>function <b>HostCallGetChunk</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetChunk"></a><code>function <b>HostCallSetChunk</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallCanBeAutomated"></a><code>function <b>HostCallCanBeAutomated</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallString2Parameter"></a><code>function <b>HostCallString2Parameter</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetNumProgramCategories"></a><code>function <b>HostCallGetNumProgramCategories</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProgramNameIndexed"></a><code>function <b>HostCallGetProgramNameIndexed</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParameterProperties"></a><code>function <b>HostCallGetParameterProperties</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallBeginSetProgram"></a><code>function <b>HostCallBeginSetProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEndSetProgram"></a><code>function <b>HostCallEndSetProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallBeginLoadBank"></a><code>function <b>HostCallBeginLoadBank</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallBeginLoadProgram"></a><code>function <b>HostCallBeginLoadProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="numParams"></a><code>property <b>numParams</b>: Integer read FEffect.numParams write SetNumParams stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="numPrograms"></a><code>property <b>numPrograms</b>: Integer read FEffect.numPrograms write SetNumPrograms stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CurrentProgram"></a><code>property <b>CurrentProgram</b>: Integer read FCurProgram write SetProgram;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CurrentProgramName"></a><code>property <b>CurrentProgramName</b>: string read GetCurrentProgramName write SetCurrentProgramName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Chunk"></a><code>property <b>Chunk</b>: TMemoryStream read fChunkData write fChunkData;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Programs"></a><code>property <b>Programs</b>: <a   href="DVSTPrograms.TCustomVstPrograms.html">TCustomVstPrograms</a> read FVstPrograms write SetVstPrograms;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParameterProperties"></a><code>property <b>ParameterProperties</b>: <a   href="DVSTParameters.TCustomVstParameterProperties.html">TCustomVstParameterProperties</a> read FParameterProperties write SetParameterProperties;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Parameter"></a><code>property <b>Parameter</b>[Index: Integer]: Single read getParameter write setParameterAutomated;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnParameterChange"></a><code>property <b>OnParameterChange</b>: <a   href="DVSTParameters.html#TParameterChangeEvent">TParameterChangeEvent</a> read FOnParameterChangeEvent write FOnParameterChangeEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBeginSetProgram"></a><code>property <b>OnBeginSetProgram</b>: TNotifyEvent read FOnBeginSetProgram write FOnBeginSetProgram;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnEndSetProgram"></a><code>property <b>OnEndSetProgram</b>: TNotifyEvent read FOnEndSetProgram write FOnEndSetProgram;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBeginLoadBank"></a><code>property <b>OnBeginLoadBank</b>: <a   href="DVSTModuleWithPrograms.html#TOnBeginLoadBankEvent">TOnBeginLoadBankEvent</a> read FOnBeginLoadBank write FOnBeginLoadBank;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBeginLoadProgram"></a><code>property <b>OnBeginLoadProgram</b>: <a   href="DVSTModuleWithPrograms.html#TOnBeginLoadProgramEvent">TOnBeginLoadProgramEvent</a> read FOnBeginLoadProgram write FOnBeginLoadProgram;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnParameterSizeFailed"></a><code>property <b>OnParameterSizeFailed</b>: TNotifyEvent read FOnParameterSizeFailed write FOnParameterSizeFailed;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnBeforeProgramChange"></a><code>property <b>OnBeforeProgramChange</b>: TNotifyEvent read FOnBeforeProgramChange write FOnBeforeProgramChange;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnAfterProgramChange"></a><code>property <b>OnAfterProgramChange</b>: TNotifyEvent read FOnAfterProgramChange write FOnAfterProgramChange;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnGetChunkParameter"></a><code>property <b>OnGetChunkParameter</b>: <a   href="DVSTModuleWithPrograms.html#TGetChunkParameterEvent">TGetChunkParameterEvent</a> read FOnGetChunkParamEvent write FOnGetChunkParamEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:21</em>
+</span>
+</body></html>

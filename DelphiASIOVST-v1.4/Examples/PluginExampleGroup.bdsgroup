@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{66552D08-6A63-454E-8FDF-4A137C7D9639}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="ASIOVST.dll">Plugins\ASIO-Extender\ASIOVST.bdsproj</Projects>
+      <Projects Name="Decimator.dll">Plugins\Decimator\Decimator.bdsproj</Projects>
+      <Projects Name="DitherNoiseshaper.dll">Plugins\DitherNoiseshaper\DitherNoiseshaper.bdsproj</Projects>
+      <Projects Name="fReeverb.dll">Plugins\fReeverb\fReeverb.bdsproj</Projects>
+      <Projects Name="GraphicEQ.dll">Plugins\Graphic EQ\GraphicEQ.bdsproj</Projects>
+      <Projects Name="LoadVSTPlugin.dll">Plugins\Load VST Plugin\LoadVSTPlugin.bdsproj</Projects>
+      <Projects Name="MIDIPlugIn.dll">Plugins\MIDI PluglIn\MIDIPlugIn.bdsproj</Projects>
+      <Projects Name="NoGUIFilter.dll">Plugins\No GUI Filter\NoGUIFilter.bdsproj</Projects>
+      <Projects Name="OpAmp.dll">Plugins\NonLinear\OpAmp.bdsproj</Projects>
+      <Projects Name="VSTPascalScript.dll">Plugins\PascalScript\VSTPascalScript.bdsproj</Projects>
+      <Projects Name="PerformanceTest.dll">Plugins\PerformanceTest\PerformanceTest.bdsproj</Projects>
+      <Projects Name="Phaser.dll">Plugins\Phaser\Phaser.bdsproj</Projects>
+      <Projects Name="Delayla.dll">Plugins\Simple Delay\Delayla.bdsproj</Projects>
+      <Projects Name="SimpleSampler.dll">Plugins\Simple Sampler\SimpleSampler.bdsproj</Projects>
+      <Projects Name="VUMeter.dll">Plugins\Simple VU Meter\VUMeter.bdsproj</Projects>
+      <Projects Name="SineSynth.dll">Plugins\Sine Synth\SineSynth.bdsproj</Projects>
+      <Projects Name="Tetris.dll">Plugins\Tetris\Tetris.bdsproj</Projects>
+      <Projects Name="Vocoder.dll">Plugins\Vocoder\Vocoder.bdsproj</Projects>
+      <Projects Name="Wavedisplay.dll">Plugins\Wavedisplay\Wavedisplay.bdsproj</Projects>
+      <Projects Name="XSynth.dll">Plugins\XSynth\XSynth.bdsproj</Projects>
+      <Projects Name="Targets">ASIOVST.dll Decimator.dll DitherNoiseshaper.dll fReeverb.dll GraphicEQ.dll LoadVSTPlugin.dll MIDIPlugIn.dll NoGUIFilter.dll OpAmp.dll VSTPascalScript.dll PerformanceTest.dll Phaser.dll Delayla.dll SimpleSampler.dll VUMeter.dll SineSynth.dll Tetris.dll Vocoder.dll Wavedisplay.dll XSynth.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

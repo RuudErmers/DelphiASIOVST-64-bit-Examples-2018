@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <PathDelim Value="\"/>
+    <Name Value="DAV_GUI_Lazarus"/>
+    <CompilerOptions>
+      <Version Value="10"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\Source;..\..\Source\GUI;..\..\Source\FileFormats"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <CStyleOperator Value="False"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <SmartLinkUnit Value="True"/>
+      </CodeGeneration>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Version Minor="3"/>
+    <Files Count="64">
+      <Item1>
+        <Filename Value="..\..\Source\GUI\DAV_GuiVUMeter.pas"/>
+        <UnitName Value="DAV_GuiVUMeter"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\Source\GUI\DAV_GuiCorrelationMeter.pas"/>
+        <UnitName Value="DAV_GuiCorrelationMeter"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\Source\GUI\DAV_GuiADSRGraph.pas"/>
+        <UnitName Value="DAV_GuiADSRGraph"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\Source\GUI\DAV_GuiAudioDataDisplay.pas"/>
+        <UnitName Value="DAV_GuiAudioDataDisplay"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\Source\GUI\DAV_GuiBaseControl.pas"/>
+        <UnitName Value="DAV_GuiBaseControl"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\Source\GUI\DAV_GuiButton.pas"/>
+        <UnitName Value="DAV_GuiButton"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\Source\GUI\DAV_GuiDynamicWaveform.pas"/>
+        <UnitName Value="DAV_GuiDynamicWaveform"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\Source\GUI\DAV_GuiLabel.pas"/>
+        <UnitName Value="DAV_GuiLabel"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\Source\GUI\DAV_GuiMidiKeys.pas"/>
+        <UnitName Value="DAV_GuiMidiKeys"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\Source\GUI\DAV_GuiMidiKeyZones.pas"/>
+        <UnitName Value="DAV_GuiMidiKeyZones"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPanel.pas"/>
+        <UnitName Value="DAV_GuiPanel"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\..\Source\GUI\DAV_GuiRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="DAV_GuiRegister"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\..\Source\GUI\DAV_GuiSelectBox.pas"/>
+        <UnitName Value="DAV_GuiSelectBox"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\..\Source\GUI\DAV_GuiStaticWaveform.pas"/>
+        <UnitName Value="DAV_GuiStaticWaveform"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPngTypes.pas"/>
+        <UnitName Value="DAV_GuiPngTypes"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPng.pas"/>
+        <UnitName Value="DAV_GuiPng"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPngChunks.pas"/>
+        <UnitName Value="DAV_GuiPngChunks"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <UnitName Value="DAV_GuiPngClasses"/>
+      </Item18>
+      <Item19>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPngCoder.pas"/>
+        <UnitName Value="DAV_GuiPngCoder"/>
+      </Item19>
+      <Item20>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPngDesign.pas"/>
+        <UnitName Value="DAV_GuiPngDesign"/>
+      </Item20>
+      <Item21>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPngImageList.pas"/>
+        <UnitName Value="DAV_GuiPngImageList"/>
+      </Item21>
+      <Item22>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPngResourceStrings.pas"/>
+        <UnitName Value="DAV_GuiPngResourceStrings"/>
+      </Item22>
+      <Item23>
+        <Filename Value="..\..\Source\GUI\DAV_GuiAudioDataDisplayAxis.pas"/>
+        <UnitName Value="DAV_GuiAudioDataDisplayAxis"/>
+      </Item23>
+      <Item24>
+        <Filename Value="..\..\Source\GUI\DAV_GuiAudioDataDisplayCursor.pas"/>
+        <UnitName Value="DAV_GuiAudioDataDisplayCursor"/>
+      </Item24>
+      <Item25>
+        <Filename Value="..\..\Source\GUI\DAV_GuiBitmap.pas"/>
+        <UnitName Value="DAV_GuiBitmap"/>
+      </Item25>
+      <Item26>
+        <Filename Value="..\..\Source\GUI\DAV_GuiBlend.pas"/>
+        <UnitName Value="DAV_GuiBlend"/>
+      </Item26>
+      <Item27>
+        <Filename Value="..\..\Source\GUI\DAV_GuiBlendReference.pas"/>
+        <UnitName Value="DAV_GuiBlendReference"/>
+      </Item27>
+      <Item28>
+        <Filename Value="..\..\Source\GUI\DAV_GuiByteMap.pas"/>
+        <UnitName Value="DAV_GuiByteMap"/>
+      </Item28>
+      <Item29>
+        <Filename Value="..\..\Source\GUI\DAV_GuiCommon.pas"/>
+        <UnitName Value="DAV_GuiCommon"/>
+      </Item29>
+      <Item30>
+        <Filename Value="..\..\Source\GUI\DAV_GuiCustomMap.pas"/>
+        <UnitName Value="DAV_GuiCustomMap"/>
+      </Item30>
+      <Item31>
+        <Filename Value="..\..\Source\GUI\DAV_GuiDesign.pas"/>
+        <UnitName Value="DAV_GuiDesign"/>
+      </Item31>
+      <Item32>
+        <Filename Value="..\..\Source\GUI\DAV_GuiDial.pas"/>
+        <UnitName Value="DAV_GuiDial"/>
+      </Item32>
+      <Item33>
+        <Filename Value="..\..\Source\GUI\DAV_GuiDialDesign.pas"/>
+        <UnitName Value="DAV_GuiDialDesign"/>
+      </Item33>
+      <Item34>
+        <Filename Value="..\..\Source\GUI\DAV_GuiDialRenderer.pas"/>
+        <UnitName Value="DAV_GuiDialRenderer"/>
+      </Item34>
+      <Item35>
+        <Filename Value="..\..\Source\GUI\DAV_GuiEQGraph.pas"/>
+        <UnitName Value="DAV_GuiEQGraph"/>
+      </Item35>
+      <Item36>
+        <Filename Value="..\..\Source\GUI\DAV_GuiEQSlide.pas"/>
+        <UnitName Value="DAV_GuiEQSlide"/>
+      </Item36>
+      <Item37>
+        <Filename Value="..\..\Source\GUI\DAV_GuiFileFormatGraphics.pas"/>
+        <UnitName Value="DAV_GuiFileFormatGraphics"/>
+      </Item37>
+      <Item38>
+        <Filename Value="..\..\Source\GUI\DAV_GuiFileFormats.pas"/>
+        <UnitName Value="DAV_GuiFileFormats"/>
+      </Item38>
+      <Item39>
+        <Filename Value="..\..\Source\GUI\DAV_GuiFilters.pas"/>
+        <UnitName Value="DAV_GuiFilters"/>
+      </Item39>
+      <Item40>
+        <Filename Value="..\..\Source\GUI\DAV_GuiFixedPoint.pas"/>
+        <UnitName Value="DAV_GuiFixedPoint"/>
+      </Item40>
+      <Item41>
+        <Filename Value="..\..\Source\GUI\DAV_GuiFont.pas"/>
+        <UnitName Value="DAV_GuiFont"/>
+      </Item41>
+      <Item42>
+        <Filename Value="..\..\Source\GUI\DAV_GuiFontList.pas"/>
+        <UnitName Value="DAV_GuiFontList"/>
+      </Item42>
+      <Item43>
+        <Filename Value="..\..\Source\GUI\DAV_GuiGraphXY.pas"/>
+        <UnitName Value="DAV_GuiGraphXY"/>
+      </Item43>
+      <Item44>
+        <Filename Value="..\..\Source\GUI\DAV_GuiGraphXYDesign.pas"/>
+        <UnitName Value="DAV_GuiGraphXYDesign"/>
+      </Item44>
+      <Item45>
+        <Filename Value="..\..\Source\GUI\DAV_GuiInscription.pas"/>
+        <UnitName Value="DAV_GuiInscription"/>
+      </Item45>
+      <Item46>
+        <Filename Value="..\..\Source\GUI\DAV_GuiLED.pas"/>
+        <UnitName Value="DAV_GuiLED"/>
+      </Item46>
+      <Item47>
+        <Filename Value="..\..\Source\GUI\DAV_GuiLevelMeter.pas"/>
+        <UnitName Value="DAV_GuiLevelMeter"/>
+      </Item47>
+      <Item48>
+        <Filename Value="..\..\Source\GUI\DAV_GuiMediaButton.pas"/>
+        <UnitName Value="DAV_GuiMediaButton"/>
+      </Item48>
+      <Item49>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPaintBox.pas"/>
+        <UnitName Value="DAV_GuiPaintBox"/>
+      </Item49>
+      <Item50>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+        <UnitName Value="DAV_GuiPixelMap"/>
+      </Item50>
+      <Item51>
+        <Filename Value="..\..\Source\GUI\DAV_GuiPixelMapDesign.pas"/>
+        <UnitName Value="DAV_GuiPixelMapDesign"/>
+      </Item51>
+      <Item52>
+        <Filename Value="..\..\Source\GUI\DAV_GuiShadow.pas"/>
+        <UnitName Value="DAV_GuiShadow"/>
+      </Item52>
+      <Item53>
+        <Filename Value="..\..\Source\GUI\DAV_GuiSlider.pas"/>
+        <UnitName Value="DAV_GuiSlider"/>
+      </Item53>
+      <Item54>
+        <Filename Value="..\..\Source\GUI\DAV_GuiStitchedButton.pas"/>
+        <UnitName Value="DAV_GuiStitchedButton"/>
+      </Item54>
+      <Item55>
+        <Filename Value="..\..\Source\GUI\DAV_GuiStitchedControls.pas"/>
+        <UnitName Value="DAV_GuiStitchedControls"/>
+      </Item55>
+      <Item56>
+        <Filename Value="..\..\Source\GUI\DAV_GuiStitchedDial.pas"/>
+        <UnitName Value="DAV_GuiStitchedDial"/>
+      </Item56>
+      <Item57>
+        <Filename Value="..\..\Source\GUI\DAV_GuiStitchedDisplay.pas"/>
+        <UnitName Value="DAV_GuiStitchedDisplay"/>
+      </Item57>
+      <Item58>
+        <Filename Value="..\..\Source\GUI\DAV_GuiStitchedPngList.pas"/>
+        <UnitName Value="DAV_GuiStitchedPngList"/>
+      </Item58>
+      <Item59>
+        <Filename Value="..\..\Source\GUI\DAV_GuiStitchedSwitch.pas"/>
+        <UnitName Value="DAV_GuiStitchedSwitch"/>
+      </Item59>
+      <Item60>
+        <Filename Value="..\..\Source\GUI\DAV_GuiVector.pas"/>
+        <UnitName Value="DAV_GuiVector"/>
+      </Item60>
+      <Item61>
+        <Filename Value="..\..\Source\GUI\DAV_GuiVectorPixel.pas"/>
+        <UnitName Value="DAV_GuiVectorPixel"/>
+      </Item61>
+      <Item62>
+        <Filename Value="..\..\Source\GUI\DAV_GuiVectorPixelCircle.pas"/>
+        <UnitName Value="DAV_GuiVectorPixelCircle"/>
+      </Item62>
+      <Item63>
+        <Filename Value="..\..\Source\GUI\DAV_GuiVectorPixelLine.pas"/>
+        <UnitName Value="DAV_GuiVectorPixelLine"/>
+      </Item63>
+      <Item64>
+        <Filename Value="..\..\Source\GUI\DAV_GuiInterface.pas"/>
+        <UnitName Value="DAV_GuiInterface"/>
+      </Item64>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="DAV_DSP_Lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="IDEIntf"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="DAV_Common_Lazarus"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)\"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

@@ -1,0 +1,129 @@
+object FormModularViewSA: TFormModularViewSA
+  Left = 291
+  Top = 266
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Demo application for ASIO-Host'
+  ClientHeight = 693
+  ClientWidth = 1122
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 120
+  TextHeight = 16
+  object Lb_Drivername: TLabel
+    Left = 9
+    Top = 15
+    Width = 39
+    Height = 16
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Caption = 'Driver:'
+  end
+  object Lb_Channels: TLabel
+    Left = 9
+    Top = 44
+    Width = 100
+    Height = 16
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Caption = 'Output Channels:'
+  end
+  object Lb_Copyright: TLabel
+    Left = 26
+    Top = 71
+    Width = 389
+    Height = 16
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Caption = 
+      '(C)opyright in 2004-2008 by  Christian Budde and Tobias Fleische' +
+      'r'
+  end
+  object DriverCombo: TComboBox
+    Left = 79
+    Top = 9
+    Width = 336
+    Height = 24
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Style = csDropDownList
+    TabOrder = 0
+    OnChange = DriverComboChange
+  end
+  object BtControlPanel: TButton
+    Left = 433
+    Top = 9
+    Width = 149
+    Height = 25
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Caption = 'Control Panel'
+    Enabled = False
+    TabOrder = 1
+    OnClick = BtControlPanelClick
+  end
+  object ChannelBox: TComboBox
+    Left = 128
+    Top = 39
+    Width = 287
+    Height = 24
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object BtStartStop: TButton
+    Left = 433
+    Top = 39
+    Width = 149
+    Height = 26
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Caption = 'Start Audio'
+    Default = True
+    Enabled = False
+    TabOrder = 3
+    OnClick = BtStartStopClick
+  end
+  object PanelModularView: TPanel
+    Left = 26
+    Top = 112
+    Width = 211
+    Height = 47
+    Caption = 'PanelModularView'
+    TabOrder = 4
+  end
+  object ASIOHostAudioData: TAsioHostAudioData
+    AsioTime.SamplePos = 0
+    AsioTime.Speed = 1.000000000000000000
+    AsioTime.SampleRate = 44100.000000000000000000
+    AsioTime.Flags = [atSystemTimeValid, atSamplePositionValid, atSampleRateValid, atSpeedValid]
+    ConvertOptimizations = [coSSE, co3DNow]
+    SampleRate = 44100.000000000000000000
+    OnBufferSwitch32 = ASIOHostAudioDataBufferSwitch32
+    OnSampleRateChanged = ASIOHostAudioDataSampleRateChanged
+    Left = 24
+    Top = 16
+  end
+end

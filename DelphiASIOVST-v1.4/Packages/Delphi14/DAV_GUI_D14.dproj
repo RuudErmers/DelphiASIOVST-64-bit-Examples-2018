@@ -1,0 +1,198 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{1A6F4FB9-44C9-4415-8E61-EEBD5AEBED96}</ProjectGuid>
+			<MainSource>DAV_GUI_D14.dpk</MainSource>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Basis' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_DcuOutput>..\..\Precompiles</DCC_DcuOutput>
+			<DesignOnlyPackage>false</DesignOnlyPackage>
+			<DCC_UnitSearchPath>..\..\Source;..\..\Source\DSP;..\..\Source\Math;..\..\Source\Modular;..\..\Source\GUI;..\..\Source\VST;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_DependencyCheckOutputName>..\..\..\..\Documents\RAD Studio\7.0\Bpl\DAV_GUI_D14.bpl</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00520000</DCC_ImageBase>
+			<GenPackage>true</GenPackage>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_Platform>x86</DCC_Platform>
+			<DCC_Description>ASIO &amp; VST Project - GUI Components</DCC_Description>
+			<DCC_N>false</DCC_N>
+			<DCC_S>false</DCC_S>
+			<GenDll>true</GenDll>
+			<DCC_E>false</DCC_E>
+			<DCC_F>false</DCC_F>
+			<DCC_K>false</DCC_K>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_MapFile>3</DCC_MapFile>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="DAV_GUI_D14.dpk">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="rtl.dcp"/>
+			<DCCReference Include="vcl.dcp"/>
+			<DCCReference Include="DAV_Common_D14.dcp"/>
+			<DCCReference Include="DAV_DSP_D14.dcp"/>
+			<DCCReference Include="DAV_VSTPlugin_D14.dcp"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiRegister.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiADSRGraph.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiAudioDataDisplay.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiAudioDataDisplayAxis.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiAudioDataDisplayCursor.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiBackgrounds.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiBaseControl.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiBlend.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiButton.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiByteMap.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiCommon.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiCorrelationMeter.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiCustomMap.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiDesign.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiDial.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiDialDesign.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiDialNew.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiDynamicWaveform.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiEQGraph.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiEQSlide.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFileFormatGraphics.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFileFormats.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFilters.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFont.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFixedPoint.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiGraphXY.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiGraphXYDesign.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiGroup.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiLabel.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiLED.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiLevelMeter.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiMediaButton.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiMidiKeys.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiMidiKeyZones.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiModular.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPaintBox.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPanel.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPixelMap.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPixelMapDesign.pas">
+				<Form>FmPixelMapDialog</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPng.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngChunks.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngCoder.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngDesign.pas">
+				<Form>FmPngDialog</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngImageList.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngResourceStrings.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngTypes.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiSelectBox.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiShadow.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiSlider.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStaticWaveform.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStitchedControls.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStitchedButton.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStitchedDial.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStitchedDisplay.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStitchedPngList.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStitchedSwitch.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiVUMeter.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiInscription.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFontList.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFontDesign.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiDialRenderer.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiGraphicControl.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiVector.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiVectorPixel.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiVectorPixelCircle.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiVectorPixelLine.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiVectorPixelRectangle.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiCustomControl.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiRadioButton.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiCheckBox.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiEdit.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiStitchedRadioSwitch.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFader.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiImageControl.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiImageList.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiPngList.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiVectorPolygon.pas"/>
+			<DCCReference Include="..\..\Source\GUI\DAV_GuiFiltersBlur.pas"/>
+			<BuildConfiguration Include="Basis">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">DAV_GUI_D14.dpk</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1031</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+						<VersionInfoKeys Name="Last Compile">2011-08-31 10:16</VersionInfoKeys>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

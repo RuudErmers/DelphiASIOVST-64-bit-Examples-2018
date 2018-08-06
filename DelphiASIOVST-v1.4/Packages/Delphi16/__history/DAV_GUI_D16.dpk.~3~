@@ -1,0 +1,100 @@
+package DAV_GUI_D16;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  DAV_Common_D16,
+  DAV_DSP_D16,
+  DAV_VSTPlugin_D16;
+
+contains
+  DAV_GuiRegister in '..\..\Source\GUI\DAV_GuiRegister.pas',
+  DAV_GuiADSRGraph in '..\..\Source\GUI\DAV_GuiADSRGraph.pas',
+  DAV_GuiAudioDataDisplay in '..\..\Source\GUI\DAV_GuiAudioDataDisplay.pas',
+  DAV_GuiAudioDataDisplayAxis in '..\..\Source\GUI\DAV_GuiAudioDataDisplayAxis.pas',
+  DAV_GuiAudioDataDisplayCursor in '..\..\Source\GUI\DAV_GuiAudioDataDisplayCursor.pas',
+  DAV_GuiBackgrounds in '..\..\Source\GUI\DAV_GuiBackgrounds.pas',
+  DAV_GuiBaseControl in '..\..\Source\GUI\DAV_GuiBaseControl.pas',
+  DAV_GuiBlend in '..\..\Source\GUI\DAV_GuiBlend.pas',
+  DAV_GuiButton in '..\..\Source\GUI\DAV_GuiButton.pas',
+  DAV_GuiByteMap in '..\..\Source\GUI\DAV_GuiByteMap.pas',
+  DAV_GuiCommon in '..\..\Source\GUI\DAV_GuiCommon.pas',
+  DAV_GuiCorrelationMeter in '..\..\Source\GUI\DAV_GuiCorrelationMeter.pas',
+  DAV_GuiCustomMap in '..\..\Source\GUI\DAV_GuiCustomMap.pas',
+  DAV_GuiDesign in '..\..\Source\GUI\DAV_GuiDesign.pas',
+  DAV_GuiDial in '..\..\Source\GUI\DAV_GuiDial.pas',
+  DAV_GuiDialDesign in '..\..\Source\GUI\DAV_GuiDialDesign.pas',
+  DAV_GuiDialNew in '..\..\Source\GUI\DAV_GuiDialNew.pas',
+  DAV_GuiDynamicWaveform in '..\..\Source\GUI\DAV_GuiDynamicWaveform.pas',
+  DAV_GuiEQGraph in '..\..\Source\GUI\DAV_GuiEQGraph.pas',
+  DAV_GuiEQSlide in '..\..\Source\GUI\DAV_GuiEQSlide.pas',
+  DAV_GuiFileFormatGraphics in '..\..\Source\GUI\DAV_GuiFileFormatGraphics.pas',
+  DAV_GuiFileFormats in '..\..\Source\GUI\DAV_GuiFileFormats.pas',
+  DAV_GuiFilters in '..\..\Source\GUI\DAV_GuiFilters.pas',
+  DAV_GuiFont in '..\..\Source\GUI\DAV_GuiFont.pas',
+  DAV_GuiFixedPoint in '..\..\Source\GUI\DAV_GuiFixedPoint.pas',
+  DAV_GuiGraphXY in '..\..\Source\GUI\DAV_GuiGraphXY.pas',
+  DAV_GuiGraphXYDesign in '..\..\Source\GUI\DAV_GuiGraphXYDesign.pas',
+  DAV_GuiGroup in '..\..\Source\GUI\DAV_GuiGroup.pas',
+  DAV_GuiLabel in '..\..\Source\GUI\DAV_GuiLabel.pas',
+  DAV_GuiLED in '..\..\Source\GUI\DAV_GuiLED.pas',
+  DAV_GuiLevelMeter in '..\..\Source\GUI\DAV_GuiLevelMeter.pas',
+  DAV_GuiMediaButton in '..\..\Source\GUI\DAV_GuiMediaButton.pas',
+  DAV_GuiMidiKeys in '..\..\Source\GUI\DAV_GuiMidiKeys.pas',
+  DAV_GuiMidiKeyZones in '..\..\Source\GUI\DAV_GuiMidiKeyZones.pas',
+  DAV_GuiModular in '..\..\Source\GUI\DAV_GuiModular.pas',
+  DAV_GuiPaintBox in '..\..\Source\GUI\DAV_GuiPaintBox.pas',
+  DAV_GuiPanel in '..\..\Source\GUI\DAV_GuiPanel.pas',
+  DAV_GuiPixelMap in '..\..\Source\GUI\DAV_GuiPixelMap.pas',
+  DAV_GuiPixelMapDesign in '..\..\Source\GUI\DAV_GuiPixelMapDesign.pas' {FmPixelMapDialog},
+  DAV_GuiPng in '..\..\Source\GUI\DAV_GuiPng.pas',
+  DAV_GuiPngChunks in '..\..\Source\GUI\DAV_GuiPngChunks.pas',
+  DAV_GuiPngClasses in '..\..\Source\GUI\DAV_GuiPngClasses.pas',
+  DAV_GuiPngCoder in '..\..\Source\GUI\DAV_GuiPngCoder.pas',
+  DAV_GuiPngDesign in '..\..\Source\GUI\DAV_GuiPngDesign.pas' {FmPngDialog},
+  DAV_GuiPngImageList in '..\..\Source\GUI\DAV_GuiPngImageList.pas',
+  DAV_GuiPngResourceStrings in '..\..\Source\GUI\DAV_GuiPngResourceStrings.pas',
+  DAV_GuiPngTypes in '..\..\Source\GUI\DAV_GuiPngTypes.pas',
+  DAV_GuiSelectBox in '..\..\Source\GUI\DAV_GuiSelectBox.pas',
+  DAV_GuiShadow in '..\..\Source\GUI\DAV_GuiShadow.pas',
+  DAV_GuiSlider in '..\..\Source\GUI\DAV_GuiSlider.pas',
+  DAV_GuiStaticWaveform in '..\..\Source\GUI\DAV_GuiStaticWaveform.pas',
+  DAV_GuiStitchedControls in '..\..\Source\GUI\DAV_GuiStitchedControls.pas',
+  DAV_GuiStitchedButton in '..\..\Source\GUI\DAV_GuiStitchedButton.pas',
+  DAV_GuiStitchedDial in '..\..\Source\GUI\DAV_GuiStitchedDial.pas',
+  DAV_GuiStitchedDisplay in '..\..\Source\GUI\DAV_GuiStitchedDisplay.pas',
+  DAV_GuiStitchedPngList in '..\..\Source\GUI\DAV_GuiStitchedPngList.pas',
+  DAV_GuiStitchedSwitch in '..\..\Source\GUI\DAV_GuiStitchedSwitch.pas',
+  DAV_GuiVector in '..\..\Source\GUI\DAV_GuiVector.pas',
+  DAV_GuiVectorPixel in '..\..\Source\GUI\DAV_GuiVectorPixel.pas',
+  DAV_GuiVectorPixelCircle in '..\..\Source\GUI\DAV_GuiVectorPixelCircle.pas',
+  DAV_GuiVectorPixelLine in '..\..\Source\GUI\DAV_GuiVectorPixelLine.pas',
+  DAV_GuiVUMeter in '..\..\Source\GUI\DAV_GuiVUMeter.pas';
+
+end.

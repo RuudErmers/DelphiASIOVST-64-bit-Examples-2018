@@ -1,0 +1,49 @@
+object RMCWorkStation: TRMCWorkStation
+  Left = 0
+  Top = 0
+  Width = 800
+  Height = 90
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentBackground = False
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  OnResize = FrameResize
+  object LabelWorkstation: TLabel
+    Left = 0
+    Top = 0
+    Width = 800
+    Height = 29
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Yamaha W5'
+    Color = 2434341
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -23
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object RMCMultiPatternView: TRMCMultiPatternView
+    Left = 0
+    Top = 29
+    Width = 800
+    Height = 61
+    Align = alClient
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 264
+    ExplicitTop = 72
+    ExplicitWidth = 890
+    ExplicitHeight = 70
+  end
+end

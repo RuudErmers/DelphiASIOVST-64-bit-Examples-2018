@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = dsp_vst.dll dsp_GraphicEQ.dll dsp_OpAmp.dll dsp_decimator.dll
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+dsp_vst.dll: Winamp\VST Host\dsp_vst.dpr
+  $(DCC)
+
+dsp_GraphicEQ.dll: Plugins\Graphic EQ\dsp_GraphicEQ.dpr
+  $(DCC)
+
+dsp_OpAmp.dll: Plugins\NonLinear\dsp_OpAmp.dpr
+  $(DCC)
+
+dsp_decimator.dll: Plugins\Decimator\dsp_decimator.dpr
+  $(DCC)
+
+

@@ -1,0 +1,585 @@
+object FmLunchBox: TFmLunchBox
+  Left = 310
+  Height = 349
+  Top = 208
+  Width = 429
+  HorzScrollBar.Page = 428
+  VertScrollBar.Page = 329
+  ActiveControl = CBKit
+  BorderStyle = bsSingle
+  Caption = 'Simple Lunch Box'
+  Font.Height = -13
+  Font.Name = 'Verdana'
+  Font.Style = [fsBold]
+  Menu = MainMenu
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  object LbQuantize: TLabel
+    Left = 318
+    Height = 17
+    Top = 148
+    Width = 52
+    Caption = 'Quant.:'
+    Color = clNone
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    ParentColor = False
+  end
+  object ToolBar1: TToolBar
+    Height = 24
+    Width = 429
+    ButtonHeight = 13
+    Caption = 'ToolBar'
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    TabOrder = 0
+    object LbKit: TLabel
+      Left = 9
+      Height = 14
+      Top = 2
+      Width = 16
+      Caption = 'kit:'
+      Color = clNone
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LbBPM: TLabel
+      Left = 117
+      Height = 14
+      Top = 2
+      Width = 25
+      Caption = 'BPM:'
+      Color = clNone
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LbBar: TLabel
+      Left = 202
+      Height = 14
+      Top = 2
+      Width = 21
+      Caption = 'Bar:'
+      Color = clNone
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LbStyle: TLabel
+      Left = 272
+      Height = 14
+      Top = 2
+      Width = 29
+      Caption = 'Style:'
+      Color = clNone
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object ToolButton2: TToolButton
+      Left = 1
+      Top = 2
+      Width = 8
+      Caption = 'ToolButton2'
+      ImageIndex = 0
+      Style = tbsSeparator
+    end
+    object CBKit: TComboBox
+      Left = 25
+      Height = 13
+      Top = 2
+      Width = 84
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      ItemHeight = 13
+      ItemIndex = 0
+      Items.Strings = (
+        'Acoustic'
+        'Detroit'
+        '80''s POP'
+        'Sci-Fi'
+        'Tabla'
+        'Vinatge'
+      )
+      MaxLength = 0
+      OnChange = CBKitChange
+      OnKeyDown = FormKeyDown
+      OnKeyUp = FormKeyUp
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'Acoustic'
+    end
+    object ToolButton1: TToolButton
+      Left = 109
+      Top = 2
+      Width = 8
+      Caption = 'ToolButton1'
+      Style = tbsSeparator
+    end
+    object SETempo: TSpinEdit
+      Left = 142
+      Height = 13
+      Top = 2
+      Width = 53
+      MaxValue = 200
+      MinValue = 50
+      OnChange = SETempoChange
+      OnKeyDown = FormKeyDown
+      OnKeyUp = FormKeyUp
+      TabOrder = 1
+      Value = 120
+    end
+    object ToolButton4: TToolButton
+      Left = 195
+      Top = 2
+      Width = 7
+      Caption = 'ToolButton4'
+      ImageIndex = 1
+      Style = tbsSeparator
+    end
+    object SEBar: TSpinEdit
+      Left = 223
+      Height = 13
+      Top = 2
+      Width = 41
+      MaxValue = 16
+      MinValue = 1
+      OnChange = SEBarChange
+      OnKeyDown = FormKeyDown
+      OnKeyUp = FormKeyUp
+      TabOrder = 2
+      Value = 1
+    end
+    object ToolButton3: TToolButton
+      Left = 264
+      Top = 2
+      Width = 8
+      Caption = 'ToolButton3'
+      ImageIndex = 1
+      Style = tbsSeparator
+    end
+    object CBStyle: TComboBox
+      Left = 301
+      Height = 13
+      Top = 2
+      Width = 68
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      Enabled = False
+      ItemHeight = 13
+      ItemIndex = 1
+      Items.Strings = (
+        'Human'
+        'Flat'
+      )
+      MaxLength = 0
+      OnChange = CBKitChange
+      OnKeyDown = FormKeyDown
+      OnKeyUp = FormKeyUp
+      Style = csDropDownList
+      TabOrder = 3
+      Text = 'Flat'
+    end
+  end
+  object Bt7: TButton
+    Left = 8
+    Height = 90
+    Top = 30
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Q'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 7
+  end
+  object Bt8: TButton
+    Tag = 1
+    Left = 111
+    Height = 90
+    Top = 30
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&W'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 8
+  end
+  object Bt9: TButton
+    Tag = 2
+    Left = 214
+    Height = 90
+    Top = 29
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&E'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 9
+  end
+  object Bt4: TButton
+    Tag = 3
+    Left = 8
+    Height = 90
+    Top = 133
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&A'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 4
+  end
+  object Bt5: TButton
+    Tag = 4
+    Left = 111
+    Height = 90
+    Top = 133
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&S'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 5
+  end
+  object Bt6: TButton
+    Tag = 5
+    Left = 214
+    Height = 90
+    Top = 133
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&D'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 6
+  end
+  object Bt1: TButton
+    Tag = 6
+    Left = 8
+    Height = 90
+    Top = 236
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Y'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 1
+  end
+  object Bt2: TButton
+    Tag = 7
+    Left = 111
+    Height = 90
+    Top = 236
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&X'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 2
+  end
+  object Bt3: TButton
+    Tag = 8
+    Left = 214
+    Height = 90
+    Top = 236
+    Width = 90
+    BorderSpacing.InnerBorder = 4
+    Caption = '&C'
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    OnClick = DrumPadClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtMouseDown
+    TabOrder = 3
+  end
+  object CBMetronome: TCheckBox
+    Left = 316
+    Height = 13
+    Top = 30
+    Width = 73
+    Caption = '&Metronome'
+    Checked = True
+    OnClick = CBMetronomeClick
+    State = cbChecked
+    TabOrder = 10
+  end
+  object CBOverdrive: TCheckBox
+    Left = 316
+    Height = 13
+    Top = 96
+    Width = 66
+    Caption = 'Overdr&ive'
+    OnClick = CBMetronomeClick
+    TabOrder = 11
+  end
+  object CBDelay: TCheckBox
+    Left = 316
+    Height = 13
+    Top = 73
+    Width = 47
+    Caption = 'De&lay'
+    OnClick = CBDelayClick
+    TabOrder = 12
+  end
+  object BtRobotize: TButton
+    Left = 316
+    Height = 26
+    Top = 237
+    Width = 107
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Robotize (&V)'
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtRobotizeMouseDown
+    OnMouseUp = BtRobotizeMouseUp
+    TabOrder = 13
+  end
+  object BtRecRev: TButton
+    Left = 316
+    Height = 26
+    Top = 268
+    Width = 107
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Rec&&Rev (&B)'
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtRecRevMouseDown
+    OnMouseUp = BtRecRevMouseUp
+    TabOrder = 14
+  end
+  object BtFlange: TButton
+    Left = 316
+    Height = 26
+    Top = 298
+    Width = 107
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Flange (&N)'
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    OnMouseDown = BtFlangeMouseDown
+    OnMouseUp = BtFlangeMouseUp
+    TabOrder = 15
+  end
+  object TBVolume: TTrackBar
+    Left = 316
+    Height = 15
+    Top = 52
+    Width = 103
+    Frequency = 10
+    Max = 100
+    OnChange = TBVolumeChange
+    Position = 80
+    ScalePos = trTop
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    TabOrder = 16
+  end
+  object BtClear: TButton
+    Left = 316
+    Height = 35
+    Top = 174
+    Width = 107
+    BorderSpacing.InnerBorder = 4
+    Caption = 'C&lear'
+    OnClick = BtClearClick
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    TabOrder = 17
+  end
+  object CBQuantize: TComboBox
+    Left = 369
+    Height = 24
+    Top = 144
+    Width = 54
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    ItemHeight = 16
+    ItemIndex = 3
+    Items.Strings = (
+      'free'
+      '4th'
+      '8th'
+      '16th'
+    )
+    MaxLength = 0
+    OnChange = CBKitChange
+    OnKeyDown = FormKeyDown
+    OnKeyUp = FormKeyUp
+    Style = csDropDownList
+    TabOrder = 18
+    Text = '16th'
+  end
+  object VstHost: TVstHost
+    VstPlugIns = <    
+      item
+        DisplayName = 'Realtime'
+      end    
+      item
+        DisplayName = 'Output'
+      end>
+    ParameterQuantization = 0
+    CanDos = [hcdSendVstEvents, hcdSendVstMidiEvent, hcdSendVstTimeInfo, hcdReceiveVstEvents, hcdReceiveVstMidiEvent, hcdReceiveVstTimeInfo, hcdReportConnectionChanges, hcdAcceptIOChanges, hcdSizeWindow, hcdAsyncProcessing, hcdOffline, hcdSupplyIdle, hcdStartStopProcess]
+    Tempo = 120
+    VstVersion = 2300
+    PlugInDir = 'C:\Programme\Audio\Plugins\VST'
+    VstTimeInfo.SampleRate = 44100
+    VstTimeInfo.Tempo = 120
+    VstTimeInfo.Flags = [vtiNanosValid, vtiPpqPosValid, vtiTempoValid, vtiBarsValid, vtiCyclePosValid, vtiTimeSigValid, vtiSmpteValid, vtiClockValid]
+    left = 72
+    top = 89
+  end
+  object ASIOHost: TASIOHost
+    PreventClipping = pcAnalog
+    PreFillOutBuffer = bpfZero
+    ConvertOptimizations = [coSSE, co3DNow]
+    SampleRate = 44100
+    ASIOTime.Speed = 1
+    ASIOTime.SampleRate = 44100
+    ASIOTime.Flags = [atSystemTimeValid, atSamplePositionValid, atSampleRateValid, atSpeedValid]
+    OnReset = ASIOHostReset
+    OnLatencyChanged = ASIOHostReset
+    OnSampleRateChanged = ASIOHostSampleRateChanged
+    OnBufferSwitch32 = ASIOHostBufferSwitch32
+    left = 104
+    top = 89
+  end
+  object MainMenu: TMainMenu
+    left = 8
+    top = 89
+    object MIFile: TMenuItem
+      Caption = '&File'
+      object MINewBeat: TMenuItem
+        Caption = '&New Beat'
+        OnClick = MINewBeatClick
+      end
+      object MILoadBeat: TMenuItem
+        Caption = '&Load Beat'
+        OnClick = MILoadBeatClick
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object MISaveBeat: TMenuItem
+        Caption = '&Save Beat'
+        OnClick = MISaveBeatClick
+      end
+      object MISaveBeatAs: TMenuItem
+        Caption = 'Save Beat &As...'
+        OnClick = MISaveBeatAsClick
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object MIExportWAV: TMenuItem
+        Caption = 'E&xport WAV...'
+        OnClick = MIExportWAVClick
+      end
+      object MIExportMID: TMenuItem
+        Caption = 'Ex&port MID...'
+        OnClick = MIExportMIDClick
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object MIQuit: TMenuItem
+        Caption = '&Quit'
+        OnClick = MIQuitClick
+      end
+    end
+    object MIOptions: TMenuItem
+      Caption = '&Options'
+      object MISettings: TMenuItem
+        Caption = '&ASIO Settings'
+        OnClick = MISettingsClick
+      end
+      object MIVST: TMenuItem
+        Caption = '&VST Settings'
+        OnClick = MIVSTClick
+      end
+      object MIMoreSettings: TMenuItem
+        Caption = '&More Settings'
+        Visible = False
+      end
+    end
+    object MIHelp: TMenuItem
+      Caption = '&Help'
+      object MIShowKeys: TMenuItem
+        Caption = '&Show Keys'
+        OnClick = MIShowKeysClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MIAbout: TMenuItem
+        Caption = '&About'
+        OnClick = MIAboutClick
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog
+    Title = 'Load Beat'
+    DefaultExt = '.lunch'
+    Filter = 'Beats (*.lunch)|*.lunch|All files (*.*)|*.*'
+    FilterIndex = 0
+    left = 136
+    top = 89
+  end
+  object SaveWAVDialog: TSaveDialog
+    Title = 'Export WAV'
+    DefaultExt = '.wav'
+    Filter = 'Wave files (*.wav)|*.wav|All files (*.*)|*.*'
+    FilterIndex = 0
+    left = 168
+    top = 89
+  end
+  object SaveMIDIDialog: TSaveDialog
+    Title = 'Export MID'
+    DefaultExt = '.mid'
+    Filter = 'MIDI files (*.mid)|*.mid|All files (*.*)|*.*'
+    FilterIndex = 0
+    left = 200
+    top = 89
+  end
+end

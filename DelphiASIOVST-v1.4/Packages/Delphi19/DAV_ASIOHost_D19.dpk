@@ -1,0 +1,57 @@
+package DAV_ASIOHost_D19;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  DAV_Common_D19;
+
+contains
+  DAV_Asio in '..\..\Source\Asio\DAV_Asio.pas',
+  DAV_AsioChannelStrip in '..\..\Source\Asio\DAV_AsioChannelStrip.pas',
+  DAV_AsioConvert in '..\..\Source\Asio\DAV_AsioConvert.pas',
+  DAV_AsioDriver in '..\..\Source\Asio\DAV_AsioDriver.pas',
+  DAV_AsioDriverConfig in '..\..\Source\Asio\DAV_AsioDriverConfig.pas',
+  DAV_AsioDriverControlPanelCreator in '..\..\Source\Asio\DAV_AsioDriverControlPanelCreator.pas',
+  DAV_AsioDriverModule in '..\..\Source\Asio\DAV_AsioDriverModule.pas',
+  DAV_AsioDriverModuleCreator in '..\..\Source\Asio\DAV_AsioDriverModuleCreator.pas',
+  DAV_AsioDriverProjectCreator in '..\..\Source\Asio\DAV_AsioDriverProjectCreator.pas',
+  DAV_AsioDriverWizard in '..\..\Source\Asio\DAV_AsioDriverWizard.pas',
+  DAV_AsioDriverWizardFrm in '..\..\Source\Asio\DAV_AsioDriverWizardFrm.pas',
+  DAV_AsioDriverWizardReg in '..\..\Source\Asio\DAV_AsioDriverWizardReg.pas',
+  DAV_AsioGenerator in '..\..\Source\Asio\DAV_AsioGenerator.pas',
+  DAV_AsioHost in '..\..\Source\Asio\DAV_AsioHost.pas',
+  DAV_ASIOHostAudioData in '..\..\Source\ASIO\DAV_ASIOHostAudioData.pas',
+  DAV_AsioInterface in '..\..\Source\Asio\DAV_AsioInterface.pas',
+  DAV_AsioList in '..\..\Source\ASIO\DAV_AsioList.pas',
+  DAV_AsioMixer in '..\..\Source\Asio\DAV_AsioMixer.pas',
+  DAV_AsioRegister in '..\..\Source\Asio\DAV_AsioRegister.pas',
+  DAV_AsioDriverBasicModule in '..\..\Source\ASIO\DAV_AsioDriverBasicModule.pas';
+
+end.

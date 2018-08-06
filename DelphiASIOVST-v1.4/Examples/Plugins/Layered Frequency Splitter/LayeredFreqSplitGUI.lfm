@@ -1,0 +1,11 @@
+object FmLayeredFreqSplit: TFmLayeredFreqSplit
+  Left = 316
+  Height = 135
+  Top = 93
+  Width = 347
+  BorderStyle = bsNone
+  Caption = 'Layered Frequency Splitter'
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  LCLVersion = '0.9.29'
+end

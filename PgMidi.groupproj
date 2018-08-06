@@ -1,0 +1,144 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7B12BD1A-AFA8-4D09-B66B-97AE0E837A42}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Components\MidiControls.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XRECDS2\XRECDS2D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XREMODULAR\XREMODULAR.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XRECDS2\prjCrumarVSTSA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XREMODULAR\prjModularVSTSA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XREWavePlayer\prjWavePlayerVSTSA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XREWavePlayer\XREWavePlayer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XRESyntorchestra\prjSyntorchestraVSTVA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XRESyntorchestra\XRESyntorchestra.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSTPlugins\XRERompler\XRERompler.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MidiControls">
+        <MSBuild Projects="Components\MidiControls.dproj"/>
+    </Target>
+    <Target Name="MidiControls:Clean">
+        <MSBuild Projects="Components\MidiControls.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MidiControls:Make">
+        <MSBuild Projects="Components\MidiControls.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XRECDS2D">
+        <MSBuild Projects="VSTPlugins\XRECDS2\XRECDS2D.dproj"/>
+    </Target>
+    <Target Name="XRECDS2D:Clean">
+        <MSBuild Projects="VSTPlugins\XRECDS2\XRECDS2D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XRECDS2D:Make">
+        <MSBuild Projects="VSTPlugins\XRECDS2\XRECDS2D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XREMODULAR">
+        <MSBuild Projects="VSTPlugins\XREMODULAR\XREMODULAR.dproj"/>
+    </Target>
+    <Target Name="XREMODULAR:Clean">
+        <MSBuild Projects="VSTPlugins\XREMODULAR\XREMODULAR.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XREMODULAR:Make">
+        <MSBuild Projects="VSTPlugins\XREMODULAR\XREMODULAR.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prjCrumarVSTSA">
+        <MSBuild Projects="VSTPlugins\XRECDS2\prjCrumarVSTSA.dproj"/>
+    </Target>
+    <Target Name="prjCrumarVSTSA:Clean">
+        <MSBuild Projects="VSTPlugins\XRECDS2\prjCrumarVSTSA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjCrumarVSTSA:Make">
+        <MSBuild Projects="VSTPlugins\XRECDS2\prjCrumarVSTSA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prjModularVSTSA">
+        <MSBuild Projects="VSTPlugins\XREMODULAR\prjModularVSTSA.dproj"/>
+    </Target>
+    <Target Name="prjModularVSTSA:Clean">
+        <MSBuild Projects="VSTPlugins\XREMODULAR\prjModularVSTSA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjModularVSTSA:Make">
+        <MSBuild Projects="VSTPlugins\XREMODULAR\prjModularVSTSA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prjWavePlayerVSTSA">
+        <MSBuild Projects="VSTPlugins\XREWavePlayer\prjWavePlayerVSTSA.dproj"/>
+    </Target>
+    <Target Name="prjWavePlayerVSTSA:Clean">
+        <MSBuild Projects="VSTPlugins\XREWavePlayer\prjWavePlayerVSTSA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjWavePlayerVSTSA:Make">
+        <MSBuild Projects="VSTPlugins\XREWavePlayer\prjWavePlayerVSTSA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XREWavePlayer">
+        <MSBuild Projects="VSTPlugins\XREWavePlayer\XREWavePlayer.dproj"/>
+    </Target>
+    <Target Name="XREWavePlayer:Clean">
+        <MSBuild Projects="VSTPlugins\XREWavePlayer\XREWavePlayer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XREWavePlayer:Make">
+        <MSBuild Projects="VSTPlugins\XREWavePlayer\XREWavePlayer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prjSyntorchestraVSTVA">
+        <MSBuild Projects="VSTPlugins\XRESyntorchestra\prjSyntorchestraVSTVA.dproj"/>
+    </Target>
+    <Target Name="prjSyntorchestraVSTVA:Clean">
+        <MSBuild Projects="VSTPlugins\XRESyntorchestra\prjSyntorchestraVSTVA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjSyntorchestraVSTVA:Make">
+        <MSBuild Projects="VSTPlugins\XRESyntorchestra\prjSyntorchestraVSTVA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XRESyntorchestra">
+        <MSBuild Projects="VSTPlugins\XRESyntorchestra\XRESyntorchestra.dproj"/>
+    </Target>
+    <Target Name="XRESyntorchestra:Clean">
+        <MSBuild Projects="VSTPlugins\XRESyntorchestra\XRESyntorchestra.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XRESyntorchestra:Make">
+        <MSBuild Projects="VSTPlugins\XRESyntorchestra\XRESyntorchestra.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XRERompler">
+        <MSBuild Projects="VSTPlugins\XRERompler\XRERompler.dproj"/>
+    </Target>
+    <Target Name="XRERompler:Clean">
+        <MSBuild Projects="VSTPlugins\XRERompler\XRERompler.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XRERompler:Make">
+        <MSBuild Projects="VSTPlugins\XRERompler\XRERompler.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MidiControls;XRECDS2D;XREMODULAR;prjCrumarVSTSA;prjModularVSTSA;prjWavePlayerVSTSA;XREWavePlayer;prjSyntorchestraVSTVA;XRESyntorchestra;XRERompler"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MidiControls:Clean;XRECDS2D:Clean;XREMODULAR:Clean;prjCrumarVSTSA:Clean;prjModularVSTSA:Clean;prjWavePlayerVSTSA:Clean;XREWavePlayer:Clean;prjSyntorchestraVSTVA:Clean;XRESyntorchestra:Clean;XRERompler:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MidiControls:Make;XRECDS2D:Make;XREMODULAR:Make;prjCrumarVSTSA:Make;prjModularVSTSA:Make;prjWavePlayerVSTSA:Make;XREWavePlayer:Make;prjSyntorchestraVSTVA:Make;XRESyntorchestra:Make;XRERompler:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

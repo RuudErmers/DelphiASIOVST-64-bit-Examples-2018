@@ -1,0 +1,29 @@
+object FmTetris: TFmTetris
+  Left = 295
+  Top = 63
+  BorderStyle = bsNone
+  Caption = 'FmTetris'
+  ClientHeight = 436
+  ClientWidth = 215
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnMouseDown = FormMouseDown
+  OnMouseWheel = FormMouseWheel
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TetrisTimer: TTimer
+    OnTimer = TetrisOnTimer
+    Left = 8
+    Top = 8
+  end
+end

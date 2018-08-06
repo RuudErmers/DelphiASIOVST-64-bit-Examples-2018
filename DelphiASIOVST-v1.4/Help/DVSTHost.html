@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTHost</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit DVSTHost</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>uses</td><td><a class="section"  href="#@Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section"  href="#@FuncsProcs">Functions and Procedures</a></td><td><a class="section"  href="#@Types">Types</a></td><td>Constants</td><td><a class="section"  href="#@Variables">Variables</a></td></tr></table>
+<a name="@Description"></a><h2 class="description">Description</h2>
+<p>
+This is a component to load a VST plugin and make its properties and methods accessible, ie. show the interface, fill the buffers and call the processing routines.
+
+<p>All host and plugin loading code was written by: Tobias Fleischer (<a  target="_parent" href="http://www.tobybear.de">http://www.tobybear.de</a>) Christan W. Budde (<a  target="_parent" href="http://www.savioursofsoul.de/Christian">http://www.savioursofsoul.de/Christian</a>)
+
+<p>Delphi VST SDK tranlsation by: Frederic Vanmol (<a  target="_parent" href="http://www.axiworld.be">http://www.axiworld.be</a>)
+
+<p>VST is a trademark of: Steinberg Media GmbH (<a  target="_parent" href="http://www.steinberg.net">http://www.steinberg.net</a>)</p>
+<a name="@Uses"></a><h2 class="overview">Overview</h2>
+<a name="@Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DVSTHost.TVstPlugIn.html"><code>TVstPlugIn</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DVSTHost.TVstPlugIns.html"><code>TVstPlugIns</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DVSTHost.TVstTimeInformation.html"><code>TVstTimeInformation</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="DVSTHost.TVstHost.html"><code>TVstHost</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="@FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="DVSTHost.html#Register">Register</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DVSTHost.html#string2Language">string2Language</a></b>(LanguageString : string): <a   href="DVSTEffect.html#TVstHostLanguage">TVstHostLanguage</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="DVSTHost.html#PlugCategory2String">PlugCategory2String</a></b>(Category:<a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a>):string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="DVSTHost.html#EffOptions2String">EffOptions2String</a></b>(EffOpts: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a>):string;</code></td>
+</tr>
+</table>
+<a name="@Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVendorSpecificEvent">TVendorSpecificEvent</a></b> = function(opcode : <a   href="DVSTEffect.html#TAudioMasterOpcode">TAudioMasterOpcode</a>; index, value: longint; ptr: pointer; opt: Single): integer of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVstShowEditEvent">TVstShowEditEvent</a></b> = procedure(Sender: TObject; Form: TForm) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVstAutomateEvent">TVstAutomateEvent</a></b> = procedure(Sender: TObject; ParamIndex, ParamValue: LongInt) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVstProcessEventsEvent">TVstProcessEventsEvent</a></b> = procedure(Sender: TObject; p: <a   href="DVSTEffect.html#PVstEvents">PVstEvents</a>) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVstAutomationNotifyEvent">TVstAutomationNotifyEvent</a></b> = procedure(Sender: TObject; ParameterIndex: Integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVstSampleRateChangedEvent">TVstSampleRateChangedEvent</a></b> = procedure(Sender: TObject; SampleRate: Single) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVstPinConnectedEvent">TVstPinConnectedEvent</a></b> = function(Sender: TObject; PinNr: Integer; isInput: Boolean):Boolean of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TVstOfflineEvent">TVstOfflineEvent</a></b> = procedure(Sender: TObject; VstOfflineTaskPointer: <a   href="DVSTEffect.html#PVstOfflineTask">PVstOfflineTask</a>) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TGUIStyle">TGUIStyle</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#THostCanDo">THostCanDo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TKnobMode">TKnobMode</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TReplaceOrAccumulate">TReplaceOrAccumulate</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TCurrentProcessLevel">TCurrentProcessLevel</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#TAutomationState">TAutomationState</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#THostCanDos">THostCanDos</a></b> = set of <a   href="DVSTHost.html#THostCanDo">THostCanDo</a>;</code></td>
+</tr>
+</table>
+<a name="@Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTHost.html#audioMaster">audioMaster</a></b>: <a   href="DVSTEffect.html#TAudioMasterCallbackFunc">TAudioMasterCallbackFunc</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="string2Language"></a><code>function <b>string2Language</b>(LanguageString : string): <a   href="DVSTEffect.html#TVstHostLanguage">TVstHostLanguage</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PlugCategory2String"></a><code>function <b>PlugCategory2String</b>(Category:<a   href="DVSTEffect.html#TVstPluginCategory">TVstPluginCategory</a>):string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EffOptions2String"></a><code>function <b>EffOptions2String</b>(EffOpts: <a   href="DVSTEffect.html#TEffFlags">TEffFlags</a>):string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVendorSpecificEvent"></a><code><b>TVendorSpecificEvent</b> = function(opcode : <a   href="DVSTEffect.html#TAudioMasterOpcode">TAudioMasterOpcode</a>; index, value: longint; ptr: pointer; opt: Single): integer of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-$DEFINE SB</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstShowEditEvent"></a><code><b>TVstShowEditEvent</b> = procedure(Sender: TObject; Form: TForm) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstAutomateEvent"></a><code><b>TVstAutomateEvent</b> = procedure(Sender: TObject; ParamIndex, ParamValue: LongInt) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstProcessEventsEvent"></a><code><b>TVstProcessEventsEvent</b> = procedure(Sender: TObject; p: <a   href="DVSTEffect.html#PVstEvents">PVstEvents</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstAutomationNotifyEvent"></a><code><b>TVstAutomationNotifyEvent</b> = procedure(Sender: TObject; ParameterIndex: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstSampleRateChangedEvent"></a><code><b>TVstSampleRateChangedEvent</b> = procedure(Sender: TObject; SampleRate: Single) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstPinConnectedEvent"></a><code><b>TVstPinConnectedEvent</b> = function(Sender: TObject; PinNr: Integer; isInput: Boolean):Boolean of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVstOfflineEvent"></a><code><b>TVstOfflineEvent</b> = procedure(Sender: TObject; VstOfflineTaskPointer: <a   href="DVSTEffect.html#PVstOfflineTask">PVstOfflineTask</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGUIStyle"></a><code><b>TGUIStyle</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+gsDefault: </li>
+<li>
+gsOld: </li>
+<li>
+gsList: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="THostCanDo"></a><code><b>THostCanDo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+hcdSendVstEvents: </li>
+<li>
+hcdSendVstMidiEvent: </li>
+<li>
+hcdSendVstTimeInfo: </li>
+<li>
+hcdReceiveVstEvents: </li>
+<li>
+hcdReceiveVstMidiEvent: </li>
+<li>
+hcdReceiveVstTimeInfo: </li>
+<li>
+hcdReportConnectionChanges: </li>
+<li>
+hcdAcceptIOChanges: </li>
+<li>
+hcdSizeWindow: </li>
+<li>
+hcdAsyncProcessing: </li>
+<li>
+hcdOffline: </li>
+<li>
+hcdSupplyIdle: </li>
+<li>
+hcdSupportShell: </li>
+<li>
+hcdOpenFileSelector: 'shell' handling via uniqueID as suggested by Waves</li>
+<li>
+hcdCloseFileSelector: </li>
+<li>
+hcdEditFile: </li>
+<li>
+hcdShellCategory: </li>
+<li>
+hcdStartStopProcess: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TKnobMode"></a><code><b>TKnobMode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+knCircular: </li>
+<li>
+knCircularRelativ: </li>
+<li>
+knLinear: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TReplaceOrAccumulate"></a><code><b>TReplaceOrAccumulate</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+roa0NotSupported: </li>
+<li>
+roa1Replace: </li>
+<li>
+roa2Accumulate: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TCurrentProcessLevel"></a><code><b>TCurrentProcessLevel</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cpl0NotSupported: </li>
+<li>
+cpl1UserThread: </li>
+<li>
+cpl2AudioThread: </li>
+<li>
+cpl3Sequencer: </li>
+<li>
+cpl4OfflineProcessing: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAutomationState"></a><code><b>TAutomationState</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+as0NotSupported: </li>
+<li>
+as1Off: </li>
+<li>
+as2Read: </li>
+<li>
+as3Write: </li>
+<li>
+as4ReadWrite: </li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="THostCanDos"></a><code><b>THostCanDos</b> = set of <a   href="DVSTHost.html#THostCanDo">THostCanDo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="audioMaster"></a><code><b>audioMaster</b>: <a   href="DVSTEffect.html#TAudioMasterCallbackFunc">TAudioMasterCallbackFunc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:20</em>
+</span>
+</body></html>

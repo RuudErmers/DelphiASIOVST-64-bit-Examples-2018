@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{F693A003-7B80-4E0E-B233-75F6ADD9CCDC}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="dsp_decimator.dll">Plugins\Decimator\dsp_decimator.bdsproj</Projects>
+      <Projects Name="dsp_GraphicEQ.dll">Plugins\Graphic EQ\dsp_GraphicEQ.bdsproj</Projects>
+      <Projects Name="dsp_OpAmp.dll">Plugins\NonLinear\dsp_OpAmp.bdsproj</Projects>
+      <Projects Name="dsp_vst.dll">Winamp\VST Host\dsp_vst.bdsproj</Projects>
+      <Projects Name="Targets">dsp_decimator.dll dsp_GraphicEQ.dll dsp_OpAmp.dll dsp_vst.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

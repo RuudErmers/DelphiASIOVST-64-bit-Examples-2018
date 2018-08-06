@@ -1,0 +1,45 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = VSTEditor.exe VSTAnalyser.exe LunchBox.exe MiniHost.exe \
+  Metronome.exe ASIODemo.exe Analyser.exe BMTestSingle.exe BMTestDouble.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+VSTEditor.exe: Standalone\Standalone Editor\VSTEditor.dpr
+  $(DCC)
+
+VSTAnalyser.exe: Standalone\Simple VST Plugin Analyser\VSTAnalyser.dpr
+  $(DCC)
+
+LunchBox.exe: Standalone\Simple Lunch-Box\LunchBox.dpr
+  $(DCC)
+
+MiniHost.exe: Standalone\MiniHost Core\MiniHost.dpr
+  $(DCC)
+
+Metronome.exe: Standalone\Metronome\Metronome.dpr
+  $(DCC)
+
+ASIODemo.exe: Standalone\ASIO-Host Demo\ASIODemo.dpr
+  $(DCC)
+
+Analyser.exe: Standalone\Analyser\Analyser.dpr
+  $(DCC)
+
+BMTestSingle.exe: Standalone\Buffer Math Test\BMTestSingle.dpr
+  $(DCC)
+
+BMTestDouble.exe: Standalone\Buffer Math Test\BMTestDouble.dpr
+  $(DCC)
+
+

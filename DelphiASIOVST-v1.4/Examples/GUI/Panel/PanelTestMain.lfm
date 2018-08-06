@@ -1,0 +1,119 @@
+object FmPanelTest: TFmPanelTest
+  Left = 375
+  Top = 133
+  Caption = 'Panel Test'
+  ClientHeight = 132
+  ClientWidth = 278
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnPaint = FormPaint
+  OnResize = FormResize
+  PixelsPerInch = 96
+  object LbRoundRadius: TLabel
+    Left = 8
+    Top = 85
+    Width = 70
+    Height = 13
+    Caption = 'Round Radius:'
+  end
+  object LbLineWidth: TLabel
+    Left = 8
+    Top = 109
+    Width = 54
+    Height = 13
+    Caption = 'Line Width:'
+  end
+  object PanelA: TGuiPanel
+    Left = 8
+    Top = 8
+    Width = 128
+    Height = 32
+    Caption = 'PanelA'
+    LineColor = 4605510
+    BorderWidth = 2.000000000000000000
+    PanelColor = clBlue
+    ParentColor = True
+    BorderRadius = 4.000000000000000000
+    TabOrder = 0
+    UseDockManager = True
+  end
+  object PanelB: TGuiPanel
+    Left = 142
+    Top = 8
+    Width = 128
+    Height = 32
+    Caption = 'GuiPanel1'
+    LineColor = 4605510
+    BorderWidth = 2.000000000000000000
+    PanelColor = clLime
+    ParentColor = True
+    BorderRadius = 4.000000000000000000
+    TabOrder = 1
+    UseDockManager = True
+  end
+  object PanelC: TGuiPanel
+    Left = 8
+    Top = 46
+    Width = 128
+    Height = 32
+    Caption = 'GuiPanel1'
+    LineColor = 4605510
+    BorderWidth = 2.000000000000000000
+    PanelColor = clRed
+    ParentColor = True
+    BorderRadius = 4.000000000000000000
+    TabOrder = 2
+    UseDockManager = True
+  end
+  object PanelD: TGuiPanel
+    Left = 142
+    Top = 46
+    Width = 128
+    Height = 32
+    Caption = 'GuiPanel1'
+    LineColor = 4605510
+    BorderWidth = 2.000000000000000000
+    PanelColor = clYellow
+    ParentColor = True
+    BorderRadius = 4.000000000000000000
+    TabOrder = 3
+    UseDockManager = True
+  end
+  object TbRoundRadius: TTrackBar
+    Left = 84
+    Top = 84
+    Width = 186
+    Height = 18
+    Max = 16
+    Min = 1
+    Position = 1
+    TabOrder = 4
+    OnChange = TbRoundRadiusChange
+  end
+  object TbLineWidth: TTrackBar
+    Left = 68
+    Top = 108
+    Width = 118
+    Height = 18
+    Max = 32
+    Frequency = 2
+    Position = 4
+    TabOrder = 5
+    OnChange = TbLineWidthChange
+  end
+  object CbTransparent: TCheckBox
+    Left = 192
+    Top = 108
+    Width = 78
+    Height = 17
+    Caption = 'Transparent'
+    TabOrder = 6
+    OnClick = CbTransparentClick
+  end
+end

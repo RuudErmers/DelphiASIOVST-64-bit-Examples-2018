@@ -1,0 +1,264 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{743F9470-2BC3-4779-800A-14B32324EA46}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Adhesive\Adhesive.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Enhanced Gate\EnhancedGate.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Hard Knee Compressor\HardKneeCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LA1701\LA1701.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LA4029\LA4029.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lightweight Compressor\LightweightCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lightweight Feedback Compressor\LightweightFeedbackCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lightweight Feedback Like Compressor\LightweightFeedbackLikeCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lightweight Gate\LightweightGate.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lightweight Limiter\LightweightLimiter.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lightweight Multiband Compressor\LightweightMultibandCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lightweight Upward Compressor\LightweightUpwardCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Multiband Compressor\MultibandCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Simple Compressor\SimpleCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Simple Feedback Compressor\SimpleFeedbackCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Simple Gate\SimpleGate.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Smooth Multiband Compressor\Source\SmoothMultibandCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Soft Knee Feedback Compressor\SoftKneeFeedbackCompressor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Soft Knee Limiter\SoftKneeLimiter.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Lookahead Limiter\LookaheadLimiter.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Adhesive">
+			<MSBuild Projects="Adhesive\Adhesive.dproj"/>
+		</Target>
+		<Target Name="Adhesive:Clean">
+			<MSBuild Targets="Clean" Projects="Adhesive\Adhesive.dproj"/>
+		</Target>
+		<Target Name="Adhesive:Make">
+			<MSBuild Targets="Make" Projects="Adhesive\Adhesive.dproj"/>
+		</Target>
+		<Target Name="EnhancedGate">
+			<MSBuild Projects="Enhanced Gate\EnhancedGate.dproj"/>
+		</Target>
+		<Target Name="EnhancedGate:Clean">
+			<MSBuild Targets="Clean" Projects="Enhanced Gate\EnhancedGate.dproj"/>
+		</Target>
+		<Target Name="EnhancedGate:Make">
+			<MSBuild Targets="Make" Projects="Enhanced Gate\EnhancedGate.dproj"/>
+		</Target>
+		<Target Name="HardKneeCompressor">
+			<MSBuild Projects="Hard Knee Compressor\HardKneeCompressor.dproj"/>
+		</Target>
+		<Target Name="HardKneeCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Hard Knee Compressor\HardKneeCompressor.dproj"/>
+		</Target>
+		<Target Name="HardKneeCompressor:Make">
+			<MSBuild Targets="Make" Projects="Hard Knee Compressor\HardKneeCompressor.dproj"/>
+		</Target>
+		<Target Name="LA1701">
+			<MSBuild Projects="LA1701\LA1701.dproj"/>
+		</Target>
+		<Target Name="LA1701:Clean">
+			<MSBuild Targets="Clean" Projects="LA1701\LA1701.dproj"/>
+		</Target>
+		<Target Name="LA1701:Make">
+			<MSBuild Targets="Make" Projects="LA1701\LA1701.dproj"/>
+		</Target>
+		<Target Name="LA4029">
+			<MSBuild Projects="LA4029\LA4029.dproj"/>
+		</Target>
+		<Target Name="LA4029:Clean">
+			<MSBuild Targets="Clean" Projects="LA4029\LA4029.dproj"/>
+		</Target>
+		<Target Name="LA4029:Make">
+			<MSBuild Targets="Make" Projects="LA4029\LA4029.dproj"/>
+		</Target>
+		<Target Name="LightweightCompressor">
+			<MSBuild Projects="Lightweight Compressor\LightweightCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Lightweight Compressor\LightweightCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightCompressor:Make">
+			<MSBuild Targets="Make" Projects="Lightweight Compressor\LightweightCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightFeedbackCompressor">
+			<MSBuild Projects="Lightweight Feedback Compressor\LightweightFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightFeedbackCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Lightweight Feedback Compressor\LightweightFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightFeedbackCompressor:Make">
+			<MSBuild Targets="Make" Projects="Lightweight Feedback Compressor\LightweightFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightFeedbackLikeCompressor">
+			<MSBuild Projects="Lightweight Feedback Like Compressor\LightweightFeedbackLikeCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightFeedbackLikeCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Lightweight Feedback Like Compressor\LightweightFeedbackLikeCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightFeedbackLikeCompressor:Make">
+			<MSBuild Targets="Make" Projects="Lightweight Feedback Like Compressor\LightweightFeedbackLikeCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightGate">
+			<MSBuild Projects="Lightweight Gate\LightweightGate.dproj"/>
+		</Target>
+		<Target Name="LightweightGate:Clean">
+			<MSBuild Targets="Clean" Projects="Lightweight Gate\LightweightGate.dproj"/>
+		</Target>
+		<Target Name="LightweightGate:Make">
+			<MSBuild Targets="Make" Projects="Lightweight Gate\LightweightGate.dproj"/>
+		</Target>
+		<Target Name="LightweightLimiter">
+			<MSBuild Projects="Lightweight Limiter\LightweightLimiter.dproj"/>
+		</Target>
+		<Target Name="LightweightLimiter:Clean">
+			<MSBuild Targets="Clean" Projects="Lightweight Limiter\LightweightLimiter.dproj"/>
+		</Target>
+		<Target Name="LightweightLimiter:Make">
+			<MSBuild Targets="Make" Projects="Lightweight Limiter\LightweightLimiter.dproj"/>
+		</Target>
+		<Target Name="LightweightMultibandCompressor">
+			<MSBuild Projects="Lightweight Multiband Compressor\LightweightMultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightMultibandCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Lightweight Multiband Compressor\LightweightMultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightMultibandCompressor:Make">
+			<MSBuild Targets="Make" Projects="Lightweight Multiband Compressor\LightweightMultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightUpwardCompressor">
+			<MSBuild Projects="Lightweight Upward Compressor\LightweightUpwardCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightUpwardCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Lightweight Upward Compressor\LightweightUpwardCompressor.dproj"/>
+		</Target>
+		<Target Name="LightweightUpwardCompressor:Make">
+			<MSBuild Targets="Make" Projects="Lightweight Upward Compressor\LightweightUpwardCompressor.dproj"/>
+		</Target>
+		<Target Name="MultibandCompressor">
+			<MSBuild Projects="Multiband Compressor\MultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="MultibandCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Multiband Compressor\MultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="MultibandCompressor:Make">
+			<MSBuild Targets="Make" Projects="Multiband Compressor\MultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="SimpleCompressor">
+			<MSBuild Projects="Simple Compressor\SimpleCompressor.dproj"/>
+		</Target>
+		<Target Name="SimpleCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Simple Compressor\SimpleCompressor.dproj"/>
+		</Target>
+		<Target Name="SimpleCompressor:Make">
+			<MSBuild Targets="Make" Projects="Simple Compressor\SimpleCompressor.dproj"/>
+		</Target>
+		<Target Name="SimpleFeedbackCompressor">
+			<MSBuild Projects="Simple Feedback Compressor\SimpleFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="SimpleFeedbackCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Simple Feedback Compressor\SimpleFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="SimpleFeedbackCompressor:Make">
+			<MSBuild Targets="Make" Projects="Simple Feedback Compressor\SimpleFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="SimpleGate">
+			<MSBuild Projects="Simple Gate\SimpleGate.dproj"/>
+		</Target>
+		<Target Name="SimpleGate:Clean">
+			<MSBuild Targets="Clean" Projects="Simple Gate\SimpleGate.dproj"/>
+		</Target>
+		<Target Name="SimpleGate:Make">
+			<MSBuild Targets="Make" Projects="Simple Gate\SimpleGate.dproj"/>
+		</Target>
+		<Target Name="SmoothMultibandCompressor">
+			<MSBuild Projects="Smooth Multiband Compressor\Source\SmoothMultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="SmoothMultibandCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Smooth Multiband Compressor\Source\SmoothMultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="SmoothMultibandCompressor:Make">
+			<MSBuild Targets="Make" Projects="Smooth Multiband Compressor\Source\SmoothMultibandCompressor.dproj"/>
+		</Target>
+		<Target Name="SoftKneeFeedbackCompressor">
+			<MSBuild Projects="Soft Knee Feedback Compressor\SoftKneeFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="SoftKneeFeedbackCompressor:Clean">
+			<MSBuild Targets="Clean" Projects="Soft Knee Feedback Compressor\SoftKneeFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="SoftKneeFeedbackCompressor:Make">
+			<MSBuild Targets="Make" Projects="Soft Knee Feedback Compressor\SoftKneeFeedbackCompressor.dproj"/>
+		</Target>
+		<Target Name="SoftKneeLimiter">
+			<MSBuild Projects="Soft Knee Limiter\SoftKneeLimiter.dproj"/>
+		</Target>
+		<Target Name="SoftKneeLimiter:Clean">
+			<MSBuild Targets="Clean" Projects="Soft Knee Limiter\SoftKneeLimiter.dproj"/>
+		</Target>
+		<Target Name="SoftKneeLimiter:Make">
+			<MSBuild Targets="Make" Projects="Soft Knee Limiter\SoftKneeLimiter.dproj"/>
+		</Target>
+		<Target Name="LookaheadLimiter">
+			<MSBuild Projects="Lookahead Limiter\LookaheadLimiter.dproj"/>
+		</Target>
+		<Target Name="LookaheadLimiter:Clean">
+			<MSBuild Targets="Clean" Projects="Lookahead Limiter\LookaheadLimiter.dproj"/>
+		</Target>
+		<Target Name="LookaheadLimiter:Make">
+			<MSBuild Targets="Make" Projects="Lookahead Limiter\LookaheadLimiter.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Adhesive;EnhancedGate;HardKneeCompressor;LA1701;LA4029;LightweightCompressor;LightweightFeedbackCompressor;LightweightFeedbackLikeCompressor;LightweightGate;LightweightLimiter;LightweightMultibandCompressor;LightweightUpwardCompressor;MultibandCompressor;SimpleCompressor;SimpleFeedbackCompressor;SimpleGate;SmoothMultibandCompressor;SoftKneeFeedbackCompressor;SoftKneeLimiter;LookaheadLimiter"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Adhesive:Clean;EnhancedGate:Clean;HardKneeCompressor:Clean;LA1701:Clean;LA4029:Clean;LightweightCompressor:Clean;LightweightFeedbackCompressor:Clean;LightweightFeedbackLikeCompressor:Clean;LightweightGate:Clean;LightweightLimiter:Clean;LightweightMultibandCompressor:Clean;LightweightUpwardCompressor:Clean;MultibandCompressor:Clean;SimpleCompressor:Clean;SimpleFeedbackCompressor:Clean;SimpleGate:Clean;SmoothMultibandCompressor:Clean;SoftKneeFeedbackCompressor:Clean;SoftKneeLimiter:Clean;LookaheadLimiter:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Adhesive:Make;EnhancedGate:Make;HardKneeCompressor:Make;LA1701:Make;LA4029:Make;LightweightCompressor:Make;LightweightFeedbackCompressor:Make;LightweightFeedbackLikeCompressor:Make;LightweightGate:Make;LightweightLimiter:Make;LightweightMultibandCompressor:Make;LightweightUpwardCompressor:Make;MultibandCompressor:Make;SimpleCompressor:Make;SimpleFeedbackCompressor:Make;SimpleGate:Make;SmoothMultibandCompressor:Make;SoftKneeFeedbackCompressor:Make;SoftKneeLimiter:Make;LookaheadLimiter:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

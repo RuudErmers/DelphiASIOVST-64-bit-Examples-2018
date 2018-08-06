@@ -1,0 +1,138 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6c5b6757-2092-4b13-a4b5-8a00135efed0}</ProjectGuid>
+    <MainSource>DAV_DSP_D11.dpk</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documents\RAD Studio\5.0\Bpl\DAV_DSP_D11.bpl</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ImageBase>510000</DCC_ImageBase>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ImageBase>510000</DCC_ImageBase>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>Package</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><Package_Options><Package_Options Name="PackageDescription">ASIO &amp; VST Project - DSP Package</Package_Options><Package_Options Name="ImplicitBuild">True</Package_Options><Package_Options Name="DesigntimeOnly">False</Package_Options><Package_Options Name="RuntimeOnly">False</Package_Options></Package_Options><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1031</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Excluded_Packages>
+      
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\dcldbxcds4100.bpl">CodeGear SimpleDataset-Komponente (DBX)</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclwebsnap100.bpl">CodeGear WebSnap-Komponenten</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclsoap100.bpl">CodeGear SOAP-Komponenten</Excluded_Packages>
+    </Excluded_Packages><Source><Source Name="MainSource">DAV_DSP_D11.dpk</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="DAV_DSP_D11.dpk">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\..\Source\DAV_ClassesFft.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_Common_D11.dcp" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspAmbience.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspAudioToMidiTrigger.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspBarberpole.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspBarberpoleTuner.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspBesselFilter.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspBlockDistribution.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspBufferedAudioFilePlayer.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspBufferedAudioFileRecorder.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspBufferedMp3Player.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspBuildingBlocks.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspCepstrum.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspChorus.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspCircularBuffer.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspCommon.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspComponents.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspConvolution.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspCorrelation.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspCrosstalkCancellation.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspCrosstalkSimulator.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspCrosstalkSimulatorHRTF.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspDelayLines.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspDFT.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspDitherNoiseShaper.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspDownsampleScheduler.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspDynamics.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspExciter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFDNReverb.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFeedbackAMOscillator.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFeedbackDelayNetwork.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFFT.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFftReal2Complex.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterAllpasses.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterBasics.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterBasicsAutomatable.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterButterworth.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterChebyshev.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterChebyshevType1.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterChebyshevType2.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterLinearPhaseCrossover.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterLinkwitzRiley.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterManager.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterMoog.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspFilterSimple.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterSpectralDelay.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFreeverb.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFreeverbFilter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFrequencyDivider.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFrequencyDomainPitchshifter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspFrequencyShifter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspGranularPitchshifter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspHRTF.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspInterpolation.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspLeslie.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspLevelingAmplifier.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspLevinson.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspLFO.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspLightweightDynamics.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspLMS.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspLorenzOscilator.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspMetronome.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspMinBlep.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspModDelay.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspNoiseShapingFilterDesigner.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspParametricEQ.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPhaser.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPinkNoiseGenerator.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPlateReverb.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseDownsampler.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseFilter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseHilbert.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseIirDesigner.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseUpsampler.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspPsychoacousticBassEnhancer.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspRegister.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspRemez.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspRingModulator.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspSimpleOscillator.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspSpectralEffects.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspSpectralNoiseReduction.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspSpectrumInterpolation.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspStateVariableFilter.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspSweepOscillator.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspTransientProcessor.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspTuner.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspUpDownsampling.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspVariableDelay.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspVibrato.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspVocoder.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspVoiceSynth.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspWaveshaper.pas" />
+    <DCCReference Include="..\..\Source\DSP\DAV_DspWindowFunctions.pas" />
+    <DCCReference Include="..\..\Source\Dsp\DAV_DspWindowing.pas" />
+    <DCCReference Include="..\..\Source\DSP\rtl.dcp" />
+    <DCCReference Include="..\..\Source\DSP\vcl.dcp" />
+  </ItemGroup>
+</Project>

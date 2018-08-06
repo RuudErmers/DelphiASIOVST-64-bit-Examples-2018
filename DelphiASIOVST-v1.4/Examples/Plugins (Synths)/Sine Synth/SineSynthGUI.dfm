@@ -1,0 +1,36 @@
+object VSTGUI: TVSTGUI
+  Left = 317
+  Top = 185
+  BorderStyle = bsNone
+  Caption = 'SineSynth'
+  ClientHeight = 73
+  ClientWidth = 503
+  Color = clBtnFace
+  TransparentColorValue = 12948623
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = 6695441
+  Font.Height = -11
+  Font.Name = 'Verdana'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MidiKeys: TGuiMidiKeys
+    Left = 0
+    Top = 0
+    Width = 503
+    Height = 73
+    Align = alClient
+    KeyDownMode = kdmFlat
+    Height3d = 0.200000002980232200
+    BlackKeyHeight = 0.629999995231628400
+    NumOctaves = 4
+    KeyZones = <>
+    ShowKeyZones = False
+    OnNoteOn = MidiKeysNoteOn
+    OnNoteOff = MidiKeysNoteOff
+  end
+end

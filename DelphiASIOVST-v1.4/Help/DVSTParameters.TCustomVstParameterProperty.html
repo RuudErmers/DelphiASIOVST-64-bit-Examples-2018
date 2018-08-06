@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTParameters: Class TCustomVstParameterProperty</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TCustomVstParameterProperty"></a><h1 class="cio">Class TCustomVstParameterProperty</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTParameters.html">DVSTParameters</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TCustomVstParameterProperty = class(TCollectionItem)</code></p>
+<h2 class="description">Description</h2>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TCollectionItem</li>
+<li class="thisitem">TCustomVstParameterProperty</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Create">Create</a></b>(ACollection: TCollection); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Smooth">Smooth</a></b>(i: Single): Single;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Min">Min</a></b>: Single read FMin write FMin;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Max">Max</a></b>: Single read FMax write FMax;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#CC">CC</a></b>: Integer read FCC write FCC default -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Curve">Curve</a></b>: <a   href="DVSTParameters.html#TCurveType">TCurveType</a> read FCurve write FCurve;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#DisplayName">DisplayName</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Units">Units</a></b>: string read FUnits write SetUnits;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#CurveFactor">CurveFactor</a></b>: Single read FCurveFactor write FCurveFactor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#SmoothingFactor">SmoothingFactor</a></b>: Single read FSmoothingFactor write FSmoothingFactor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#CanBeAutomated">CanBeAutomated</a></b>: Boolean read FCanBeAutomated write FCanBeAutomated default true;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#ReportVST2Properties">ReportVST2Properties</a></b>: Boolean read FV2Properties write FV2Properties default false;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#StepFloat">StepFloat</a></b>: Single read FStepFloat write FStepFloat;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#SmallStepFloat">SmallStepFloat</a></b>: Single read FSmallStepFloat write FSmallStepFloat;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#LargeStepFloat">LargeStepFloat</a></b>: Single read FLargeStepFloat write FLargeStepFloat;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#Flags">Flags</a></b>: <a   href="DVSTEffect.html#TVstParameterPropertiesFlags">TVstParameterPropertiesFlags</a> read FFlags write FFlags default [];</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#MinInteger">MinInteger</a></b>: Integer read FMinInteger write FMinInteger default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#MaxInteger">MaxInteger</a></b>: Integer read FMaxInteger write FMaxInteger default 100;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#StepInteger">StepInteger</a></b>: Integer read FStepInteger write FStepInteger default 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#LargeStepInteger">LargeStepInteger</a></b>: Integer read FLargeStepInteger write FLargeStepInteger default 10;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#ShortLabel">ShortLabel</a></b>: string read GetShortLabel write SetShortLabel;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#VSTModule">VSTModule</a></b>: <a   href="DVSTBasicModule.TBasicVSTModule.html">TBasicVSTModule</a> read FVSTModule write FVSTModule;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#OnParameterChange">OnParameterChange</a></b>: <a   href="DVSTParameters.html#TParameterChangeEvent">TParameterChangeEvent</a> read FOnSPC write FOnSPC;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#OnCustomParameterLabel">OnCustomParameterLabel</a></b>: <a   href="DVSTParameters.html#TCustomParameterLabelEvent">TCustomParameterLabelEvent</a> read FOnCPL write FOnCPL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTParameters.TCustomVstParameterProperty.html#OnCustomParameterDisplay">OnCustomParameterDisplay</a></b>: <a   href="DVSTParameters.html#TCustomParameterDisplayEvent">TCustomParameterDisplayEvent</a> read FOnCPD write FOnCPD;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ACollection: TCollection); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Smooth"></a><code>function <b>Smooth</b>(i: Single): Single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Min"></a><code>property <b>Min</b>: Single read FMin write FMin;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Max"></a><code>property <b>Max</b>: Single read FMax write FMax;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CC"></a><code>property <b>CC</b>: Integer read FCC write FCC default -1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Curve"></a><code>property <b>Curve</b>: <a   href="DVSTParameters.html#TCurveType">TCurveType</a> read FCurve write FCurve;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DisplayName"></a><code>property <b>DisplayName</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Units"></a><code>property <b>Units</b>: string read FUnits write SetUnits;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CurveFactor"></a><code>property <b>CurveFactor</b>: Single read FCurveFactor write FCurveFactor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SmoothingFactor"></a><code>property <b>SmoothingFactor</b>: Single read FSmoothingFactor write FSmoothingFactor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CanBeAutomated"></a><code>property <b>CanBeAutomated</b>: Boolean read FCanBeAutomated write FCanBeAutomated default true;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReportVST2Properties"></a><code>property <b>ReportVST2Properties</b>: Boolean read FV2Properties write FV2Properties default false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="StepFloat"></a><code>property <b>StepFloat</b>: Single read FStepFloat write FStepFloat;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SmallStepFloat"></a><code>property <b>SmallStepFloat</b>: Single read FSmallStepFloat write FSmallStepFloat;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LargeStepFloat"></a><code>property <b>LargeStepFloat</b>: Single read FLargeStepFloat write FLargeStepFloat;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Flags"></a><code>property <b>Flags</b>: <a   href="DVSTEffect.html#TVstParameterPropertiesFlags">TVstParameterPropertiesFlags</a> read FFlags write FFlags default [];</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MinInteger"></a><code>property <b>MinInteger</b>: Integer read FMinInteger write FMinInteger default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxInteger"></a><code>property <b>MaxInteger</b>: Integer read FMaxInteger write FMaxInteger default 100;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="StepInteger"></a><code>property <b>StepInteger</b>: Integer read FStepInteger write FStepInteger default 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LargeStepInteger"></a><code>property <b>LargeStepInteger</b>: Integer read FLargeStepInteger write FLargeStepInteger default 10;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShortLabel"></a><code>property <b>ShortLabel</b>: string read GetShortLabel write SetShortLabel;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="VSTModule"></a><code>property <b>VSTModule</b>: <a   href="DVSTBasicModule.TBasicVSTModule.html">TBasicVSTModule</a> read FVSTModule write FVSTModule;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnParameterChange"></a><code>property <b>OnParameterChange</b>: <a   href="DVSTParameters.html#TParameterChangeEvent">TParameterChangeEvent</a> read FOnSPC write FOnSPC;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnCustomParameterLabel"></a><code>property <b>OnCustomParameterLabel</b>: <a   href="DVSTParameters.html#TCustomParameterLabelEvent">TCustomParameterLabelEvent</a> read FOnCPL write FOnCPL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnCustomParameterDisplay"></a><code>property <b>OnCustomParameterDisplay</b>: <a   href="DVSTParameters.html#TCustomParameterDisplayEvent">TCustomParameterDisplayEvent</a> read FOnCPD write FOnCPD;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:21</em>
+</span>
+</body></html>

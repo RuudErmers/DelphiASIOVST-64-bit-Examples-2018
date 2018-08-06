@@ -1,0 +1,53 @@
+object VSTSSModule: TVSTSSModule
+  OldCreateOrder = False
+  Flags = [effFlagsHasEditor, effFlagsCanMono, effFlagsCanReplacing, effFlagsIsSynth]
+  Version = '1.0'
+  EffectName = 'Sine Synth'
+  ProductName = 'DAV Synth Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcSynth
+  CanDos = [vcdSendVstEvents, vcdSendVstMidiEvent, vcdReceiveVstEvents, vcdReceiveVstMidiEvent, vcdPlugAsChannelInsert, vcdPlugAsSend, vcd2in2out]
+  SampleRate = 44100
+  CurrentProgram = 0
+  CurrentProgramName = 'Default'
+  IORatio = 1
+  UniqueID = 'SiSy'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Default'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      Curve = ctLinear
+      CurveFactor = 1
+      DisplayName = 'Order'
+      Flags = [kVstParameterUsesIntStep]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 32
+      MaxInteger = 32
+      Min = 2
+      MinInteger = 2
+      ShortLabel = 'Order'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      VSTModule = Owner
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnEditOpen = VSTModuleEditOpen
+  OnProcess = VSTModuleProcess
+  OnProcessReplacing64 = VSTModuleProcessReplacing64
+  OnProcessMidi = VSTModuleProcessMidi
+  OnProcessReplacing = VSTModuleProcess
+  left = 200
+  top = 103
+  Height = 150
+  HorizontalOffset = 305
+  VerticalOffset = 187
+  Width = 215
+end

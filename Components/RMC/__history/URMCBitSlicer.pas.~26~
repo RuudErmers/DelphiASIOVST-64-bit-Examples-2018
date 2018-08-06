@@ -1,0 +1,58 @@
+unit URMCBitSlicer;
+
+interface
+
+uses Vcl.Graphics,Classes;
+
+type eBitmapSlice = (BmpArpSlider,BmpArpThumb);
+
+type tbitmapslice = record left,top,width,height:integer end;
+const bitmapDef: array[eBitmapSlice] of tbitmapslice = (
+
+(* BmpArpSlider *)       (left:59; top:18; width:53; height:115),
+(* BmpArpThumb  *)   (left:21; top:14; width:26; height:17)
+
+);
+
+type TRMCBitSlicer = class
+  bmp:TBitmap;
+  function getBitmap(e:eBitmapSlice):TBitmap;
+end;
+
+function getBitmapSlice(e:eBitmapSlice):TBitmap;
+const bmpSliceFilename:string = 'C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\StaticBitmaps.bmp';
+
+implementation
+
+{ TRMCBitSlicer }
+VAR IRMCBitSlicer:TRMCBitSlicer;
+VAR   RMCBitmapsBmp : array [eBitmapSlice] of TBitmap;
+
+function getBitmapSlice(e:eBitmapSlice):TBitmap;
+begin
+  if IRMCBitSlicer=NIL then IRMCBitSlicer:=TRMCBitSlicer.Create;
+  result:=IRMCBitSlicer.getBitmap(e);
+end;
+
+function TRMCBitSlicer.getBitmap(e: eBitmapSlice): TBitmap;
+VAR parm:tbitmapslice;
+begin
+  if RMCBitmapsBmp[e]<>NIL then
+  begin
+    result:=RMCBitmapsBmp[e];
+    exit;
+  end;
+  if bmp = NIL then
+  begin
+    bmp:=TBitmap.Create;
+    bmp.LoadFromFile(bmpSliceFilename);
+  end;
+  result:=TBitmap.Create;
+  parm:=bitmapDef[e];
+  result.Width:=parm.width;
+  result.Height:=parm.height;
+  result.Canvas.CopyRect(Rect(0,0,parm.Width,parm.Height),Bmp.Canvas,Rect(parm.left,parm.top,parm.left+parm.width,parm.top+parm.height));
+  RMCBitmapsBmp[e]:=result;
+end;
+
+end.

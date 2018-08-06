@@ -1,0 +1,106 @@
+object FmVST: TFmVST
+  Left = 343
+  Height = 128
+  Top = 356
+  Width = 299
+  HorzScrollBar.Page = 298
+  VertScrollBar.Page = 127
+  ActiveControl = EdOutputVST
+  Caption = 'VST Setup'
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 54
+    Top = 67
+    Width = 284
+    Anchors = [akTop, akLeft, akRight]
+    Caption = ' Output VST '
+    TabOrder = 0
+    object Label2: TLabel
+      Left = 11
+      Height = 14
+      Top = 25
+      Width = 23
+      Caption = 'VST:'
+      Color = clNone
+      ParentColor = False
+    end
+    object EdOutputVST: TEdit
+      Left = 39
+      Height = 21
+      Top = 22
+      Width = 185
+      OnChange = EdOutputVSTChange
+      TabOrder = 0
+    end
+    object BtOutputVST: TButton
+      Left = 204
+      Height = 18
+      Top = 24
+      Width = 18
+      BorderSpacing.InnerBorder = 4
+      Caption = '...'
+      OnClick = BtOutputVSTClick
+      TabOrder = 1
+    end
+    object BtOutputEditor: TButton
+      Left = 230
+      Height = 21
+      Top = 22
+      Width = 43
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Editor'
+      Enabled = False
+      OnClick = BtOutputEditorClick
+      TabOrder = 2
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 57
+    Top = 4
+    Width = 284
+    Anchors = [akTop, akLeft, akRight]
+    Caption = ' Realtime FX VST '
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 11
+      Height = 14
+      Top = 25
+      Width = 23
+      Caption = 'VST:'
+      Color = clNone
+      ParentColor = False
+    end
+    object EdRealtimeVST: TEdit
+      Left = 39
+      Height = 21
+      Top = 22
+      Width = 185
+      OnChange = EdRealtimeVSTChange
+      TabOrder = 0
+    end
+    object BtRealtimeVST: TButton
+      Left = 204
+      Height = 18
+      Top = 24
+      Width = 18
+      BorderSpacing.InnerBorder = 4
+      Caption = '...'
+      OnClick = BtRealtimeVSTClick
+      TabOrder = 1
+    end
+    object BtRealtimeEditor: TButton
+      Left = 230
+      Height = 21
+      Top = 22
+      Width = 43
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Editor'
+      Enabled = False
+      OnClick = BtRealtimeEditorClick
+      TabOrder = 2
+    end
+  end
+end

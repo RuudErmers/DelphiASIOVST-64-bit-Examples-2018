@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <Title Value="VST Plugin Preset Designer"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable Comments="" CompanyName="" FileDescription="" FileVersion="" InternalName="" LegalCopyright="" LegalTrademarks="" OriginalFilename="" ProductName="" ProductVersion=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="DAV_VSTHost_Lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="VstPresetDesigner.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="13" Y="3"/>
+        <UsageCount Value="31"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="VpdMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmVstPresetDesigner"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="VpdMain"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="63" Y="39"/>
+        <UsageCount Value="31"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_VSTHost_Lazarus.pas"/>
+        <UnitName Value="DAV_VSTHost_Lazarus"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="22" Y="5"/>
+        <UsageCount Value="11"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTHost.pas"/>
+        <UnitName Value="DAV_VSTHost"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="4027"/>
+        <CursorPos X="58" Y="4050"/>
+        <UsageCount Value="16"/>
+        <Bookmarks Count="1">
+          <Item0 X="1" Y="2055" ID="2"/>
+        </Bookmarks>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTEffect.pas"/>
+        <UnitName Value="DAV_VSTEffect"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="31"/>
+        <CursorPos X="36" Y="50"/>
+        <UsageCount Value="16"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Source\DAV_Types.pas"/>
+        <UnitName Value="DAV_Types"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="9"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\Lazarus\fpc\2.4.1\source\rtl\objpas\sysutils\syspchh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="27" Y="46"/>
+        <UsageCount Value="9"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\Lazarus\fpc\2.4.1\source\rtl\objpas\sysutils\sysstrh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="78"/>
+        <CursorPos X="17" Y="101"/>
+        <UsageCount Value="9"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\Source\DAV_Compiler.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="20" Y="10"/>
+        <UsageCount Value="13"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\Source\DAV_CompilerSwitches.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="102"/>
+        <CursorPos X="11" Y="104"/>
+        <UsageCount Value="13"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\Lazarus\packager\packagesystem.pas"/>
+        <UnitName Value="PackageSystem"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="47"/>
+        <CursorPos X="3" Y="54"/>
+        <UsageCount Value="13"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\Lazarus\lcl\include\icon.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="677"/>
+        <CursorPos X="39" Y="693"/>
+        <UsageCount Value="13"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\Lazarus\ide\sourceeditor.pp"/>
+        <ComponentName Value="SourceNotebook"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SourceEditor"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="29"/>
+        <CursorPos X="38" Y="45"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\Lazarus\ide\compileroptions.pp"/>
+        <UnitName Value="CompilerOptions"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="4212"/>
+        <CursorPos X="3" Y="4228"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\GR32\Source\GR32_Backends_LCL_Win.pas"/>
+        <UnitName Value="GR32_Backends_LCL_Win"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="664"/>
+        <CursorPos X="1" Y="687"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\GR32\Source\GR32_Backends_Generic.pas"/>
+        <UnitName Value="GR32_Backends_Generic"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="..\..\..\..\GR32\Source\GR32_Backends_LCL_Win.pas"/>
+        <Caret Line="43" Column="46" TopLine="14"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\GR32\Source\GR32_Backends_LCL_Win.pas"/>
+        <Caret Line="172" Column="1" TopLine="156"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\GR32\Source\GR32_Backends_LCL_Win.pas"/>
+        <Caret Line="43" Column="3" TopLine="28"/>
+      </Position3>
+      <Position4>
+        <Filename Value="C:\Lazarus\ide\sourceeditor.pp"/>
+        <Caret Line="90" Column="43" TopLine="74"/>
+      </Position4>
+      <Position5>
+        <Filename Value="C:\Lazarus\ide\sourceeditor.pp"/>
+        <Caret Line="8" Column="97" TopLine="5"/>
+      </Position5>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source\"/>
+      <OtherUnitFiles Value="..\..\..\Source\;..\..\..\Source\VST\"/>
+      <UnitOutputDirectory Value="..\..\..\Bin\$(TargetCPU)-$(TargetOS)"/>
+      <SrcPath Value="..\..\..\Source\;..\..\..\Source\VST\"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

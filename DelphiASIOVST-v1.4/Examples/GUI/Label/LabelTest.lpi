@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="DAV_GUI_Lazarus"/>
+        <MinVersion Minor="3" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="47">
+      <Unit0>
+        <Filename Value="LabelTest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="36" Y="17"/>
+        <UsageCount Value="22"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="LabelTestMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmLabelTest"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LabelTestMain"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="17"/>
+        <CursorPos X="63" Y="39"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\Source\FileFormats\DAV_ChunkClasses.pas"/>
+        <UnitName Value="DAV_ChunkClasses"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="89"/>
+        <CursorPos X="20" Y="103"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBaseControl.pas"/>
+        <UnitName Value="DAV_GuiBaseControl"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="480"/>
+        <CursorPos X="1" Y="496"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiLabel.pas"/>
+        <UnitName Value="DAV_GuiLabel"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="118"/>
+        <CursorPos X="1" Y="167"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiCommon.pas"/>
+        <UnitName Value="DAV_GuiCommon"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="984"/>
+        <CursorPos X="11" Y="990"/>
+        <UsageCount Value="11"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\Lazarus\lcl\intfgraphics.pas"/>
+        <UnitName Value="IntfGraphics"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="565"/>
+        <CursorPos X="35" Y="573"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\Lazarus\lcl\include\custombitmap.inc"/>
+        <TopLine Value="415"/>
+        <CursorPos X="1" Y="431"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\Lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1472"/>
+        <CursorPos X="27" Y="1479"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\Lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <TopLine Value="17"/>
+        <CursorPos X="13" Y="37"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\Lazarus\lcl\include\winapih.inc"/>
+        <TopLine Value="36"/>
+        <CursorPos X="10" Y="52"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\Lazarus\lcl\include\canvas.inc"/>
+        <TopLine Value="133"/>
+        <CursorPos X="56" Y="134"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\Lazarus\lcl\interfacebase.pp"/>
+        <UnitName Value="InterfaceBase"/>
+        <TopLine Value="94"/>
+        <CursorPos X="15" Y="110"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\Lazarus\lcl\graphtype.pp"/>
+        <UnitName Value="GraphType"/>
+        <TopLine Value="217"/>
+        <CursorPos X="3" Y="233"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\Lazarus\fpc\2.2.5\source\packages\fcl-image\src\fpimage.pp"/>
+        <UnitName Value="FPimage"/>
+        <TopLine Value="88"/>
+        <CursorPos X="17" Y="142"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\Lazarus\lcl\interfaces\win32\win32object.inc"/>
+        <TopLine Value="767"/>
+        <CursorPos X="93" Y="768"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\Lazarus\fpc\2.2.5\source\packages\fcl-image\src\fpimage.inc"/>
+        <TopLine Value="313"/>
+        <CursorPos X="3" Y="315"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFileFormats.pas"/>
+        <UnitName Value="DAV_GuiFileFormats"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="5" Y="35"/>
+        <UsageCount Value="11"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiBlend.pas"/>
+        <UnitName Value="DAV_GuiBlend"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="15"/>
+        <CursorPos X="1" Y="15"/>
+        <UsageCount Value="11"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiLED.pas"/>
+        <UnitName Value="DAV_GuiLED"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="696"/>
+        <CursorPos X="1" Y="715"/>
+        <UsageCount Value="11"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiGraphXY.pas"/>
+        <UnitName Value="DAV_GuiGraphXY"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="755"/>
+        <CursorPos X="1" Y="767"/>
+        <UsageCount Value="11"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiStitchedControls.pas"/>
+        <UnitName Value="DAV_GuiStitchedControls"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="532"/>
+        <CursorPos X="3" Y="551"/>
+        <UsageCount Value="11"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPng.pas"/>
+        <UnitName Value="DAV_GuiPng"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="505"/>
+        <CursorPos X="9" Y="522"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngTypes.pas"/>
+        <UnitName Value="DAV_GuiPngTypes"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="21"/>
+        <CursorPos X="8" Y="35"/>
+        <UsageCount Value="11"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <UnitName Value="DAV_GuiPngClasses"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="190"/>
+        <CursorPos X="13" Y="201"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\Lazarus\fpc\2.4.1\source\packages\zlib\src\zlib.pp"/>
+        <UnitName Value="zlib"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="106"/>
+        <CursorPos X="5" Y="113"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngChunks.pas"/>
+        <UnitName Value="DAV_GuiPngChunks"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="675"/>
+        <CursorPos X="3" Y="689"/>
+        <UsageCount Value="11"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngResourceStrings.pas"/>
+        <UnitName Value="DAV_GuiPngResourceStrings"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="21"/>
+        <CursorPos X="8" Y="35"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngCoder.pas"/>
+        <UnitName Value="DAV_GuiPngCoder"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="21"/>
+        <CursorPos X="8" Y="35"/>
+        <UsageCount Value="10"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiStitchedDial.pas"/>
+        <UnitName Value="DAV_GuiStitchedDial"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="424"/>
+        <CursorPos X="52" Y="424"/>
+        <UsageCount Value="10"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiStitchedSwitch.pas"/>
+        <UnitName Value="DAV_GuiStitchedSwitch"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="54"/>
+        <CursorPos X="13" Y="68"/>
+        <UsageCount Value="10"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="C:\Lazarus\lcl\lresources.pp"/>
+        <UnitName Value="LResources"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiStitchedButton.pas"/>
+        <UnitName Value="DAV_GuiStitchedButton"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="96"/>
+        <CursorPos X="51" Y="110"/>
+        <UsageCount Value="10"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiFileFormatGraphics.pas"/>
+        <UnitName Value="DAV_GuiFileFormatGraphics"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="8" Y="34"/>
+        <UsageCount Value="10"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPixelMapDesign.pas"/>
+        <UnitName Value="DAV_GuiPixelMapDesign"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="273"/>
+        <CursorPos X="55" Y="284"/>
+        <UsageCount Value="10"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="C:\Lazarus\ideintf\propedits.pp"/>
+        <UnitName Value="PropEdits"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="4061"/>
+        <CursorPos X="79" Y="4068"/>
+        <UsageCount Value="10"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngDesign.pas"/>
+        <ComponentName Value="FmPngDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="DAV_GuiPngDesign"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="231"/>
+        <CursorPos X="13" Y="247"/>
+        <UsageCount Value="10"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\..\..\Packages\Lazarus\DAV_GUI_Lazarus.pas"/>
+        <UnitName Value="DAV_GUI_Lazarus"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="57" Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTBasicModule.pas"/>
+        <ComponentName Value="BasicVSTModule"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="DAV_VSTBasicModule"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="61"/>
+        <CursorPos X="12" Y="75"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="C:\Lazarus\components\images\lazpng.pas"/>
+        <UnitName Value="LazPNG"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3"/>
+        <CursorPos X="21" Y="27"/>
+        <UsageCount Value="10"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="C:\Lazarus\lcl\include\png.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="28"/>
+        <CursorPos X="21" Y="30"/>
+        <UsageCount Value="10"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="C:\Lazarus\fpc\2.4.3\source\packages\fcl-image\src\fpreadpng.pp"/>
+        <UnitName Value="FPReadPNG"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="12"/>
+        <CursorPos X="54" Y="22"/>
+        <UsageCount Value="10"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="C:\Lazarus\fpc\2.4.3\source\packages\paszlib\src\zstream.pp"/>
+        <UnitName Value="zstream"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="259"/>
+        <CursorPos X="53" Y="260"/>
+        <UsageCount Value="10"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="C:\Lazarus\fpc\2.4.3\source\packages\paszlib\src\zbase.pas"/>
+        <UnitName Value="zbase"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="276"/>
+        <CursorPos X="5" Y="287"/>
+        <UsageCount Value="10"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="C:\Lazarus\fpc\2.4.3\source\packages\paszlib\src\zinflate.pas"/>
+        <UnitName Value="zinflate"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="16"/>
+        <CursorPos X="10" Y="30"/>
+        <UsageCount Value="10"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiRegister.pas"/>
+        <UnitName Value="DAV_GuiRegister"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="13"/>
+        <CursorPos X="55" Y="33"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngImageList.pas"/>
+        <UnitName Value="DAV_GuiPngImageList"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="2" Y="35"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit46>
+    </Units>
+    <JumpHistory Count="24" HistoryIndex="23">
+      <Position1>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTBasicModule.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\Source\VST\DAV_VSTBasicModule.pas"/>
+        <Caret Line="75" Column="12" TopLine="61"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiRegister.pas"/>
+        <Caret Line="33" Column="55" TopLine="13"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPng.pas"/>
+        <Caret Line="211" Column="31" TopLine="202"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPng.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPng.pas"/>
+        <Caret Line="522" Column="9" TopLine="505"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="38" Column="52" TopLine="26"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="121" Column="30" TopLine="107"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="38" Column="38" TopLine="16"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="38" Column="38" TopLine="16"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="43" Column="26" TopLine="33"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="132" Column="8" TopLine="122"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="137" Column="1" TopLine="122"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="37" Column="16" TopLine="15"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="138" Column="13" TopLine="124"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="36" Column="1" TopLine="23"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="142" Column="17" TopLine="128"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="137" Column="35" TopLine="128"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="38" Column="45" TopLine="19"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="142" Column="19" TopLine="128"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="193" Column="1" TopLine="181"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngClasses.pas"/>
+        <Caret Line="201" Column="13" TopLine="190"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\Source\GUI\DAV_GuiPngImageList.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position24>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="..\..\..\Source\"/>
+      <OtherUnitFiles Value="..\..\..\Source\;..\..\..\Source\GUI\;..\..\..\Source\DSP\;..\..\..\Source\FileFormats\"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="2">
+      <Item1>
+        <Source Value="C:\Lazarus\fpc\2.2.5\source\packages\fcl-image\src\fpimage.inc"/>
+        <Line Value="308"/>
+      </Item1>
+      <Item2>
+        <Source Value="C:\Lazarus\fpc\2.2.5\source\packages\fcl-image\src\fpimage.inc"/>
+        <Line Value="315"/>
+      </Item2>
+    </BreakPoints>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.833,C:\Users\Ruud\Documents\Projects2014\PgMidi.groupproj=C:\Users\Ruud\Documents\Projects2014\Midimania\PgMidi.groupproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.692,C:\Users\Ruud\Documents\Projects2013\Midimania\PgMidi.groupproj=C:\Users\ruud\Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Projects\Midimania\VSTPlugins\XRERompler\XRERompler.dproj"/>
+	</Default.Personality>
+</BorlandProject>

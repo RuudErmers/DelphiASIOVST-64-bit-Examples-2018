@@ -1,0 +1,266 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0E543BB7-590C-475C-A601-BC92A9E1AD5E}</ProjectGuid>
+        <MainSource>DAV_DSP_D16.dpk</MainSource>
+        <Base>True</Base>
+        <ProjectVersion>15.1</ProjectVersion>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>7</TargetedPlatforms>
+        <AppType>Package</AppType>
+        <FrameworkType>None</FrameworkType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
+        <Base_OSX32>true</Base_OSX32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <GenPackage>true</GenPackage>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_F>false</DCC_F>
+        <GenDll>true</GenDll>
+        <DCC_E>false</DCC_E>
+        <DCC_DebugInformation>true</DCC_DebugInformation>
+        <DCC_K>false</DCC_K>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_OSX32)'!=''">
+        <DCC_UsePackage>rtl;DAV_Common_D16;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_UsePackage>rtl;DAV_Common_D16;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_UsePackage>rtl;DAV_Common_D16;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1043</VerInfo_Locale>
+        <DCC_UnitSearchPath>C:\Users\Ruud\Documents\Projects\Midimania\DelphiASIOVST-v1.4\Source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="rtl.dcp"/>
+        <DCCReference Include="DAV_Common_D16.dcp"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspRegister.pas"/>
+        <DCCReference Include="..\..\Source\DAV_ClassesFft.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspAmbience.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspAnalogueFilterPrototypes.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspAudioToMidiTrigger.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspBarberpole.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspBarberpoleTuner.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspBesselFilter.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspBlockDistribution.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspBufferedAudioFilePlayer.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspBufferedAudioFileRecorder.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspBufferedMp3Player.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspBuildingBlocks.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspCepstrum.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspChorus.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspCircularBuffer.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspComponents.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspConvolution.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspCorrelation.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspCrosstalkCancellation.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspCrosstalkSimulator.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspCrosstalkSimulatorHRTF.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspDelayLines.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspDFT.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspDitherNoiseShaper.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspDownsampleScheduler.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspDynamics.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspExciter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFDNReverb.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFeedbackAMOscillator.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFeedbackDelayNetwork.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFFT.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFftReal2Complex.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterAllpasses.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterBasics.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterBasicsAutomatable.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterButterworth.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterChebyshev.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterChebyshevType1.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterChebyshevType2.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterLinearPhaseCrossover.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterLinkwitzRiley.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterManager.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterMoog.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterSimple.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFilterSpectralDelay.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFreeverb.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFreeverbFilter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFrequencyDivider.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFrequencyDomainPitchshifter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspFrequencyShifter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspGranularPitchshifter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspHRTF.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspInterpolation.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspLeslie.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspLevelingAmplifier.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspLevinson.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspLFO.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspLightweightDynamics.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspLMS.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspLorenzOscilator.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspMetronome.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspMinBlep.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspModDelay.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspNoiseShapingFilterDesigner.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspParametricEQ.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPhaser.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPinkNoiseGenerator.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPlateReverb.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseDownsampler.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseFilter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseHilbert.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseIirDesigner.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPolyphaseUpsampler.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspPsychoacousticBassEnhancer.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspRemez.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspRingModulator.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspSimpleOscillator.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspSpectralEffects.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspSpectralFilters.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspSpectralNoiseReduction.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspSpectrumInterpolation.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspStateVariableFilter.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspSweepOscillator.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspTransientProcessor.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspTuner.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspUpDownsampling.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspVariableDelay.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspVibrato.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspVocoder.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspVoiceSynth.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspWaveshaper.pas"/>
+        <DCCReference Include="..\..\Source\DSP\DAV_DspWindowFunctions.pas"/>
+        <DCCReference Include="..\..\Source\Dsp\DAV_DspWindowing.pas"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>Package</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">DAV_DSP_D16.dpk</Source>
+                </Source>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1043</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                    <VersionInfoKeys Name="CFBundleName"/>
+                    <VersionInfoKeys Name="CFBundleDisplayName"/>
+                    <VersionInfoKeys Name="UIDeviceFamily"/>
+                    <VersionInfoKeys Name="CFBundleIdentifier"/>
+                    <VersionInfoKeys Name="CFBundleVersion"/>
+                    <VersionInfoKeys Name="CFBundlePackageType"/>
+                    <VersionInfoKeys Name="CFBundleSignature"/>
+                    <VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+                    <VersionInfoKeys Name="UISupportedInterfaceOrientations"/>
+                    <VersionInfoKeys Name="CFBundleExecutable"/>
+                    <VersionInfoKeys Name="CFBundleResourceSpecification"/>
+                    <VersionInfoKeys Name="LSRequiresIPhoneOS"/>
+                    <VersionInfoKeys Name="CFBundleInfoDictionaryVersion"/>
+                    <VersionInfoKeys Name="CFBundleDevelopmentRegion"/>
+                    <VersionInfoKeys Name="package"/>
+                    <VersionInfoKeys Name="label"/>
+                    <VersionInfoKeys Name="versionCode"/>
+                    <VersionInfoKeys Name="versionName"/>
+                    <VersionInfoKeys Name="persistent"/>
+                    <VersionInfoKeys Name="restoreAnyVersion"/>
+                    <VersionInfoKeys Name="installLocation"/>
+                    <VersionInfoKeys Name="largeHeap"/>
+                    <VersionInfoKeys Name="theme"/>
+                </VersionInfoKeys>
+                <Excluded_Packages/>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="OSX32">True</Platform>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

@@ -1,0 +1,84 @@
+object RMCChannelFrame: TRMCChannelFrame
+  Left = 0
+  Top = 0
+  Width = 680
+  Height = 312
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 680
+    Height = 312
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    object Shape1: TShape
+      Left = 568
+      Top = 36
+      Width = 2
+      Height = 237
+      Pen.Color = clWhite
+    end
+    object Label1: TLabel
+      Left = 28
+      Top = 76
+      Width = 32
+      Height = 21
+      Caption = 'VCO'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -17
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 28
+      Top = 136
+      Width = 29
+      Height = 21
+      Caption = 'VCF'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -17
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 28
+      Top = 196
+      Width = 31
+      Height = 21
+      Caption = 'VCA'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -17
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object LabelChannel: TLabel
+      Left = 614
+      Top = 16
+      Width = 15
+      Height = 33
+      Caption = '1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -27
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+end

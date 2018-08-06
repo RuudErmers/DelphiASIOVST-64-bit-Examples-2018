@@ -1,0 +1,22 @@
+object RMCCCSurfaceFrame: TRMCCCSurfaceFrame
+  Left = 0
+  Top = 0
+  Width = 1090
+  Height = 629
+  DoubleBuffered = False
+  ParentDoubleBuffered = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 1090
+    Height = 629
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    ExplicitWidth = 600
+    ExplicitHeight = 247
+  end
+end

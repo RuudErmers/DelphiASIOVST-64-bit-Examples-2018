@@ -1,0 +1,67 @@
+unit URMCBitSlicer;
+
+interface
+
+uses Vcl.Graphics,Classes;
+
+type eBitmapSlice = (BmpArpThumbBlue,BmpArpThumbRed,BmpArpThumbOrange,BmpArpThumbGreen,BmpArpThumbBrown,BmpArpThumbWhite,
+BmpArpSlider,BmpArpWaveSquare,BmpArpWaveSaw, BmpArpWaveSine,BmpArpADSR,BmpArpAR);
+
+type tbitmapslice = record left,top,width,height:integer end;
+const bitmapDef: array[eBitmapSlice] of tbitmapslice = (
+(* BmpArpThumbBlue   *)   (left:21; top:14; width:26; height:17),
+(* BmpArpThumbRed    *)   (left:12; top:132; width:30; height:17),
+(* BmpArpThumbOrange *)   (left:10; top:212; width:32; height:16),
+(* BmpArpThumbGreen  *)   (left:13; top:158; width:29; height:16),
+(* BmpArpThumbBrown  *)   (left:69; top:151; width:28; height:15),
+(* BmpArpThumbWhite  *)   (left:13; top:181; width:27; height:16),
+(* BmpArpSlider      *)   (left:59; top:18; width:53; height:115),
+(* BmpArpWaveSquare  *)   (left:16; top:43; width:32; height:8),
+(* BmpArpWaveSaw     *)   (left:12; top:59; width:33; height:10),
+(* BmpArpWaveSine    *)   (left:12; top:110; width:30; height:12),
+(* BmpArpADSR        *)   (left:17; top:92; width:24; height:11),
+(* BmpArpAR          *)   (left:18; top:75; width:23; height:11)
+);
+
+type TRMCBitSlicer = class
+  bmp:TBitmap;
+  function getBitmap(e:eBitmapSlice):TBitmap;
+end;
+
+function getBitmapSlice(e:eBitmapSlice):TBitmap;
+const bmpSliceFilename:string = 'C:\Users\Ruud\Documents\Projects\Midimania\Components\RMC\StaticBitmaps.bmp';
+
+implementation
+
+{ TRMCBitSlicer }
+VAR IRMCBitSlicer:TRMCBitSlicer;
+VAR   RMCBitmapsBmp : array [eBitmapSlice] of TBitmap;
+
+function getBitmapSlice(e:eBitmapSlice):TBitmap;
+begin
+  if IRMCBitSlicer=NIL then IRMCBitSlicer:=TRMCBitSlicer.Create;
+  result:=IRMCBitSlicer.getBitmap(e);
+end;
+
+function TRMCBitSlicer.getBitmap(e: eBitmapSlice): TBitmap;
+VAR parm:tbitmapslice;
+begin
+  if RMCBitmapsBmp[e]<>NIL then
+  begin
+    result:=RMCBitmapsBmp[e];
+    exit;
+  end;
+  if bmp = NIL then
+  begin
+    bmp:=TBitmap.Create;
+    bmp.LoadFromFile(bmpSliceFilename);
+  end;
+  result:=TBitmap.Create;
+  parm:=bitmapDef[e];
+  result.Width:=parm.width;
+  result.Height:=parm.height;
+  result.Canvas.CopyRect(Rect(0,0,parm.Width,parm.Height),Bmp.Canvas,Rect(parm.left,parm.top,parm.left+parm.width,parm.top+parm.height));
+  RMCBitmapsBmp[e]:=result;
+end;
+
+end.

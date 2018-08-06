@@ -1,0 +1,30 @@
+object RMCBehringerInfoFrame: TRMCBehringerInfoFrame
+  Left = 0
+  Top = 0
+  Width = 600
+  Height = 250
+  DoubleBuffered = False
+  ParentDoubleBuffered = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 600
+    Height = 250
+    Align = alClient
+    Caption = ''
+    RoundRect = 10
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    object Memo1: TMemo
+      Left = 24
+      Top = 24
+      Width = 553
+      Height = 201
+      Lines.Strings = (
+        'Plaats hier uw gegevens...')
+      TabOrder = 0
+    end
+  end
+end

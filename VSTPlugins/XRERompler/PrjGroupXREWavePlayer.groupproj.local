@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.030,C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\PrjGroupXREWavePlayer.groupproj=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\PrjGroupXREBridge.groupproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.312,C:\Users\Ruud\Documents\RAD Studio\Projects\ProjectGroup1.groupproj=C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREBridge\PrjGroupXREBridge.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\Ruud\Documents\Projects\Midimania\VSTPlugins\XREWavePlayer\prjWavePlayerVSTSA.dproj"/>
+	</Default.Personality>
+</BorlandProject>

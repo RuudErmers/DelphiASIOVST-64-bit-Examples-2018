@@ -1,0 +1,18 @@
+object RMCCCPanelFrame: TRMCCCPanelFrame
+  Left = 0
+  Top = 0
+  Width = 600
+  Height = 250
+  DoubleBuffered = False
+  ParentDoubleBuffered = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 600
+    Height = 250
+    Align = alClient
+    ExplicitWidth = 1141
+    ExplicitHeight = 240
+  end
+end

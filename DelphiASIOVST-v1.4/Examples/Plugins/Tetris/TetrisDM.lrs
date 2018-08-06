@@ -1,0 +1,11 @@
+LazarusResources.Add('TTetrisModule','FORMDATA',[
+  'TPF0'#13'TTetrisModule'#12'TetrisModule'#5'Flags'#11#17'effFlagsHasEditor'#0
+  +#7'Version'#6#3'1.0'#10'EffectName'#6#6'Tetris'#11'ProductName'#6#6'Tetris'
+  +#10'VendorName'#6#11'VST Example'#12'VersionMajor'#2#1#12'VersionMinor'#2#0
+  +#14'VersionRelease'#2#0#12'PlugCategory'#7#8'cgEffect'#8'TailSize'#2#0#6'Can'
+  +'Dos'#11#0#10'SampleRate'#5#0#0#0#0#0#0'D'#172#14'@'#14'CurrentProgram'#2#255
+  +#12'KeysRequired'#9#8'UniqueID'#6#4'Tetr'#12'ShellPlugins'#14#0#8'Programs'
+  +#14#0#19'ParameterProperties'#14#0#10'OnEditOpen'#7#17'VSTModuleEditOpen'#15
+  +'OnEditorKeyDown'#7#22'VSTModuleEditorKeyDown'#10'OnCheckKey'#7#17'VSTModule'
+  +'CheckKey'#0#0
+]);

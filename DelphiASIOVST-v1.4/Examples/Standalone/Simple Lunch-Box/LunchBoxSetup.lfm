@@ -1,0 +1,96 @@
+object FmSetup: TFmSetup
+  Left = 333
+  Height = 109
+  Top = 221
+  Width = 228
+  HorzScrollBar.Page = 227
+  VertScrollBar.Page = 108
+  ActiveControl = CBDrivers
+  BorderStyle = bsDialog
+  Caption = 'Setup'
+  Font.Height = -11
+  Font.Name = 'Verdana'
+  Font.Style = [fsBold]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object LbPreset: TLabel
+    Left = 4
+    Height = 21
+    Top = 2
+    Width = 81
+    AutoSize = False
+    Caption = 'ASIO Driver:'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 4
+    Height = 21
+    Top = 29
+    Width = 50
+    AutoSize = False
+    Caption = 'Output:'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 4
+    Height = 14
+    Top = 88
+    Width = 100
+    Caption = 'Playback Samplerate'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object CBDrivers: TComboBox
+    Left = 88
+    Height = 21
+    Top = 2
+    Width = 136
+    Anchors = [akTop, akLeft, akRight]
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 13
+    MaxLength = 0
+    OnChange = CBDriversChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object CBOutput: TComboBox
+    Left = 64
+    Height = 21
+    Top = 29
+    Width = 160
+    Anchors = [akTop, akLeft, akRight]
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 13
+    MaxLength = 0
+    OnChange = CBOutputChange
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object BtControlPanel: TButton
+    Left = 4
+    Height = 25
+    Top = 55
+    Width = 220
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Control Panel'
+    OnClick = BtControlPanelClick
+    TabOrder = 2
+  end
+  object SESampleRate: TSpinEdit
+    Left = 148
+    Height = 22
+    Top = 85
+    Width = 76
+    Anchors = [akTop, akLeft, akRight]
+    MaxValue = 0
+    OnChange = SESampleRateChange
+    TabOrder = 3
+    Value = 44100
+  end
+end

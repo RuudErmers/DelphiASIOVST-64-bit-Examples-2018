@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTEffect: record TVstMidiEvent</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TVstMidiEvent"></a><h1 class="cio">record TVstMidiEvent</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td>Hierarchy</td><td><a class="section"  href="#@Fields">Fields</a></td><td>Methods</td><td>Properties</td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTEffect.html">DVSTEffect</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TVstMidiEvent = record</code></p>
+<h2 class="description">Description</h2>
+&nbsp;<h2 class="overview">Overview</h2>
+<a name="@Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#EventType">EventType</a></b>: <a   href="DVSTEffect.html#TVSTEventType">TVSTEventType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#ByteSize">ByteSize</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#DeltaFrames">DeltaFrames</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#Flags">Flags</a></b>: <a   href="DVSTEffect.html#TVstMidiEventFlags">TVstMidiEventFlags</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#NoteLength">NoteLength</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#NoteOffset">NoteOffset</a></b>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#MidiData">MidiData</a></b>: array[0..3] of Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#Detune">Detune</a></b>: Byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#NoteOffVelocity">NoteOffVelocity</a></b>: Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#Reserved1">Reserved1</a></b>: Byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="DVSTEffect.TVstMidiEvent.html#Reserved2">Reserved2</a></b>: Byte;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EventType"></a><code><b>EventType</b>: <a   href="DVSTEffect.html#TVSTEventType">TVSTEventType</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+to be casted from a VstEvent</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ByteSize"></a><code><b>ByteSize</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+kVstMidiType</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DeltaFrames"></a><code><b>DeltaFrames</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+24</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Flags"></a><code><b>Flags</b>: <a   href="DVSTEffect.html#TVstMidiEventFlags">TVstMidiEventFlags</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+sample frames related to the current block start sample position</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NoteLength"></a><code><b>NoteLength</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+see above</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NoteOffset"></a><code><b>NoteOffset</b>: LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+(in sample frames) of entire note, if available, else 0</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MidiData"></a><code><b>MidiData</b>: array[0..3] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+offset into note from note start if available, else 0</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Detune"></a><code><b>Detune</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 thru 3 midi Bytes; midiData[3] is reserved (zero)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NoteOffVelocity"></a><code><b>NoteOffVelocity</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-64 to +63 cents; for scales other than 'well-tempered' ('microtuning')</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Reserved1"></a><code><b>Reserved1</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Reserved2"></a><code><b>Reserved2</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+zero</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:19</em>
+</span>
+</body></html>

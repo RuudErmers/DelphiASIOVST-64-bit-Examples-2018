@@ -1,0 +1,41 @@
+object RMCCurrInstrumentFrame: TRMCCurrInstrumentFrame
+  Left = 0
+  Top = 0
+  Width = 800
+  Height = 174
+  DoubleBuffered = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentDoubleBuffered = False
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 800
+    Height = 137
+    Align = alClient
+    Caption = ''
+    RoundRect = 0
+    DoubleBuffered = True
+    Color = 2434341
+    FontSize = 8
+    ExplicitTop = 29
+    ExplicitHeight = 138
+  end
+  object PanelPatches: TPanel
+    Left = 0
+    Top = 137
+    Width = 800
+    Height = 37
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 1
+    ExplicitTop = 167
+  end
+end

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{A09DB763-BC41-455A-803C-09B2F98535A4}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  
+    
+    <Projects>
+      <Projects Name="DAV_Common_D10.bpl">DAV_Common_D10.bdsproj</Projects>
+      <Projects Name="DAV_DSP_D10.bpl">DAV_DSP_D10.bdsproj</Projects>
+      <Projects Name="DAV_Modular_D10.bpl">DAV_Modular_D10.bdsproj</Projects>
+      <Projects Name="DAV_VSTPlugin_D10.bpl">DAV_VSTPlugin_D10.bdsproj</Projects>
+      <Projects Name="DAV_VSTHost_D10.bpl">DAV_VSTHost_D10.bdsproj</Projects>
+      <Projects Name="DAV_ASIOHost_D10.bpl">DAV_ASIOHost_D10.bdsproj</Projects>
+      <Projects Name="DAV_SEHost_D10.bpl">DAV_SEHost_D10.bdsproj</Projects>
+      <Projects Name="DAV_GUI_D10.bpl">DAV_GUI_D10.bdsproj</Projects>
+      <Projects Name="DAV_VSTCloner_D10.bpl">DAV_VSTCloner_D10.bdsproj</Projects>
+      <Projects Name="Targets">DAV_Common_D10.bpl DAV_DSP_D10.bpl DAV_Modular_D10.bpl DAV_VSTPlugin_D10.bpl DAV_VSTHost_D10.bpl DAV_ASIOHost_D10.bpl DAV_SEHost_D10.bpl DAV_GUI_D10.bpl DAV_VSTCloner_D10.bpl</Projects>
+    </Projects>
+    <Dependencies>
+      <Dependency GUID="{EA6C899F-BFF7-4C22-A8D6-8ADA4A6D1102}">
+        <Dependency GUID="{BF579786-56CB-4C56-824F-24A5DEF73E77}"/>
+      </Dependency>
+      <Dependency GUID="{88624A48-C07F-4CAA-89C9-334FCA3805A2}">
+        <Dependency GUID="{BF579786-56CB-4C56-824F-24A5DEF73E77}"/>
+        <Dependency GUID="{EA6C899F-BFF7-4C22-A8D6-8ADA4A6D1102}"/>
+        <Dependency GUID="{9BBFFEDA-4079-4648-98C4-356430021140}"/>
+      </Dependency>
+      <Dependency GUID="{9BBFFEDA-4079-4648-98C4-356430021140}">
+        <Dependency GUID="{BF579786-56CB-4C56-824F-24A5DEF73E77}"/>
+      </Dependency>
+      <Dependency GUID="{E35643D9-8D38-463D-8150-5E6C52EEDA4F}">
+        <Dependency GUID="{9BBFFEDA-4079-4648-98C4-356430021140}"/>
+        <Dependency GUID="{BF579786-56CB-4C56-824F-24A5DEF73E77}"/>
+      </Dependency>
+      <Dependency GUID="{3ABFC752-5D9A-495C-B157-E577B1B74848}">
+        <Dependency GUID="{BF579786-56CB-4C56-824F-24A5DEF73E77}"/>
+      </Dependency>
+      <Dependency GUID="{86D8FD20-D803-4307-BDD8-63E1B77F34CB}">
+        <Dependency GUID="{BF579786-56CB-4C56-824F-24A5DEF73E77}"/>
+      </Dependency>
+      <Dependency GUID="{E33699D0-865C-470E-B225-6CBBFC90FF71}">
+        <Dependency GUID="{9BBFFEDA-4079-4648-98C4-356430021140}"/>
+        <Dependency GUID="{88624A48-C07F-4CAA-89C9-334FCA3805A2}"/>
+        <Dependency GUID="{BF579786-56CB-4C56-824F-24A5DEF73E77}"/>
+      </Dependency>
+      <Dependency GUID="{F511D808-1D93-49A1-BF41-5C6953A2E26C}">
+        <Dependency GUID="{9BBFFEDA-4079-4648-98C4-356430021140}"/>
+        <Dependency GUID="{E35643D9-8D38-463D-8150-5E6C52EEDA4F}"/>
+      </Dependency>
+    </Dependencies>
+  </Default.Personality>
+</BorlandProject>

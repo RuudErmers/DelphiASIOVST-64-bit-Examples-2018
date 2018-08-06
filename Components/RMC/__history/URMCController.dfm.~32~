@@ -1,0 +1,23 @@
+object RMCControllerFrame: TRMCControllerFrame
+  Left = 0
+  Top = 0
+  Width = 220
+  Height = 140
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  ParentDoubleBuffered = False
+  ParentFont = False
+  TabOrder = 0
+  object RMCEmptyPanel1: TRMCEmptyPanel
+    Left = 0
+    Top = 0
+    Width = 220
+    Height = 140
+    Align = alClient
+    ExplicitWidth = 320
+  end
+end

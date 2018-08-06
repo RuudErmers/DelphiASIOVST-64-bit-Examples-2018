@@ -1,0 +1,108 @@
+object ExciterDataModule: TExciterDataModule
+  OnCreate = VSTModuleCreate
+  OnDestroy = VSTModuleDestroy
+  OldCreateOrder = False
+  Flags = [effFlagsHasEditor, effFlagsCanReplacing]
+  Version = '1.0'
+  EffectName = 'Exciter'
+  ProductName = 'DAV Effect Examples'
+  VendorName = 'Delphi ASIO & VST Project'
+  PlugCategory = vpcEffect
+  SampleRate = 44100
+  CurrentProgramName = 'Default'
+  IORatio = 1
+  UniqueID = 'eXtR'
+  ShellPlugins = <>
+  Programs = <  
+    item
+      DisplayName = 'Default'
+      VSTModule = Owner
+    end  
+    item
+      DisplayName = 'High Life'
+      VSTModule = Owner
+    end>
+  ParameterProperties = <  
+    item
+      Curve = ctLogarithmic
+      CurveFactor = 200
+      DisplayName = 'Tune'
+      Flags = [ppfParameterUsesFloatStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 16000
+      MaxInteger = 16000
+      Min = 1000
+      MinInteger = 1000
+      ReportVST2Properties = True
+      ShortLabel = 'Tune'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = 'Hz'
+      VSTModule = Owner
+      OnParameterChange = ParamFrequencyChange
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Order'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 16
+      MaxInteger = 16
+      Min = 2
+      MinInteger = 2
+      ReportVST2Properties = True
+      ShortLabel = 'Order'
+      SmallStepFloat = 1
+      SmoothingFactor = 0
+      StepFloat = 1
+      VSTModule = Owner
+      OnParameterChange = ParameterOrderChange
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Shape'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesFloatStep, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      Max = 100
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'Shape'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = '%'
+      VSTModule = Owner
+      OnParameterChange = ParamShapeChange
+    end  
+    item
+      CurveFactor = 1
+      DisplayName = 'Mix'
+      Flags = [ppfParameterUsesIntegerMinMax, ppfParameterUsesFloatStep, ppfParameterUsesIntStep, ppfParameterSupportsDisplayIndex]
+      LargeStepFloat = 2
+      LargeStepInteger = 2
+      Max = 100
+      Min = 0
+      ReportVST2Properties = True
+      ShortLabel = 'LoDist'
+      SmallStepFloat = 0.5
+      SmoothingFactor = 0
+      StepFloat = 1
+      Units = '%'
+      VSTModule = Owner
+      OnParameterChange = ParamMixChange
+    end>
+  ParameterCategories = <>
+  OnOpen = VSTModuleOpen
+  OnClose = VSTModuleClose
+  OnResume = VSTModuleResume
+  OnSampleRateChange = VSTModuleSampleRateChange
+  left = 218
+  top = 84
+  Height = 150
+  HorizontalOffset = 0
+  VerticalOffset = 0
+  Width = 215
+end

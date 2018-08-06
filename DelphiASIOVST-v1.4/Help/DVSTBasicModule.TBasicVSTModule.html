@@ -1,0 +1,1105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.10.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Delphi ASIO &amp; VST Package: DVSTBasicModule: Class TBasicVSTModule</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TBasicVSTModule"></a><h1 class="cio">Class TBasicVSTModule</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#@Description">Description</a></td><td><a class="section"  href="#@Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#@Methods">Methods</a></td><td><a class="section"  href="#@Properties">Properties</a></td></tr></table>
+<a name="@Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="DVSTBasicModule.html">DVSTBasicModule</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBasicVSTModule = class(TDataModule)</code></p>
+<h2 class="description">Description</h2>
+<p>
+-$DEFINE Debug</p>
+<a name="@Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TDataModule</li>
+<li class="thisitem">TBasicVSTModule</li></ul><h2 class="overview">Overview</h2>
+<a name="@Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="DVSTBasicModule.TBasicVSTModule.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallProcess">HostCallProcess</a></b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallProcessReplacing">HostCallProcessReplacing</a></b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallProcessDoubleReplacing">HostCallProcessDoubleReplacing</a></b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPDouble">PPDouble</a>; const SampleFrames: Integer); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetParameter">HostCallGetParameter</a></b>(Index: Integer): Single; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetParameter">HostCallSetParameter</a></b>(Index: Integer; Value: Single); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallDispatchEffect">HostCallDispatchEffect</a></b>(opcode : <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>; Index, Value: Integer; ptr: pointer; opt: Single); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallOpen">HostCallOpen</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallClose">HostCallClose</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetProgramm">HostCallSetProgramm</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetProgramm">HostCallGetProgramm</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetProgramName">HostCallSetProgramName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetProgramName">HostCallGetProgramName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetParamLabel">HostCallGetParamLabel</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetParamDisplay">HostCallGetParamDisplay</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetParamName">HostCallGetParamName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetVu">HostCallGetVu</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetSampleRate">HostCallSetSampleRate</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetBlockSize">HostCallSetBlockSize</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallMainsChanged">HostCallMainsChanged</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditGetRect">HostCallEditGetRect</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditOpen">HostCallEditOpen</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditClose">HostCallEditClose</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditDraw">HostCallEditDraw</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditMouse">HostCallEditMouse</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditKey">HostCallEditKey</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditIdle">HostCallEditIdle</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditTop">HostCallEditTop</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditSleep">HostCallEditSleep</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallIdentify">HostCallIdentify</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetChunk">HostCallGetChunk</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetChunk">HostCallSetChunk</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallProcessEvents">HostCallProcessEvents</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallCanBeAutomated">HostCallCanBeAutomated</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallString2Parameter">HostCallString2Parameter</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetNumProgramCategories">HostCallGetNumProgramCategories</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetProgramNameIndexed">HostCallGetProgramNameIndexed</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallCopyProgram">HostCallCopyProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallConnectInput">HostCallConnectInput</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallConnectOutput">HostCallConnectOutput</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetInputProperties">HostCallGetInputProperties</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetOutputProperties">HostCallGetOutputProperties</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetPlugCategory">HostCallGetPlugCategory</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetCurrentPosition">HostCallGetCurrentPosition</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetDestinationBuffer">HostCallGetDestinationBuffer</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallOfflineNotify">HostCallOfflineNotify</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallOfflinePrepare">HostCallOfflinePrepare</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallOfflineRun">HostCallOfflineRun</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallProcessVarIo">HostCallProcessVarIo</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetSpeakerArrangement">HostCallSetSpeakerArrangement</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetBlockSizeAndSampleRate">HostCallSetBlockSizeAndSampleRate</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetBypass">HostCallSetBypass</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetEffectName">HostCallGetEffectName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetErrorText">HostCallGetErrorText</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetVendorString">HostCallGetVendorString</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetProductString">HostCallGetProductString</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetVendorVersion">HostCallGetVendorVersion</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallVendorSpecific">HostCallVendorSpecific</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallCanDo">HostCallCanDo</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetTailSize">HostCallGetTailSize</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallIdle">HostCallIdle</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetIcon">HostCallGetIcon</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetViewPosition">HostCallSetViewPosition</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetParameterProperties">HostCallGetParameterProperties</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallKeysRequired">HostCallKeysRequired</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetVstVersion">HostCallGetVstVersion</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditKeyDown">HostCallEditKeyDown</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEditKeyUp">HostCallEditKeyUp</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetEditKnobMode">HostCallSetEditKnobMode</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetMidiProgramName">HostCallGetMidiProgramName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetCurrentMidiProgram">HostCallGetCurrentMidiProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetMidiProgramCategory">HostCallGetMidiProgramCategory</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallHasMidiProgramsChanged">HostCallHasMidiProgramsChanged</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetMidiKeyName">HostCallGetMidiKeyName</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallBeginSetProgram">HostCallBeginSetProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallEndSetProgram">HostCallEndSetProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetSpeakerArrangement">HostCallGetSpeakerArrangement</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallShellGetNextPlugin">HostCallShellGetNextPlugin</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallStartProcess">HostCallStartProcess</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallStopProcess">HostCallStopProcess</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetTotalSampleToProcess">HostCallSetTotalSampleToProcess</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetPanLaw">HostCallSetPanLaw</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallBeginLoadBank">HostCallBeginLoadBank</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallBeginLoadProgram">HostCallBeginLoadProgram</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallSetProcessPrecision">HostCallSetProcessPrecision</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetNumMidiInputChannels">HostCallGetNumMidiInputChannels</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="DVSTBasicModule.TBasicVSTModule.html#HostCallGetNumMidiOutputChannels">HostCallGetNumMidiOutputChannels</a></b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+</table>
+<a name="@Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTBasicModule.TBasicVSTModule.html#Effect">Effect</a></b>: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a> read GetEffect;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="DVSTBasicModule.TBasicVSTModule.html#AudioMaster">AudioMaster</a></b>: <a   href="DVSTEffect.html#TAudioMasterCallbackFunc">TAudioMasterCallbackFunc</a> read FAudioMaster write SetAudioMaster;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcess"></a><code>procedure <b>HostCallProcess</b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessReplacing"></a><code>procedure <b>HostCallProcessReplacing</b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPSingle">PPSingle</a>; const SampleFrames: Integer); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessDoubleReplacing"></a><code>procedure <b>HostCallProcessDoubleReplacing</b>(const Inputs, Outputs: <a   href="DVSTEffect.html#PPDouble">PPDouble</a>; const SampleFrames: Integer); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParameter"></a><code>function <b>HostCallGetParameter</b>(Index: Integer): Single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetParameter"></a><code>procedure <b>HostCallSetParameter</b>(Index: Integer; Value: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallDispatchEffect"></a><code>procedure <b>HostCallDispatchEffect</b>(opcode : <a   href="DVSTEffect.html#TDispatcherOpcode">TDispatcherOpcode</a>; Index, Value: Integer; ptr: pointer; opt: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOpen"></a><code>function <b>HostCallOpen</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallClose"></a><code>function <b>HostCallClose</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetProgramm"></a><code>function <b>HostCallSetProgramm</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProgramm"></a><code>function <b>HostCallGetProgramm</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetProgramName"></a><code>function <b>HostCallSetProgramName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProgramName"></a><code>function <b>HostCallGetProgramName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParamLabel"></a><code>function <b>HostCallGetParamLabel</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParamDisplay"></a><code>function <b>HostCallGetParamDisplay</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParamName"></a><code>function <b>HostCallGetParamName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVu"></a><code>function <b>HostCallGetVu</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetSampleRate"></a><code>function <b>HostCallSetSampleRate</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetBlockSize"></a><code>function <b>HostCallSetBlockSize</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallMainsChanged"></a><code>function <b>HostCallMainsChanged</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditGetRect"></a><code>function <b>HostCallEditGetRect</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditOpen"></a><code>function <b>HostCallEditOpen</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditClose"></a><code>function <b>HostCallEditClose</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditDraw"></a><code>function <b>HostCallEditDraw</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditMouse"></a><code>function <b>HostCallEditMouse</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditKey"></a><code>function <b>HostCallEditKey</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditIdle"></a><code>function <b>HostCallEditIdle</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditTop"></a><code>function <b>HostCallEditTop</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditSleep"></a><code>function <b>HostCallEditSleep</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallIdentify"></a><code>function <b>HostCallIdentify</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetChunk"></a><code>function <b>HostCallGetChunk</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetChunk"></a><code>function <b>HostCallSetChunk</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessEvents"></a><code>function <b>HostCallProcessEvents</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallCanBeAutomated"></a><code>function <b>HostCallCanBeAutomated</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallString2Parameter"></a><code>function <b>HostCallString2Parameter</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetNumProgramCategories"></a><code>function <b>HostCallGetNumProgramCategories</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProgramNameIndexed"></a><code>function <b>HostCallGetProgramNameIndexed</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallCopyProgram"></a><code>function <b>HostCallCopyProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallConnectInput"></a><code>function <b>HostCallConnectInput</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallConnectOutput"></a><code>function <b>HostCallConnectOutput</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetInputProperties"></a><code>function <b>HostCallGetInputProperties</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetOutputProperties"></a><code>function <b>HostCallGetOutputProperties</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetPlugCategory"></a><code>function <b>HostCallGetPlugCategory</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetCurrentPosition"></a><code>function <b>HostCallGetCurrentPosition</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetDestinationBuffer"></a><code>function <b>HostCallGetDestinationBuffer</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOfflineNotify"></a><code>function <b>HostCallOfflineNotify</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOfflinePrepare"></a><code>function <b>HostCallOfflinePrepare</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallOfflineRun"></a><code>function <b>HostCallOfflineRun</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallProcessVarIo"></a><code>function <b>HostCallProcessVarIo</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetSpeakerArrangement"></a><code>function <b>HostCallSetSpeakerArrangement</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetBlockSizeAndSampleRate"></a><code>function <b>HostCallSetBlockSizeAndSampleRate</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetBypass"></a><code>function <b>HostCallSetBypass</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetEffectName"></a><code>function <b>HostCallGetEffectName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetErrorText"></a><code>function <b>HostCallGetErrorText</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVendorString"></a><code>function <b>HostCallGetVendorString</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetProductString"></a><code>function <b>HostCallGetProductString</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVendorVersion"></a><code>function <b>HostCallGetVendorVersion</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallVendorSpecific"></a><code>function <b>HostCallVendorSpecific</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallCanDo"></a><code>function <b>HostCallCanDo</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetTailSize"></a><code>function <b>HostCallGetTailSize</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallIdle"></a><code>function <b>HostCallIdle</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetIcon"></a><code>function <b>HostCallGetIcon</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetViewPosition"></a><code>function <b>HostCallSetViewPosition</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetParameterProperties"></a><code>function <b>HostCallGetParameterProperties</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallKeysRequired"></a><code>function <b>HostCallKeysRequired</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetVstVersion"></a><code>function <b>HostCallGetVstVersion</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditKeyDown"></a><code>function <b>HostCallEditKeyDown</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEditKeyUp"></a><code>function <b>HostCallEditKeyUp</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetEditKnobMode"></a><code>function <b>HostCallSetEditKnobMode</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetMidiProgramName"></a><code>function <b>HostCallGetMidiProgramName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetCurrentMidiProgram"></a><code>function <b>HostCallGetCurrentMidiProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetMidiProgramCategory"></a><code>function <b>HostCallGetMidiProgramCategory</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallHasMidiProgramsChanged"></a><code>function <b>HostCallHasMidiProgramsChanged</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetMidiKeyName"></a><code>function <b>HostCallGetMidiKeyName</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallBeginSetProgram"></a><code>function <b>HostCallBeginSetProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallEndSetProgram"></a><code>function <b>HostCallEndSetProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetSpeakerArrangement"></a><code>function <b>HostCallGetSpeakerArrangement</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallShellGetNextPlugin"></a><code>function <b>HostCallShellGetNextPlugin</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallStartProcess"></a><code>function <b>HostCallStartProcess</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallStopProcess"></a><code>function <b>HostCallStopProcess</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetTotalSampleToProcess"></a><code>function <b>HostCallSetTotalSampleToProcess</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetPanLaw"></a><code>function <b>HostCallSetPanLaw</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallBeginLoadBank"></a><code>function <b>HostCallBeginLoadBank</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallBeginLoadProgram"></a><code>function <b>HostCallBeginLoadProgram</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallSetProcessPrecision"></a><code>function <b>HostCallSetProcessPrecision</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetNumMidiInputChannels"></a><code>function <b>HostCallGetNumMidiInputChannels</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HostCallGetNumMidiOutputChannels"></a><code>function <b>HostCallGetNumMidiOutputChannels</b> (Index, Value: Integer; ptr: pointer; opt: Single): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Effect"></a><code>property <b>Effect</b>: <a   href="DVSTEffect.html#PVSTEffect">PVSTEffect</a> read GetEffect;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AudioMaster"></a><code>property <b>AudioMaster</b>: <a   href="DVSTEffect.html#TAudioMasterCallbackFunc">TAudioMasterCallbackFunc</a> read FAudioMaster write SetAudioMaster;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.10.0</a> on 2007-11-13 13:04:18</em>
+</span>
+</body></html>
