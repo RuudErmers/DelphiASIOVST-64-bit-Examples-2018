@@ -1,6 +1,6 @@
 # DelphiASIOVST-64-bit-Examples-2018
 Some 64 bit VSTs (Crumar DS2, Modular, Syntorchestra, Mellotron, Waveplayer) using DelphiASIOVST and Delphi Community Edition.
-This part of my hobby project. See www.ermers.org.
+This is part of my hobby project. See www.ermers.org.
 
 Here you find a few examples of 64 bit VSTs written
 - with ASIOVST package
@@ -22,14 +22,14 @@ can leave out the effects easily).
 
 A quick overview:
 - The Crumar DS2 Plugin is a faithfull reconstruction of the DS2, with almost exactly the same possibilities.
-- The modular plugin is a 4 oscillator synth which I use in my setup for sequencing. Under the hood it is almost the
+- The Modular plugin is a 4 oscillator synth which I use in my setup for sequencing. Under the hood it is almost the
 same synth as the DS2, except for another UI and two more oscillators. 
 - The Rompler VST was just a quick study for a mellotron VST. You will need the samples to run it, but since these are 
 free I can send them if you want them.
 - The syntorchestra is an emulation for a Farfisa Syntorchestra. It can use samples OR waveforms. I don't have the 
-correct samples for the mono section so I only did some effort to recreate the ploy section. However, in my setup
+correct samples for the mono section so I only did some effort to recreate the poly section. However, in my setup
 I use another samplebased plugin. 
-- The waveplayer is a very basic waveplayer. It can play .WAV and .MP# and uses Bass (not included). I use it 
+- The waveplayer is a very basic waveplayer. It can play .WAV and .MP3 and uses Bass (not included). I use it 
 in my setup, and by sending the correct MIDI information you can command it to play any wavefile.
 
 The VST are available in 64 bit VST format, but there are also standalone versions included.
