@@ -1420,13 +1420,13 @@ end;
 procedure Msg(b: Boolean);
 begin if b then Msg('TRUE') else Msg('FALSE');end;
 procedure Msg(m: string; m2: string = '');
-begin MessageBox(0, PAnsiChar(m), PChar(m2), MB_OK); end;
+begin MessageBox(0, PChar(m), PChar(m2), MB_OK); end;
 procedure Msg(i: Integer);
 begin Msg(IntToStr(i)); end;
 procedure Msg(s: Single);
 begin Msg(FloatToStrF(s, ffFixed, 3, 3)); end;
 procedure Msg(m: string; i:Integer);
-begin MessageBox(0, PAnsiChar(m + ' ' + IntToStr(i)), '', MB_OK); end;
+begin MessageBox(0, PChar(m + ' ' + IntToStr(i)), '', MB_OK); end;
 {$ENDIF}
 {$ENDIF}
 {$WARNINGS ON}
