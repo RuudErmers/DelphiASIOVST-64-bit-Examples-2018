@@ -1024,6 +1024,10 @@
 { DELPHIX_UP from DELPHIX mappings                                             }
 {------------------------------------------------------------------------------}
 
+{$IFDEF DELPHI26} {$DEFINE DELPHI26_UP} {$ENDIF}
+{$IFDEF DELPHI25} {$DEFINE DELPHI25_UP} {$ENDIF}
+{$IFDEF DELPHI24} {$DEFINE DELPHI24_UP} {$ENDIF}
+{$IFDEF DELPHI23} {$DEFINE DELPHI23_UP} {$ENDIF}
 {$IFDEF DELPHI22} {$DEFINE DELPHI22_UP} {$ENDIF}
 {$IFDEF DELPHI21} {$DEFINE DELPHI21_UP} {$ENDIF}
 {$IFDEF DELPHI20} {$DEFINE DELPHI20_UP} {$ENDIF}
