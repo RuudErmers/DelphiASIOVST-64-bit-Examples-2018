@@ -226,7 +226,7 @@ const
 implementation
 
 uses
-  Math, SysUtils;
+  Math, {$IFDEF DELPHI20_UP}AnsiStrings, {$ENDIF}SysUtils;
 
 { Byte Ordering }
 
@@ -1397,7 +1397,7 @@ var
 begin
  GetMem(s, $7FF);
  GetModuleFileNameA(hInstance, s, SizeOf(s));
- Result := ExtractFilename(string(StrPas(s)));
+ Result := ExtractFilename(string({$IFDEF DELPHI20_UP}AnsiStrings.{$ENDIF}StrPas(s)));
 end;
 
 function GetApplicationDirectory: string;
@@ -1406,7 +1406,7 @@ var
 begin
  GetMem(s, $7FF);
  GetModuleFilenameA(hInstance, s, SizeOf(s));
- Result := ExtractFileDir(string(StrPas(s)));
+ Result := ExtractFileDir(string({$IFDEF DELPHI20_UP}AnsiStrings.{$ENDIF}StrPas(s)));
 end;
 {$ENDIF}
 
