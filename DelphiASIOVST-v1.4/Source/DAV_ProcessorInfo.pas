@@ -35,6 +35,7 @@ interface
 {$I DAV_Compiler.inc}
 
 uses
+  {$IFDEF DELPHI20_UP}AnsiStrings,{$ENDIF}
   SysUtils;
 
 type
@@ -1206,7 +1207,7 @@ begin
                end;
            10: FCPUName := 'Pentium III Xeon';
            11: FCPUName := 'Pentium III';
-         else StrPCopy(FCPUName, AnsiString(Format('P6 (Model %d)', [FModel])));
+         else {$IFDEF DELPHI20_UP}AnsiStrings.{$ENDIF}StrPCopy(FCPUName, AnsiString(Format('P6 (Model %d)', [FModel])));
         end;
     15: case FBrandID of
             1: FCPUName := 'Celeron';
@@ -1215,7 +1216,7 @@ begin
          else  FCPUName := 'Pentium 4';
         end;
     else
-      StrPCopy(FCPUName, AnsiString(Format('P%d', [FFamily])));
+      {$IFDEF DELPHI20_UP}AnsiStrings.{$ENDIF}StrPCopy(FCPUName, AnsiString(Format('P%d', [FFamily])));
     end;
   end;
 
@@ -1319,7 +1320,7 @@ begin
           7: FCPUName := 'AMD-K6® (Model 7)';
           8: FCPUName := 'AMD-K6®-2 (Model 8)';
           9: FCPUName := 'AMD-K6®-III (Model 9)';
-        else StrFmt(FCPUName, PAnsiChar(AnsiString('Unknown AMD (Model %d)')), [FModel]);
+        else {$IFDEF DELPHI20_UP}AnsiStrings.{$ENDIF}StrFmt(FCPUName, PAnsiChar(AnsiString('Unknown AMD (Model %d)')), [FModel]);
        end;
      6: case FModel of
           1: FCPUName := 'AMD Athlon™ (Model 1)';
@@ -1330,7 +1331,7 @@ begin
           7: FCPUName := 'AMD Duron™ (Model 7)';
           8: FCPUName := 'AMD Athlon™ XP (Model 8)';
          10: FCPUName := 'AMD Athlon™ XP (Model 10)';
-        else StrFmt(FCPUName, PAnsiChar(AnsiString('Unknown AMD (Model %d)')), [FModel]);
+        else {$IFDEF DELPHI20_UP}AnsiStrings.{$ENDIF}StrFmt(FCPUName, PAnsiChar(AnsiString('Unknown AMD (Model %d)')), [FModel]);
        end;
      8:
 
@@ -1408,7 +1409,7 @@ begin
          4: FCPUName := 'Cyrix GXm';
        end;
     6: FCPUName := '6x86MX';
-    else StrPCopy(FCPUName, AnsiString(Format('%dx86', [FFamily])));
+    else {$IFDEF DELPHI20_UP}AnsiStrings.{$ENDIF}StrPCopy(FCPUName, AnsiString(Format('%dx86', [FFamily])));
    end;
   end;
 end;

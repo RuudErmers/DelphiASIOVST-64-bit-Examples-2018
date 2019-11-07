@@ -805,6 +805,8 @@ implementation
 uses
   Math, SysUtils, DAV_Math;
 
+{$WARNINGS OFF}
+
 { Trigonomic Approximations }
 
 // 3-Term: Accurate to about 3.2 decimal digits over the range [0, pi/2].
